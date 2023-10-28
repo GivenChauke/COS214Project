@@ -1,19 +1,18 @@
 # Cheat GBT
 
-Our Practical Project for COS214 2023. 
-From the specification document:
+Our Practical Project for COS214 at the Univerdity of Pretoria (2023). From the specification document:
 > This assignment will require you to design a restaurant simulator. A fair bit of the assignment is up to the team to design including the implementation as a pure simulation or as a ”restaurant tycoon” game. A restaurant is a chaotic ensemble of various processes happening at the same time (Multithreading is not required) to result in the production and sale of food to customers. These processes can be small, from being seated at a table, to massive processes such as the cooking of food at various workstations and being passed between chefs. For the purpose of this assignment we will be dealing primarily with two distinct areas, the floor and the kitchen, of the restaurant and how they must communicate.
 
 ## Contributions by:
 Name  | Student Number
 ------------- | -------------
-Ms. Nerina Borchard  | u21537144)
-Mr. Given Chauke  | u21595969)
+Ms. Nerina Borchard  | u21537144
+Mr. Given Chauke  | u21595969
 Mx. Zion van Wyk  | u21655325
-Mr. Siyabonga Mbuyisa  | u20491621)
-Mr. Lesedi Kekana  | u20486473)
-Mr. Atidaishe Mupanemunda  | u22747886)
-Mr. Thabiso Matau  | u22609254)
+Mr. Siyabonga Mbuyisa  | u20491621
+Mr. Lesedi Kekana  | u20486473
+Mr. Atidaishe Mupanemunda  | u22747886
+Mr. Thabiso Matau  | u22609254
 
 ## Our implemented patterns
 - Composite (Table)
@@ -31,34 +30,34 @@ Mr. Thabiso Matau  | u22609254)
 
 ## Assigned patterns
 * Siya
-Composite (Table)
-State (TableState and CustomerState)
+  * Composite (Table)
+  * State (TableState and CustomerState)
 
 
 * Zion
-Memento (Billing System)
-State (OrderStatus)
+  * Memento (Billing System)
+  * State (OrderStatus)
 
 * Lesedi
-- Strategy (Chef)
-Template Method (Chef)
+  * Strategy (Chef)
+  * Template Method (Chef)
 
 * Nerina
-Builder (DishBuilder)
-Decorator (Food)
+  * Builder (DishBuilder)
+  * Decorator (Food)
 
 * Thabiso
-Bridge (Department)
+  * Bridge (Department)
 
 * Ati
-Iterator (Floor and Employee)
-Observer (Waiter & Kitchen)
+  * Iterator (Floor and Employee)
+  * Observer (Waiter & Kitchen)
 
 * Given
-Facade (Engine)
-Chain of Responsibility (Chef)
+  * Facade (Engine)
+  * Chain of Responsibility (Chef)
 
-## 5 stage deadlines
+## 4 stage deadlines
 
 ### 30th of October
 Name  | Responsibility
