@@ -1,6 +1,6 @@
 # Cheat GBT
 
-Our Practical Project for COS214 at the Univerdity of Pretoria (2023). From the specification document:
+Our Practical Project for COS214 at the University of Pretoria (2023). From the specification document:
 > This assignment will require you to design a restaurant simulator. A fair bit of the assignment is up to the team to design including the implementation as a pure simulation or as a ”restaurant tycoon” game. A restaurant is a chaotic ensemble of various processes happening at the same time (Multithreading is not required) to result in the production and sale of food to customers. These processes can be small, from being seated at a table, to massive processes such as the cooking of food at various workstations and being passed between chefs. For the purpose of this assignment we will be dealing primarily with two distinct areas, the floor and the kitchen, of the restaurant and how they must communicate.
 
 ## Contributions by:
@@ -25,7 +25,7 @@ Mr. Thabiso Matau  | u22609254
 - Strategy (Chef)
 - Template Method (Chef)
 - Decorator (Food)
-- Builder (Dishbuilder)
+- Builder (DishBuilder)
 - Facade (Engine)
 
 ## Assigned patterns
@@ -65,7 +65,7 @@ Name  | Responsibility
 Siya | AbstractTable interface
 Zion | Bill and Order classes
 Lesedi | AbstractTable and its children (with Siya)
-Nerina | Dishbuilder class and its Abstract interface
+Nerina | DishbBilder class and its Abstract interface
 Thabiso | Employee class and its children, as well as Floor and AbstractFloor (with Ati)
 Given | work with Thabiso on Chef class
 Ati | work with Thabiso to make Employee class and its children, as well as Floor and AbstractFloor. for integration with Employee iterator
