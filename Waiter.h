@@ -3,8 +3,10 @@
 
 #include "Employee.h"
 
-class Waiter: public Employee{
-
+class Waiter : public Employee {
+public:
+    Waiter(int id);
+    void getReviewsForKitchenDepartment();
 };
 
-#endif
+#endif // WAITER_H
