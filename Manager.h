@@ -3,8 +3,10 @@
 
 #include "Employee.h"
 
-class Manager: public Employee{
-
+class Manager : public Employee {
+public:
+    Manager(int id);
+    void getReviewsForFloorDepartment();
 };
 
-#endif
+#endif // MANAGER_H
