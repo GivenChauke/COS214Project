@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Course/Year 2/Semester 2/COS214/Practicals/Broject/COS214Project",
-      "program": "c:/Course/Year 2/Semester 2/COS214/Practicals/Broject/COS214Project/build/Debug/outDebug",
+      "cwd": "c:/Users/mupan/OneDrive/Documents/GitHub/COS214Project",
+      "program": "c:/Users/mupan/OneDrive/Documents/GitHub/COS214Project/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
