@@ -1,16 +1,15 @@
 #ifndef CUSTOMDISH_H
 #define CUSTOMDISH_H
+#include "Food.h"
+#include <string>
+using namespace std;
 
-namespace Main_Class_Diagram {
-	class CustomDish : Food {
+	class CustomDish : public Food {
 
 	public:
 		string name;
-
 		string getName();
-
 		void setName(string name);
 	};
-}
 
 #endif
