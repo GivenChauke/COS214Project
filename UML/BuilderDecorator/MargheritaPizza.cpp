@@ -1,6 +1,11 @@
 #include "MargheritaPizza.h"
 
-Main_Class_Diagram::MargheritaPizza::MargheritaPizza() {
+MargheritaPizza::MargheritaPizza() {
 	// TODO - implement MargheritaPizza::MargheritaPizza
+	throw "Not yet implemented";
+}
+
+MargheritaPizza::~MargheritaPizza() {
+	// TODO - implement MargheritaPizza::~MargheritaPizza
 	throw "Not yet implemented";
 }

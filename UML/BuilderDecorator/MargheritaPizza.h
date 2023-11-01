@@ -1,13 +1,11 @@
 #ifndef MARGHERITAPIZZA_H
 #define MARGHERITAPIZZA_H
+#include "PizzaType.h"
 
-namespace Main_Class_Diagram {
-	class MargheritaPizza : Main_Class_Diagram::PizzaType {
-
-
+	class MargheritaPizza : public PizzaType {
 	public:
 		MargheritaPizza();
+		~MargheritaPizza();
 	};
-}
 
 #endif

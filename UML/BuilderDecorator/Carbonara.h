@@ -1,13 +1,11 @@
 #ifndef CARBONARA_H
 #define CARBONARA_H
+#include "PastaType.h"
 
-namespace Main_Class_Diagram {
-	class Carbonara : Main_Class_Diagram::PastaType {
-
-
+	class Carbonara : public PastaType {
 	public:
 		Carbonara();
+		~Carbonara();
 	};
-}
 
 #endif

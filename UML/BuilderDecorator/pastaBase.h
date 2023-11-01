@@ -1,17 +1,13 @@
 #ifndef PASTABASE_H
 #define PASTABASE_H
+#include "pasta.h"
 
-namespace Main_Class_Diagram {
-	class pastaBase : Pasta {
-
-
+	class pastaBase : public Pasta {
 	public:
 		pastaBase();
-
 		double total();
-
-		void decorate(Pasta* p);
+		virtual void decorate(Pasta* );
+		~pastaBase();
 	};
-}
 
 #endif

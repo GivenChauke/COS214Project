@@ -1,13 +1,11 @@
 #ifndef CHICKENBURGER_H
 #define CHICKENBURGER_H
+#include "BurgerBase.h"
 
-namespace Main_Class_Diagram {
-	class ChickenBurger : Main_Class_Diagram::BurgerBase {
-
-
+	class ChickenBurger : public BurgerBase {
 	public:
 		ChickenBurger();
+		~ChickenBurger();
 	};
-}
 
 #endif

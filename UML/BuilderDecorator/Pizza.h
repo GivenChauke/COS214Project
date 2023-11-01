@@ -1,24 +1,22 @@
 #ifndef PIZZA_H
 #define PIZZA_H
+#include "Food.h"
+#include <string>
+using namespace std;
 
-class Pizza : Food {
+class Pizza : public Food {
 
 public:
-	String name;
-
+	string name;
 	string getName();
-
 	void setName(string name);
 
 	double getCost();
-
 	void setCost(double d);
-
-	void decorate(Pizza* p);
-
-	double total();
-
+	virtual void decorate(Pizza*);
+	virtual double total();
 	Pizza();
+	~Pizza();
 };
 
 #endif

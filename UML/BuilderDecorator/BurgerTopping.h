@@ -1,16 +1,15 @@
 #ifndef BURGERTOPPING_H
 #define BURGERTOPPING_H
+#include "Burger.h"
 
-namespace Main_Class_Diagram {
-	class BurgerTopping : Burger {
-
+	class BurgerTopping : public Burger {
+	private:
+		Burger* burgerTopping;
 	public:
-		Burger* toppingBurger;
-
 		BurgerTopping();
-
 		double total();
+		void decorate(Burger* burgerTopping);
+		~BurgerTopping();
 	};
-}
 
 #endif

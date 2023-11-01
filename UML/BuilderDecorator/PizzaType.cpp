@@ -1,16 +1,21 @@
 #include "PizzaType.h"
 
-Main_Class_Diagram::PizzaType::PizzaType() {
+PizzaType::PizzaType() {
 	// TODO - implement PizzaType::PizzaType
 	throw "Not yet implemented";
 }
 
-double Main_Class_Diagram::PizzaType::total() {
+double PizzaType::total() {
 	// TODO - implement PizzaType::total
 	throw "Not yet implemented";
 }
 
-void Main_Class_Diagram::PizzaType::decorate(Pizza* pizzaType) {
+void PizzaType::decorate(Pizza* pizzaType) {
 	// TODO - implement PizzaType::decorate
+	throw "Not yet implemented";
+}
+
+PizzaType::~PizzaType() {
+	// TODO - implement PizzaType::~PizzaType
 	throw "Not yet implemented";
 }

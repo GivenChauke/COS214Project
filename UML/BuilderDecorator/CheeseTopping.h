@@ -1,13 +1,11 @@
 #ifndef CHEESETOPPING_H
 #define CHEESETOPPING_H
+#include "BurgerTopping.h"
 
-namespace Main_Class_Diagram {
-	class CheeseTopping : Main_Class_Diagram::BurgerTopping {
-
-
+	class CheeseTopping : public BurgerTopping {
 	public:
 		CheeseTopping();
+		~CheeseTopping();
 	};
-}
 
 #endif

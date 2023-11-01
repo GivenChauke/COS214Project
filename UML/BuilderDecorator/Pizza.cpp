@@ -1,14 +1,14 @@
 #include "Pizza.h"
 
-string Pizza::getName() {
-	// TODO - implement Pizza::getName
-	throw "Not yet implemented";
-}
+// string Pizza::getName() {
+// 	// TODO - implement Pizza::getName
+// 	throw "Not yet implemented";
+// }
 
-void Pizza::setName(string name) {
-	// TODO - implement Pizza::setName
-	throw "Not yet implemented";
-}
+// void Pizza::setName(string name) {
+// 	// TODO - implement Pizza::setName
+// 	throw "Not yet implemented";
+// }
 
 double Pizza::getCost() {
 	// TODO - implement Pizza::getCost
@@ -32,5 +32,10 @@ double Pizza::total() {
 
 Pizza::Pizza() {
 	// TODO - implement Pizza::Pizza
+	throw "Not yet implemented";
+}
+
+Pizza::~Pizza() {
+	// TODO - implement Pizza::~Pizza
 	throw "Not yet implemented";
 }

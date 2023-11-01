@@ -29,3 +29,13 @@ double Pasta::total() {
 	// TODO - implement Pasta::total
 	throw "Not yet implemented";
 }
+
+Pasta::Pasta() {
+	// TODO - implement Pasta::Pasta
+	throw "Not yet implemented";
+}
+
+Pasta::~Pasta() {
+	// TODO - implement Pasta::~Pasta
+	throw "Not yet implemented";
+}

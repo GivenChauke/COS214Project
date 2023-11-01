@@ -1,13 +1,11 @@
 #ifndef ALFREDO_H
 #define ALFREDO_H
+#include "PastaType.h"
 
-namespace Main_Class_Diagram {
-	class Alfredo : Main_Class_Diagram::PastaType {
-
-
+	class Alfredo : public PastaType {
 	public:
 		Alfredo();
+		~Alfredo();
 	};
-}
 
 #endif

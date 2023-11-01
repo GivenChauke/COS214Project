@@ -1,13 +1,10 @@
 #ifndef BEEFBUGER_H
 #define BEEFBUGER_H
+#include "BurgerBase.h"
 
-namespace Main_Class_Diagram {
-	class BeefBuger : Main_Class_Diagram::BurgerBase {
-
-
+	class BeefBuger : public BurgerBase {
 	public:
 		BeefBuger();
 	};
-}
 
 #endif

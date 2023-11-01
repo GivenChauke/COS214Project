@@ -1,6 +1,11 @@
 #include "VegetarianBurger.h"
 
-Main_Class_Diagram::VegetarianBurger::VegetarianBurger() {
+VegetarianBurger::VegetarianBurger() {
 	// TODO - implement VegetarianBurger::VegetarianBurger
+	throw "Not yet implemented";
+}
+
+VegetarianBurger::~VegetarianBurger() {
+	// TODO - implement VegetarianBurger::~VegetarianBurger
 	throw "Not yet implemented";
 }

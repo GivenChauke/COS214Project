@@ -1,13 +1,11 @@
 #ifndef ONIONTOPPING_H
 #define ONIONTOPPING_H
+#include "BurgerTopping.h"
 
-namespace Main_Class_Diagram {
-	class OnionTopping : Main_Class_Diagram::BurgerTopping {
-
-
+	class OnionTopping : public BurgerTopping {
 	public:
 		OnionTopping();
+		~OnionTopping();
 	};
-}
 
 #endif

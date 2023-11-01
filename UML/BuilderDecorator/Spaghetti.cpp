@@ -1,6 +1,11 @@
 #include "Spaghetti.h"
 
-Main_Class_Diagram::Spaghetti::Spaghetti() {
+Spaghetti::Spaghetti() {
 	// TODO - implement Spaghetti::Spaghetti
+	throw "Not yet implemented";
+}
+
+Spaghetti::~Spaghetti() {
+	// TODO - implement Spaghetti::~Spaghetti
 	throw "Not yet implemented";
 }

@@ -1,11 +1,11 @@
 #include "MeatSupremePizza.h"
 
-Main_Class_Diagram::MeatSupremePizza::MeatSupremePizza() {
+MeatSupremePizza::MeatSupremePizza() {
 	// TODO - implement MeatSupremePizza::MeatSupremePizza
 	throw "Not yet implemented";
 }
 
-void Main_Class_Diagram::MeatSupremePizza::operation() {
-	// TODO - implement MeatSupremePizza::operation
+MeatSupremePizza::~MeatSupremePizza() {
+	// TODO - implement MeatSupremePizza::~MeatSupremePizza
 	throw "Not yet implemented";
 }

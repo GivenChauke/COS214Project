@@ -1,13 +1,11 @@
 #ifndef MACARONI_H
 #define MACARONI_H
+#include "pastaBase.h"
 
-namespace Main_Class_Diagram {
-	class Macaroni : Main_Class_Diagram::pastaBase {
-
-
+	class Macaroni : public pastaBase {
 	public:
 		Macaroni();
+		~Macaroni();
 	};
-}
 
 #endif

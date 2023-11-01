@@ -1,13 +1,11 @@
 #ifndef THICKBASEPIZZA_H
 #define THICKBASEPIZZA_H
+#include "PizzaBase.h"
 
-namespace Main_Class_Diagram {
-	class ThickBasePizza : Main_Class_Diagram::PizzaBase {
-
-
+	class ThickBasePizza : public PizzaBase {
 	public:
 		ThickBasePizza();
+		~ThickBasePizza();
 	};
-}
 
 #endif

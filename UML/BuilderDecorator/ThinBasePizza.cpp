@@ -1,6 +1,11 @@
 #include "ThinBasePizza.h"
 
-Main_Class_Diagram::ThinBasePizza::ThinBasePizza() {
+ThinBasePizza::ThinBasePizza() {
 	// TODO - implement ThinBasePizza::ThinBasePizza
+	throw "Not yet implemented";
+}
+
+ThinBasePizza::~ThinBasePizza() {
+	// TODO - implement ThinBasePizza::~ThinBasePizza
 	throw "Not yet implemented";
 }

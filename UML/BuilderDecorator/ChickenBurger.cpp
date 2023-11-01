@@ -1,6 +1,11 @@
 #include "ChickenBurger.h"
 
-Main_Class_Diagram::ChickenBurger::ChickenBurger() {
+ChickenBurger::ChickenBurger() {
 	// TODO - implement ChickenBurger::ChickenBurger
+	throw "Not yet implemented";
+}
+
+ChickenBurger::~ChickenBurger() {
+	// TODO - implement ChickenBurger::~ChickenBurger
 	throw "Not yet implemented";
 }

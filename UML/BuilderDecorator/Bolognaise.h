@@ -1,13 +1,11 @@
 #ifndef BOLOGNAISE_H
 #define BOLOGNAISE_H
+#include "PastaType.h"
 
-namespace Main_Class_Diagram {
-	class Bolognaise : Main_Class_Diagram::PastaType {
-
-
+	class Bolognaise : public PastaType {
 	public:
 		Bolognaise();
+		~Bolognaise();
 	};
-}
 
 #endif

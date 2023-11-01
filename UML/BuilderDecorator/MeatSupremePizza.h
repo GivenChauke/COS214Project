@@ -1,15 +1,11 @@
 #ifndef MEATSUPREMEPIZZA_H
 #define MEATSUPREMEPIZZA_H
+#include "PizzaType.h"
 
-namespace Main_Class_Diagram {
-	class MeatSupremePizza : Main_Class_Diagram::PizzaType {
-
-
+	class MeatSupremePizza : PizzaType {
 	public:
 		MeatSupremePizza();
-
-		void operation();
+		~MeatSupremePizza();
 	};
-}
 
 #endif

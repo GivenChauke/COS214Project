@@ -1,18 +1,15 @@
 #ifndef PASTATYPE_H
 #define PASTATYPE_H
+#include "pasta.h"
 
-namespace Main_Class_Diagram {
-	class PastaType : Pasta {
-
-	public:
+	class PastaType : public Pasta {
+	private:
 		Pasta* typePasta;
-
+	public:
 		PastaType();
-
 		double total();
-
 		void decorate(Pasta* pastaType);
+		~PastaType();
 	};
-}
 
 #endif

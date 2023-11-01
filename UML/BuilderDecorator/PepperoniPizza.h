@@ -1,13 +1,11 @@
 #ifndef PEPPERONIPIZZA_H
 #define PEPPERONIPIZZA_H
+#include "PizzaType.h"
 
-namespace Main_Class_Diagram {
-	class PepperoniPizza : Main_Class_Diagram::PizzaType {
-
-
+	class PepperoniPizza : public PizzaType {
 	public:
 		PepperoniPizza();
+		~PepperoniPizza();
 	};
-}
 
 #endif

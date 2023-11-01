@@ -1,16 +1,21 @@
 #include "PastaType.h"
 
-Main_Class_Diagram::PastaType::PastaType() {
+PastaType::PastaType() {
 	// TODO - implement PastaType::PastaType
 	throw "Not yet implemented";
 }
 
-double Main_Class_Diagram::PastaType::total() {
+double PastaType::total() {
 	// TODO - implement PastaType::total
 	throw "Not yet implemented";
 }
 
-void Main_Class_Diagram::PastaType::decorate(Pasta* pastaType) {
+void PastaType::decorate(Pasta* pastaType) {
 	// TODO - implement PastaType::decorate
+	throw "Not yet implemented";
+}
+
+PastaType::~PastaType() {
+	// TODO - implement PastaType::~PastaType
 	throw "Not yet implemented";
 }

@@ -1,18 +1,16 @@
 #ifndef PIZZATYPE_H
 #define PIZZATYPE_H
+#include "pizza.h"
 
-namespace Main_Class_Diagram {
 	class PizzaType : Pizza {
-
+	private:
+		Pizza* pizzaType;
 	public:
-		Pizza* typePizza;
-
 		PizzaType();
-
 		double total();
-
 		void decorate(Pizza* pizzaType);
+		~PizzaType();
 	};
-}
+
 
 #endif

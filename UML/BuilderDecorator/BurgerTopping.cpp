@@ -1,11 +1,21 @@
 #include "BurgerTopping.h"
 
-Main_Class_Diagram::BurgerTopping::BurgerTopping() {
+BurgerTopping::BurgerTopping() {
 	// TODO - implement BurgerTopping::BurgerTopping
 	throw "Not yet implemented";
 }
 
-double Main_Class_Diagram::BurgerTopping::total() {
+double BurgerTopping::total() {
 	// TODO - implement BurgerTopping::total
+	throw "Not yet implemented";
+}
+
+void BurgerTopping::decorate(Burger* burgerType) {
+	// TODO - implement BurgerTopping::decorate
+	throw "Not yet implemented";
+}
+
+BurgerTopping::~BurgerTopping() {
+	// TODO - implement BurgerTopping::~BurgerTopping
 	throw "Not yet implemented";
 }

@@ -1,13 +1,13 @@
 #ifndef VEGETARIANBURGER_H
 #define VEGETARIANBURGER_H
+#include "BurgerBase.h"
 
-namespace Main_Class_Diagram {
-	class VegetarianBurger : Main_Class_Diagram::BurgerBase {
+using namespace std;
 
-
+	class VegetarianBurger : public BurgerBase {
 	public:
 		VegetarianBurger();
+		~VegetarianBurger();
 	};
-}
 
 #endif

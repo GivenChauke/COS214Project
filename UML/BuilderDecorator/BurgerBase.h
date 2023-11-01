@@ -1,15 +1,14 @@
 #ifndef BURGERBASE_H
 #define BURGERBASE_H
+#include "Burger.h"
 
-namespace Main_Class_Diagram {
-	class BurgerBase : Burger {
-
-
+	class BurgerBase : public Burger {
 	public:
 		BurgerBase();
-
 		double total();
+		virtual void decorate(Burger*);
+		~BurgerBase();
 	};
-}
+
 
 #endif

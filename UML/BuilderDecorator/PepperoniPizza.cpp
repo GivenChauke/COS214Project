@@ -1,6 +1,11 @@
 #include "PepperoniPizza.h"
 
-Main_Class_Diagram::PepperoniPizza::PepperoniPizza() {
+PepperoniPizza::PepperoniPizza() {
 	// TODO - implement PepperoniPizza::PepperoniPizza
+	throw "Not yet implemented";
+}
+
+PepperoniPizza::~PepperoniPizza() {
+	// TODO - implement PepperoniPizza::~PepperoniPizza
 	throw "Not yet implemented";
 }

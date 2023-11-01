@@ -24,3 +24,18 @@ double Burger::total() {
 	// TODO - implement Burger::total
 	throw "Not yet implemented";
 }
+
+void Burger::decorate(Burger* b) {
+	// TODO - implement Burger::decorate
+	throw "Not yet implemented";
+}
+
+Burger::Burger() {
+	// TODO - implement Burger::Burger
+	throw "Not yet implemented";
+}
+
+Burger::~Burger() {
+	// TODO - implement Burger::~Burger
+	throw "Not yet implemented";
+}
