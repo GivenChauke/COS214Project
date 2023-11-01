@@ -17,6 +17,7 @@ struct FoodItem{
     string method; /**< The preparation method of the food item. */
     string type;   /**< The type of food item (e.g., Burger, Pasta, etc.). */
     FoodItem(string, int, string, string);
+    ~FoodItem();
 };
 
 /**
