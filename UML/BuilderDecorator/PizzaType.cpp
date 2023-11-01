@@ -1,21 +1,18 @@
 #include "PizzaType.h"
 
 PizzaType::PizzaType() {
-	// TODO - implement PizzaType::PizzaType
-	throw "Not yet implemented";
+	setName("Pizza Type");
 }
 
 double PizzaType::total() {
-	// TODO - implement PizzaType::total
-	throw "Not yet implemented";
+	return getCost() + pizzaType->total(); 
 }
 
 void PizzaType::decorate(Pizza* pizzaType) {
-	// TODO - implement PizzaType::decorate
-	throw "Not yet implemented";
+	this->pizzaType = pizzaType;
 }
 
 PizzaType::~PizzaType() {
-	// TODO - implement PizzaType::~PizzaType
-	throw "Not yet implemented";
+	// // TODO - implement PizzaType::~PizzaType
+	// throw "Not yet implemented";
 }

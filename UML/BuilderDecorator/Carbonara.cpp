@@ -1,11 +1,11 @@
 #include "Carbonara.h"
 
 Carbonara::Carbonara() {
-	// TODO - implement Carbonara::Carbonara
-	throw "Not yet implemented";
+	setName("Carbonara");
+    setCost(8.0);
 }
 
 Carbonara::~Carbonara() {
-	// TODO - implement Carbonara::~Carbonara
-	throw "Not yet implemented";
+	// // TODO - implement Carbonara::~Carbonara
+	// throw "Not yet implemented";
 }

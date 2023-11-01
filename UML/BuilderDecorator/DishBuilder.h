@@ -1,7 +1,9 @@
 #ifndef DISHBUILDER_H
 #define DISHBUILDER_H
+#include "AbstractDishBuilder.h"
+#include "Food.h"
 
-class DishBuilder : AbstractDishBuilder {
+class DishBuilder : public AbstractDishBuilder {
 
 public:
 	Food* foodItem;

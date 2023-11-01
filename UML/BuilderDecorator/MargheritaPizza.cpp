@@ -1,11 +1,11 @@
 #include "MargheritaPizza.h"
 
 MargheritaPizza::MargheritaPizza() {
-	// TODO - implement MargheritaPizza::MargheritaPizza
-	throw "Not yet implemented";
+	setName("Margherita Pizza");
+    setCost(7.0);
 }
 
 MargheritaPizza::~MargheritaPizza() {
-	// TODO - implement MargheritaPizza::~MargheritaPizza
-	throw "Not yet implemented";
+	// // TODO - implement MargheritaPizza::~MargheritaPizza
+	// throw "Not yet implemented";
 }

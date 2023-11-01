@@ -1,21 +1,18 @@
 #include "PastaType.h"
 
 PastaType::PastaType() {
-	// TODO - implement PastaType::PastaType
-	throw "Not yet implemented";
+	setName("Pasta Type");
 }
 
 double PastaType::total() {
-	// TODO - implement PastaType::total
-	throw "Not yet implemented";
+	return getCost() + typePasta->total(); 
 }
 
 void PastaType::decorate(Pasta* pastaType) {
-	// TODO - implement PastaType::decorate
-	throw "Not yet implemented";
+	typePasta = pastaType;
 }
 
 PastaType::~PastaType() {
-	// TODO - implement PastaType::~PastaType
-	throw "Not yet implemented";
+	// // TODO - implement PastaType::~PastaType
+	// throw "Not yet implemented";
 }

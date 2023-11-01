@@ -5,6 +5,7 @@
 	class BeefBuger : public BurgerBase {
 	public:
 		BeefBuger();
+		~BeefBuger();
 	};
 
 #endif

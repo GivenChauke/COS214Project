@@ -1,13 +1,11 @@
 #include "pastaBase.h"
 
 pastaBase::pastaBase() {
-	// TODO - implement pastaBase::pastaBase
-	throw "Not yet implemented";
+	setName("Pasta Base");
 }
 
 double pastaBase::total() {
-	// TODO - implement pastaBase::total
-	throw "Not yet implemented";
+	return getCost();
 }
 
 // void pastaBase::decorate(Pasta* ) {
@@ -16,6 +14,6 @@ double pastaBase::total() {
 // }
 
 pastaBase::~pastaBase() {
-	// TODO - implement pastaBase::~pastaBase
-	throw "Not yet implemented";
+	// // TODO - implement pastaBase::~pastaBase
+	// throw "Not yet implemented";
 }

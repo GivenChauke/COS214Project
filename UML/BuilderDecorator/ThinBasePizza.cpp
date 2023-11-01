@@ -1,11 +1,11 @@
 #include "ThinBasePizza.h"
 
 ThinBasePizza::ThinBasePizza() {
-	// TODO - implement ThinBasePizza::ThinBasePizza
-	throw "Not yet implemented";
+	setName("Thin Base Pizza");
+    setCost(1.0);
 }
 
 ThinBasePizza::~ThinBasePizza() {
-	// TODO - implement ThinBasePizza::~ThinBasePizza
-	throw "Not yet implemented";
+	// // TODO - implement ThinBasePizza::~ThinBasePizza
+	// throw "Not yet implemented";
 }

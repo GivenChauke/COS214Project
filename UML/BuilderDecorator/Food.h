@@ -9,12 +9,12 @@ class Food {
 private:
 	string name;
 	vector<string> ingredients;
-	int RandomFoodQuality;
-
+	// int RandomFoodQuality;
+	double cost;
 public:
 	string getName();
 	void setName(string name);
-	void addIngredient(string food);
+	void addIngredient(string ingredient);
 	double getCost();
 	void setCost(double d);
 };

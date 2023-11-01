@@ -5,6 +5,7 @@
 	class ThinBasePizza : public PizzaBase {
 	public:
 		ThinBasePizza();
+		~ThinBasePizza();
 	};
 
 #endif

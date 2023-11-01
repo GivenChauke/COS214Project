@@ -4,19 +4,19 @@
 #include <string>
 using namespace std;
 
-class Burger : Food {
+class Burger : public Food {
 
 public:
-	string name;
-	string getName();
-	void setName(string name);
+	// string name;
+	// string getName();
+	// void setName(string name);
 
-	double getCost();
-	void setCost(double d);
-	virtual double total();
-	virtual void decorate(Burger*);
+	// double getCost();
+	// void setCost(double d);
+	virtual double total() = 0;
+	virtual void decorate(Burger* burger) = 0;
 	Burger();
-	~Burger();
+	virtual ~Burger();
 };
 
 #endif

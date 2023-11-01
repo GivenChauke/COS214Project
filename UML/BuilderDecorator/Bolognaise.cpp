@@ -1,11 +1,11 @@
 #include "Bolognaise.h"
 
 Bolognaise::Bolognaise() {
-	// TODO - implement Bolognaise::Bolognaise
-	throw "Not yet implemented";
+	setName("Bolognaise");
+    setCost(7.0);
 }
 
 Bolognaise::~Bolognaise() {
-	// TODO - implement Bolognaise::~Bolognaise
-	throw "Not yet implemented";
+	// // TODO - implement Bolognaise::~Bolognaise
+	// throw "Not yet implemented";
 }

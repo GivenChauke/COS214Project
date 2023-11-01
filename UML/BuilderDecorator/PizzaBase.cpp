@@ -1,16 +1,14 @@
 #include "PizzaBase.h"
 
 PizzaBase::PizzaBase() {
-	// TODO - implement PizzaBase::PizzaBase
-	throw "Not yet implemented";
+	setName("Pizza Base");
 }
 
 double PizzaBase::total() {
-	// TODO - implement PizzaBase::total
-	throw "Not yet implemented";
+	return getCost(); 
 }
 
 PizzaBase::~PizzaBase() {
-	// TODO - implement PizzaBase::~PizzaBase
-	throw "Not yet implemented";
+	// // TODO - implement PizzaBase::~PizzaBase
+	// throw "Not yet implemented";
 }

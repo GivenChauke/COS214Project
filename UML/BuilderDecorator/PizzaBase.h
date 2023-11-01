@@ -6,8 +6,8 @@
 	public:
 		PizzaBase();
 		double total();
-		virtual void decorate(Pizza* );
-		~PizzaBase();
+		virtual void decorate(Pizza* pizza);
+		virtual ~PizzaBase();
 	};
 
 #endif

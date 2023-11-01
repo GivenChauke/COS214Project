@@ -1,21 +1,18 @@
 #include "BurgerTopping.h"
 
 BurgerTopping::BurgerTopping() {
-	// TODO - implement BurgerTopping::BurgerTopping
-	throw "Not yet implemented";
+	setName("Burger Topping"); //?
 }
 
 double BurgerTopping::total() {
-	// TODO - implement BurgerTopping::total
-	throw "Not yet implemented";
+	return getCost() + burgerTopping->total();
 }
 
-void BurgerTopping::decorate(Burger* burgerType) {
-	// TODO - implement BurgerTopping::decorate
-	throw "Not yet implemented";
+void BurgerTopping::decorate(Burger* burger) {
+	burgerTopping = burger;
 }
 
 BurgerTopping::~BurgerTopping() {
-	// TODO - implement BurgerTopping::~BurgerTopping
-	throw "Not yet implemented";
+	// // TODO - implement BurgerTopping::~BurgerTopping
+	// throw "Not yet implemented";
 }

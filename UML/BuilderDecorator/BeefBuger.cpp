@@ -1,11 +1,11 @@
 #include "BeefBuger.h"
 
 BeefBuger::BeefBuger() {
-	// TODO - implement BeefBuger::BeefBuger
-	throw "Not yet implemented";
+	setName("Beef Burger");
+    setCost(6.0);
 }
 
 BeefBuger::~BeefBuger() {
-	// TODO - implement BeefBuger::~BeefBuger
-	throw "Not yet implemented";
+	// // TODO - implement BeefBuger::~BeefBuger
+	// throw "Not yet implemented";
 }

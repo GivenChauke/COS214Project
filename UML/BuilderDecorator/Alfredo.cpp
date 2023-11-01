@@ -1,11 +1,11 @@
 #include "Alfredo.h"
 
 Alfredo::Alfredo() {
-	// TODO - implement Alfredo::Alfredo
-	throw "Not yet implemented";
+	setName("Alfredo");
+    setCost(7.0);
 }
 
 Alfredo::~Alfredo() {
-	// TODO - implement Alfredo::~Alfredo
-	throw "Not yet implemented";
+	// // TODO - implement Alfredo::~Alfredo
+	// throw "Not yet implemented";
 }

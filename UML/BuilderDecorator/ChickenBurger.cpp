@@ -1,11 +1,11 @@
 #include "ChickenBurger.h"
 
 ChickenBurger::ChickenBurger() {
-	// TODO - implement ChickenBurger::ChickenBurger
-	throw "Not yet implemented";
+	setName("Chicken Burger");
+    setCost(5.0);
 }
 
 ChickenBurger::~ChickenBurger() {
-	// TODO - implement ChickenBurger::~ChickenBurger
-	throw "Not yet implemented";
+	// // TODO - implement ChickenBurger::~ChickenBurger
+	// throw "Not yet implemented";
 }

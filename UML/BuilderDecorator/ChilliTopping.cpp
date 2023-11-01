@@ -1,11 +1,11 @@
 #include "ChilliTopping.h"
 
 ChilliTopping::ChilliTopping() {
-	// TODO - implement ChilliTopping::ChilliTopping
-	throw "Not yet implemented";
+	setName("Chilli Topping");
+	setCost(0.50);
 }
 
 ChilliTopping::~ChilliTopping() {
-	// TODO - implement ChilliTopping::~ChilliTopping
-	throw "Not yet implemented";
+	// // TODO - implement ChilliTopping::~ChilliTopping
+	// throw "Not yet implemented";
 }

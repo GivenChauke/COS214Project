@@ -1,11 +1,11 @@
 #include "MeatSupremePizza.h"
 
 MeatSupremePizza::MeatSupremePizza() {
-	// TODO - implement MeatSupremePizza::MeatSupremePizza
-	throw "Not yet implemented";
+	setName("Meat Supreme Pizza");
+    setCost(1.0);
 }
 
 MeatSupremePizza::~MeatSupremePizza() {
-	// TODO - implement MeatSupremePizza::~MeatSupremePizza
-	throw "Not yet implemented";
+	// // TODO - implement MeatSupremePizza::~MeatSupremePizza
+	// throw "Not yet implemented";
 }

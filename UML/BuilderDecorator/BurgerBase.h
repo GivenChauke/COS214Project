@@ -6,8 +6,8 @@
 	public:
 		BurgerBase();
 		double total();
-		virtual void decorate(Burger*);
-		~BurgerBase();
+		virtual void decorate(Burger* burger);
+		virtual ~BurgerBase();
 	};
 
 

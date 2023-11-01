@@ -1,16 +1,14 @@
 #include "BurgerBase.h"
 
 BurgerBase::BurgerBase() {
-	// TODO - implement BurgerBase::BurgerBase
-	throw "Not yet implemented";
+	setName("Burger Base"); //?
 }
 
 double BurgerBase::total() {
-	// TODO - implement BurgerBase::total
-	throw "Not yet implemented";
+	return getCost();
 }
 
 BurgerBase::~BurgerBase() {
-	// TODO - implement BurgerBase::~BurgerBase
-	throw "Not yet implemented";
+	// // TODO - implement BurgerBase::~BurgerBase
+	// throw "Not yet implemented";
 }

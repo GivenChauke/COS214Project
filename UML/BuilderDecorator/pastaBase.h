@@ -6,8 +6,8 @@
 	public:
 		pastaBase();
 		double total();
-		virtual void decorate(Pasta* );
-		~pastaBase();
+		virtual void decorate(Pasta* pasta);
+		virtual ~pastaBase();
 	};
 
 #endif
