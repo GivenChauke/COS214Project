@@ -14,7 +14,7 @@ class AbstractTable
         int RandomState;
         static int counter;
         int tableID;
-        
+
     public:
         int getMaxPeople(){return this->maxPeople;}
         void setMaxPeople(int maxPeople){this->maxPeople=maxPeople;}
@@ -40,4 +40,5 @@ class AbstractTable
 
 };
 int AbstractTable::counter=0;
+#include "AbstractTable.cpp"
 #endif
