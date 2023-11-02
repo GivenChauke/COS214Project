@@ -36,8 +36,9 @@ class Floor{
         Floor(int);
         /**
          * @brief Create a Waiter object, and adds it to the list of waiters. Number of waiters cannot exceed number of tables
+         * returns null if waiters reached capacity
          *
-         * @return Employee*
+         * @return Employee* 
          */
         Employee* createWaiter();
         /**

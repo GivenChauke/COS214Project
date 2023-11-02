@@ -2,9 +2,10 @@
 #define EMPLOYEE_H
 
 #include "Department.h"
-#include "Table.h"
+// #include "Table.h"
 #include "TableIterator.h"
 #include <vector>
+class Table;
 
 class Employee {
 public:

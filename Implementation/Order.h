@@ -3,11 +3,12 @@
 
 #include <string>
 #include <vector>
-
+#include "Employee.h"
 #include "OrderStatus.h"
 #include "Ready.h"
 #include "Processing.h"
 #include "Received.h"
+#include "Menu.h"
 
 /**
  * @brief the destructor deallocates ALL memory. 
@@ -20,14 +21,14 @@
 
 class Bill;
 class Table;
-class Employee;
+// class Employee;
 class Waiter;
 
 class Order{
 
     private:
         OrderStatus* orderStatus;
-        std::vector<std::string> items;
+        std::vector<FoodItem*> items;
         Bill* bill;
         Table* table;
         Employee* waiter;
@@ -36,10 +37,10 @@ class Order{
         }
 
     public:
-        Order(); // 
-        ~Order(); 
-        std::vector<std::string> getItems();
-        void setItems(std::vector<std::string>);
+        Order();
+        ~Order();
+        std::vector<FoodItem*> getItems();
+        void setItems(std::vector<FoodItem*>);
         Table* getTable();
         void setTable(Table*);
         Employee* getWaiter();
