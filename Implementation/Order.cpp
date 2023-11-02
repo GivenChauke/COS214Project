@@ -16,7 +16,7 @@ Order::~Order(){
 
 }
 
-std::vector<std::string> Order::getItems(){
+std::vector<FoodItem*> Order::getItems(){
     return items;
 }
 
@@ -68,7 +68,7 @@ std::string Order::getOrderStatus(){
     }
 }
 
-void Order::setItems(std::vector<std::string> items){
+void Order::setItems(std::vector<FoodItem*> items){
     this->items = items;
 }
 
