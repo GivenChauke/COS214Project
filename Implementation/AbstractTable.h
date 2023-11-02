@@ -14,6 +14,7 @@ class AbstractTable
         int RandomState;
         static int counter;
         int tableID;
+        
     public:
         int getMaxPeople(){return this->maxPeople;}
         void setMaxPeople(int maxPeople){this->maxPeople=maxPeople;}
