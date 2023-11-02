@@ -61,6 +61,9 @@ FoodItem::FoodItem(string n, int p, string m,string t)
     method = m;
     type = t;
 }
+FoodItem::~FoodItem()
+{
+}
 
 
 string Menu::printMenu()
