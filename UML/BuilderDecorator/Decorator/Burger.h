@@ -13,7 +13,7 @@ public:
 
 	// double getCost();
 	// void setCost(double d);
-	virtual double total() = 0;
+	double total() ;
 	virtual void decorate(Burger* burger) = 0;
 	Burger();
 	virtual ~Burger();

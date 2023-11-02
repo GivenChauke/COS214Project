@@ -12,3 +12,8 @@ BurgerBase::~BurgerBase() {
 	// // TODO - implement BurgerBase::~BurgerBase
 	// throw "Not yet implemented";
 }
+
+void BurgerBase::decorate(Burger* burger) {
+	// TODO - implement BurgerBase::decorate
+	// throw "Not yet implemented";
+}

@@ -2,7 +2,7 @@
 #define MEATSUPREMEPIZZA_H
 #include "PizzaType.h"
 
-	class MeatSupremePizza : PizzaType {
+	class MeatSupremePizza : public PizzaType {
 	public:
 		MeatSupremePizza();
 		~MeatSupremePizza();

@@ -2,7 +2,7 @@
 #define PIZZATYPE_H
 #include "pizza.h"
 
-	class PizzaType : Pizza {
+	class PizzaType : public Pizza {
 	private:
 		Pizza* pizzaType;
 	public:
