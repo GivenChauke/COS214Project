@@ -5,16 +5,18 @@
 using namespace std;
 
 class Pizza : public Food {
+private:
+    double cost;
 public:
 	// string name;
 	// string getName();
 	// void setName(string name);
 
-	// double getCost();
-	// void setCost(double d);
-	virtual void decorate(Pizza* pizza) = 0;
-	virtual double total()= 0;
 	Pizza();
+	virtual void decorate(Pizza*);
+	virtual double total();
+	double getCost();
+	void setCost(double cost);
 	virtual ~Pizza();
 };
 

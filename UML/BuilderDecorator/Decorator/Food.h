@@ -3,20 +3,23 @@
 #include <string>
 #include <vector>
 using namespace std;
+#include <iostream>
 
 class Food {
-
 private:
 	string name;
 	vector<string> ingredients;
 	// int RandomFoodQuality;
 	double cost;
 public:
-	string getName();
-	void setName(string name);
-	void addIngredient(string ingredient);
+	Food();
+	// string getName();
+	// void setName(string name);
+	// void addIngredient(string ingredient);
+	// virtual double total() = 0;
 	double getCost();
-	void setCost(double d);
-};
+	void setCost(double cost);
+	virtual ~Food();
+	};
 
 #endif
