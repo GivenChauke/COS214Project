@@ -1,7 +1,7 @@
 #include "OnionTopping.h"
 
 OnionTopping::OnionTopping() : BurgerTopping() {
-	// setName("Onion Topping");
+	setName("Onion Topping");
 	cout << "Creating Onion Topping" << endl;
 	setCost(2.0);
 }

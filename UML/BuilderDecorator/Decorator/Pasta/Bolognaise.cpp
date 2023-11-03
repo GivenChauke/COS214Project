@@ -1,7 +1,7 @@
 #include "Bolognaise.h"
 
 Bolognaise::Bolognaise() : PastaType () {
-	// setName("Bolognaise");
+	setName("Bolognaise");
 	cout << "Creating Bolognaise" << endl;
     setCost(10.0);
 }
