@@ -47,6 +47,7 @@ public:
      * @brief returns a foodItem, for testing purposes
      */
     FoodItem* getFoodItem();
+    vector<FoodItem*> menu;  /**< A vector to store food items in the menu. */
 
 protected:
     /**
@@ -57,7 +58,7 @@ protected:
 
 
 private:
-    vector<FoodItem*> menu;  /**< A vector to store food items in the menu. */
+
     static Menu* Menu_instance; /**< The singleton instance of the Menu class. */
 };
 
