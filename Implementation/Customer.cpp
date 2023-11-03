@@ -7,8 +7,11 @@ using namespace std;
 #include<cstdlib>
 #include "RandomString.h"
 #include "Customer.h"
+#include <ctime>
+#include "Menu.h"
 
 class Order;
+class Bill;
 string Customer::GiveComment_Food()
 {
     srand((unsigned) time(NULL));
@@ -98,9 +101,9 @@ Customer::Customer()
     
 }
 
-/*void Customer::receiveOrder(Order* order)
+void Customer::receiveOrder(Order* order)
 {
-    Food* food= order->getFood();
+    /*Food* food= order->getFood();
     if(food->getRandomFoodQuality()<=5)//bad
     {
         delete state;
@@ -109,8 +112,51 @@ Customer::Customer()
     else{//good
         delete state;
         state= new Happy();
+    }*/
+
+}
+
+
+Order* Customer::PlaceOrder()
+{
+    /*Order * order= new Order();
+    order->setOrderStatus(new Received());
+    vector<FoodItem*>items;
+    srand((unsigned) time(NULL));
+    int foodItem;
+    int orderAgain=2;
+    Menu* menu=Menu::getMenu();//added getter for vector menu
+    while(orderAgain%2==0)
+    {
+        //order food item
+        foodItem=rand()%9;
+                                        //get for vector with food items
+        FoodItem* it= new FoodItem(menu->getmenuItem.at(foodItem).name, menu->getmenuItem.at(foodItem).price, menu->getmenuItem.at(foodItem).method, menu->getmenuItem.at(foodItem).type);
+        items.push_back(it);
+        //order decorator
+        foodItem=rand()%23 +8;
+        if(foodItem !=8)
+        {
+            it= new FoodItem(menu->getmenuItem.at(foodItem).name, menu->getmenuItem.at(foodItem).price, menu->getmenuItem.at(foodItem).method, menu->getmenuItem.at(foodItem).type);
+            items.push_back(it);   
+        }
+        orderAgain=rand();
     }
 
-}*/
+    float cost=0.0;
+    for(int i=0; i<items.size(); i++)
+    {
+        cost+=items.at(i)->price;
+    }
+
+    order->setItems(items);
+    Bill* bill= new Bill();
+    bill->setOrder(items);
+    bill->setCost(cost);
+    bill->setPaid(false);
+    bill->setCustomer(*this);
+    order->setBill(bill);
+    return order;*/
+}
 
 #endif

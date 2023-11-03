@@ -28,6 +28,7 @@ class CustomerGroup
         bool PayBill();
         vector<Review> ReviewFood();
         vector<Review> ReviewService();
+        vector<Order*> PlaceOrder();
 
 
 };
