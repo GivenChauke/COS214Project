@@ -6,7 +6,7 @@ using namespace std;
 
 CombinedTable::CombinedTable()
 {
-    table=NULL;
+    //table;
 }
 CombinedTable::~CombinedTable()
 {
@@ -15,19 +15,22 @@ CombinedTable::~CombinedTable()
 
 bool CombinedTable::AddTable(AbstractTable* table)
 {
-    if(this->table != NULL && table != NULL)
+    /*if(this->table != NULL && table != NULL)
     {
         this->table=table;
         return true;
-    }
-    return false;
+    }*/
+    this->table.push_back(table);
+    return true;
 }
 
 AbstractTable* CombinedTable::SeparateTable()
 {
-    AbstractTable * RT=table;
-    table=NULL;
-    return RT;
+    if(this->table.size()==0)
+    {
+        return NULL;
+    }
+    return this->table.at(0);
     
 }
 

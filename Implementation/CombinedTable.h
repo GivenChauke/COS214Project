@@ -6,7 +6,7 @@ class CombinedTable : public AbstractTable
 {
     private:
         /* data */
-        AbstractTable* table;
+        vector<AbstractTable*> table;
     public:
         CombinedTable(/* args */);
         ~CombinedTable();
