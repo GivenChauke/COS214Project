@@ -1,10 +1,11 @@
-#ifndef PIZZA_H
-#define PIZZA_H
-#include "Food.h"
+#ifndef BURGER_H
+#define BURGER_H
+#include "../Food.h"
 #include <string>
 using namespace std;
+#include <iostream>
 
-class Pizza : public Food {
+class Burger: public Food {
 private:
     double cost;
 public:
@@ -12,12 +13,12 @@ public:
 	// string getName();
 	// void setName(string name);
 
-	Pizza();
-	virtual void decorate(Pizza*) = 0;
+	Burger();
+	virtual void decorate(Burger*) = 0;
 	virtual double total() = 0;
 	double getCost();
 	void setCost(double cost);
-	virtual ~Pizza();
+	virtual ~Burger();
 };
 
 #endif

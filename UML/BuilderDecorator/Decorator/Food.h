@@ -13,10 +13,10 @@ private:
 	double cost;
 public:
 	Food();
-	// string getName();
-	// void setName(string name);
-	// void addIngredient(string ingredient);
-	// virtual double total() = 0;
+	string getName();
+	void setName(string name);
+	void addIngredient(string ingredient);
+	virtual double total() = 0;
 	double getCost();
 	void setCost(double cost);
 	virtual ~Food();

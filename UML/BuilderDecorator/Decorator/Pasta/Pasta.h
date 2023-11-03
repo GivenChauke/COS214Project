@@ -1,11 +1,11 @@
 #ifndef PASTA_H
 #define PASTA_H
-// #include "Food.h"
+#include "../Food.h"
 #include <string>
 using namespace std;
 #include <iostream>
 
-class Pasta  {
+class Pasta: public Food {
 private:
     double cost;
 public:
