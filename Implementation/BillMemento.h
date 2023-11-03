@@ -1,5 +1,5 @@
-#ifndef BILLMEM_H
-#define BILLMEM_H
+#ifndef BILLMEMENTO_H
+#define BILLMEMENTO_H
 
 #include <string>
 #include "BillState.h"
@@ -13,4 +13,5 @@ class BillMemento {
         void setState(BillState bs);
 
 };
+#include "BillMemento.cpp"
 #endif

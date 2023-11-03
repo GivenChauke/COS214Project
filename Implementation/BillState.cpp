@@ -29,7 +29,7 @@ int BillState::getTableID(){
 }
 
 void BillState::setOrder(vector<std::string> orders){
-    for(int i = 0; i < order.size; i++){
+    for(int i = 0; i < orders.size(); i++){
         order.push_back(orders[i]);
     }
 }
