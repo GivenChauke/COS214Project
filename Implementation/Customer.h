@@ -23,7 +23,8 @@ class Customer
         int GiveRating_Service();
         Customer(string name){ID=name;};
         Customer();
-        void receiveOrder(Order order);
+        void receiveOrder(Order* order);//check
+        Order* PlaceOrder();
 };
 
 #endif;

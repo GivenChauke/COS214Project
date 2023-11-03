@@ -17,7 +17,7 @@ bool CustomerGroup::addCustomer(Customer customer)
 
 CustomerGroup::CustomerGroup()
 {
-
+    
 }
 
 
@@ -135,4 +135,15 @@ vector<Review> CustomerGroup::ReviewService()
 
 }
 
+
+vector<Order* > CustomerGroup::PlaceOrder()
+{
+    vector<Order*> rt;
+    for(int i=0; i<customers.size(); i++)
+    {
+        rt.push_back(customers.at(i).PlaceOrder());
+    }
+
+    return rt;
+}
 #endif

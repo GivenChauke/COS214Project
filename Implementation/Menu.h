@@ -48,6 +48,8 @@ public:
      */
     FoodItem* getFoodItem();
 
+    
+
 protected:
     /**
      * @brief Constructs a Menu instance.
