@@ -1,3 +1,5 @@
+#ifndef CHEF_CPP
+#define CHEF_CPP
 #include "Chef.h"
 
 Chef::Chef(Chef *nc,string type)
@@ -34,3 +36,5 @@ bool Chef::processOrder(Order* order)
    }
    return false;
 }
+
+#endif

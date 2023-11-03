@@ -31,4 +31,5 @@ class Bill {
         map<std::string, BillMemento*> saveState();
         
 };
+#include "Bill.cpp"
 #endif

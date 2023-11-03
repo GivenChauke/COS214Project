@@ -1,5 +1,5 @@
-#ifndef CHEF
-#define CHEF
+#ifndef CHEF_H
+#define CHEF_H
 #include <string>
 using namespace std;
 #include "Order.cpp"
@@ -17,4 +17,6 @@ class Chef{
     AbstractDishBuilder* builder;
     string type;
 };
+
+#include "Chef.cpp"
 #endif

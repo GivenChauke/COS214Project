@@ -27,4 +27,5 @@ class BillState {
         void setTableID(int tabID);
 
 };
+#include "BillState.cpp"
 #endif

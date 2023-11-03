@@ -27,4 +27,6 @@ class Customer
         Order* PlaceOrder();
 };
 
+#include "Customer.cpp"
+
 #endif;

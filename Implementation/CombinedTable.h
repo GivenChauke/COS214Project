@@ -14,6 +14,6 @@ class CombinedTable : public AbstractTable
         AbstractTable* SeparateTable();
         vector<Order*> PlaceOrder();
 };
-
+#include "CombinedTable.cpp"
 
 #endif

@@ -1,3 +1,5 @@
+#ifndef BILL_CPP
+#define BILL_CPP
 #include "Bill.h"
 #include "BillMemento.h"
 
@@ -64,3 +66,5 @@ void Bill::recoverBill(BillMemento* mem){
 map<std::string, BillMemento*> Bill::saveState(){
 
 }
+
+#endif

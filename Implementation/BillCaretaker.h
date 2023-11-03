@@ -1,5 +1,5 @@
-#ifndef BILLCARE_H
-#define BILLCARE_H
+#ifndef BILLCARETAKER_H
+#define BILLCARETAKER_H
 
 #include <bits/stdc++.h>
 #include <string>
@@ -17,4 +17,5 @@ class BillCaretaker {
         BillMemento* retrieveMemento(std::string customerID);
 
 };
+#include "BillCaretaker.cpp"
 #endif

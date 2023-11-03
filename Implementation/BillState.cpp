@@ -1,3 +1,6 @@
+#ifndef BILLSTATE_CPP
+#define BILLSTATE_CPP
+
 #include "BillState.h"
 
 void BillState::loadFromFile(std::string filename){
@@ -49,3 +52,5 @@ void BillState::setCustomerID(std::string custID){
 void BillState::setTableID(int tabID){
     tableID = tabID;
 }
+
+#endif
