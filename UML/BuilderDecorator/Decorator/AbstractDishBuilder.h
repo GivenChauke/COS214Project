@@ -8,11 +8,12 @@ private:
     std::string type;
     std::string base;
 public:
-    virtual void buildPasta(std::string type, std::string base);
-    virtual void buildBurger(std::string type, std::string base);
-    virtual void buildPizza(std::string type, std::string base);
 	virtual ~AbstractDishBuilder() {}
+    virtual void buildPasta(std::string type, std::string base) = 0;
+    virtual void buildBurger(std::string type, std::string base) = 0;
+    virtual void buildPizza(std::string type, std::string base) = 0;
 	
+
 	
 	// void addPizzaToppings(int string);
 	// void addBurgerExtras(int string);

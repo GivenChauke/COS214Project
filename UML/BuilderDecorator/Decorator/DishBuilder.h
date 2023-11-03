@@ -11,10 +11,11 @@ public:
 	// Food* foodItem;
 
 	// void buildPasta();
+	DishBuilder(); 
 	void buildPasta(string type, string base);
 	void buildBurger(string type, string base);
 	void buildPizza(string type, string base);
-	virtual ~DishBuilder();
+	// virtual ~DishBuilder();
 	// Food* getFood();
 };
 

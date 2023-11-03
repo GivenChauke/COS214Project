@@ -15,8 +15,22 @@
 #include "Pasta/Spaghetti.h"
 #include "Pasta/Carbonara.h"
 #include "Pasta/Macaroni.h"
+#include "DishBuilder.h"
+#include "AbstractDishBuilder.h"
 
 int main() {
+    DishBuilder dishBuilder;
+
+    dishBuilder.buildPasta("Alfredo", "Macaroni");
+
+
+
+
+
+
+
+
+
     // Pasta* myPasta;
     // myPasta = new Alfredo();
     // myPasta->decorate(new Spaghetti());
@@ -28,19 +42,19 @@ int main() {
     // cout << "Cost = " << myPasta->total() << endl;
     // delete myPasta;
 
-    Pizza* myPizza;
-    myPizza = new MeatSupremePizza();
-    myPizza->decorate(new ThickBasePizza());
-    cout << "Cost = " << myPizza->total() << endl;
-
-
     // Pizza* myPizza;
-    // myPizza = new PepperoniPizza();
-    // myPizza->decorate(new ThinBasePizza());
+    // myPizza = new MeatSupremePizza();
+    // myPizza->decorate(new ThickBasePizza());
     // cout << "Cost = " << myPizza->total() << endl;
 
+
+    // // Pizza* myPizza;
+    // // myPizza = new PepperoniPizza();
+    // // myPizza->decorate(new ThinBasePizza());
+    // // cout << "Cost = " << myPizza->total() << endl;
+
     
-    delete myPizza;
+    // delete myPizza;
 
 
     // Burger* myBurger;
