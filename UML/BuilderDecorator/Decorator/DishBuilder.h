@@ -4,15 +4,18 @@
 #include "Food.h"
 
 class DishBuilder : public AbstractDishBuilder {
-
+private:
+	string type;
+	string base;
 public:
 	// Food* foodItem;
 
 	// void buildPasta();
-	void buildPasta(string pastaType, string baseType);
-	void buildBurger(string burgerTopping, string baseType);
-	void buildPizza(string pizzaType, string baseType);
-	Food* getFood();
+	void buildPasta(string type, string base);
+	void buildBurger(string type, string base);
+	void buildPizza(string type, string base);
+	virtual ~DishBuilder();
+	// Food* getFood();
 };
 
 #endif

@@ -154,7 +154,11 @@ void DishBuilder::buildPizza(string pizzaType, string baseType) {
 
 }
 
-Food* DishBuilder::getFood() {
-	// TODO - implement DishBuilder::getFood
-	throw "Not yet implemented";
+DishBuilder::~DishBuilder()
+{
 }
+
+// Food* DishBuilder::getFood() {
+// 	// TODO - implement DishBuilder::getFood
+// 	throw "Not yet implemented";
+// }
