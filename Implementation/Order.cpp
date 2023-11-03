@@ -1,3 +1,6 @@
+#ifndef ORDER_CPP
+#define ORDER_CPP
+
 #include "Order.h"
 
 
@@ -20,11 +23,11 @@ std::vector<FoodItem*> Order::getItems(){
     return items;
 }
 
-Table* Order::getTable(){
+AbstractTable* Order::getTable(){
     return table;
 }
 
-void Order::setTable(Table* table){
+void Order::setTable(AbstractTable* table){
     if(this->table != nullptr) delete this->table;
     this->table = table;
 }
@@ -74,7 +77,7 @@ void Order::setItems(std::vector<FoodItem*> items){
 
 
 
-
+#endif
 
 
 

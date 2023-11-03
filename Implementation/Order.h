@@ -9,7 +9,7 @@
 #include "Processing.h"
 #include "Received.h"
 #include "Menu.h"
-
+#include "AbstractTable.h"
 /**
  * @brief the destructor deallocates ALL memory. 
  * So be mindful when using setter functions since only shallow copies are made
@@ -30,7 +30,7 @@ class Order{
         OrderStatus* orderStatus;
         std::vector<FoodItem*> items;
         Bill* bill;
-        Table* table;
+        AbstractTable* table;
         Employee* waiter;
         void deallocateStatus(){
             if(orderStatus != nullptr) delete orderStatus;
@@ -41,8 +41,8 @@ class Order{
         ~Order();
         std::vector<FoodItem*> getItems();
         void setItems(std::vector<FoodItem*>);
-        Table* getTable();
-        void setTable(Table*);
+        AbstractTable* getTable();
+        void setTable(AbstractTable*);
         Employee* getWaiter();
         void setWaiter(Employee*);
         void setBill(Bill*);

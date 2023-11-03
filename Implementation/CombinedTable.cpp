@@ -2,6 +2,7 @@
 #define COMBINEDTABLE_CPP
 #include "CombinedTable.h"
 #include <iostream>
+#include "Order.h"
 using namespace std;
 
 CombinedTable::CombinedTable()
@@ -35,9 +36,26 @@ AbstractTable* CombinedTable::SeparateTable()
 }
 
 
-vector<Order> CombinedTable::PlaceOrder()
+vector<Order*> CombinedTable::PlaceOrder()
 {
-    vector<Order> rt;
+   
+    vector<Order*> orders;
+    vector<Order*> temp;
+    vector<Order*>::iterator it;
+    for(int i=0; i<table.size(); i++)
+    {
+        temp=table.at(i)->getCustomerGroup().PlaceOrder();
+    //    it=orders.begin();
+        //(orders.begin() ,temp.begin(), temp.back() );
+        orders.insert(orders.begin(),temp.begin(),temp.end());
+    }
+
+    for(int i=0;i<orders.size(); i++)
+    {
+        orders.at(i)->setTable(this);
+    }
+
+    return orders;
 }
 
 

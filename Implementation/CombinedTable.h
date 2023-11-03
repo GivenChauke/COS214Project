@@ -12,7 +12,7 @@ class CombinedTable : public AbstractTable
         ~CombinedTable();
         bool AddTable(AbstractTable* table);
         AbstractTable* SeparateTable();
-        vector<Order> PlaceOrder();
+        vector<Order*> PlaceOrder();
 };
 
 

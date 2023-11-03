@@ -47,4 +47,15 @@ string AbstractTable::EnquireState()
     return tableState->getStatus();
 }
 
+vector<Order*> AbstractTable::PlaceOrder()
+{
+    vector<Order*>jjr = customerGroup.PlaceOrder();;
+
+    for(int i=0;i<jjr.size(); i++)
+    {
+        jjr.at(i)->setTable(this);
+    }
+    return  jjr;
+}
+
 #endif

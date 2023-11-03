@@ -29,7 +29,7 @@ class AbstractTable
         virtual AbstractTable* SeparateTable()=0;
         int getCurrentPeople(){return currentPeople;}
         void setCurrentPeople(int currentPeople){this->currentPeople=currentPeople;}
-        virtual vector<Order> PlaceOrder();
+        virtual vector<Order*> PlaceOrder();
         void ReceiveOrder(vector<Order> orders){customerGroup.receiveOrder(orders);};
         int getRandomState(){return RandomState;}
         void setRandomState(int RandomState){this->RandomState=RandomState;}
