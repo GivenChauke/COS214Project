@@ -4,7 +4,7 @@ Chef::Chef(Chef *nc,string type)
 {
     this->type = type;
     nextChef = nc;
-    //AbstractDishBuilder* builder = new AbstractDishBuilder();
+    AbstractDishBuilder* builder = new DishBuilder();
 }
 
 void Chef::addChef(Chef * nc)
