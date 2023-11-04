@@ -5,7 +5,7 @@
 #include <vector>
 #include "Table.h"
 
-Employee::Employee(int id) : department(nullptr), tables(nullptr), currTable(nullptr) {
+Employee::Employee(int id) : department(nullptr), currTable(nullptr) {
     employeeId = id;
 }
 
@@ -17,7 +17,7 @@ void Employee::iterateTables() {
     if (tableIterator) {
         Table* table = tableIterator->first();
         while (table) {
-            table->getTableNumber();
+            // table->getTableNumber();
             table = tableIterator->next();
         }
     }
@@ -48,7 +48,7 @@ void Employee::setCurrTable(Table* currTab) {
     currTable = currTab;
 }
 
-void Employee::GetReview(const std::vector<Review*>& reviewList) {
+void Employee::getReview(const std::vector<Review*>& reviewList) {
     if (department) {
         for (const Review* review : reviewList) {
             department->TakeReview(*review);
@@ -56,7 +56,7 @@ void Employee::GetReview(const std::vector<Review*>& reviewList) {
     }
 }
 
-void Employee::TakeOrder(Table* table) {
+void Employee::takeOrder(Table* table) {
     if (table) {
         // Process the order and add it to the queue
     }

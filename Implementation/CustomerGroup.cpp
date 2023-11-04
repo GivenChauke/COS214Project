@@ -8,9 +8,9 @@ using namespace std;
 class Bill;
 class Review;
 
-bool CustomerGroup::addCustomer(Customer customer)
+bool CustomerGroup::addCustomer(Customer* customer)
 {
-    vector<Customer>::iterator iter=this->customers.begin();
+    vector<Customer*>::iterator iter=this->customers.begin();
     
     this->customers.insert(iter, customer);
 }
@@ -21,7 +21,7 @@ CustomerGroup::CustomerGroup()
 }
 
 
-Customer CustomerGroup::CustomerAt(int index)
+Customer* CustomerGroup::CustomerAt(int index)
 {
     //error condition/you need to make sure that you dont go outofbound
     // if(index>=this->customers.size())
@@ -34,7 +34,7 @@ Customer CustomerGroup::CustomerAt(int index)
 int CustomerGroup::NumOfCustomer()
 {return customers.size();}
 
-void CustomerGroup::receiveOrder(vector<Order> orders)
+void CustomerGroup::receiveOrder(vector<Order*> orders)
 {
     for(int t=0; t<this->customers.size(); t++)
     {
@@ -55,11 +55,11 @@ void CustomerGroup::receiveOrder(vector<Order> orders)
 }
 
 
-vector<Bill> CustomerGroup::mergeBill()
+vector<Bill*> CustomerGroup::mergeBill()
 {
-    vector<Bill> bills;
+    vector<Bill*> bills;
     srand((unsigned) time(NULL));
-    int random=(rand()%orders.size()) +1;
+    int random=(rand()%orders.size()) + 1;
     /*
     int billIndex=0;
     int difference= orders.size()-random;
@@ -89,7 +89,7 @@ vector<Bill> CustomerGroup::mergeBill()
 
 bool CustomerGroup::PayBill()
 {
-    vector<Bill> bills=mergeBill();
+    vector<Bill*> bills = mergeBill();
 
     for(int i=0; i<bills.size(); i++)
     {
@@ -99,7 +99,7 @@ bool CustomerGroup::PayBill()
 }
 
 
-vector<Review> CustomerGroup::ReviewFood()
+vector<Review*> CustomerGroup::ReviewFood()
 {
     //vector<Review> Reviews;
    //
@@ -117,7 +117,7 @@ vector<Review> CustomerGroup::ReviewFood()
 
 }
 
-vector<Review> CustomerGroup::ReviewService()
+vector<Review*> CustomerGroup::ReviewService()
 {
     //vector<Review> Reviews;
    //
@@ -136,12 +136,12 @@ vector<Review> CustomerGroup::ReviewService()
 }
 
 
-vector<Order* > CustomerGroup::PlaceOrder()
+vector<Order*> CustomerGroup::PlaceOrder()
 {
     vector<Order*> rt;
     for(int i=0; i<customers.size(); i++)
     {
-        rt.push_back(customers.at(i).PlaceOrder());
+        rt.push_back(customers.at(i)->PlaceOrder());
     }
 
     return rt;

@@ -13,7 +13,7 @@ AbstractTable::AbstractTable()
     this->currentPeople=0;
     maxPeople=5;
     srand((unsigned) time(NULL));
-    int random=(rand()% customerGroup.NumOfCustomer());
+    int random=(rand()% customerGroup->NumOfCustomer());
     RandomState=random;
     if(RandomState==0)
     {
@@ -27,7 +27,7 @@ AbstractTable::AbstractTable()
 
 bool AbstractTable::payBill()
 {
-    return customerGroup.PayBill();
+    return customerGroup->PayBill();
 }
 
 AbstractTable::~AbstractTable()
