@@ -3,13 +3,13 @@
 
 #include <string>
 #include <vector>
-#include "Employee.h"
 #include "OrderStatus.h"
-#include "Ready.h"
-#include "Processing.h"
-#include "Received.h"
 #include "Menu.h"
-#include "AbstractTable.h"
+// #include "AbstractTable.h"
+
+class AbstractTable;
+
+
 /**
  * @brief the destructor deallocates ALL memory. 
  * So be mindful when using setter functions since only shallow copies are made
@@ -19,11 +19,10 @@
  * 
  */
 
-class Bill;
-class Table;
-// class Employee;
-class Waiter;
+//#include "Bill.h"
+#include "Employee.h"
 
+class Bill;
 class Order{
 
     private:
@@ -38,6 +37,7 @@ class Order{
 
     public:
         Order();
+        Order(Order& r);
         ~Order();
         std::vector<FoodItem*> getItems();
         void setItems(std::vector<FoodItem*>);
@@ -53,5 +53,5 @@ class Order{
         void toProcessingStatus();
 
 };
-#include "Order.cpp"
+//#include "Order.cpp"
 #endif

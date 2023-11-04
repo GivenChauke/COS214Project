@@ -3,29 +3,29 @@
 #include <vector>
 #include<string>
 using namespace std;
-
+#include "Order.h"
 class BillState {
     private:
-        vector<std::string> order;
+        Order* CopyOrder;
         float cost;
         bool paid;
-        std::string customerID;
+        string customerID;
         int tableID;
     
     public:
-        void loadFromFile(std::string filename);
-        void saveToFile(std::string filename);
-        vector<string> getOrder();
+        void loadFromFile(string filename){}
+        void saveToFile(string filename){}
+        Order* getCopyOrder();
         float getCost();
         bool getPaidStatus();
         std::string getCustomerID();
         int getTableID();
-        void setOrder(vector<std::string> orders);
+        void setCopyOrder(Order* order);
         void setCost(float newCost);
         void setPaid(bool pay);
-        void setCustomerID(std::string custID);
+        void setCustomerID(string custID);
         void setTableID(int tabID);
 
 };
-#include "BillState.cpp"
+//#include "BillState.cpp"
 #endif

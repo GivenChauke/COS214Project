@@ -9,10 +9,11 @@ class Table : public AbstractTable
     private:
         /* data */
     public:
-        Table();
-        ~Table();
+        Table(){};
+        ~Table(){};
         bool AddTable(AbstractTable* table){return false;}
-        AbstractTable* Separate(){return NULL;}
+        AbstractTable* SeparateTable(){return NULL;}
+
 
 };
 

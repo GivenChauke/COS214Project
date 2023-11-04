@@ -2,34 +2,37 @@
 #define BILL_H
 
 #include "BillState.h"
-#include "Customer.h"
 #include <string>
 #include<vector>
 #include<map>
-using namespace   std;
-class BillMemento;
-class Bill {
+using namespace std;
+#include "BillMemento.h"
+#include "Order.h"
+//class Order;
+class Bill
+{
     private:
         float cost;
         bool paid;
         int tableID;
-        BillState state;
-        vector<string> orders;
-        vector<string> customers;
+        Order* CopyOrders;//Changes 
+        string customerID;
     public:
         Bill();
-        vector<std::string> getOrder();
-        void setOrder(vector<std::string> order);
+        Order* getCopyOrder();
+        void setCopyOrder(Order* order);
         float getCost();
         void setCost(float orderCost);
+        BillState* getBillState();
         bool getBillStatus();
         void setBillStatus(bool BillStatus);
-        void setID(std::string id, int tableID);
+        void setTableID(int ID){this->tableID=ID;}
+        void setCustoemrID(string ID){this->customerID=ID;}
         std::string getCustomerID();
         int getTableID();
         void recoverBill(BillMemento* mem);
-        map<std::string, BillMemento*> saveState();
+        BillMemento* saveState();
         
 };
-#include "Bill.cpp"
+//#include "Bill.cpp"
 #endif

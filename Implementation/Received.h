@@ -3,6 +3,7 @@
 
 #include <string>
 #include "OrderStatus.h"
+using namespace std;
 
 class Received: public OrderStatus{
     public:

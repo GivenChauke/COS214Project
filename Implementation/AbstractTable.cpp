@@ -6,7 +6,9 @@ using namespace std;
 #include "NotOccupied.h"
 #include "ReadyToOrder.h"
 #include "NotReadyToOrder.h"
+#include "Order.h"
 
+int AbstractTable::counter=0;
 AbstractTable::AbstractTable()
 {
     tableState= new NotOccupied();
@@ -46,14 +48,18 @@ string AbstractTable::EnquireState()
     tableState= new ReadyToOrder();
     return tableState->getStatus();
 }
+void AbstractTable::ReceiveOrder(vector<Order*> orders)
+{
+    this->customerGroup.receiveOrder(orders);
+}
 
 vector<Order*> AbstractTable::PlaceOrder()
 {
-    vector<Order*>jjr = customerGroup.PlaceOrder();;
+    vector<Order*>jjr = this->customerGroup.PlaceOrder();
 
     for(int i=0;i<jjr.size(); i++)
     {
-        jjr.at(i)->setTable(this);
+        jjr[i]->setTable(this);
     }
     return  jjr;
 }

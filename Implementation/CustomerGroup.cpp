@@ -5,8 +5,9 @@
 #include<vector>
 using namespace std;
 
-class Bill;
-class Review;
+#include "Bill.h"
+#include "Review.h"
+
 
 bool CustomerGroup::addCustomer(Customer customer)
 {
@@ -34,53 +35,55 @@ Customer CustomerGroup::CustomerAt(int index)
 int CustomerGroup::NumOfCustomer()
 {return customers.size();}
 
-void CustomerGroup::receiveOrder(vector<Order> orders)
+void CustomerGroup::receiveOrder(vector<Order*> orders)
 {
     for(int t=0; t<this->customers.size(); t++)
     {
        
         for( int i=0; i<orders.size(); i++)
         {
-           /* if(orders.at(i).getCustomerID()==customers.at(t).getCustomerID())
-           {
+        //    if(orders.at(i)->getBill()->getCustomerID==customers.at(t).getID())
+        //    {
 
-                customers.at(t).receiveOrder(orders.at(i));
+        //         //customers.at(t).receiveOrder(orders.at(i));
     
-           }
+        //    }
 
-           */
+           
         }
     }
-    this->orders=orders;
+    this->orders.clear();
+    this->orders.insert(this->orders.begin(), orders.begin(), orders.end());
 }
 
 
-vector<Bill> CustomerGroup::mergeBill()
+vector<Bill*> CustomerGroup::mergeBill()
 {
-    vector<Bill> bills;
+     vector<Bill*> bills;
     srand((unsigned) time(NULL));
     int random=(rand()%orders.size()) +1;
-    /*
+    
     int billIndex=0;
     int difference= orders.size()-random;
-        for(int i=0; i<random; i++)
+       for(int i=0; i<random; i++)
         {
             if(i==0)
             {
 
-                bills.insert(bills.begin(), order.at( billIndex++).getBill());
+                bills.push_back(orders.at( billIndex++)->getBill());
                 for(int b=0; b<difference; b++)
                 {
-                    bills.insert(bills.begin(), order.at( billIndex++).getBill());
+                    bills.push_back(orders.at( billIndex++)->getBill());
                 }
             }
             else{
-                bills.insert(bills.begin(), order.at( billIndex++).getBill());
+                bills.push_back(orders.at( billIndex++)->getBill());
 
             }
         }
     
-    */
+    
+
 
    return bills;
 
@@ -89,11 +92,11 @@ vector<Bill> CustomerGroup::mergeBill()
 
 bool CustomerGroup::PayBill()
 {
-    vector<Bill> bills=mergeBill();
+    vector<Bill*> bills=mergeBill();
 
     for(int i=0; i<bills.size(); i++)
     {
-      //  bills.at(i).setBill(true);
+       bills.at(i)->setBillStatus(true);
     }
     return true;
 }
@@ -101,42 +104,42 @@ bool CustomerGroup::PayBill()
 
 vector<Review> CustomerGroup::ReviewFood()
 {
-    //vector<Review> Reviews;
+    vector<Review> Reviews;
    //
-   /*
-    for(int i=0; i<order.size(); i++)
+   
+    for(int i=0; i<NumOfCustomer(); i++)
     {
-        Review note;
-        note.ReviewComment=customers.at(i).GiveComment();
-        note.Rating=customers.at(i).GiveComment();
-        Reviews.insert(Reviews.begin(), note);
+         Review note;
+         note.setReviewComment(customers.at(i).GiveComment_Food());
+         note.setRating(customers.at(i).GiveRating_Food());
+         Reviews.insert(Reviews.begin(), note);
     }
     
-   */
+   
   
-
+  return Reviews;
 }
 
 vector<Review> CustomerGroup::ReviewService()
 {
-    //vector<Review> Reviews;
+    vector<Review> Reviews;
    //
-   /*
-    for(int i=0; i<order.size(); i++)
+   
+    for(int i=0; i<orders.size(); i++)
     {
         Review note;
-        note.ReviewComment=customers.at(i).GiveComment();
-        note.Rating=customers.at(i).GiveComment();
+        note.setReviewComment(customers.at(i).GiveComment_Food());
+        note.setRating(customers.at(i).GiveRating_Service());
         Reviews.insert(Reviews.begin(), note);
     }
     
-   */
+   
   
-
+  return Reviews;
 }
 
 
-vector<Order* > CustomerGroup::PlaceOrder()
+vector<Order*> CustomerGroup::PlaceOrder()
 {
     vector<Order*> rt;
     for(int i=0; i<customers.size(); i++)

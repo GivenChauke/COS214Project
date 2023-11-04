@@ -1,20 +1,19 @@
 #ifndef BILLCARETAKER_H
 #define BILLCARETAKER_H
-
-#include <bits/stdc++.h>
 #include <string>
 #include<vector>
 #include<map>
 #include "BillMemento.h"
+using namespace std;
 
 class BillCaretaker {
     private:
-        vector<map<std::string, BillMemento>> bills;
+        vector<BillMemento*> bills;
     
     public:
         BillCaretaker();
-        void storeMemento(std::string ID, BillMemento* mem);
-        BillMemento* retrieveMemento(std::string customerID);
+        void storeMemento(BillMemento* mem);
+        BillMemento* retrieveMemento(string customerID);
 
 };
 #include "BillCaretaker.cpp"

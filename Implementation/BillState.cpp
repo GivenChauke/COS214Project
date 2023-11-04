@@ -1,18 +1,24 @@
 #ifndef BILLSTATE_CPP
 #define BILLSTATE_CPP
 
+#include<string>
 #include "BillState.h"
+#include "Order.h"
 
-void BillState::loadFromFile(std::string filename){
+using namespace std;
+//order clas error
 
-}
+// void BillState::loadFromFile(string filename){
 
-void BillState::saveToFile(std::string filename){
+// }
 
-}
+// void BillState::saveToFile(string filename){
 
-vector<string> BillState::getOrder(){
-    return order;
+// }
+
+Order* BillState::getCopyOrder()
+{
+    return CopyOrder;
 }
 
 float BillState::getCost(){
@@ -23,7 +29,7 @@ bool BillState::getPaidStatus(){
     return paid;
 }
 
-std::string BillState::getCustomerID(){
+string BillState::getCustomerID(){
     return customerID;
 }
 
@@ -31,10 +37,8 @@ int BillState::getTableID(){
     return tableID;
 }
 
-void BillState::setOrder(vector<std::string> orders){
-    for(int i = 0; i < orders.size(); i++){
-        order.push_back(orders[i]);
-    }
+void BillState::setCopyOrder(Order* order){
+    CopyOrder= new Order(*order);//donry worry
 }
 
 void BillState::setCost(float newCost){

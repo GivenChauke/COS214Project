@@ -1,9 +1,16 @@
-#ifndef ABSTRACTTABLE_H
-#define ABSTRACTTABLE_H
+#ifndef ABSTRACT_TABLE_H
+#define ABSTRACT_TABLE_H
 #include <iostream>
-using namespace std;
+
 #include "TableState.h"
-#include "CustomerGroup.h"
+ #include "CustomerGroup.h"
+//#include "CustomerGroup.cpp"
+#include "Order.h"
+#include "Review.h"
+#include <vector>
+using namespace std;
+
+
 class AbstractTable
 {
     protected:
@@ -30,7 +37,7 @@ class AbstractTable
         int getCurrentPeople(){return currentPeople;}
         void setCurrentPeople(int currentPeople){this->currentPeople=currentPeople;}
         virtual vector<Order*> PlaceOrder();
-        void ReceiveOrder(vector<Order> orders){customerGroup.receiveOrder(orders);};
+        void ReceiveOrder(vector<Order*> orders);
         int getRandomState(){return RandomState;}
         void setRandomState(int RandomState){this->RandomState=RandomState;}
         string EnquireState();
@@ -42,6 +49,6 @@ class AbstractTable
 
 
 };
-int AbstractTable::counter=0;
-#include "AbstractTable.cpp"
+
+//#include "AbstractTable.cpp"
 #endif

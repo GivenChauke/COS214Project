@@ -7,7 +7,7 @@ using namespace std;
 class Angry: public CustomerState
 {
     public:
-        string getString(){return "ANGRY";};
+        string getStatus(){return "ANGRY";};
         void action(){cout<<"Customer: THE FOOD HERE SUCKS";};
 
 };

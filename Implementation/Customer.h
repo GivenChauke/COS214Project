@@ -5,7 +5,9 @@
 #include <string>
 using namespace std;
 #include "CustomerState.h"
-class Order;
+#include"Order.h"
+
+
 class Customer
 {
     private:
@@ -27,6 +29,6 @@ class Customer
         Order* PlaceOrder();
 };
 
-#include "Customer.cpp"
+//#include "Customer.cpp"
 
-#endif;
+#endif

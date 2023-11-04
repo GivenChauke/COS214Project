@@ -2,7 +2,11 @@
 #define ORDER_CPP
 
 #include "Order.h"
-
+#include "Ready.h"
+#include "Received.h"
+#include "Processing.h"
+#include "Bill.h"
+#include "AbstractTable.h"
 
 Order::Order(){
     waiter = nullptr;
@@ -10,12 +14,19 @@ Order::Order(){
     orderStatus = nullptr;
     bill = nullptr;
 }
+Order::Order(Order&r)
+{
+    waiter=r.waiter;
+    table=r.table;
+    orderStatus=r.orderStatus;
+    bill=r.bill;
+}
 
 Order::~Order(){
-    if(waiter!= nullptr) delete waiter;
+    /*if(waiter!= nullptr) delete waiter;
     if(bill != nullptr) delete bill;
     if(orderStatus != nullptr) delete orderStatus;
-    if(table != nullptr) delete table;
+    if(table != nullptr) delete table;*/
 
 }
 
@@ -28,7 +39,7 @@ AbstractTable* Order::getTable(){
 }
 
 void Order::setTable(AbstractTable* table){
-    if(this->table != nullptr) delete this->table;
+    //if(this->table != nullptr) delete this->table;
     this->table = table;
 }
 
@@ -37,12 +48,12 @@ Employee* Order::getWaiter(){
 }
 
 void Order::setWaiter(Employee* w){
-    if(waiter != nullptr) delete waiter;
+    //if(waiter != nullptr) delete waiter;
     waiter = w;
 }
 
 void Order::setBill(Bill* bill){
-    if(this->bill != nullptr) delete this->bill;
+    //if(this->bill != nullptr) delete this->bill;
     this->bill = bill;
 }
 
@@ -51,15 +62,15 @@ Bill* Order::getBill(){
 }
 
 void Order:: toReadyStatus(){
-    deallocateStatus();
+    //deallocateStatus();
     orderStatus = new Ready();
 }
 void Order::toReceivedStatus(){
-    deallocateStatus();
+    //deallocateStatus();
     orderStatus = new Received();
 }
 void Order::toProcessingStatus(){
-    deallocateStatus();
+    //deallocateStatus();
     orderStatus = new Processing();
 }
 

@@ -3,15 +3,18 @@
 
 #include <string>
 #include "BillState.h"
+using namespace std;
 
-class BillMemento {
+class BillMemento 
+{
     private:
-        BillState state;
+        BillState* state;
     
     public:
-        BillState getState();
-        void setState(BillState bs);
+        BillMemento(){state=NULL;}
+        BillState* getState();
+        void setState(BillState* bs);
 
 };
-#include "BillMemento.cpp"
+//#include "BillMemento.cpp"
 #endif

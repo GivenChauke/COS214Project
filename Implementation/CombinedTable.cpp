@@ -1,14 +1,12 @@
 #ifndef COMBINEDTABLE_CPP
 #define COMBINEDTABLE_CPP
 #include "CombinedTable.h"
+#include "AbstractTable.h"
 #include <iostream>
 #include "Order.h"
 using namespace std;
 
-CombinedTable::CombinedTable()
-{
-    //table;
-}
+
 CombinedTable::~CombinedTable()
 {
     

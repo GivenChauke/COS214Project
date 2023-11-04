@@ -11,7 +11,7 @@ using namespace std;
 #include "Menu.h"
 
 class Order;
-class Bill;
+#include "Bill.h"
 string Customer::GiveComment_Food()
 {
     srand((unsigned) time(NULL));
@@ -119,25 +119,26 @@ void Customer::receiveOrder(Order* order)
 
 Order* Customer::PlaceOrder()
 {
-    /*Order * order= new Order();
-    order->setOrderStatus(new Received());
+    Order * order= new Order();
+    order->toReceivedStatus();
     vector<FoodItem*>items;
     srand((unsigned) time(NULL));
     int foodItem;
     int orderAgain=2;
     Menu* menu=Menu::getMenu();//added getter for vector menu
+    
     while(orderAgain%2==0)
     {
         //order food item
         foodItem=rand()%9;
                                         //get for vector with food items
-        FoodItem* it= new FoodItem(menu->getmenuItem.at(foodItem).name, menu->getmenuItem.at(foodItem).price, menu->getmenuItem.at(foodItem).method, menu->getmenuItem.at(foodItem).type);
+        FoodItem* it= new FoodItem(menu->menu.at(foodItem)->name, menu->menu.at(foodItem)->price,menu->menu.at(foodItem)->method,menu->menu.at(foodItem)->type);
         items.push_back(it);
         //order decorator
         foodItem=rand()%23 +8;
         if(foodItem !=8)
         {
-            it= new FoodItem(menu->getmenuItem.at(foodItem).name, menu->getmenuItem.at(foodItem).price, menu->getmenuItem.at(foodItem).method, menu->getmenuItem.at(foodItem).type);
+            it= new FoodItem(menu->menu.at(foodItem)->name, menu->menu.at(foodItem)->price, menu->menu.at(foodItem)->method, menu->menu.at(foodItem)->type);
             items.push_back(it);   
         }
         orderAgain=rand();
@@ -151,12 +152,12 @@ Order* Customer::PlaceOrder()
 
     order->setItems(items);
     Bill* bill= new Bill();
-    bill->setOrder(items);
+    bill->setCopyOrder(order);
     bill->setCost(cost);
-    bill->setPaid(false);
-    bill->setCustomer(*this);
+    bill->setBillStatus(false);
+    bill-> setCustoemrID(this->getID());
     order->setBill(bill);
-    return order;*/
+    return order;
 }
 
 #endif

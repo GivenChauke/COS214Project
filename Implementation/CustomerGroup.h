@@ -3,17 +3,18 @@
 #include <vector>
 #include "Customer.h"
 #include <iostream>
-using namespace std;
 
-class Bill;
-class Order;
-class Review;
+
+#include "Order.h"
+#include "Review.h"
+
+using namespace std;
 class CustomerGroup
 {
     protected:
         vector<Customer> customers;
         int RandomState;//for what
-        vector<Order> orders;
+        vector<Order*> orders;
     public:
         vector<Customer> getCustomers(){return customers;}
         void setCustomers(vector<Customer> customer){this->customers=customer;}
@@ -21,10 +22,10 @@ class CustomerGroup
         void setRandomState(int RandomState){this->RandomState=RandomState;}
         int NumOfCustomer();
         Customer CustomerAt(int index);
-        vector<Bill> mergeBill();
+        vector<Bill*> mergeBill();
         bool addCustomer(Customer customer);
         CustomerGroup();
-        void receiveOrder(vector<Order> orders);
+        void receiveOrder(vector<Order*> orders);
         bool PayBill();
         vector<Review> ReviewFood();
         vector<Review> ReviewService();
@@ -33,5 +34,5 @@ class CustomerGroup
 
 };
 
-#include "CustomerGroup.cpp"
+//#include "CustomerGroup.cpp"
 #endif
