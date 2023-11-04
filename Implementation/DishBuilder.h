@@ -2,11 +2,9 @@
 #define DISHBUILDER_H
 #include "AbstractDishBuilder.h"
 #include "Food.h"
+#include <cstdlib>
 
 class DishBuilder : public AbstractDishBuilder {
-private:
-	string type;
-	string base;
 public:
 	// Food* foodItem;
 
@@ -15,8 +13,9 @@ public:
 	void buildPasta(string type, string base);
 	void buildBurger(string type, string base);
 	void buildPizza(string type, string base);
-	// virtual ~DishBuilder();
-	// Food* getFood();
+	void addExtras(string);
+	virtual ~DishBuilder();
+	Food* getFood();
 };
 
 #endif

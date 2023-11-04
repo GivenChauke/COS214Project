@@ -28,3 +28,20 @@ Food::~Food() {
 	// TODO - implement Pizza::~Pizza
 	// throw "Not yet implemented";
 }
+void Food::decorate(Burger*b) {
+//child will overide
+}
+void Food::decorate(Pizza*) {
+//child will overide
+}
+void Food::decorate(Pasta*) {
+//child will overide
+}
+int Food::getFoodQuality()
+{
+	return RandomFoodQuality;
+}
+void Food::setFoodQuality(int i)
+{
+	RandomFoodQuality = i;
+}

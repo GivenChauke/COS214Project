@@ -1,6 +1,5 @@
 #include "Order.h"
 
-
 Order::Order(){
     waiter = nullptr;
     table = nullptr;
@@ -13,14 +12,14 @@ Order::~Order(){
     if(bill != nullptr) delete bill;
     if(orderStatus != nullptr) delete orderStatus;
     if(table != nullptr) delete table;
-    for(FoodItem* item: items){
-        if(item != nullptr) delete item;
+    if (!items.empty()) {
+    for (auto it = items.begin(); it != items.end(); ++it) {
+        delete *it;
     }
-    for(Food* f: food){
-        if(f != nullptr){
-            delete f;
-        }
-    }
+    items.clear(); // Clear the vector after deleting the items
+}
+
+
 }
 
 std::vector<FoodItem*> Order::getItems(){
@@ -75,19 +74,16 @@ std::string Order::getOrderStatus(){
     }
 }
 
-void Order::setItems(std::vector<FoodItem*> items){
-    this->items = items;
+void Order::setItems(std::vector<FoodItem*> items) {
+this->items = items;
 }
 
 void Order::addFood(Food* f){
-    if(f == nullptr) return;
     food.push_back(f);
 }
-
-std::vector<Food*> Order::getFood(){
+vector<Food*> Order::getFood(){
     return food;
 }
-
 
 
 

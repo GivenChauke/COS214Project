@@ -28,6 +28,7 @@ using namespace std;
 
 DishBuilder::DishBuilder()
 {
+	food = nullptr;
 }
 // void DishBuilder::buildPasta() {
 // 	// Pasta* myPasta;
@@ -45,62 +46,73 @@ DishBuilder::DishBuilder()
 
 
 void DishBuilder::buildPasta( string pastaType, string baseType) {
-    Pasta* pasta = nullptr;
+    //Pasta* pasta = nullptr;
 
     if (pastaType == "Alfredo") {
-        pasta = new Alfredo();
+        food = new Alfredo();
+		food->setFoodQuality(rand()%10);
     } else if (pastaType == "Carbonara") {
-        pasta = new Carbonara();
+        food = new Carbonara();
+		food->setFoodQuality(rand()%10);
     } else if (pastaType == "Bolognaise") {
-        pasta = new Bolognaise(); // Assuming you have a Bolognaise pasta class
+        food = new Bolognaise(); // Assuming you have a Bolognaise pasta class
+		food->setFoodQuality(rand()%10);
     } else {
         cout << "Invalid pasta type." << std::endl;
         return;
     }
 
     if (baseType == "Macaroni") {
-        pasta->decorate(new Macaroni());
+        food->decorate(new Macaroni());
+		food->setFoodQuality(rand()%10);
     } else if (baseType == "Spaghetti") {
-        pasta->decorate(new Spaghetti());
+        food->decorate(new Spaghetti());
+		food->setFoodQuality(rand()%10);
     } else {
         cout << "Invalid base type." << std::endl;
-        delete pasta;
+        //delete food;
         return;
     }
 
-    std::cout << "Cost = " << pasta->total() << std::endl;
-    delete pasta;
+    //std::cout << "Cost = " << pasta->total() << std::endl;
+    //delete pasta;
 }
 
 
 void DishBuilder::buildBurger(string burgerTopping, string baseType) {
-	Burger* burger = nullptr;
+	//Burger* burger = nullptr;
 
 	if (burgerTopping == "Beef") {
-		burger = new BeefBurger();
+		food = new BeefBurger();
+		food->setFoodQuality(rand()%10);
 	} else if (burgerTopping == "Chicken") {
-		burger = new ChickenBurger();
+		food = new ChickenBurger();
+		food->setFoodQuality(rand()%10);
 	} else if (burgerTopping == "Vegetarian") {
-		burger = new VegetarianBurger(); // Assuming you have a VegetarianBurger class
+		food = new VegetarianBurger(); // Assuming you have a VegetarianBurger class
+		food->setFoodQuality(rand()%10);
 	} else {
 		cout << "Invalid burger topping." << std::endl;
 		return;
 	}
 
 	if (baseType == "Cheese") {
-		burger->decorate(new CheeseTopping());
+		food->decorate(new CheeseTopping());
+		food->setFoodQuality(rand()%10);
 	} else if (baseType == "Chilli") {
-		burger->decorate(new ChilliTopping());
+		food->decorate(new ChilliTopping());
+		food->setFoodQuality(rand()%10);
 	} else if (baseType == "Onion") {
-		burger->decorate(new OnionTopping());
+		food->decorate(new OnionTopping());
+		food->setFoodQuality(rand()%10);
 	} else {
 		cout  << "Invalid base type." << std::endl;
-		delete burger;
+		//delete burger;
 		return;
 	}
 
-	cout << "Cost = " << burger->total() << std::endl;
-	delete burger;
+	//cout << "Cost = " << burger->total() << std::endl;
+	//delete burger;
 	// Burger* myBurger;
     // myBurger = new CheeseTopping();
     // myBurger->decorate(new BeefBurger());
@@ -118,31 +130,36 @@ void DishBuilder::buildBurger(string burgerTopping, string baseType) {
 }
 
 void DishBuilder::buildPizza(string pizzaType, string baseType) {
-	Pizza* pizza = nullptr;
+	//Pizza* pizza = nullptr;
 
 	if(pizzaType == "MeatSupreme") {
-		pizza = new MeatSupremePizza();
+		food = new MeatSupremePizza();
+		food->setFoodQuality(rand()%10);
 	} else if (pizzaType == "Margherita") {
-		pizza = new MargheritaPizza();
+		food = new MargheritaPizza();
+		food->setFoodQuality(rand()%10);
 	} else if (pizzaType == "Pepperoni") {
-		pizza = new PepperoniPizza(); // Assuming you have a PepperoniPizza class
+		food = new PepperoniPizza(); // Assuming you have a PepperoniPizza class
+		food->setFoodQuality(rand()%10);
 	} else {
 		cout << "Invalid pizza type." << std::endl;
 		return;
 	}
 
 	if (baseType == "Thick") {
-		pizza->decorate(new ThickBasePizza());
+		food->decorate(new ThickBasePizza());
+		food->setFoodQuality(rand()%10);
 	} else if (baseType == "Thin") {
-		pizza->decorate(new ThinBasePizza());
+		food->decorate(new ThinBasePizza());
+		food->setFoodQuality(rand()%10);
 	} else {
 		cout << "Invalid base type." << std::endl;
-		delete pizza;
+		//delete pizza;
 		return;
 	}
 
-	cout << "Cost = " << pizza->total() << endl;
-	delete pizza;
+	//cout << "Cost = " << pizza->total() << endl;
+	//delete pizza;
 	// Pizza* myPizza;
     // myPizza = new MeatSupremePizza();
     // myPizza->decorate(new ThickBasePizza());
@@ -158,11 +175,15 @@ void DishBuilder::buildPizza(string pizzaType, string baseType) {
 
 }
 
-// DishBuilder::~DishBuilder()
-// {
-// }
+DishBuilder::~DishBuilder()
+{
+	delete food;
+}
 
-// Food* DishBuilder::getFood() {
-// 	// TODO - implement DishBuilder::getFood
-// 	throw "Not yet implemented";
-// }
+Food* DishBuilder::getFood() {
+	return this->food;
+}
+void DishBuilder::addExtras(string temp)
+{
+	food->addIngredient(temp);
+}
