@@ -151,7 +151,7 @@ Order* Customer::PlaceOrder()
        // cout<<"ABove\n"; 
         items.push_back(it);
         //order decorator
-        foodItem=rand()%15 +8;
+        foodItem=rand()%11 +8;
         if(foodItem !=8)
         {
             it= new FoodItem(menu->menu.at(foodItem)->name, menu->menu.at(foodItem)->price, menu->menu.at(foodItem)->method, menu->menu.at(foodItem)->type);
