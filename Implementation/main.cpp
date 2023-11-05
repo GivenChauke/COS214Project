@@ -46,10 +46,10 @@ void TestCustomerGroup()
     oneGroup.addCustomer(five);
     cout<<"edrf\n";
     oneGroup.print();
-    cout<<oneGroup.NumOfCustomer()<<endl;
+    /*cout<<oneGroup.NumOfCustomer()<<endl;
     cout<<oneGroup.CustomerAt(0).getID()<<endl;
 
-    vector<Order*> oo=oneGroup.PlaceOrder();
+    vector<Order*> oo=oneGroup.PlaceOrder();*/
 
 
 }

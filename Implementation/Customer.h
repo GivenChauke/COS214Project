@@ -10,9 +10,12 @@ using namespace std;
 
 class Customer
 {
+    //srand((unsigned) time(NULL));
     private:
         string ID;
         CustomerState* state;
+    public:
+        static int SeedValue;
 
     public:
         string getID(){return ID;};//t

@@ -10,9 +10,12 @@ using namespace std;
 #include <ctime>
 #include "Menu.h"
 #include "Neutral.h"
-
+#include <stdlib.h> 
+#include "Food.h"
 class Order;
 #include "Bill.h"
+
+int Customer::SeedValue=0;
 string Customer::GiveComment_Food()
 {
     srand((unsigned) time(NULL));
@@ -93,7 +96,9 @@ Customer::Customer()
 {
     ID="";
     string alphabets="abcdefghijklmnopqrstuvwxyz";
-    srand((unsigned) time(NULL));
+    srand((unsigned)++SeedValue);
+    SeedValue;
+   // sleep(5000);
     int random;
     for(int i=0; i<11; i++)
     {
@@ -157,7 +162,7 @@ Order* Customer::PlaceOrder()
     bill->setCost(cost);
     bill->setBillStatus(false);
     bill-> setCustomerID(ID);
-   // cout<<"BILL "<<bill->getCustomerID()<<endl;
+ //   cout<<"BILL "<<bill->getCustomerID<<endl;
     order->setBill(bill);
     return order;
 }

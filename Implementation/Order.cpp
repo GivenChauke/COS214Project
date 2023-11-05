@@ -1,12 +1,4 @@
-#ifndef ORDER_CPP
-#define ORDER_CPP
-
 #include "Order.h"
-#include "Ready.h"
-#include "Received.h"
-#include "Processing.h"
-#include "Bill.h"
-#include "AbstractTable.h"
 
 Order::Order(){
     waiter = nullptr;
@@ -14,19 +6,18 @@ Order::Order(){
     orderStatus = nullptr;
     bill = nullptr;
 }
-Order::Order(Order&r)
-{
-    waiter=r.waiter;
-    table=r.table;
-    orderStatus=r.orderStatus;
-    bill=r.bill;
-}
 
 Order::~Order(){
-    /*if(waiter!= nullptr) delete waiter;
-    if(bill != nullptr) delete bill;
+    if(waiter!= nullptr) //delete waiter;
+    if(bill != nullptr)// delete bill;
     if(orderStatus != nullptr) delete orderStatus;
-    if(table != nullptr) delete table;*/
+    if(table != nullptr) //delete table;
+    std::cout<<"Before seg fault2.0"<<std::endl;
+    if (!items.empty()) {
+    items.clear(); // Clear the vector after deleting the items
+    if(!food.empty()) food.clear();
+}
+
 
 }
 
@@ -39,21 +30,21 @@ AbstractTable* Order::getTable(){
 }
 
 void Order::setTable(AbstractTable* table){
-    //if(this->table != nullptr) delete this->table;
+    if(this->table != nullptr) {delete this->table;}
     this->table = table;
 }
 
-Employee* Order::getWaiter(){
+Waiter* Order::getWaiter(){//back to employee
     return waiter;
 }
 
-void Order::setWaiter(Employee* w){
-    //if(waiter != nullptr) delete waiter;
+void Order::setWaiter(Waiter* w){
+    if(waiter != nullptr) {delete waiter;}
     waiter = w;
 }
 
 void Order::setBill(Bill* bill){
-    //if(this->bill != nullptr) delete this->bill;
+    if(this->bill != nullptr) {delete this->bill;}
     this->bill = bill;
 }
 
@@ -62,15 +53,15 @@ Bill* Order::getBill(){
 }
 
 void Order:: toReadyStatus(){
-    //deallocateStatus();
+    deallocateStatus();
     orderStatus = new Ready();
 }
 void Order::toReceivedStatus(){
-    //deallocateStatus();
+    deallocateStatus();
     orderStatus = new Received();
 }
 void Order::toProcessingStatus(){
-    //deallocateStatus();
+    deallocateStatus();
     orderStatus = new Processing();
 }
 
@@ -82,28 +73,36 @@ std::string Order::getOrderStatus(){
     }
 }
 
-void Order::setItems(std::vector<FoodItem*> items){
-    this->items = items;
+void Order::setItems(std::vector<FoodItem*> items) {
+this->items = items;
 }
 
-
-// void Order::print()
-// {
-//     if(orderStatus != NULL)
-//         cout<<orderStatus->getStatus()<<endl;
+void Order::addFood(Food* f){
+    food.push_back(f);
+}
+vector<Food*> Order::getFood(){
+    return food;
+}
+std::string Order::toString() {
+    std::string result = "Order Details:\n";
     
-//     for(int i=0; i<items.size(); i++)
-//     {
-//         cout<<items[i]->name<<" "<<items[i]->price<<endl;
-//     }
-
-
-//     if(bill != NULL){
-//         cout<<"fg\n";
-//         cout<<bill->getBillStatus()<<" "<<bill->getCustomerID()<<" "<<bill->getCost()<<endl;
-//     }
-// }
-#endif
-
+    if (!items.empty()) {
+        result += "Food Items:\n";
+        for (const FoodItem* item : items) {
+            result += "- " + item->name + " ($" + std::to_string(item->price) + ")\n";
+        }
+    } 
+    if(!food.empty()){
+        result += "Food available in order: \n" ;
+        for( Food* f:food)
+        {
+            result += f->getName();
+        }
+    }  
+    
+    // You can add more information to the string as needed
+    
+    return result;
+}
 
 
