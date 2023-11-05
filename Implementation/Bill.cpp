@@ -65,6 +65,13 @@ void Bill::recoverBill(BillMemento* mem)
     else
         CopyOrders=NULL;
 }
+void Bill::print()
+{
+    cout<<"COST "<<cost<<endl;
+    cout<<"IS IT PAID "<<paid<<endl;
+    cout<<"TableID "<<tableID<<endl;
+    cout<<"CUSTOMER ID "<<customerID<<endl;
+}
 
 void Bill::setCustomerID(string ID)
 {

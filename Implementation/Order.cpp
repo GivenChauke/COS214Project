@@ -106,3 +106,21 @@ std::string Order::toString() {
 }
 
 
+void Order::print()
+{
+    cout<<"---------------------------------------------------\n";
+    cout<<"OrderStatus: "<<orderStatus->getStatus()<<endl;
+    cout<<"Food item:\n";
+    for(int i=0; i<items.size(); i++)
+    {
+        cout<<items[i]->name<<endl;
+    }
+
+    cout<<"BILL \n";
+   // this->bill->print();
+
+   // cout<<"TABLE ID "<<table->getTableID()<<endl;
+   cout<<"----------------------------------------------------\n";
+
+
+}

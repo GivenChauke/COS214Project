@@ -24,6 +24,8 @@ class AbstractTable
         bool occupied=false;
 
     public:
+        int getTableID(){return tableID;}
+        void setTableID(int ID){this->tableID=ID;}
         void setOccupied(bool o){this->occupied=o;}//t
         bool getOccupied(){return occupied;}//t
         int getMaxPeople(){return this->maxPeople;}//t

@@ -54,6 +54,7 @@ class Order{
         void toReceivedStatus();
         void toProcessingStatus();
         std::string toString();
+        void print();
 
 };
 

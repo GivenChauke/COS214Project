@@ -20,7 +20,7 @@ class Order;
 int Customer::SeedValue=0;
 string Customer::GiveComment_Food()
 {
-    srand((unsigned) time(NULL));
+    srand((unsigned) ++SeedValue);
     int random=rand()%10;
     if(this->state->getStatus()=="ANGRY")
     {
@@ -41,7 +41,7 @@ string Customer::GiveComment_Food()
 string Customer::GiveComment_Service()
 {
    
-    srand((unsigned) time(NULL));
+    srand((unsigned) ++SeedValue);
     int random=rand()%10;
     if(this->state->getStatus()=="ANGRY")
     {
@@ -62,7 +62,7 @@ string Customer::GiveComment_Service()
 
 int Customer::GiveRating_Food()
 {
-    srand((unsigned) time(NULL));
+    srand((unsigned) ++SeedValue);
     int random=rand()%5;
 
     if (this->state->getStatus() == "ANGRY")
@@ -78,7 +78,7 @@ int Customer::GiveRating_Food()
 
 int Customer::GiveRating_Service()
 {
-    srand((unsigned) time(NULL));
+    srand((unsigned)++SeedValue);
     int random=rand()%5;
 
     if (this->state->getStatus() == "ANGRY")
@@ -99,7 +99,7 @@ Customer::Customer()
     ID="";
     string alphabets="abcdefghijklmnopqrstuvwxyz";
     srand((unsigned)++SeedValue);
-    SeedValue;
+    //SeedValue;
    // sleep(5000);
     int random;
     for(int i=0; i<11; i++)
@@ -137,20 +137,21 @@ Order* Customer::PlaceOrder()
     Order * order= new Order();
     order->toReceivedStatus();
     vector<FoodItem*>items;
-    srand((unsigned) time(NULL));
+    srand((unsigned) ++SeedValue);
     int foodItem;
     int orderAgain=2;
     Menu* menu=Menu::getMenu();//added getter for vector menu
-  
+    
     while(orderAgain%2==0)
     {
         //order food item
         foodItem=rand()%9;
-                                        //get for vector with food items
+                                       //get for vector with food items
         FoodItem* it= new FoodItem(menu->menu.at(foodItem)->name, menu->menu.at(foodItem)->price,menu->menu.at(foodItem)->method,menu->menu.at(foodItem)->type);
+       // cout<<"ABove\n"; 
         items.push_back(it);
         //order decorator
-        foodItem=rand()%23 +8;
+        foodItem=rand()%15 +8;
         if(foodItem !=8)
         {
             it= new FoodItem(menu->menu.at(foodItem)->name, menu->menu.at(foodItem)->price, menu->menu.at(foodItem)->method, menu->menu.at(foodItem)->type);
@@ -158,6 +159,7 @@ Order* Customer::PlaceOrder()
         }
         orderAgain=rand();
     }
+   
      // cout<<"ertgh\n";
     float cost=0.0;
     for(int i=0; i<items.size(); i++)

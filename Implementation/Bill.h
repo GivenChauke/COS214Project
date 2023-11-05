@@ -32,6 +32,7 @@ class Bill
         int getTableID();
         void recoverBill(BillMemento* mem);
         BillMemento* saveState();
+        void print();
         
 };
 //#include "Bill.cpp"
