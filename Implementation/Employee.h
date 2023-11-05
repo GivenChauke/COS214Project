@@ -5,6 +5,8 @@
 // #include "Table.h"
 #include "TableIterator.h"
 #include <vector>
+
+using namespace std;
 class Table;
 
 class Employee {

@@ -1,10 +1,11 @@
 #ifndef Customer_H
 #define Customer_H
-#include "Customer.h"
+// #include "Customer.h"
 #include <iostream>
 #include <string>
 using namespace std;
 #include "CustomerState.h"
+#pragma warning
 class Order;
 class Customer
 {

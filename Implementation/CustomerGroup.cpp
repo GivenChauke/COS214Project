@@ -1,12 +1,7 @@
-#ifndef CUSTOMER_GROUP_CPP
-#define CUSTOMER_GROUP_CPP
 #include "CustomerGroup.h"
-#include <iostream>
-#include<vector>
+
 using namespace std;
 
-class Bill;
-class Review;
 
 bool CustomerGroup::addCustomer(Customer* customer)
 {
@@ -146,4 +141,3 @@ vector<Order*> CustomerGroup::PlaceOrder()
 
     return rt;
 }
-#endif

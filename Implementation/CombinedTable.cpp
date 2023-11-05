@@ -13,7 +13,7 @@ CombinedTable::~CombinedTable()
     
 }
 
-bool CombinedTable::AddTable(AbstractTable* table)
+bool CombinedTable::addTable(AbstractTable* table)
 {
     /*if(this->table != NULL && table != NULL)
     {
@@ -24,7 +24,7 @@ bool CombinedTable::AddTable(AbstractTable* table)
     return true;
 }
 
-AbstractTable* CombinedTable::SeparateTable()
+AbstractTable* CombinedTable::separateTable()
 {
     if(this->table.size()==0)
     {
@@ -35,9 +35,9 @@ AbstractTable* CombinedTable::SeparateTable()
 }
 
 
-vector<Order> CombinedTable::PlaceOrder()
+vector<Order*> CombinedTable::placeOrder()
 {
-    vector<Order> rt;
+    vector<Order*> rt;
 }
 
 

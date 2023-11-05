@@ -2,11 +2,12 @@
 #define CUSTOMER_GROUP_H
 #include <vector>
 #include "Customer.h"
+#include "Order.h"
 #include <iostream>
 using namespace std;
 
 class Bill;
-class Order;
+// class Order;
 class Review;
 class CustomerGroup
 {
@@ -33,5 +34,5 @@ class CustomerGroup
 
 };
 
-#include "CustomerGroup.cpp"
+// #include "CustomerGroup.cpp"
 #endif

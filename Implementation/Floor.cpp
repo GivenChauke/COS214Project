@@ -1,5 +1,6 @@
 #include "Floor.h"
 #include <cmath>
+using namespace std;
 
 Floor::Floor(int capacity){
     this->capacity = capacity;

@@ -1,4 +1,7 @@
 #include "Order.h"
+#include "Waiter.h"
+#include "Table.h"
+#include "CombinedTable.h"
 
 Order::Order(){
     waiter = nullptr;

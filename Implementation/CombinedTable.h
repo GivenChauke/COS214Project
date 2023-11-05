@@ -10,9 +10,9 @@ class CombinedTable : public AbstractTable
     public:
         CombinedTable(/* args */);
         ~CombinedTable();
-        bool AddTable(AbstractTable* table);
-        AbstractTable* SeparateTable();
-        vector<Order*> PlaceOrder();
+        bool addTable(AbstractTable* table);
+        AbstractTable* separateTable();
+        vector<Order*> placeOrder();
 };
 
 

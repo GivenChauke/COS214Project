@@ -2,7 +2,7 @@
 #define WAITER_H
 #include <vector>
 #include "Employee.h"
-
+using namespace std;
 class Waiter : public Employee {
 private:
     int maxTables;
