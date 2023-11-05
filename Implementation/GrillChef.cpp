@@ -21,7 +21,7 @@ Order* GrillChef::cook(Order* order)
                 builder->buildPasta(order->getItems().at(i)->name,order->getItems().at(i)->type);
                 order->addFood(builder->getFood());
             }
-            else if(order->getItems().at(i)->method.compare(type)==0) {
+            else if(order->getItems().at(i)!= nullptr && order->getItems().at(i)->method.compare(type)==0 && order->getItems().at(i)->type.compare("Pizza")==0) {
                 builder->buildPizza(order->getItems().at(i)->name,"Thick");
                 order->addFood(builder->getFood());
             }
