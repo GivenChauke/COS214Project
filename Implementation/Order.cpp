@@ -87,7 +87,22 @@ void Order::setItems(std::vector<FoodItem*> items){
 }
 
 
+// void Order::print()
+// {
+//     if(orderStatus != NULL)
+//         cout<<orderStatus->getStatus()<<endl;
+    
+//     for(int i=0; i<items.size(); i++)
+//     {
+//         cout<<items[i]->name<<" "<<items[i]->price<<endl;
+//     }
 
+
+//     if(bill != NULL){
+//         cout<<"fg\n";
+//         cout<<bill->getBillStatus()<<" "<<bill->getCustomerID()<<" "<<bill->getCost()<<endl;
+//     }
+// }
 #endif
 
 

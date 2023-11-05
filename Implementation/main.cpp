@@ -10,19 +10,69 @@ using namespace std;
 #include "ReadyToOrder.h"
 #include "NotOccupied.h"
 #include "NotReadyToOrder.h"
-
+#include "Customer.h"
+#include "CustomerGroup.h"
 
 #include "Bill.h"
 
 
 void InitializeTest();
 void InitialTest2();
+void TestOrder();
+void TestCustomer();
+
+void TestCustomerGroup();
 
 void TestBillNyana();
 int main()
 {
-   TestBillNyana();
+  TestCustomerGroup();
     return 0;
+}
+
+void TestCustomerGroup()
+{
+    Customer one;
+    Customer two;
+    Customer three;
+    Customer four;
+    Customer five;
+
+    CustomerGroup  oneGroup;
+    oneGroup.addCustomer(one);
+    oneGroup.addCustomer(two);
+    oneGroup.addCustomer(three);
+    oneGroup.addCustomer(four);
+    oneGroup.addCustomer(five);
+    cout<<"edrf\n";
+    oneGroup.print();
+    cout<<oneGroup.NumOfCustomer()<<endl;
+    cout<<oneGroup.CustomerAt(0).getID()<<endl;
+
+    vector<Order*> oo=oneGroup.PlaceOrder();
+
+
+}
+
+void TestCustomer()
+{
+    Customer one;
+    cout<<one.getID()<<endl;
+    cout<<one.getState()->getStatus()<<endl;
+    CustomerState* happy= new Happy();
+    one.setState(happy);
+    cout<<one.GiveComment_Food()<<"\n";
+    cout<<one.GiveComment_Service()<<"\n";
+    cout<<one.GiveRating_Food()<<"\n";
+    cout<<one.GiveRating_Service()<<"\n";
+
+    Order* ord=one.PlaceOrder();
+    //ord->print();
+}
+
+void TestOrder()
+{
+    Order o;
 }
 
 void TestBillNyana()

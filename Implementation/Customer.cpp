@@ -9,6 +9,7 @@ using namespace std;
 #include "Customer.h"
 #include <ctime>
 #include "Menu.h"
+#include "Neutral.h"
 
 class Order;
 #include "Bill.h"
@@ -94,11 +95,11 @@ Customer::Customer()
     string alphabets="abcdefghijklmnopqrstuvwxyz";
     srand((unsigned) time(NULL));
     int random;
-    for(int i=0; i<10; i++)
+    for(int i=0; i<11; i++)
     {
         ID+=alphabets.substr(rand()%26, 1);
     }
-    
+    state= new Neutral();
 }
 
 void Customer::receiveOrder(Order* order)
@@ -126,7 +127,7 @@ Order* Customer::PlaceOrder()
     int foodItem;
     int orderAgain=2;
     Menu* menu=Menu::getMenu();//added getter for vector menu
-    
+  
     while(orderAgain%2==0)
     {
         //order food item
@@ -143,7 +144,7 @@ Order* Customer::PlaceOrder()
         }
         orderAgain=rand();
     }
-
+     // cout<<"ertgh\n";
     float cost=0.0;
     for(int i=0; i<items.size(); i++)
     {
@@ -155,7 +156,8 @@ Order* Customer::PlaceOrder()
     bill->setCopyOrder(order);
     bill->setCost(cost);
     bill->setBillStatus(false);
-    bill-> setCustoemrID(this->getID());
+    bill-> setCustomerID(ID);
+   // cout<<"BILL "<<bill->getCustomerID()<<endl;
     order->setBill(bill);
     return order;
 }

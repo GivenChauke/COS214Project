@@ -29,8 +29,9 @@ AbstractTable* CombinedTable::SeparateTable()
     {
         return NULL;
     }
-    return this->table.at(0);
-    
+    AbstractTable * rt=table.at(table.size()-1);
+    table.pop_back();
+    return rt;    
 }
 
 

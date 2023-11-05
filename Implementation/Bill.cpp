@@ -11,6 +11,7 @@ Bill::Bill(){
     CopyOrders=NULL;
    // state=NULL;
    // billS
+  // customerID="666";
 }
 
 Order* Bill::getCopyOrder()
@@ -44,7 +45,7 @@ void Bill::setBillStatus(bool BillStatus){
 
 
 std::string Bill::getCustomerID(){
-    return "";
+    return customerID;
 }
 
 int Bill::getTableID(){
@@ -63,6 +64,12 @@ void Bill::recoverBill(BillMemento* mem)
         CopyOrders= new Order(*(mem->getState()->getCopyOrder()));//dont wory
     else
         CopyOrders=NULL;
+}
+
+void Bill::setCustomerID(string ID)
+{
+    //cout<<ID<<" defv\n";
+    this->customerID=ID;
 }
 
 BillMemento* Bill::saveState()

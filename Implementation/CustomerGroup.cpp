@@ -14,6 +14,8 @@ bool CustomerGroup::addCustomer(Customer customer)
     vector<Customer>::iterator iter=this->customers.begin();
     
     this->customers.insert(iter, customer);
+
+    return true;
 }
 
 CustomerGroup::CustomerGroup()
@@ -21,6 +23,13 @@ CustomerGroup::CustomerGroup()
     
 }
 
+void CustomerGroup::print()
+{
+    for(int i=0; i<customers.size(); i++)
+    {
+        cout<<customers[i].getID()<<endl;
+    }
+}
 
 Customer CustomerGroup::CustomerAt(int index)
 {
@@ -112,7 +121,7 @@ vector<Review> CustomerGroup::ReviewFood()
          Review note;
          note.setReviewComment(customers.at(i).GiveComment_Food());
          note.setRating(customers.at(i).GiveRating_Food());
-         Reviews.insert(Reviews.begin(), note);
+         Reviews.push_back( note);
     }
     
    
@@ -130,7 +139,8 @@ vector<Review> CustomerGroup::ReviewService()
         Review note;
         note.setReviewComment(customers.at(i).GiveComment_Food());
         note.setRating(customers.at(i).GiveRating_Service());
-        Reviews.insert(Reviews.begin(), note);
+                Reviews.push_back( note);
+
     }
     
    

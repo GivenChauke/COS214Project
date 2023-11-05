@@ -15,18 +15,18 @@ class Customer
         CustomerState* state;
 
     public:
-        string getID(){return ID;};
-        void setID(string ID){this->ID=ID;};
-        void setState(CustomerState* state){this->state=state;};
-        CustomerState* getState(){return state;};
-        string GiveComment_Food();
-        string GiveComment_Service();
-        int GiveRating_Food();
-        int GiveRating_Service();
-        Customer(string name){ID=name;};
-        Customer();
+        string getID(){return ID;};//t
+        void setID(string ID){this->ID=ID;};//t
+        void setState(CustomerState* state){this->state=state;};//t
+        CustomerState* getState(){return state;};//t
+        string GiveComment_Food();//t
+        string GiveComment_Service();//t
+        int GiveRating_Food();//t
+        int GiveRating_Service();//t
+        Customer(string name){ID=name;};//t
+        Customer();//t
         void receiveOrder(Order* order);//check
-        Order* PlaceOrder();
+        Order* PlaceOrder();//t
 };
 
 //#include "Customer.cpp"

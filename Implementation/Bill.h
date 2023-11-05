@@ -16,7 +16,7 @@ class Bill
         bool paid;
         int tableID;
         Order* CopyOrders;//Changes 
-        string customerID;
+        string customerID="";
     public:
         Bill();
         Order* getCopyOrder();
@@ -27,7 +27,7 @@ class Bill
         bool getBillStatus();
         void setBillStatus(bool BillStatus);
         void setTableID(int ID){this->tableID=ID;}
-        void setCustoemrID(string ID){this->customerID=ID;}
+        void setCustomerID(string ID);
         std::string getCustomerID();
         int getTableID();
         void recoverBill(BillMemento* mem);
