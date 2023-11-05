@@ -2,7 +2,7 @@
 #define EMPLOYEE_H
 
 #include "Department.h"
-// #include "Table.h"
+#include "Table.h"
 #include "TableIterator.h"
 #include <vector>
 class Table;
@@ -19,6 +19,7 @@ public:
     void setCurrTable(Table* currTab);
     void GetReview(const std::vector<Review*>& reviewList);
     void TakeOrder(Table* table);
+    int getEmployeeId();
     ~Employee();
 private:
     Department* department;

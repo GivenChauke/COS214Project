@@ -2,7 +2,9 @@
 #include "KitchenDepartment.h"
 #include <iostream>
 
-Waiter::Waiter(int id) : Employee(id) {}
+Waiter::Waiter(int id) : Employee(id){
+
+}
 
 void Waiter::getReviewsForKitchenDepartment() {
     if (getDepartment()) {
@@ -13,4 +15,32 @@ void Waiter::getReviewsForKitchenDepartment() {
             std::cout << "Waiter can only get reviews for the Kitchen Department." << std::endl;
         }
     }
+}
+void Waiter::CollectOrderFromKitchen(Order* order)
+{
+    customerOrder.push_back(order);
+}
+Waiter::~Waiter() {
+    for (auto it = customerOrder.begin(); it != customerOrder.end(); ++it)
+    {
+        customerOrder.erase(it);
+    }
+}
+void Waiter::TakeOrder(Table* table) {
+    if (table) {
+        this->customerOrder = table->PlaceOrder();
+        for(Order* order:customerOrder)
+        {
+            order->setWaiter(this);
+        }
+    }
+}
+void Waiter::TakeOrder(Order* order) {
+
+    order->setWaiter(this);
+
+}
+void Waiter::deliverOrders()
+{
+    //iterate tables and call //call void ReceiveOrder(vector<Order> orders){customerGroup.receiveOrder(orders);};
 }

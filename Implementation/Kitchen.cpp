@@ -7,16 +7,16 @@ Kitchen::Kitchen()
 {
     Chef* headchef = new HeadChef(nullptr,"head");
     Chef* grillChef = new GrillChef(headchef,"grill");
-    chef = new FryerChef(grillChef,"fry");
-
+    chef = new FryerChef(grillChef,"fryer");
 }
 Kitchen::~Kitchen()
 {
 
-    for (auto it = waiters.begin(); it != waiters.end(); ++it)
-    {
-        waiters.erase(it);//detach all waiters
-    }
+waiters.clear();
+while (!orders.empty()) {
+    //delete orders.front(); // Delete the Order object
+    orders.pop(); // Remove the Order from the queue
+}
 
 }
 void Kitchen::attachWaiter(Waiter* waiter)
@@ -58,9 +58,9 @@ void Kitchen::notify()
 }
 vector<Waiter*> Kitchen::getWaiters()
 {
-    return waiters;
+    return this->waiters;
 }
 queue<Order*> Kitchen::getOrders()
 {
-    return orders;
+    return this->orders;
 }

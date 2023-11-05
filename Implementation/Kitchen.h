@@ -1,12 +1,11 @@
 #ifndef KITCHEN
 #define KITCHEN
 
-#include "Chef.cpp"
-#include "HeadChef.cpp"
-#include "FryerChef.cpp"
-#include "GrillChef.cpp"
-#include "Order.cpp"
-#include "Waiter.cpp"
+#include "Chef.h"
+#include "HeadChef.h"
+#include "FryerChef.h"
+#include "GrillChef.h"
+#include "Waiter.h"
 #include <queue>
 #include <vector>
 using namespace std;
