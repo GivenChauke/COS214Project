@@ -12,6 +12,8 @@ using namespace std;
 #include "Neutral.h"
 #include <stdlib.h> 
 #include "Food.h"
+#include "Angry.h"
+#include "Happy.h"
 class Order;
 #include "Bill.h"
 
@@ -109,8 +111,15 @@ Customer::Customer()
 
 void Customer::receiveOrder(Order* order)
 {
-    /*Food* food= order->getFood();
-    if(food->getRandomFoodQuality()<=5)//bad
+    vector<Food*>food= order->getFood();
+    int mean=0;
+    for(int i=0; i<food.size(); i++)
+    {
+        mean+=food[i]->getFoodQuality();
+    }
+    if(food.size() != 0)
+        mean/=food.size();
+    if(mean<=5)//bad
     {
         delete state;
         state= new Angry();
@@ -118,7 +127,7 @@ void Customer::receiveOrder(Order* order)
     else{//good
         delete state;
         state= new Happy();
-    }*/
+    }
 
 }
 
