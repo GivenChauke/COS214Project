@@ -29,7 +29,7 @@ bool Chef::processOrder(Order* order)
 {
    for(int i=0;i < order->getItems().size();i++)
    {
-    if (order->getItems().at(i)->type == type)
+    if (order->getItems().at(i)->method.compare(type)==0)
     return true;
    }
    return false;

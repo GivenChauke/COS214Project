@@ -67,3 +67,6 @@ Employee::~Employee() {
         delete tableIterator;
     }
 }
+int Employee::getEmployeeId(){
+    return employeeId;
+}
