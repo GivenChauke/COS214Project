@@ -15,7 +15,7 @@ AbstractTable::AbstractTable()
     this->currentPeople=0;
     maxPeople=5;
     srand((unsigned) time(NULL));
-    int random=(rand()% customerGroup.NumOfCustomer());
+    int random=(rand()% 10);
     RandomState=random;
     if(RandomState==0)
     {

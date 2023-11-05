@@ -14,20 +14,88 @@ using namespace std;
 #include "CustomerGroup.h"
 
 #include "Bill.h"
-
+#include "AbstractTable.h"
+#include "Table.h"
+#include "CombinedTable.h"
 
 void InitializeTest();
 void InitialTest2();
 void TestOrder();
 void TestCustomer();
-
+void TestTables();
 void TestCustomerGroup();
 
 void TestBillNyana();
 int main()
 {
-  TestCustomerGroup();
+   TestTables();
     return 0;
+}
+
+
+void TestTables()
+{
+    AbstractTable* Tableone=new Table();
+    AbstractTable* Tabletwo= new Table();
+    AbstractTable* Tablethree= new Table();
+    AbstractTable* Tablefour= new CombinedTable();
+
+    Customer one;
+    Customer two;
+    Customer three;
+    Customer four;
+    Customer five;
+
+    CustomerGroup  oneGroup;
+    oneGroup.addCustomer(one);
+    oneGroup.addCustomer(two);
+    oneGroup.addCustomer(three);
+    oneGroup.addCustomer(four);
+    oneGroup.addCustomer(five);
+
+    Customer one2;
+    Customer two2;
+    Customer three2;
+    Customer four2;
+    Customer five2;
+    CustomerGroup  twoGroup;
+    twoGroup.addCustomer(one2);
+    twoGroup.addCustomer(two2);
+    twoGroup.addCustomer(three2);
+    twoGroup.addCustomer(four2);
+    twoGroup.addCustomer(five2);
+
+    Customer one3;
+    Customer two3;
+    Customer three3;
+    Customer four3;
+    Customer five3;
+    CustomerGroup  threeGroup;
+    threeGroup.addCustomer(one2);
+    threeGroup.addCustomer(two2);
+    threeGroup.addCustomer(three2);
+    threeGroup.addCustomer(four2);
+    threeGroup.addCustomer(five2);
+
+    Tableone->setCustomerGroup(oneGroup);
+
+    Tabletwo->setCustomerGroup(twoGroup);
+
+    Tablefour->setCustomerGroup(threeGroup);
+
+
+    Tablefour->AddTable(Tabletwo);
+
+    vector<Order*> Vectorfive=Tableone->PlaceOrder();
+    vector<Order*> Vectorten=Tablefour->PlaceOrder();
+
+    cout<<Vectorfive.size()<<endl;
+    cout<<Vectorten.size()<<endl;
+  //  delete Tablefour;
+    
+
+    
+
 }
 
 void TestCustomerGroup()

@@ -12,6 +12,11 @@ CombinedTable::~CombinedTable()
     
 }
 
+CombinedTable::CombinedTable()
+{
+    
+}
+
 bool CombinedTable::AddTable(AbstractTable* table)
 {
     /*if(this->table != NULL && table != NULL)
@@ -41,12 +46,20 @@ vector<Order*> CombinedTable::PlaceOrder()
     vector<Order*> orders;
     vector<Order*> temp;
     vector<Order*>::iterator it;
+
     for(int i=0; i<table.size(); i++)
     {
         temp=table.at(i)->getCustomerGroup().PlaceOrder();
     //    it=orders.begin();
         //(orders.begin() ,temp.begin(), temp.back() );
         orders.insert(orders.begin(),temp.begin(),temp.end());
+    }
+
+    vector<Order*> ThisTable=getCustomerGroup().PlaceOrder();
+
+    for(int i=0; i<ThisTable.size(); i++)
+    {
+        orders.push_back(ThisTable.at(i));
     }
 
     for(int i=0;i<orders.size(); i++)

@@ -11,8 +11,23 @@ class BillCaretaker {
         vector<BillMemento*> bills;
     
     public:
+    /**
+     * 
+     * 
+    */
         BillCaretaker();
+        /**
+         * @brief 
+         * 
+         * @param mem 
+         */
         void storeMemento(BillMemento* mem);
+        /**
+         * @brief 
+         * 
+         * @param customerID 
+         * @return BillMemento* 
+         */
         BillMemento* retrieveMemento(string customerID);
 
 };
