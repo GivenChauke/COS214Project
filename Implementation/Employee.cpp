@@ -5,7 +5,7 @@
 #include <vector>
 #include "Table.h"
 
-Employee::Employee(int id) : department(nullptr), currTable(nullptr) {
+Employee::Employee(int id) : department(nullptr), tables(nullptr), currTable(nullptr), tableIterator(nullptr) {
     employeeId = id;
 }
 
@@ -14,10 +14,16 @@ void Employee::assignTables(std::vector<Table*>& tables) {
 }
 
 void Employee::iterateTables() {
-    if (tableIterator) {
+    cout << tableIterator << endl;
+    if (tableIterator != nullptr) {
         Table* table = tableIterator->first();
         while (table) {
-            // table->getTableNumber();
+            //table->getTableNumber();
+
+            CustomerGroup* group = table->getCustomerGroup();
+            if(table->visitTable()){
+                this->TakeOrder(table);
+            }
             table = tableIterator->next();
         }
     }
@@ -48,7 +54,7 @@ void Employee::setCurrTable(Table* currTab) {
     currTable = currTab;
 }
 
-void Employee::getReview(const std::vector<Review*>& reviewList) {
+void Employee::GetReview(const std::vector<Review*>& reviewList) {
     if (department) {
         for (const Review* review : reviewList) {
             department->TakeReview(*review);
@@ -56,15 +62,15 @@ void Employee::getReview(const std::vector<Review*>& reviewList) {
     }
 }
 
-void Employee::takeOrder(Table* table) {
+void Employee::TakeOrder(Table* table) {
     if (table) {
         // Process the order and add it to the queue
     }
 }
 
 Employee::~Employee() {
-    if (tableIterator) {
-        delete tableIterator;
+    if (tableIterator != nullptr) {
+        //delete tableIterator;
     }
 }
 int Employee::getEmployeeId(){

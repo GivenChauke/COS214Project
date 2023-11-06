@@ -1,10 +1,16 @@
 #include "Menu.h"
 #include <iomanip> 
+
+/**
+ * @file Menu.cpp
+ * @brief Implementation of the Menu and FoodItem classes.
+ */
+
 Menu* Menu::Menu_instance = NULL;
+
 Menu::Menu()
 {
     // Burgers
-    //FoodItem(name,price,method of prep,type)
     menu.push_back(new FoodItem("Beef", 10, "grill", "Burger"));
     menu.push_back(new FoodItem("Chicken", 9, "grill", "Burger"));
     menu.push_back(new FoodItem("Vegetarian", 8, "fryer", "Burger"));
@@ -36,58 +42,47 @@ Menu::Menu()
     menu.push_back(new FoodItem("Chilli", 2, "Sliced", "Extra"));
 }
 
-
 Menu* Menu::getMenu()
 {
-    if(Menu_instance == NULL)
+    if (Menu_instance == NULL)
     {
         Menu_instance = new Menu();
     }
     return Menu_instance;
 }
 
-FoodItem::FoodItem(string n, int p, string m,string t)
+FoodItem::FoodItem(string n, int p, string m, string t)
 {
     name = n;
     price = p;
     method = m;
     type = t;
 }
-FoodItem::~FoodItem()
-{
-}
-
 
 string Menu::printMenu()
 {
-        
-    const std::string resetColor = "\x1B[0m";
-    const std::string redColor = "\x1B[31m";
-    const std::string greenColor = "\x1B[32m";
-    const std::string yellowColor = "\x1B[33m";
     if (Menu_instance == NULL)
     {
         return "Menu is empty.";
     }
     stringstream ss;
-    ss<< "Menu:\n";
-    ss<< "_____________________________________________________________________\n";
-    ss<< "Item                     Type        Price     Preparation Method\n";
+    ss << "Menu:\n";
+    ss << "_____________________________________________________________________\n";
+    ss << "Item                     Type        Price     Preparation Method\n";
     for (FoodItem* item : menu)
     {
-        ss<< left; // Set left alignment
+        ss << left; // Set left alignment
 
         // Format each part of the menu item with setw
-        ss<<greenColor << setw(25) << item->name <<greenColor;
-        ss<< setw(13) << item->type <<yellowColor;
-        ss<< setw(12) << "R" + to_string(item->price) <<redColor;
-        ss<< setw(20) << item->method << resetColor;
+        ss << setw(25) << item->name;
+        ss << setw(13) << item->type;
+        ss << setw(12) << "R" + to_string(item->price);
+        ss << setw(20) << item->method;
 
-        ss<< right; // Set right alignment
-        ss<<"\n";
-        
+        ss << right; // Set right alignment
+        ss << "\n";
     }
-    ss<< "_____________________________________________________________________\n";
+    ss << "_____________________________________________________________________\n";
     string menuString = ss.str();
     return menuString;
 }
@@ -96,6 +91,7 @@ FoodItem* Menu::getFoodItem()
 {
     return menu.front();
 }
+
 Menu::~Menu()
 {
     delete Menu_instance;

@@ -5,11 +5,13 @@
 using namespace std;
 #include "TableState.h"
 
+class AbstractTable;
+
 class NotOccupied : public TableState
 {
     public:
-        string getStatus(){return"NotOccupied";}
-        void action(){};
+        string getStatus(){return "NotOccupied";};
+        bool action(){return false;};
 };
 
 #endif

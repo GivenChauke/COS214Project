@@ -7,11 +7,6 @@ using namespace std;
 class Processing: public OrderStatus{
 
     public:
-    /**
-     * @brief Get the Status object
-     * 
-     * @return string 
-     */
         virtual string getStatus(){
             return "Processing";
         }

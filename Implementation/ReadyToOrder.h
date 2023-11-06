@@ -4,20 +4,17 @@
 #include <iostream>
 using namespace std;
 #include "TableState.h"
+
+class AbstractTable;
+
 class ReadyToOrder : public TableState
+
 {
+
     public:
-    /**
-     * @brief Get the Status object
-     * 
-     * @return string 
-     */
-        string getStatus(){return "READYTOORDER";};
-        /**
-         * @brief 
-         * 
-         */
-        void action(){cout<<"TABLE: WE READY TO ORDER";};
+        string getStatus();
+        bool action();
+
 };
 
 #endif

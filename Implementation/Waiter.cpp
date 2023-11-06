@@ -1,12 +1,15 @@
 #include "Waiter.h"
+#include "Table.h"
 #include "KitchenDepartment.h"
 #include <iostream>
 
-using namespace std;
+Waiter::Waiter(int id) : Employee(id){
+    this->tableIterator = nullptr;
 
-Waiter::Waiter(int id) : Employee(id) {}
+}
 
 void Waiter::setMaxTables(int max){
+
     this->maxTables = max;
 }
 
@@ -18,8 +21,9 @@ void Waiter::assignTables(vector<Table*>& tables){
     for(Table* table: tables){
         this->tables.push_back(table);
     }
-    if(tableIterator) delete tableIterator;
-    tableIterator = new TableIterator(this->tables);
+    //if(tableIterator!= nullptr) delete tableIterator;
+    this->tableIterator = new TableIterator(this->tables);
+
 }
 
 void Waiter::getReviewsForKitchenDepartment() {
@@ -32,8 +36,26 @@ void Waiter::getReviewsForKitchenDepartment() {
         }
     }
 }
+
+void Waiter::iterateTables() {
+
+    if (tableIterator != nullptr) {
+        Table* table = tableIterator->first();
+        while (table) {
+            //table->getTableNumber();
+
+            CustomerGroup* group = table->getCustomerGroup();
+            if(table->visitTable()){
+                this->TakeOrder(table);
+            }
+            table = tableIterator->next();
+        }
+    }
+}
+
 void Waiter::CollectOrderFromKitchen(Order* order)
 {
+
     customerOrder.push_back(order);
 }
 Waiter::~Waiter() {
@@ -42,6 +64,7 @@ Waiter::~Waiter() {
         customerOrder.erase(it);
     }
 }
+
 void Waiter::TakeOrder(Table* table) {
     if (table) {
         this->customerOrder = table->PlaceOrder();
@@ -51,6 +74,7 @@ void Waiter::TakeOrder(Table* table) {
         }
     }
 }
+
 void Waiter::TakeOrder(Order* order) {
 
     order->setWaiter(this);

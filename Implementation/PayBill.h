@@ -2,22 +2,17 @@
 #define PAYBILL_H
 #include <string>
 #include <iostream>
+#include "TableState.h"
+
+class AbstractTable;
+
 using namespace std;
 
-class PayBill
+class PayBill: public TableState
 {
     public:
-    /**
-     * @brief Get the Status object
-     * 
-     * @return string 
-     */
-        string getStatus(){return "PAYBILL";};
-        /**
-         * @brief 
-         * 
-         */
-        void action(){cout<<"TABLE: CAN WE GET THE BILL";};
+        string getStatus();
+        bool action();
 };
 
 #endif

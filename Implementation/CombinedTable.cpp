@@ -28,7 +28,7 @@ bool CombinedTable::AddTable(AbstractTable* table)
     return true;
 }
 
-AbstractTable* CombinedTable::separateTable()
+AbstractTable* CombinedTable::SeparateTable()
 {
     if(this->table.size()==0)
     {
@@ -49,13 +49,13 @@ vector<Order*> CombinedTable::PlaceOrder()
 
     for(int i=0; i<table.size(); i++)
     {
-        temp=table.at(i)->getCustomerGroup().PlaceOrder();
+        temp=table.at(i)->getCustomerGroup()->PlaceOrder();
     //    it=orders.begin();
         //(orders.begin() ,temp.begin(), temp.back() );
         orders.insert(orders.begin(),temp.begin(),temp.end());
     }
 
-    vector<Order*> ThisTable=getCustomerGroup().PlaceOrder();
+    vector<Order*> ThisTable=getCustomerGroup()->PlaceOrder();
 
     for(int i=0; i<ThisTable.size(); i++)
     {

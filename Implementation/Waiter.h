@@ -1,6 +1,7 @@
 #ifndef WAITER_H
 #define WAITER_H
-#include <vector>
+
+#include "TableIterator.h"
 #include "Employee.h"
 #include "Order.h"
 #include <vector>
@@ -10,6 +11,11 @@
  * @brief Represents a waiter who takes and delivers orders in a restaurant.
  */
 class Waiter :public Employee{
+public:
+    /**
+     * @brief Constructs a Waiter with the given ID.
+     * @param id The ID of the waiter.
+     */
     Waiter(int id);
     ~Waiter();
     /**
@@ -27,21 +33,24 @@ class Waiter :public Employee{
      * @brief Takes an order from a table.
      * @param table The table from which the order is taken.
      */
-    void TakeOrder(Order*);//change it back to table
-
+    void TakeOrder(Table*);//change it back to table
+    void TakeOrder(Order*);
     /**
      * @brief Delivers orders to the respective tables.
      */
     void deliverOrders();
-    int getEmployeeId();
-    /**
-     * @brief get orders.
-     */
-    vector<Order*> getOrders();
+    void assignTables(vector<Table*>&);
+    bool isFullyOccupied();
+    void setMaxTables(int);
+    void iterateTables();
+
 
 private:
     vector<Order*> customerOrder; /**< Orders from customers or from the kitchen. */
-    int employeeId;
+    int employeeId, maxTables;
+    vector<Table*> tables;
+    TableIterator* tableIterator;
+
 };
 
 #endif // WAITER_H

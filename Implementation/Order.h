@@ -3,6 +3,7 @@
 using namespace std;
 #include <string>
 #include <vector>
+
 #include "OrderStatus.h"
 #include "Ready.h"
 #include "Processing.h"
@@ -42,14 +43,19 @@ class Order{
         void setItems(std::vector<FoodItem*>);
         void addFood(Food* );
         vector<Food*> getFood();
-        Table* getTable();
-        void setTable(Table*);
+        AbstractTable* getTable();
+        void setTable(AbstractTable*);
+        Waiter* getWaiter();    //change it back to employee
         void setWaiter(Waiter*);//change it back to Employee
         void setBill(Bill*);
+        Bill* getBill();
         std::string getOrderStatus();
         void toReadyStatus();
         void toReceivedStatus();
         void toProcessingStatus();
         std::string toString();
         void print();
+
 };
+
+#endif

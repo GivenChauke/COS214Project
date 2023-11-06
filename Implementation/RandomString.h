@@ -9,34 +9,13 @@ class RandomString
     public:
         static string PositiveComment[10];
         static string NegativeComment[10];
-        RandomString(){
-              // Initialize the PositiveComment array
-            PositiveComment[0] = "The food here is absolutely delicious!";
-            PositiveComment[1] = "The service is outstanding, and the staff is very friendly.";
-            PositiveComment[2] = "The atmosphere is cozy and inviting.";
-            PositiveComment[3] = "I highly recommend trying their special dishes.";
-            PositiveComment[4] = "The restaurant is always clean and well-maintained.";
-            PositiveComment[5] = "I had a fantastic dining experience here.";
-            PositiveComment[6] = "The flavors in the dishes are amazing!";
-            PositiveComment[7] = "The portion sizes are generous, and you get great value for your money.";
-            PositiveComment[8] = "The desserts are to die for.";
-            PositiveComment[9] = "I can't wait to come back to this restaurant.";
-
-            // Initialize the NegativeComment array with 10 random negative comments
-            NegativeComment[0] = "The food was disappointing and tasted bland.";
-            NegativeComment[1] = "Service was slow, and the staff seemed indifferent.";
-            NegativeComment[2] = "The restaurant had a dirty atmosphere.";
-            NegativeComment[3] = "I regret trying their special dishes; they were not worth it.";
-            NegativeComment[4] = "The cleanliness of the restaurant left much to be desired.";
-            NegativeComment[5] = "My dining experience here was underwhelming.";
-            NegativeComment[6] = "The flavors in the dishes were a letdown.";
-            NegativeComment[7] = "The portion sizes were small for the price.";
-            NegativeComment[8] = "Desserts were unimpressive and overpriced.";
-            NegativeComment[9] = "I won't be returning to this restaurant.";
-        }
+    // protected:
+    //     RandomString();
 };
 
-// string RandomString::PositiveComment[0]="kmnb";
+
+
+string RandomString::PositiveComment[10]={"The food was the best ever","I enjoyed the food","dont change the receipt it works", "I wish could order more", "Best Resturant in the city", "Your food 100% amazing","Give the chefs a raise pls","I dont think i have eaten such a meal in a long time", "The meal was mouth watering", "Definetely scrambious"};
 // string RandomString::PositiveComment[1]="kmnb";
 // string RandomString::PositiveComment[2]="kmnb";
 // string RandomString::PositiveComment[3]="kmnb";
@@ -47,7 +26,7 @@ class RandomString
 // string RandomString::PositiveComment[8]="kmnb";
 // string RandomString::PositiveComment[9]="kmnb";
 
-// string RandomString::NegativeComment[0]="kmnb";
+string RandomString::NegativeComment[10]={"The food was undone","you guys cant cook","definetely wasted my money", "i think the best was expired", "Bad  expreince", "I am never coming here again","Lower Quality","I hate it here", "my mom can cook better than this", "WACK menu"};
 // string RandomString::NegativeComment[1]="kmnb";
 // string RandomString::NegativeComment[2]="kmnb";
 // string RandomString::NegativeComment[3]="kmnb";

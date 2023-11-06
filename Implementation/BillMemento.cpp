@@ -3,12 +3,27 @@
 
 #include "BillMemento.h"
 
-BillState* BillMemento::getState(){
+/**
+ * @file BillMemento.cpp
+ * @brief Implementation of the BillMemento class.
+ */
+
+/**
+ * @brief Get the state associated with the Memento.
+ * @return A pointer to the BillState object representing the state.
+ */
+BillState* BillMemento::getState()
+{
     return state;
 }
 
-void BillMemento::setState(BillState* bs){
-    this->state=bs;
+/**
+ * @brief Set the state associated with the Memento.
+ * @param bs A pointer to the BillState object to be set as the state.
+ */
+void BillMemento::setState(BillState* bs)
+{
+    this->state = bs;
 }
 
 #endif

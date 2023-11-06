@@ -5,20 +5,14 @@
 using namespace std;
 #include "TableState.h"
 
+class AbstractTable;
+
 class Waiting : public TableState
 {
     public:
-    /**
-     * @brief Get the Status object
-     * 
-     * @return string 
-     */
-        string getStatus(){return "WAITING";}
-        /**
-         * @brief 
-         * 
-         */
-        void action(){cout<<"TABLE: HOW LONG TILL OUR ORDER IS DONE";}
+        string getStatus();
+        bool action();
+
 };
 
 #endif
