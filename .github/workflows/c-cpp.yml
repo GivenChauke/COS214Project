@@ -23,10 +23,22 @@ jobs:
           version: latest
           platform: x64
 
-      - name: build
+      - name: cd-Implementation
+        run: |
+          cd Implementation
+
+      - name: clean-prev
+        run: |
+          make full-clean
+
+      - name: build-cpp
         run: |
           make
 
-      - name: clean
+      - name: move-binary
         run: |
-          make clean
+          mv main ../
+
+      - name: clean-object-files
+        run: |
+          make clean-o
