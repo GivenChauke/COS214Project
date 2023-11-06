@@ -1,16 +1,8 @@
-make:
-	g++ -std=c++17 *.cpp -o main
-
-run:
-	make
+main:
+	g++ -c -std=c++17 main.cpp
+	g++ -o main -std=c++98 *.o
 	./main
-	make clean
-
+# tar:
+#     tar -cvf archive.tar makefile *.cpp *.h
 clean:
-	rm ./main
-
-compress:
-	tar -cvz makefile *.cpp -f output.tar
-
-tarmac:
-	tar -czf output.tar makefile *.cpp
+	rm *.o *.tar  main
