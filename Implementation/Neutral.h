@@ -7,7 +7,7 @@ using namespace std;
 class Neutral: public CustomerState
 {
     public:
-        string getString(){return "NEUTRAL";};
+        string getStatus(){return "NEUTRAL";};
         void action(){cout<<"Customer:  Am so hungry";};
 
 };

@@ -1,5 +1,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
+#include <string>
+using namespace std;
 
 #include "Department.h"
 #include "Table.h"
@@ -30,5 +32,4 @@ protected:
     TableIterator* tableIterator;
     int employeeId;
 };
-
-#endif // EMPLOYEE_H
+#endif

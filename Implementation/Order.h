@@ -3,13 +3,12 @@
 using namespace std;
 #include <string>
 #include <vector>
-// #include "Bill.h"
 #include "OrderStatus.h"
 #include "Ready.h"
 #include "Processing.h"
 #include "Received.h"
-#include "Menu.cpp"
-#pragma warning
+#include "Menu.h"
+#include "Food.h"
 /**
  * @brief the destructor deallocates ALL memory. 
  * So be mindful when using setter functions since only shallow copies are made
@@ -19,8 +18,9 @@ using namespace std;
  */
 class Bill;
 class Table;
-class Employee;
+#include "Employee.h"
 class Waiter;
+class AbstractTable;
 
 class Order{
 
@@ -29,7 +29,7 @@ class Order{
         std::vector<FoodItem*> items;
         std::vector<Food*> food;
         Bill* bill;
-        Table* table;
+        AbstractTable* table;//I have changed this to abstract  Table
         Waiter* waiter;//change it back to employee
         void deallocateStatus(){
             if(orderStatus != nullptr) delete orderStatus;
@@ -44,15 +44,14 @@ class Order{
         vector<Food*> getFood();
         Table* getTable();
         void setTable(Table*);
-        Waiter* getWaiter();    //change it back to employee
         void setWaiter(Waiter*);//change it back to Employee
         void setBill(Bill*);
-        Bill* getBill();
         std::string getOrderStatus();
         void toReadyStatus();
         void toReceivedStatus();
         void toProcessingStatus();
         std::string toString();
+        void print();
 
 };
 

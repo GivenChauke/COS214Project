@@ -5,27 +5,92 @@
 #include <string>
 using namespace std;
 #include "CustomerState.h"
-#pragma warning
-class Order;
+#include"Order.h"
+
+
 class Customer
 {
+    //srand((unsigned) time(NULL));
     private:
         string ID;
         CustomerState* state;
+    public:
+        static int SeedValue;
 
     public:
-        string getID(){return ID;};
-        void setID(string ID){this->ID=ID;};
-        void setState(CustomerState* state){this->state=state;};
-        CustomerState* getState(){return state;};
-        string GiveComment_Food();
-        string GiveComment_Service();
-        int GiveRating_Food();
-        int GiveRating_Service();
-        Customer(string name){ID=name;};
-        Customer();
+    /**
+     * @brief 
+     * 
+     * @return string 
+     */
+        string getID(){return ID;};//t
+        /**
+         * @brief 
+         * 
+         * @param ID 
+         */
+        void setID(string ID){this->ID=ID;};//t
+        /**
+         * @brief Set the State object
+         * 
+         * @param state 
+         */
+        void setState(CustomerState* state){this->state=state;};//t
+        /**
+         * @brief Get the State object
+         * 
+         * @return CustomerState* 
+         */
+        CustomerState* getState(){return state;};//t
+        /**
+         * @brief 
+         * 
+         * @return string 
+         */
+        string GiveComment_Food();//t
+        /**
+         * @brief 
+         * 
+         * @return string 
+         */
+        string GiveComment_Service();//t
+        /**
+         * @brief 
+         * 
+         * @return int 
+         */
+        int GiveRating_Food();//t
+        /**
+         * @brief 
+         * 
+         * @return int 
+         */
+        int GiveRating_Service();//t
+        /**
+         * @brief Construct a new Customer object
+         * 
+         * @param name 
+         */
+        Customer(string name){ID=name;};//t
+        /**
+         * @brief Construct a new Customer object
+         * 
+         */
+        Customer();//t
+        /**
+         * @brief 
+         * 
+         * @param order 
+         */
         void receiveOrder(Order* order);//check
-        Order* PlaceOrder();
+        /**
+         * @brief 
+         * 
+         * @return Order* 
+         */
+        Order* PlaceOrder();//t
 };
 
-#endif;
+//#include "Customer.cpp"
+
+#endif

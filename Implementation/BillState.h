@@ -1,29 +1,77 @@
 #ifndef BILLSTATE_H
 #define BILLSTATE_H
-
+#include <vector>
 #include<string>
-
+using namespace std;
+#include "Order.h"
 class BillState {
     private:
-        vector<std::string> order(5);
+        Order* CopyOrder;
         float cost;
         bool paid;
-        std::string customerID;
+        string customerID;
         int tableID;
     
     public:
-        void loadFromFile(std::string filename);
-        void saveToFile(std::string filename);
-        vector<string> getOrder();
+    /**
+     * @brief 
+     * 
+     * @param filename 
+     */
+        void loadFromFile(string filename){}
+        /**
+         * @brief 
+         * 
+         * @param filename 
+         */
+        void saveToFile(string filename){}
+        /**
+         * @brief Get the Copy Order object
+         * 
+         * @return Order* 
+         */
+        Order* getCopyOrder();
         float getCost();
+        /**
+         * @brief Get the Paid Status object
+         * 
+         * @return true 
+         * @return false 
+         */
         bool getPaidStatus();
         std::string getCustomerID();
+        /**
+         * @brief Get the Table I D object
+         * 
+         * @return int 
+         */
         int getTableID();
-        void setOrder(vector<std::string> orders);
+        /**
+         * @brief Set the Copy Order object
+         * 
+         * @param order 
+         */
+        void setCopyOrder(Order* order);
+        /**
+         * @brief Set the Cost object
+         * 
+         * @param newCost 
+         */
         void setCost(float newCost);
         void setPaid(bool pay);
-        void setCustomerID(std::string custID);
+        /**
+         * @brief Set the Customer I D object
+         * 
+         * @param custID 
+         */
+        void setCustomerID(string custID);
+        /**
+         * @brief Set the Table I D object
+         * 
+         * @param tabID 
+         */
         void setTableID(int tabID);
 
 };
+//#include "BillState.cpp"
 #endif

@@ -1,7 +1,4 @@
 #include "Order.h"
-#include "Waiter.h"
-#include "Table.h"
-#include "CombinedTable.h"
 
 Order::Order(){
     waiter = nullptr;
@@ -11,15 +8,14 @@ Order::Order(){
 }
 
 Order::~Order(){
-    if(waiter!= nullptr) delete waiter;
-    if(bill != nullptr) delete bill;
+    if(waiter!= nullptr) //delete waiter;
+    if(bill != nullptr)// delete bill;
     if(orderStatus != nullptr) delete orderStatus;
-    if(table != nullptr) delete table;
+    if(table != nullptr) //delete table;
+    std::cout<<"Before seg fault2.0"<<std::endl;
     if (!items.empty()) {
-    for (auto it = items.begin(); it != items.end(); ++it) {
-        delete *it;
-    }
     items.clear(); // Clear the vector after deleting the items
+    if(!food.empty()) food.clear();
 }
 
 
@@ -29,26 +25,26 @@ std::vector<FoodItem*> Order::getItems(){
     return items;
 }
 
-Table* Order::getTable(){
+AbstractTable* Order::getTable(){
     return table;
 }
 
-void Order::setTable(Table* table){
-    if(this->table != nullptr) delete this->table;
+void Order::setTable(AbstractTable* table){
+    if(this->table != nullptr) {delete this->table;}
     this->table = table;
 }
 
-Employee* Order::getWaiter(){
+Waiter* Order::getWaiter(){//back to employee
     return waiter;
 }
 
-void Order::setWaiter(Employee* w){
-    if(waiter != nullptr) delete waiter;
+void Order::setWaiter(Waiter* w){
+    if(waiter != nullptr) {delete waiter;}
     waiter = w;
 }
 
 void Order::setBill(Bill* bill){
-    if(this->bill != nullptr) delete this->bill;
+    if(this->bill != nullptr) {delete this->bill;}
     this->bill = bill;
 }
 
@@ -110,3 +106,21 @@ std::string Order::toString() {
 }
 
 
+void Order::print()
+{
+    cout<<"---------------------------------------------------\n";
+    cout<<"OrderStatus: "<<orderStatus->getStatus()<<endl;
+    cout<<"Food item:\n";
+    for(int i=0; i<items.size(); i++)
+    {
+        cout<<items[i]->name<<endl;
+    }
+
+    cout<<"BILL \n";
+   // this->bill->print();
+
+   // cout<<"TABLE ID "<<table->getTableID()<<endl;
+   cout<<"----------------------------------------------------\n";
+
+
+}

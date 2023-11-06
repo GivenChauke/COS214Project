@@ -49,8 +49,6 @@ public:
     FoodItem* getFoodItem();
     vector<FoodItem*> menu;  /**< A vector to store food items in the menu. */
 
-    
-
 protected:
     /**
      * @brief Constructs a Menu instance.

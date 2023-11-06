@@ -1,20 +1,35 @@
-#ifndef BILLCARE_H
-#define BILLCARE_H
-
-#include <bits/stdc++.h>
+#ifndef BILLCARETAKER_H
+#define BILLCARETAKER_H
 #include <string>
 #include<vector>
 #include<map>
 #include "BillMemento.h"
+using namespace std;
 
 class BillCaretaker {
     private:
-        vector<map<std::string, BillMemento>> bills;
+        vector<BillMemento*> bills;
     
     public:
+    /**
+     * 
+     * 
+    */
         BillCaretaker();
-        void storeMemento(std::string ID, BillMemento* mem);
-        BillMemento* retrieveMemento(std::string customerID);
+        /**
+         * @brief 
+         * 
+         * @param mem 
+         */
+        void storeMemento(BillMemento* mem);
+        /**
+         * @brief 
+         * 
+         * @param customerID 
+         * @return BillMemento* 
+         */
+        BillMemento* retrieveMemento(string customerID);
 
 };
+#include "BillCaretaker.cpp"
 #endif

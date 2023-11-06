@@ -1,3 +1,6 @@
+#ifndef REVIEW_CPP
+#define REVIEW_CPP
+
 #include "Review.h"
 #include <stdexcept>
 
@@ -21,3 +24,10 @@ int Review::getRating() const {
 bool Review::operator==(const Review& other) const {
     return (ReviewComment == other.ReviewComment) && (Rating == other.Rating);
 }
+
+Review::Review()
+{
+    
+}
+
+#endif

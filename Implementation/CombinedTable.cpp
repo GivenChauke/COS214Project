@@ -1,19 +1,23 @@
 #ifndef COMBINEDTABLE_CPP
 #define COMBINEDTABLE_CPP
 #include "CombinedTable.h"
+#include "AbstractTable.h"
 #include <iostream>
+#include "Order.h"
 using namespace std;
 
-CombinedTable::CombinedTable()
-{
-    //table;
-}
+
 CombinedTable::~CombinedTable()
 {
     
 }
 
-bool CombinedTable::addTable(AbstractTable* table)
+CombinedTable::CombinedTable()
+{
+    
+}
+
+bool CombinedTable::AddTable(AbstractTable* table)
 {
     /*if(this->table != NULL && table != NULL)
     {
@@ -30,14 +34,40 @@ AbstractTable* CombinedTable::separateTable()
     {
         return NULL;
     }
-    return this->table.at(0);
-    
+    AbstractTable * rt=table.at(table.size()-1);
+    table.pop_back();
+    return rt;    
 }
 
 
-vector<Order*> CombinedTable::placeOrder()
+vector<Order*> CombinedTable::PlaceOrder()
 {
-    vector<Order*> rt;
+   
+    vector<Order*> orders;
+    vector<Order*> temp;
+    vector<Order*>::iterator it;
+
+    for(int i=0; i<table.size(); i++)
+    {
+        temp=table.at(i)->getCustomerGroup().PlaceOrder();
+    //    it=orders.begin();
+        //(orders.begin() ,temp.begin(), temp.back() );
+        orders.insert(orders.begin(),temp.begin(),temp.end());
+    }
+
+    vector<Order*> ThisTable=getCustomerGroup().PlaceOrder();
+
+    for(int i=0; i<ThisTable.size(); i++)
+    {
+        orders.push_back(ThisTable.at(i));
+    }
+
+    for(int i=0;i<orders.size(); i++)
+    {
+        orders.at(i)->setTable(this);
+    }
+
+    return orders;
 }
 
 

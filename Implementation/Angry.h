@@ -7,7 +7,16 @@ using namespace std;
 class Angry: public CustomerState
 {
     public:
-        string getString(){return "ANGRY";};
+    /**
+     * @brief Get the Status object
+     * 
+     * @return string 
+     */
+        string getStatus(){return "ANGRY";};
+        /**
+         * @brief 
+         * 
+         */
         void action(){cout<<"Customer: THE FOOD HERE SUCKS";};
 
 };

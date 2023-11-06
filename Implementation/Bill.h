@@ -2,30 +2,96 @@
 #define BILL_H
 
 #include "BillState.h"
-#include "Customer.h"
 #include <string>
 #include<vector>
-
-class Bill {
+#include<map>
+using namespace std;
+#include "BillMemento.h"
+#include "Order.h"
+//class Order;
+class Bill
+{
     private:
         float cost;
         bool paid;
         int tableID;
-        BillState state;
-        vector<std::string> orders(10);
-        vector<std::string> customers(10);
+        Order* CopyOrders;//Changes 
+        string customerID="";
     public:
+    /**
+     * @brief Construct a new Bill object
+     * 
+     */
         Bill();
-        vector<std::string> getOrder();
-        void setOrder(vector<std::string> order);
+        /**
+         * @brief Get the Copy Order object
+         * 
+         * @return Order* 
+         */
+        Order* getCopyOrder();
+        /**
+         * @brief Set the Copy Order object
+         * 
+         * @param order 
+         */
+        void setCopyOrder(Order* order);
         float getCost();
+        /**
+         * @brief Set the Cost object
+         * 
+         * @param orderCost 
+         */
         void setCost(float orderCost);
+        BillState* getBillState();
+        /**
+         * @brief Get the Bill Status object
+         * 
+         * @return true 
+         * @return false 
+         */
         bool getBillStatus();
+        /**
+         * @brief Set the Bill Status object
+         * 
+         * @param BillStatus 
+         */
         void setBillStatus(bool BillStatus);
-        void setID(std::string id, int tableID);
+        /**
+         * @brief Set the Table I D object
+         * 
+         * @param ID 
+         */
+        void setTableID(int ID){this->tableID=ID;}
+
+        /**
+         * @brief Set the Customer I D object
+         * 
+         * @param ID 
+         */
+        void setCustomerID(string ID);
+
+        /**
+         * @brief Get the Customer I D object
+         * 
+         * @return std::string 
+         */
         std::string getCustomerID();
         int getTableID();
+
+        /**
+         * @brief 
+         * 
+         * @param mem 
+         */
         void recoverBill(BillMemento* mem);
-        map<std::string, BillMemento*> saveState();
+        BillMemento* saveState();
+        /**
+         * @brief 
+         * 
+         * 
+         */
+        void print();
         
-}
+};
+//#include "Bill.cpp"
+#endif

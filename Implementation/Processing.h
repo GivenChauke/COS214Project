@@ -2,11 +2,17 @@
 #define PROCESSING_H
 
 #include "OrderStatus.h"
+using namespace std;
 
 class Processing: public OrderStatus{
 
     public:
-        virtual std::string getStatus(){
+    /**
+     * @brief Get the Status object
+     * 
+     * @return string 
+     */
+        virtual string getStatus(){
             return "Processing";
         }
 

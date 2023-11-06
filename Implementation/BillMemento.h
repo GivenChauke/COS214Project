@@ -1,16 +1,34 @@
-#ifndef BILLMEM_H
-#define BILLMEM_H
+#ifndef BILLMEMENTO_H
+#define BILLMEMENTO_H
 
 #include <string>
 #include "BillState.h"
+using namespace std;
 
-class BillMemento {
+class BillMemento 
+{
     private:
-        BillState state;
+        BillState* state;
     
     public:
-        BillState getState();
-        void setState(BillState bs);
+    /**
+     * @brief Construct a new Bill Memento object
+     * 
+     */
+        BillMemento(){state=NULL;}
+        /**
+         * @brief Get the State object
+         * 
+         * @return BillState* 
+         */
+        BillState* getState();
+        /**
+         * @brief Set the State object
+         * 
+         * @param bs 
+         */
+        void setState(BillState* bs);
 
 };
+//#include "BillMemento.cpp"
 #endif
