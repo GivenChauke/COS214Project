@@ -7,6 +7,4 @@ MargheritaPizza::MargheritaPizza() : PizzaType() {
 }
 
 MargheritaPizza::~MargheritaPizza() {
-	// // TODO - implement MargheritaPizza::~MargheritaPizza
-	// throw "Not yet implemented";
 }

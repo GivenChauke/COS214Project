@@ -1,7 +1,6 @@
 #include "BurgerBase.h"
 
 BurgerBase::BurgerBase() {
-	// setName("Burger Base"); //?
 }
 
 double BurgerBase::total() {
@@ -9,11 +8,7 @@ double BurgerBase::total() {
 }
 
 void BurgerBase::decorate(Burger* b) {
-	// TODO - implement BurgerBase::decorate
-	// throw "Not yet implemented";
 }
 
 BurgerBase::~BurgerBase() {
-	// // TODO - implement BurgerBase::~BurgerBase
-	// throw "Not yet implemented";
 }

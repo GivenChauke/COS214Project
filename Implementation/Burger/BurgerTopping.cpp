@@ -1,12 +1,10 @@
 #include "BurgerTopping.h"
 
 BurgerTopping::BurgerTopping() {
-	// setName("Burger Topping"); //?
 	topping = 0;
 }
 
 double BurgerTopping::total() {
-	// return getCost() + burgerTopping->total();
 	if (topping == 0) {
         return getCost();
     } else {
@@ -15,7 +13,6 @@ double BurgerTopping::total() {
 }
 
 void BurgerTopping::decorate(Burger* burgerTopping) {
-	// burgerTopping = burger;
 	cout << "In Burger add" << endl;
     if (topping == 0){
         topping = burgerTopping;

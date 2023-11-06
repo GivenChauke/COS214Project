@@ -7,6 +7,4 @@ PepperoniPizza::PepperoniPizza() : PizzaType()  {
 }
 
 PepperoniPizza::~PepperoniPizza() {
-	// // TODO - implement PepperoniPizza::~PepperoniPizza
-	// throw "Not yet implemented";
 }

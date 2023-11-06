@@ -7,6 +7,4 @@ Alfredo::Alfredo() : PastaType () {
 }
 
 Alfredo::~Alfredo() {
-	// // TODO - implement Alfredo::~Alfredo
-	// throw "Not yet implemented";
 }

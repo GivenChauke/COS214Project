@@ -13,7 +13,7 @@ jobs:
     - name: Build and Run
       run: |
         make
-      working-directory: path/to/your/repo # Replace with the actual path to your repository
+      working-directory: $GITHUB_WORKSPACE
 
     - name: Clean Up
       run: |

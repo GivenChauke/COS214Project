@@ -7,6 +7,4 @@ CheeseTopping::CheeseTopping() : BurgerTopping() {
 }
 
 CheeseTopping::~CheeseTopping() {
-	// // TODO - implement CheeseTopping::~CheeseTopping
-	// throw "Not yet implemented";
 }
