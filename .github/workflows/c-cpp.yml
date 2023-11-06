@@ -26,7 +26,6 @@ jobs:
       - name: build
         run: |
           make
-        working-directory: $GITHUB_WORKSPACE
 
       - name: clean
         run: |
