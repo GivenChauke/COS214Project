@@ -1,7 +1,6 @@
 #include "pastaBase.h"
 
 pastaBase::pastaBase() {
-	// setName("Pasta Base");
 }
 
 double pastaBase::total() {
@@ -9,11 +8,7 @@ double pastaBase::total() {
 }
 
 void pastaBase::decorate(Pasta* p) {
-	// // TODO - implement pastaBase::decorate
-	// throw "Not yet implemented";
 }
 
 pastaBase::~pastaBase() {
-	// // TODO - implement pastaBase::~pastaBase
-	// throw "Not yet implemented";
 }

@@ -7,6 +7,4 @@ Bolognaise::Bolognaise() : PastaType () {
 }
 
 Bolognaise::~Bolognaise() {
-	// // TODO - implement Bolognaise::~Bolognaise
-	// throw "Not yet implemented";
 }

@@ -7,6 +7,4 @@ Carbonara::Carbonara() : PastaType () {
 }
 
 Carbonara::~Carbonara() {
-	// // TODO - implement Carbonara::~Carbonara
-	// throw "Not yet implemented";
 }

@@ -7,6 +7,4 @@ MeatSupremePizza::MeatSupremePizza() : PizzaType()  {
 }
 
 MeatSupremePizza::~MeatSupremePizza() {
-	// // TODO - implement MeatSupremePizza::~MeatSupremePizza
-	// throw "Not yet implemented";
 }
