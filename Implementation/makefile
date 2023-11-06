@@ -12,12 +12,10 @@ macrun:
 	make clean
 
 clean:
-	rm ./main
+	rm -f ./main
 
 full-clean:
-	rm *.o *.tar  main
+	rm -f *.o *.tar main
 
 clean-o:
-	rm *.o
-
-	
+	rm -f *.o
