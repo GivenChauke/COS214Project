@@ -1,33 +1,33 @@
-name: 'Build and Run C++'
+name: Build and Run C++
 
 on:
-	workflow_dispatch:
-	
-	push:
-		branches:
-			- main
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - main
 
-	pull_request:
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-	- name: checkout-code
-	uses: actions/checkout@v4
+      - name: checkout-code
+        uses: actions/checkout@v2
 
-	- name: set-up-gcc
-	uses: egor-tensin/setup-gcc@v1
-		with:
-			version: latest
-			platform: x64
+      - name: set-up-gcc
+        uses: egor-tensin/setup-gcc@v1
+        with:
+          version: latest
+          platform: x64
 
-    	- name: build
-      	run: |
-        	make
-      	working-directory: $GITHUB_WORKSPACE
+      - name: build
+        run: |
+          make
+        working-directory: $GITHUB_WORKSPACE
 
-    	- name: clean
-      	run: |
-        	make clean
+      - name: clean
+        run: |
+          make clean
