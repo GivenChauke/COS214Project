@@ -42,20 +42,19 @@ void Kitchen ::cook()
         orders.pop();
     }
 }
-void Kitchen::notify()
-{
-    while(!preparedOrders.empty())
-    {
-        for (auto it = waiters.begin(); it != waiters.end(); ++it)
-    {
-        Waiter* currentWaiter = *it; // Access the Waiter using the iterator
-        if (preparedOrders.front()->getWaiter()->getEmployeeId() == currentWaiter->getEmployeeId() ) {
-            currentWaiter->CollectOrderFromKitchen(preparedOrders.front());
+void Kitchen::notify() {
+    while (!preparedOrders.empty()) {
+        Order* currentOrder = preparedOrders.front();
+        for (Waiter* waiter : waiters) {
+            if (currentOrder->getWaiter()->getEmployeeId() == waiter->getEmployeeId()) {
+                waiter->CollectOrderFromKitchen(currentOrder);
+                break; // Exit the loop after notifying the waiter for the order
+            }
         }
-    }
         preparedOrders.pop();
     }
 }
+
 vector<Waiter*> Kitchen::getWaiters()
 {
     return this->waiters;

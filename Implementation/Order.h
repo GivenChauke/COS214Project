@@ -18,9 +18,8 @@ using namespace std;
  */
 class Bill;
 class Table;
-#include "Employee.h"
+class Employee;
 class Waiter;
-class AbstractTable;
 
 class Order{
 
@@ -29,7 +28,7 @@ class Order{
         std::vector<FoodItem*> items;
         std::vector<Food*> food;
         Bill* bill;
-        AbstractTable* table;//I have changed this to abstract  Table
+        Table* table;
         Waiter* waiter;//change it back to employee
         void deallocateStatus(){
             if(orderStatus != nullptr) delete orderStatus;
@@ -44,15 +43,13 @@ class Order{
         vector<Food*> getFood();
         Table* getTable();
         void setTable(Table*);
+        Waiter* getWaiter();    //change it back to employee
         void setWaiter(Waiter*);//change it back to Employee
         void setBill(Bill*);
+        Bill* getBill();
         std::string getOrderStatus();
         void toReadyStatus();
         void toReceivedStatus();
         void toProcessingStatus();
         std::string toString();
-        void print();
-
 };
-
-#endif

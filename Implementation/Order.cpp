@@ -8,10 +8,10 @@ Order::Order(){
 }
 
 Order::~Order(){
-    if(waiter!= nullptr) //delete waiter;
-    if(bill != nullptr)// delete bill;
+    if(waiter!= nullptr) delete waiter;
+    if(bill != nullptr) delete bill;
     if(orderStatus != nullptr) delete orderStatus;
-    if(table != nullptr) //delete table;
+    if(table != nullptr) delete table;
     std::cout<<"Before seg fault2.0"<<std::endl;
     if (!items.empty()) {
     items.clear(); // Clear the vector after deleting the items
@@ -25,12 +25,12 @@ std::vector<FoodItem*> Order::getItems(){
     return items;
 }
 
-AbstractTable* Order::getTable(){
+Table* Order::getTable(){
     return table;
 }
 
-void Order::setTable(AbstractTable* table){
-    if(this->table != nullptr) {delete this->table;}
+void Order::setTable(Table* table){
+    if(this->table != nullptr) delete this->table;
     this->table = table;
 }
 
@@ -39,12 +39,12 @@ Waiter* Order::getWaiter(){//back to employee
 }
 
 void Order::setWaiter(Waiter* w){
-    if(waiter != nullptr) {delete waiter;}
+    if(waiter != nullptr) delete waiter;
     waiter = w;
 }
 
 void Order::setBill(Bill* bill){
-    if(this->bill != nullptr) {delete this->bill;}
+    if(this->bill != nullptr) delete this->bill;
     this->bill = bill;
 }
 
@@ -87,40 +87,24 @@ std::string Order::toString() {
     std::string result = "Order Details:\n";
     
     if (!items.empty()) {
-        result += "Food Items:\n";
+        result += "Order Food Items:\n";
         for (const FoodItem* item : items) {
-            result += "- " + item->name + " ($" + std::to_string(item->price) + ")\n";
+            result += "- \x1B[31m" + item->name + " ($" + std::to_string(item->price) + ")\x1B[0m\n";  // Red color for item name
         }
-    } 
-    if(!food.empty()){
-        result += "Food available in order: \n" ;
-        for( Food* f:food)
-        {
-            result += f->getName();
+    } else {
+        result += "No food items in the order.\n";
+    }
+
+    if (!food.empty()) {
+        result += "Food available in order: \n";
+        for (Food* f : food) {
+            result += "- \x1B[33m" + f->getName() + "\x1B[0m\n";  // Yellow color for food name
         }
-    }  
-    
-    // You can add more information to the string as needed
-    
+    } else {
+        result += "Food not yet prepared for the order.\n";
+    }
+
     return result;
 }
 
 
-void Order::print()
-{
-    cout<<"---------------------------------------------------\n";
-    cout<<"OrderStatus: "<<orderStatus->getStatus()<<endl;
-    cout<<"Food item:\n";
-    for(int i=0; i<items.size(); i++)
-    {
-        cout<<items[i]->name<<endl;
-    }
-
-    cout<<"BILL \n";
-   // this->bill->print();
-
-   // cout<<"TABLE ID "<<table->getTableID()<<endl;
-   cout<<"----------------------------------------------------\n";
-
-
-}
