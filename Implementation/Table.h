@@ -9,10 +9,31 @@ class Table : public AbstractTable
     private:
         /* data */
     public:
-        Table();
-        ~Table();
+    /**
+     * @brief Construct a new Table object
+     * 
+     */
+        Table(){};
+        /**
+         * @brief Destroy the Table object
+         * 
+         */
+        ~Table(){};
+        /**
+         * @brief 
+         * 
+         * @param table 
+         * @return true 
+         * @return false 
+         */
         bool AddTable(AbstractTable* table){return false;}
-        AbstractTable* Separate(){return NULL;}
+        /**
+         * @brief 
+         * 
+         * @return AbstractTable* 
+         */
+        AbstractTable* SeparateTable(){return NULL;}
+
 
 };
 
