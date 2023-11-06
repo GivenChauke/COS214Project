@@ -13,6 +13,7 @@ class Table : public AbstractTable
         ~Table();
         bool AddTable(AbstractTable* table){return false;}
         AbstractTable* Separate(){return NULL;}
+        virtual Table* SeparateTable();
 
 };
 

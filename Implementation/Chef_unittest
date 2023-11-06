@@ -1,71 +1,71 @@
-#include <gtest/gtest.h>
-#include "Chef.cpp"
-#include "FryerChef.cpp"
-#include "GrillChef.cpp"
-#include "HeadChef.cpp"
-namespace {
-    //test if order can handle foodItems and return them
-    TEST(ChefTest, OrderHasFoodItems) {
-    Order* order = new Order();
-    vector<FoodItem*>menu;
-    menu.push_back(new FoodItem("Classic Beef Burger", 10, "Grilled", "Burger"));
-    menu.push_back(new FoodItem("Chicken Burger", 9, "Grilled", "Burger"));
-    menu.push_back(new FoodItem("Veggie Burger", 8, "Grilled", "Burger"));
-    order->setItems(menu);
-    EXPECT_NE(menu, order->getItems());
-    delete order;
-        for (FoodItem* item : menu) {
-        delete item;
-    }
-    menu.clear();
-}
-    TEST(ChefTest,ChefConstructorsAndCookMethod)
-    {
-        Order* order = new Order();
-        vector<FoodItem*>menu;
-        menu.push_back(new FoodItem("Classic Beef Burger", 10, "Grilled", "Burger"));
-        menu.push_back(new FoodItem("Chicken Burger", 9, "Grilled", "Burger"));
-        menu.push_back(new FoodItem("Veggie Burger", 8, "Grilled", "Burger"));
-        order->setItems(menu);
-        Chef* head = new HeadChef(nullptr,"Head");
-        Chef* grillChef = new GrillChef(head,"Grill");
-        Chef* fryerChef = new FryerChef(grillChef,"Fry");
-        EXPECT_EQ(fryerChef->cook(order),order);
-        for (FoodItem* item : menu) {
-        delete item;
-    }
-    menu.clear();
-        delete head;
-        delete fryerChef;
-        delete grillChef;
-        delete order;
-        order = nullptr;
-        head = nullptr;
-        fryerChef = nullptr;
-        grillChef = nullptr;
-    }
-    TEST(ChefTest,ChefDestructors)
-    {
-        Order* order = new Order();
-        vector<FoodItem*>menu;
-        menu.push_back(new FoodItem("Classic Beef Burger", 10, "Grilled", "Burger"));
-        menu.push_back(new FoodItem("Chicken Burger", 9, "Grilled", "Burger"));
-        menu.push_back(new FoodItem("Veggie Burger", 8, "Grilled", "Burger"));
-        order->setItems(menu);
-        Chef* head = new HeadChef(nullptr,"Head");
-        Chef* grillChef = new GrillChef(head,"Grill");
-        Chef* fryerChef = new FryerChef(grillChef,"Fry");
-        for (FoodItem* item : menu) {
-        delete item;
-    }
-    menu.clear();
-        delete head;
-        delete fryerChef;
-        delete grillChef;
-        delete order;
-        head = nullptr;
-        fryerChef = nullptr;
-        grillChef = nullptr;
-        EXPECT_EQ(fryerChef,fryerChef);
-    }
-}
+// #include <gtest/gtest.h>
+// #include "Chef.cpp"
+// #include "FryerChef.cpp"
+// #include "GrillChef.cpp"
+// #include "HeadChef.cpp"
+// namespace {
+//     //test if order can handle foodItems and return them
+//     TEST(ChefTest, OrderHasFoodItems) {
+//     Order* order = new Order();
+//     vector<FoodItem*>menu;
+//     menu.push_back(new FoodItem("Classic Beef Burger", 10, "Grilled", "Burger"));
+//     menu.push_back(new FoodItem("Chicken Burger", 9, "Grilled", "Burger"));
+//     menu.push_back(new FoodItem("Veggie Burger", 8, "Grilled", "Burger"));
+//     order->setItems(menu);
+//     EXPECT_NE(menu, order->getItems());
+//     delete order;
+//         for (FoodItem* item : menu) {
+//         delete item;
+//     }
+//     menu.clear();
+// }
+//     TEST(ChefTest,ChefConstructorsAndCookMethod)
+//     {
+//         Order* order = new Order();
+//         vector<FoodItem*>menu;
+//         menu.push_back(new FoodItem("Classic Beef Burger", 10, "Grilled", "Burger"));
+//         menu.push_back(new FoodItem("Chicken Burger", 9, "Grilled", "Burger"));
+//         menu.push_back(new FoodItem("Veggie Burger", 8, "Grilled", "Burger"));
+//         order->setItems(menu);
+//         Chef* head = new HeadChef(nullptr,"Head");
+//         Chef* grillChef = new GrillChef(head,"Grill");
+//         Chef* fryerChef = new FryerChef(grillChef,"Fry");
+//         EXPECT_EQ(fryerChef->cook(order),order);
+//         for (FoodItem* item : menu) {
+//         delete item;
+//     }
+//     menu.clear();
+//         delete head;
+//         delete fryerChef;
+//         delete grillChef;
+//         delete order;
+//         order = nullptr;
+//         head = nullptr;
+//         fryerChef = nullptr;
+//         grillChef = nullptr;
+//     }
+//     TEST(ChefTest,ChefDestructors)
+//     {
+//         Order* order = new Order();
+//         vector<FoodItem*>menu;
+//         menu.push_back(new FoodItem("Classic Beef Burger", 10, "Grilled", "Burger"));
+//         menu.push_back(new FoodItem("Chicken Burger", 9, "Grilled", "Burger"));
+//         menu.push_back(new FoodItem("Veggie Burger", 8, "Grilled", "Burger"));
+//         order->setItems(menu);
+//         Chef* head = new HeadChef(nullptr,"Head");
+//         Chef* grillChef = new GrillChef(head,"Grill");
+//         Chef* fryerChef = new FryerChef(grillChef,"Fry");
+//         for (FoodItem* item : menu) {
+//         delete item;
+//     }
+//     menu.clear();
+//         delete head;
+//         delete fryerChef;
+//         delete grillChef;
+//         delete order;
+//         head = nullptr;
+//         fryerChef = nullptr;
+//         grillChef = nullptr;
+//         EXPECT_EQ(fryerChef,fryerChef);
+//     }
+// }

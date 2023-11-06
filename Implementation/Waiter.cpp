@@ -2,8 +2,24 @@
 #include "KitchenDepartment.h"
 #include <iostream>
 
-Waiter::Waiter(int id) : Employee(id){
+using namespace std;
 
+Waiter::Waiter(int id) : Employee(id) {}
+
+void Waiter::setMaxTables(int max){
+    this->maxTables = max;
+}
+
+bool Waiter::isFullyOccupied(){
+    return tables.size() >= maxTables;
+}
+
+void Waiter::assignTables(vector<Table*>& tables){
+    for(Table* table: tables){
+        this->tables.push_back(table);
+    }
+    if(tableIterator) delete tableIterator;
+    tableIterator = new TableIterator(this->tables);
 }
 
 void Waiter::getReviewsForKitchenDepartment() {

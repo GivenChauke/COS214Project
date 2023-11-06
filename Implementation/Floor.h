@@ -5,12 +5,15 @@
 #include "Employee.h"
 #include "Manager.h"
 #include "TableIterator.h"
-
+#include "Table.h"
+#include "CombinedTable.h"
+#include <iomanip>
+using namespace std;
 class Table;
 class CustomerGroup;
 
 /**
- * @class AbstractFloor
+ * @class Floor
  * 
  *
  * @brief This is the interface for floor
@@ -27,6 +30,7 @@ class Floor{
          * 
          */
         int capacity; 
+        int numOccupiedTables;
 
     public:
         /**
@@ -59,6 +63,14 @@ class Floor{
          * 
          */
         void waiterIterateTables();
+        void printTablesAndWaiters(){
+            cout << "Printing floors and waiters" << endl;
+
+            for(Table* table: tables){
+                cout << setw(10) << table->getTableState() << "|";
+            }
+            cout << endl << "Number of tables: " << tables.size() << "\nNumber of occupied tables: " << this->numOccupiedTables << endl;
+        }
 
 };
 

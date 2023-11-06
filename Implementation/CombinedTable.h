@@ -6,13 +6,13 @@ class CombinedTable : public AbstractTable
 {
     private:
         /* data */
-        AbstractTable* table;
+        vector<AbstractTable*> table;
     public:
         CombinedTable(/* args */);
         ~CombinedTable();
-        bool AddTable(AbstractTable* table);
-        AbstractTable* SeparateTable();
-        vector<Order> PlaceOrder();
+        bool addTable(AbstractTable* table);
+        AbstractTable* separateTable();
+        vector<Order*> placeOrder();
 };
 
 

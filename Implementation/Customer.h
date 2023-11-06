@@ -1,10 +1,11 @@
 #ifndef Customer_H
 #define Customer_H
-#include "Customer.h"
+// #include "Customer.h"
 #include <iostream>
 #include <string>
 using namespace std;
 #include "CustomerState.h"
+#pragma warning
 class Order;
 class Customer
 {
@@ -23,7 +24,8 @@ class Customer
         int GiveRating_Service();
         Customer(string name){ID=name;};
         Customer();
-        void receiveOrder(Order order);
+        void receiveOrder(Order* order);//check
+        Order* PlaceOrder();
 };
 
 #endif;

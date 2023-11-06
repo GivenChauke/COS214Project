@@ -3,13 +3,13 @@
 using namespace std;
 #include <string>
 #include <vector>
-
+// #include "Bill.h"
 #include "OrderStatus.h"
 #include "Ready.h"
 #include "Processing.h"
 #include "Received.h"
-#include "Menu.h"
-#include "Food.h"
+#include "Menu.cpp"
+#pragma warning
 /**
  * @brief the destructor deallocates ALL memory. 
  * So be mindful when using setter functions since only shallow copies are made

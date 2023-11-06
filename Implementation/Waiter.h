@@ -1,6 +1,6 @@
 #ifndef WAITER_H
 #define WAITER_H
-
+#include <vector>
 #include "Employee.h"
 #include "Order.h"
 #include <vector>
