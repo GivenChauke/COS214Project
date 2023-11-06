@@ -60,6 +60,11 @@ FoodItem::~FoodItem()
 
 string Menu::printMenu()
 {
+        
+    const std::string resetColor = "\x1B[0m";
+    const std::string redColor = "\x1B[31m";
+    const std::string greenColor = "\x1B[32m";
+    const std::string yellowColor = "\x1B[33m";
     if (Menu_instance == NULL)
     {
         return "Menu is empty.";
@@ -73,10 +78,10 @@ string Menu::printMenu()
         ss<< left; // Set left alignment
 
         // Format each part of the menu item with setw
-        ss<< setw(25) << item->name;
-        ss<< setw(13) << item->type;
-        ss<< setw(12) << "R" + to_string(item->price);
-        ss<< setw(20) << item->method;
+        ss<<greenColor << setw(25) << item->name <<greenColor;
+        ss<< setw(13) << item->type <<yellowColor;
+        ss<< setw(12) << "R" + to_string(item->price) <<redColor;
+        ss<< setw(20) << item->method << resetColor;
 
         ss<< right; // Set right alignment
         ss<<"\n";

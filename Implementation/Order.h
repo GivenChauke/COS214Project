@@ -52,7 +52,4 @@ class Order{
         void toProcessingStatus();
         std::string toString();
         void print();
-
 };
-
-#endif

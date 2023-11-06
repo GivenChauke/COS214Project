@@ -87,21 +87,23 @@ std::string Order::toString() {
     std::string result = "Order Details:\n";
     
     if (!items.empty()) {
-        result += "Food Items:\n";
+        result += "Order Food Items:\n";
         for (const FoodItem* item : items) {
-            result += "- " + item->name + " ($" + std::to_string(item->price) + ")\n";
+            result += "- \x1B[31m" + item->name + " ($" + std::to_string(item->price) + ")\x1B[0m\n";  // Red color for item name
         }
-    } 
-    if(!food.empty()){
-        result += "Food available in order: \n" ;
-        for( Food* f:food)
-        {
-            result += f->getName();
+    } else {
+        result += "No food items in the order.\n";
+    }
+
+    if (!food.empty()) {
+        result += "Food available in order: \n";
+        for (Food* f : food) {
+            result += "- \x1B[33m" + f->getName() + "\x1B[0m\n";  // Yellow color for food name
         }
-    }  
-    
-    // You can add more information to the string as needed
-    
+    } else {
+        result += "Food not yet prepared for the order.\n";
+    }
+
     return result;
 }
 

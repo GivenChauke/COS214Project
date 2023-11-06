@@ -12,7 +12,7 @@
 
 // void AbstractDishBuilder::addPastaExtras(int string) {
 
-// 	//instead of this code in the main i want to call the first half here (Alfredo/Carbonara) where it will get that as input and then call the second half in DishBuilder::buildPasta() where it will have the input for the rest of the decorating (Macaroni/Spaghetti)
+// 	//instead of this code in the  i want to call the first half here (Alfredo/Carbonara) where it will get that as input and then call the second half in DishBuilder::buildPasta() where it will have the input for the rest of the decorating (Macaroni/Spaghetti)
 
 // 	// Pasta* myPasta;
 //     // myPasta = new Alfredo();
