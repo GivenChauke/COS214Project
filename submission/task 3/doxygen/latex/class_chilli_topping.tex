@@ -1,0 +1,117 @@
+\doxysection{Chilli\+Topping Class Reference}
+\hypertarget{class_chilli_topping}{}\label{class_chilli_topping}\index{ChilliTopping@{ChilliTopping}}
+
+
+The \doxylink{class_chilli_topping}{Chilli\+Topping} class represents a chili topping for a burger, which is a specific type of \doxylink{class_burger_topping}{Burger\+Topping}.  
+
+
+
+
+{\ttfamily \#include $<$Chilli\+Topping.\+h$>$}
+
+Inheritance diagram for Chilli\+Topping\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_chilli_topping}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chilli_topping_ab0307261a12f4d77d6ed57c1c06c8da4}{Chilli\+Topping}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_chilli_topping}{Chilli\+Topping} to set its name and cost. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chilli_topping_a629a1da13b4f6b699a17408479f3887a}{\texorpdfstring{$\sim$}{\string~}\+Chilli\+Topping}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_chilli_topping}{Chilli\+Topping}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_burger_topping}{Burger\+Topping}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burger_topping_afe24c5c8efeedc741bbb3ce9a637ce41}{Burger\+Topping}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_burger_topping}{Burger\+Topping} to set cost to 0.\+0. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_burger_topping_aa6ad848e01dea941c1ca12a536a5d00f}{total}} ()
+\begin{DoxyCompactList}\small\item\em Virtual method to get the total cost of the burger. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_burger_topping_add16e3ec497d69847b3d1cee12add3a6}{decorate}} (\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*}burger\+Topping)
+\begin{DoxyCompactList}\small\item\em Virtual method to decorate the burger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_burger}{Burger}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burger_ab5c9b4e70727ca73e1eae8415060e8e9}{Burger}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_burger}{Burger} to set its cost to 0.\+0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_burger_a04fa2755ed90a41f8686f38b87fa7049}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the burger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_burger_af51a4581bb1b38bff1fec295540f42b0}{set\+Cost}} (double cost)
+\begin{DoxyCompactList}\small\item\em Set the cost of the burger. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_burger_aed0edf975f13f06173877d4581e61371}{\texorpdfstring{$\sim$}{\string~}\+Burger}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_burger}{Burger}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_food}{Food} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{set\+Food\+Quality}} (int)
+\item 
+int \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{get\+Food\+Quality}} ()
+\item 
+string \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{set\+Name}} (string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}})
+\item 
+void \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{add\+Ingredient}} (string ingredient)
+\item 
+double \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{get\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{set\+Cost}} (double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\item 
+virtual void \mbox{\hyperlink{class_food_a58da93bcf8b3477f060c29b41a6974ff}{decorate}} (\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a4b500b34877fd38f084f4ec6692971ed}{decorate}} (\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_burger_topping}{Burger\+Topping}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burger_topping_a82e774336ca20e8e5b221fb23e84957f}{\texorpdfstring{$\sim$}{\string~}\+Burger\+Topping}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_burger_topping}{Burger\+Topping}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}}
+\item 
+int \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{Random\+Food\+Quality}}
+\item 
+double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_chilli_topping}{Chilli\+Topping} class represents a chili topping for a burger, which is a specific type of \doxylink{class_burger_topping}{Burger\+Topping}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_chilli_topping_ab0307261a12f4d77d6ed57c1c06c8da4}\label{class_chilli_topping_ab0307261a12f4d77d6ed57c1c06c8da4} 
+\index{ChilliTopping@{ChilliTopping}!ChilliTopping@{ChilliTopping}}
+\index{ChilliTopping@{ChilliTopping}!ChilliTopping@{ChilliTopping}}
+\doxysubsubsection{\texorpdfstring{ChilliTopping()}{ChilliTopping()}}
+{\footnotesize\ttfamily Chilli\+Topping\+::\+Chilli\+Topping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_chilli_topping}{Chilli\+Topping} to set its name and cost. 
+
+\Hypertarget{class_chilli_topping_a629a1da13b4f6b699a17408479f3887a}\label{class_chilli_topping_a629a1da13b4f6b699a17408479f3887a} 
+\index{ChilliTopping@{ChilliTopping}!````~ChilliTopping@{\texorpdfstring{$\sim$}{\string~}ChilliTopping}}
+\index{````~ChilliTopping@{\texorpdfstring{$\sim$}{\string~}ChilliTopping}!ChilliTopping@{ChilliTopping}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ChilliTopping()}{\string~ChilliTopping()}}
+{\footnotesize\ttfamily Chilli\+Topping\+::\texorpdfstring{$\sim$}{\string~}\+Chilli\+Topping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_chilli_topping}{Chilli\+Topping}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_chilli_topping_8h}{Chilli\+Topping.\+h}}\end{DoxyCompactItemize}

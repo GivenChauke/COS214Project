@@ -1,0 +1,121 @@
+.TH "TableIterator" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TableIterator \- The \fBTableIterator\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TableIterator\&.h>\fP
+.PP
+Inherits \fBIterator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTableIterator\fP (const std::vector< \fBTable\fP * > &tables)"
+.br
+.RI "Construct a new \fBTableIterator\fP object\&. "
+.ti -1c
+.RI "\fB~TableIterator\fP ()"
+.br
+.RI "Destroy the \fBTableIterator\fP object\&. "
+.ti -1c
+.RI "\fBTable\fP * \fBfirst\fP () override"
+.br
+.RI "Get the first table\&. "
+.ti -1c
+.RI "\fBTable\fP * \fBnext\fP () override"
+.br
+.RI "Get the next table\&. "
+.ti -1c
+.RI "bool \fBhasNext\fP () override"
+.br
+.RI "Check if there is a next table\&. "
+.ti -1c
+.RI "\fBTable\fP * \fBcurrent\fP () override"
+.br
+.RI "Get the current table\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBTableIterator\fP class\&. 
+
+This class represents an iterator for a collection of tables\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "TableIterator::TableIterator (const std::vector< \fBTable\fP * > & tables)"
+
+.PP
+Construct a new \fBTableIterator\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItables\fP The tables to iterate over\&. 
+.RE
+.PP
+
+.SS "TableIterator::~TableIterator ()"
+
+.PP
+Destroy the \fBTableIterator\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBTable\fP * TableIterator::current ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the current table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The current table\&. 
+.RE
+.PP
+
+.PP
+Implements \fBIterator\fP\&.
+.SS "\fBTable\fP * TableIterator::first ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the first table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The first table\&. 
+.RE
+.PP
+
+.PP
+Implements \fBIterator\fP\&.
+.SS "bool TableIterator::hasNext ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Check if there is a next table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if there is a next table, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implements \fBIterator\fP\&.
+.SS "\fBTable\fP * TableIterator::next ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Get the next table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The next table\&. 
+.RE
+.PP
+
+.PP
+Implements \fBIterator\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

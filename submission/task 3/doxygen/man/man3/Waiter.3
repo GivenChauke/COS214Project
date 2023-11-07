@@ -1,0 +1,193 @@
+.TH "Waiter" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Waiter \- Represents a waiter who takes and delivers orders in a restaurant\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Waiter\&.h>\fP
+.PP
+Inherits \fBEmployee\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWaiter\fP (int id)"
+.br
+.RI "Constructs a \fBWaiter\fP with the given ID\&. "
+.ti -1c
+.RI "\fB~Waiter\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetReviewsForKitchenDepartment\fP ()"
+.br
+.RI "Retrieves reviews from the kitchen department\&. "
+.ti -1c
+.RI "void \fBCollectOrderFromKitchen\fP (\fBOrder\fP *)"
+.br
+.RI "Collects an order from the kitchen and updates the order\&. "
+.ti -1c
+.RI "void \fBTakeOrder\fP (\fBTable\fP *)"
+.br
+.RI "Takes an order from a table\&. "
+.ti -1c
+.RI "void \fBTakeOrder\fP (\fBOrder\fP *)"
+.br
+.ti -1c
+.RI "void \fBdeliverOrders\fP ()"
+.br
+.RI "Delivers orders to the respective tables\&. "
+.ti -1c
+.RI "void \fBassignTables\fP (vector< \fBTable\fP * > &)"
+.br
+.ti -1c
+.RI "bool \fBisFullyOccupied\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMaxTables\fP (int)"
+.br
+.ti -1c
+.RI "void \fBiterateTables\fP ()"
+.br
+.RI "Iterate through the tables\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEmployee\fP
+.in +1c
+.ti -1c
+.RI "\fBEmployee\fP (int id)"
+.br
+.RI "Construct a new \fBEmployee\fP object\&. "
+.ti -1c
+.RI "virtual void \fBassignTables\fP (std::vector< \fBTable\fP * > &\fBtables\fP)"
+.br
+.RI "Assign tables to the employee\&. "
+.ti -1c
+.RI "void \fBmoveToNextTable\fP ()"
+.br
+.RI "Move to the next table\&. "
+.ti -1c
+.RI "\fBDepartment\fP * \fBgetDepartment\fP ()"
+.br
+.RI "Get the department of the employee\&. "
+.ti -1c
+.RI "\fBTable\fP * \fBgetCurrentTable\fP ()"
+.br
+.RI "Get the current table\&. "
+.ti -1c
+.RI "void \fBsetDepartment\fP (\fBDepartment\fP *dep)"
+.br
+.RI "Set the department of the employee\&. "
+.ti -1c
+.RI "void \fBsetCurrTable\fP (\fBTable\fP *currTab)"
+.br
+.RI "Set the current table\&. "
+.ti -1c
+.RI "void \fBGetReview\fP (const std::vector< \fBReview\fP * > &reviewList)"
+.br
+.RI "Get the reviews\&. "
+.ti -1c
+.RI "void \fBTakeOrder\fP (\fBTable\fP *table)"
+.br
+.RI "Take an order\&. "
+.ti -1c
+.RI "int \fBgetEmployeeId\fP ()"
+.br
+.RI "Get the ID of the employee\&. "
+.ti -1c
+.RI "\fB~Employee\fP ()"
+.br
+.RI "Destroy the \fBEmployee\fP object\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBEmployee\fP
+.in +1c
+.ti -1c
+.RI "\fBDepartment\fP * \fBdepartment\fP"
+.br
+.ti -1c
+.RI "\fBTable\fP * \fBtables\fP"
+.br
+.ti -1c
+.RI "\fBTable\fP * \fBcurrTable\fP"
+.br
+.ti -1c
+.RI "\fBTableIterator\fP * \fBtableIterator\fP"
+.br
+.ti -1c
+.RI "int \fBemployeeId\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a waiter who takes and delivers orders in a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Waiter::Waiter (int id)"
+
+.PP
+Constructs a \fBWaiter\fP with the given ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The ID of the waiter\&. 
+.RE
+.PP
+
+.SS "Waiter::~Waiter ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Waiter::assignTables (vector< \fBTable\fP * > &)"
+
+.SS "void Waiter::CollectOrderFromKitchen (\fBOrder\fP *)"
+
+.PP
+Collects an order from the kitchen and updates the order\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorder\fP The order to be updated\&. 
+.RE
+.PP
+
+.SS "void Waiter::deliverOrders ()"
+
+.PP
+Delivers orders to the respective tables\&. 
+.SS "void Waiter::getReviewsForKitchenDepartment ()"
+
+.PP
+Retrieves reviews from the kitchen department\&. 
+.SS "bool Waiter::isFullyOccupied ()"
+
+.SS "void Waiter::iterateTables ()\fC [virtual]\fP"
+
+.PP
+Iterate through the tables\&. 
+.PP
+Reimplemented from \fBEmployee\fP\&.
+.SS "void Waiter::setMaxTables (int)"
+
+.SS "void Waiter::TakeOrder (\fBOrder\fP *)"
+
+.SS "void Waiter::TakeOrder (\fBTable\fP *)"
+
+.PP
+Takes an order from a table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItable\fP The table from which the order is taken\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

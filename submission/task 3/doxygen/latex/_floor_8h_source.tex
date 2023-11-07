@@ -1,0 +1,50 @@
+\doxysection{Floor.\+h}
+\hypertarget{_floor_8h_source}{}\label{_floor_8h_source}\mbox{\hyperlink{_floor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ABSTRACT\_FLOOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ABSTRACT\_FLOOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_waiter_8h}{Waiter.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_employee_8h}{Employee.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_manager_8h}{Manager.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_iterator_8h}{Iterator.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_table_8h}{Table.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_combined_table_8h}{CombinedTable.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table}{Table}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_customer_group}{CustomerGroup}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_floor}{Floor}}\{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::vector<Table*>\ \mbox{\hyperlink{class_floor_a14e614e7a5953246ee8715fa8cd0d3c2}{tables}};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::vector<Employee*>\ \mbox{\hyperlink{class_floor_a90f36dec326a7ae89146e75a11fb66d2}{waiters}};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_manager}{Manager}}*\ \mbox{\hyperlink{class_floor_a992b6445cdfa3743cea5ae9c9d5be128}{manager}};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_floor_a14ea93ee39dd8f7d7d2a6e3f1bbe3877}{capacity}};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_floor_a0f7fbb3fe9d0aa86e639f8b74ef5dce5}{numOccupiedTables}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_floor_a7e0fe7c3fddd9110256563fdd5882671}{numAvailableWaiters}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_floor_aab5f7fe43bd89e73727292941c123751}{Floor}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_employee}{Employee}}*\ \mbox{\hyperlink{class_floor_abd6c73a3801d26f2cde9745d5343fcd9}{createWaiter}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_employee}{Employee}}*\ \mbox{\hyperlink{class_floor_aed12e5f99bf47f73e5116b4d4c52b313}{createManager}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_floor_a5b83830adee93bc94e5d62f5e4288c53}{hasAvailableWaiter}}();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_floor_a098f7d58e9afb2609d0c2cea2141cef3}{addCustomerGroup}}(\mbox{\hyperlink{class_customer_group}{CustomerGroup}}*);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_floor_a6bacedc0b13a0826e30367cc6a137bfa}{waiterIterateTables}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_floor_a582d4d368593fe512dd46a0d7c467eb5}{reorderMaxTablesForWaiters}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_floor_abf84d9d6d4afaf5f3d1478a93206e315}{printTablesAndWaiters}}()\{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Printing\ floors\ and\ waiters"{}}\ <<\ endl;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_table}{Table}}*\ table:\ \mbox{\hyperlink{class_floor_a14e614e7a5953246ee8715fa8cd0d3c2}{tables}})\{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ left\ <<\ setw(20)\ <<\ table-\/>EnquireState()\ <<\ \textcolor{stringliteral}{"{}|"{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Number\ of\ tables:\ "{}}\ <<\ \mbox{\hyperlink{class_floor_a14e614e7a5953246ee8715fa8cd0d3c2}{tables}}.size()\ <<}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)nNumber\ of\ occupied\ tables:\ "{}}\ <<\ this-\/>numOccupiedTables\ <<\ endl;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

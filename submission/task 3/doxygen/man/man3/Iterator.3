@@ -1,0 +1,96 @@
+.TH "Iterator" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Iterator \- The \fBIterator\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Iterator\&.h>\fP
+.PP
+Inherited by \fBTableIterator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBTable\fP * \fBfirst\fP ()=0"
+.br
+.RI "Get the first table\&. "
+.ti -1c
+.RI "virtual \fBTable\fP * \fBnext\fP ()=0"
+.br
+.RI "Get the next table\&. "
+.ti -1c
+.RI "virtual bool \fBhasNext\fP ()=0"
+.br
+.RI "Check if there is a next table\&. "
+.ti -1c
+.RI "virtual \fBTable\fP * \fBcurrent\fP ()=0"
+.br
+.RI "Get the current table\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBIterator\fP class\&. 
+
+This class represents an iterator for a collection of tables\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBTable\fP * Iterator::current ()\fC [pure virtual]\fP"
+
+.PP
+Get the current table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The current table\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBTableIterator\fP\&.
+.SS "virtual \fBTable\fP * Iterator::first ()\fC [pure virtual]\fP"
+
+.PP
+Get the first table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The first table\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBTableIterator\fP\&.
+.SS "virtual bool Iterator::hasNext ()\fC [pure virtual]\fP"
+
+.PP
+Check if there is a next table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if there is a next table, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBTableIterator\fP\&.
+.SS "virtual \fBTable\fP * Iterator::next ()\fC [pure virtual]\fP"
+
+.PP
+Get the next table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The next table\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBTableIterator\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

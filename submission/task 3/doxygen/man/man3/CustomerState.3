@@ -1,0 +1,53 @@
+.TH "CustomerState" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CustomerState \- Represents the state of a customer in a restaurant\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CustomerState\&.h>\fP
+.PP
+Inherited by \fBAngry\fP, \fBHappy\fP, and \fBNeutral\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual string \fBgetStatus\fP ()=0"
+.br
+.RI "Get the status of the customer state\&. "
+.ti -1c
+.RI "virtual void \fBaction\fP ()=0"
+.br
+.RI "Perform an action associated with the customer state\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents the state of a customer in a restaurant\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void CustomerState::action ()\fC [pure virtual]\fP"
+
+.PP
+Perform an action associated with the customer state\&. 
+.PP
+Implemented in \fBAngry\fP, \fBHappy\fP, and \fBNeutral\fP\&.
+.SS "virtual string CustomerState::getStatus ()\fC [pure virtual]\fP"
+
+.PP
+Get the status of the customer state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The status as a string\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBAngry\fP, \fBHappy\fP, and \fBNeutral\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

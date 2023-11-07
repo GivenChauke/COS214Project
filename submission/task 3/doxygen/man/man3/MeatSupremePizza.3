@@ -1,0 +1,142 @@
+.TH "MeatSupremePizza" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MeatSupremePizza \- The \fBMeatSupremePizza\fP class represents a Meat Supreme pizza type, which is a specific type of \fBPizza\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MeatSupremePizza\&.h>\fP
+.PP
+Inherits \fBPizzaType\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMeatSupremePizza\fP ()"
+.br
+.RI "Constructor for \fBMeatSupremePizza\fP to set its name and cost\&. "
+.ti -1c
+.RI "\fB~MeatSupremePizza\fP ()"
+.br
+.RI "Destructor for \fBMeatSupremePizza\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBPizzaType\fP
+.in +1c
+.ti -1c
+.RI "\fBPizzaType\fP ()"
+.br
+.RI "Constructor for \fBPizzaType\fP\&. "
+.ti -1c
+.RI "virtual double \fBtotal\fP ()"
+.br
+.RI "Returns the total cost of the pizza\&. "
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *pizzaType)"
+.br
+.RI "Decorates the pizza\&. "
+.in -1c
+
+Public Member Functions inherited from \fBPizza\fP
+.in +1c
+.ti -1c
+.RI "\fBPizza\fP ()"
+.br
+.RI "Constructor for \fBPizza\fP to set its cost to 0\&.0\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the pizza\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (double cost)"
+.br
+.RI "Set the cost of the pizza\&. "
+.ti -1c
+.RI "virtual \fB~Pizza\fP ()"
+.br
+.RI "Virtual destructor for \fBPizza\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBPizzaType\fP
+.in +1c
+.ti -1c
+.RI "\fB~PizzaType\fP ()"
+.br
+.RI "Destructor for \fBPizzaType\fP\&. "
+.in -1c
+
+Protected Attributes inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBMeatSupremePizza\fP class represents a Meat Supreme pizza type, which is a specific type of \fBPizza\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MeatSupremePizza::MeatSupremePizza ()"
+
+.PP
+Constructor for \fBMeatSupremePizza\fP to set its name and cost\&. 
+.SS "MeatSupremePizza::~MeatSupremePizza ()"
+
+.PP
+Destructor for \fBMeatSupremePizza\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

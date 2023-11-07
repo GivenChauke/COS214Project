@@ -1,0 +1,142 @@
+.TH "ChilliTopping" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ChilliTopping \- The \fBChilliTopping\fP class represents a chili topping for a burger, which is a specific type of \fBBurgerTopping\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ChilliTopping\&.h>\fP
+.PP
+Inherits \fBBurgerTopping\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBChilliTopping\fP ()"
+.br
+.RI "Constructor for \fBChilliTopping\fP to set its name and cost\&. "
+.ti -1c
+.RI "\fB~ChilliTopping\fP ()"
+.br
+.RI "Destructor for \fBChilliTopping\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBBurgerTopping\fP
+.in +1c
+.ti -1c
+.RI "\fBBurgerTopping\fP ()"
+.br
+.RI "Constructor for \fBBurgerTopping\fP to set cost to 0\&.0\&. "
+.ti -1c
+.RI "virtual double \fBtotal\fP ()"
+.br
+.RI "Virtual method to get the total cost of the burger\&. "
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *burgerTopping)"
+.br
+.RI "Virtual method to decorate the burger\&. "
+.in -1c
+
+Public Member Functions inherited from \fBBurger\fP
+.in +1c
+.ti -1c
+.RI "\fBBurger\fP ()"
+.br
+.RI "Constructor for \fBBurger\fP to set its cost to 0\&.0\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the burger\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (double cost)"
+.br
+.RI "Set the cost of the burger\&. "
+.ti -1c
+.RI "virtual \fB~Burger\fP ()"
+.br
+.RI "Virtual destructor for \fBBurger\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBBurgerTopping\fP
+.in +1c
+.ti -1c
+.RI "\fB~BurgerTopping\fP ()"
+.br
+.RI "Destructor for \fBBurgerTopping\fP\&. "
+.in -1c
+
+Protected Attributes inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBChilliTopping\fP class represents a chili topping for a burger, which is a specific type of \fBBurgerTopping\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ChilliTopping::ChilliTopping ()"
+
+.PP
+Constructor for \fBChilliTopping\fP to set its name and cost\&. 
+.SS "ChilliTopping::~ChilliTopping ()"
+
+.PP
+Destructor for \fBChilliTopping\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

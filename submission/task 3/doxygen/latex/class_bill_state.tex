@@ -1,0 +1,219 @@
+\doxysection{Bill\+State Class Reference}
+\hypertarget{class_bill_state}{}\label{class_bill_state}\index{BillState@{BillState}}
+
+
+Represents the state of a bill associated with an order.  
+
+
+
+
+{\ttfamily \#include $<$Bill\+State.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bill_state_a47bdb969feda28243f257d9e0e62d56c}{load\+From\+File}} (string filename)
+\begin{DoxyCompactList}\small\item\em Load the state from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_state_ae773fcaeafe70dde097d397854e6cbd6}{save\+To\+File}} (string filename)
+\begin{DoxyCompactList}\small\item\em Save the state to a file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bill_state_a5aadade52d48fbc3dda6d44ac0c12769}{get\+Copy\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Get a copy of the order associated with the bill state. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bill_state_a0b77b766d05c93e54165ea08c70d0a88}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the bill state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bill_state_af4a285a67ad65186a824e2a58ecb58ab}{get\+Paid\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Get the payment status of the bill state. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_bill_state_a23928b8bd66c3e3578be9bbbb93c99db}{get\+Customer\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the customer ID associated with the bill state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bill_state_a3e692e32eaaa3ba40a286ad708eef040}{get\+Table\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the table ID associated with the bill state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_state_aab60ab0cd20087b7e2002492076cb157}{set\+Copy\+Order}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}order)
+\begin{DoxyCompactList}\small\item\em Set a copy of the order associated with the bill state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_state_a407521a8776185196c8b7329a8afd66e}{set\+Cost}} (float new\+Cost)
+\begin{DoxyCompactList}\small\item\em Set the cost of the bill state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_state_a0ac51ea880e29d25afe46e629485011d}{set\+Paid}} (bool pay)
+\begin{DoxyCompactList}\small\item\em Set the payment status of the bill state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_state_a9857f43c68a846176c7627ddff4cb61b}{set\+Customer\+ID}} (string cust\+ID)
+\begin{DoxyCompactList}\small\item\em Set the customer ID associated with the bill state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_state_a425586c6f9b69c4ed67922ae7cc98a5f}{set\+Table\+ID}} (int tab\+ID)
+\begin{DoxyCompactList}\small\item\em Set the table ID associated with the bill state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the state of a bill associated with an order. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bill_state_a5aadade52d48fbc3dda6d44ac0c12769}\label{class_bill_state_a5aadade52d48fbc3dda6d44ac0c12769} 
+\index{BillState@{BillState}!getCopyOrder@{getCopyOrder}}
+\index{getCopyOrder@{getCopyOrder}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{getCopyOrder()}{getCopyOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} Bill\+State\+::get\+Copy\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a copy of the order associated with the bill state. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the copy of the order. 
+\end{DoxyReturn}
+\Hypertarget{class_bill_state_a0b77b766d05c93e54165ea08c70d0a88}\label{class_bill_state_a0b77b766d05c93e54165ea08c70d0a88} 
+\index{BillState@{BillState}!getCost@{getCost}}
+\index{getCost@{getCost}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily float Bill\+State\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the cost of the bill state. 
+
+\begin{DoxyReturn}{Returns}
+The cost of the bill state. 
+\end{DoxyReturn}
+\Hypertarget{class_bill_state_a23928b8bd66c3e3578be9bbbb93c99db}\label{class_bill_state_a23928b8bd66c3e3578be9bbbb93c99db} 
+\index{BillState@{BillState}!getCustomerID@{getCustomerID}}
+\index{getCustomerID@{getCustomerID}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{getCustomerID()}{getCustomerID()}}
+{\footnotesize\ttfamily std\+::string Bill\+State\+::get\+Customer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the customer ID associated with the bill state. 
+
+\begin{DoxyReturn}{Returns}
+The customer ID as a string. 
+\end{DoxyReturn}
+\Hypertarget{class_bill_state_af4a285a67ad65186a824e2a58ecb58ab}\label{class_bill_state_af4a285a67ad65186a824e2a58ecb58ab} 
+\index{BillState@{BillState}!getPaidStatus@{getPaidStatus}}
+\index{getPaidStatus@{getPaidStatus}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{getPaidStatus()}{getPaidStatus()}}
+{\footnotesize\ttfamily bool Bill\+State\+::get\+Paid\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the payment status of the bill state. 
+
+\begin{DoxyReturn}{Returns}
+true if the bill is paid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_bill_state_a3e692e32eaaa3ba40a286ad708eef040}\label{class_bill_state_a3e692e32eaaa3ba40a286ad708eef040} 
+\index{BillState@{BillState}!getTableID@{getTableID}}
+\index{getTableID@{getTableID}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{getTableID()}{getTableID()}}
+{\footnotesize\ttfamily int Bill\+State\+::get\+Table\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the table ID associated with the bill state. 
+
+\begin{DoxyReturn}{Returns}
+The table ID. 
+\end{DoxyReturn}
+\Hypertarget{class_bill_state_a47bdb969feda28243f257d9e0e62d56c}\label{class_bill_state_a47bdb969feda28243f257d9e0e62d56c} 
+\index{BillState@{BillState}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily void Bill\+State\+::load\+From\+File (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Load the state from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file from which to load the state. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bill_state_ae773fcaeafe70dde097d397854e6cbd6}\label{class_bill_state_ae773fcaeafe70dde097d397854e6cbd6} 
+\index{BillState@{BillState}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily void Bill\+State\+::save\+To\+File (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Save the state to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to which to save the state. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bill_state_aab60ab0cd20087b7e2002492076cb157}\label{class_bill_state_aab60ab0cd20087b7e2002492076cb157} 
+\index{BillState@{BillState}!setCopyOrder@{setCopyOrder}}
+\index{setCopyOrder@{setCopyOrder}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{setCopyOrder()}{setCopyOrder()}}
+{\footnotesize\ttfamily void Bill\+State\+::set\+Copy\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{order }\end{DoxyParamCaption})}
+
+
+
+Set a copy of the order associated with the bill state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & A pointer to the order to be copied and associated with the bill state. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bill_state_a407521a8776185196c8b7329a8afd66e}\label{class_bill_state_a407521a8776185196c8b7329a8afd66e} 
+\index{BillState@{BillState}!setCost@{setCost}}
+\index{setCost@{setCost}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{setCost()}{setCost()}}
+{\footnotesize\ttfamily void Bill\+State\+::set\+Cost (\begin{DoxyParamCaption}\item[{float}]{new\+Cost }\end{DoxyParamCaption})}
+
+
+
+Set the cost of the bill state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Cost} & The cost of the bill state to be set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bill_state_a9857f43c68a846176c7627ddff4cb61b}\label{class_bill_state_a9857f43c68a846176c7627ddff4cb61b} 
+\index{BillState@{BillState}!setCustomerID@{setCustomerID}}
+\index{setCustomerID@{setCustomerID}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{setCustomerID()}{setCustomerID()}}
+{\footnotesize\ttfamily void Bill\+State\+::set\+Customer\+ID (\begin{DoxyParamCaption}\item[{string}]{cust\+ID }\end{DoxyParamCaption})}
+
+
+
+Set the customer ID associated with the bill state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cust\+ID} & The customer ID to be set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bill_state_a0ac51ea880e29d25afe46e629485011d}\label{class_bill_state_a0ac51ea880e29d25afe46e629485011d} 
+\index{BillState@{BillState}!setPaid@{setPaid}}
+\index{setPaid@{setPaid}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{setPaid()}{setPaid()}}
+{\footnotesize\ttfamily void Bill\+State\+::set\+Paid (\begin{DoxyParamCaption}\item[{bool}]{pay }\end{DoxyParamCaption})}
+
+
+
+Set the payment status of the bill state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pay} & true if the bill is paid, false otherwise. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bill_state_a425586c6f9b69c4ed67922ae7cc98a5f}\label{class_bill_state_a425586c6f9b69c4ed67922ae7cc98a5f} 
+\index{BillState@{BillState}!setTableID@{setTableID}}
+\index{setTableID@{setTableID}!BillState@{BillState}}
+\doxysubsubsection{\texorpdfstring{setTableID()}{setTableID()}}
+{\footnotesize\ttfamily void Bill\+State\+::set\+Table\+ID (\begin{DoxyParamCaption}\item[{int}]{tab\+ID }\end{DoxyParamCaption})}
+
+
+
+Set the table ID associated with the bill state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+ID} & The table ID to be set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bill_state_8h}{Bill\+State.\+h}}\end{DoxyCompactItemize}

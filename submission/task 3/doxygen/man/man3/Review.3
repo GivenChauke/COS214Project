@@ -1,0 +1,118 @@
+.TH "Review" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Review \- The \fBReview\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Review\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBReview\fP ()"
+.br
+.ti -1c
+.RI "\fBReview\fP (const std::string &comment, int rating)"
+.br
+.ti -1c
+.RI "std::string \fBgetReviewComment\fP () const"
+.br
+.RI "Get the review comment\&. "
+.ti -1c
+.RI "int \fBgetRating\fP () const"
+.br
+.RI "Get the rating\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBReview\fP &other) const"
+.br
+.RI "Check if two reviews are equal\&. "
+.ti -1c
+.RI "void \fBsetRating\fP (int r)"
+.br
+.RI "Set the rating\&. "
+.ti -1c
+.RI "void \fBsetReviewComment\fP (string c)"
+.br
+.RI "Set the review comment\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBReview\fP class\&. 
+
+This class represents a review of a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Review::Review ()"
+
+.SS "Review::Review (const std::string & comment, int rating)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Review::getRating () const"
+
+.PP
+Get the rating\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The rating\&. 
+.RE
+.PP
+
+.SS "std::string Review::getReviewComment () const"
+
+.PP
+Get the review comment\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The review comment\&. 
+.RE
+.PP
+
+.SS "bool Review::operator== (const \fBReview\fP & other) const"
+
+.PP
+Check if two reviews are equal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The other review to compare\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the reviews are equal, false otherwise\&. 
+.RE
+.PP
+
+.SS "void Review::setRating (int r)\fC [inline]\fP"
+
+.PP
+Set the rating\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIr\fP The rating to set\&. 
+.RE
+.PP
+
+.SS "void Review::setReviewComment (string c)\fC [inline]\fP"
+
+.PP
+Set the review comment\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP The review comment to set\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

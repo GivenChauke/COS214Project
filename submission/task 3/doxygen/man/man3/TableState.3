@@ -1,0 +1,98 @@
+.TH "TableState" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TableState \- The \fBTableState\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TableState\&.h>\fP
+.PP
+Inherited by \fBNotOccupied\fP, \fBNotReadyToOrder\fP, \fBPayBill\fP, \fBReadyToOrder\fP, and \fBWaiting\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTableState\fP ()"
+.br
+.RI "Construct a new \fBTableState\fP object\&. "
+.ti -1c
+.RI "virtual string \fBgetStatus\fP ()=0"
+.br
+.RI "Get the status of the table\&. "
+.ti -1c
+.RI "virtual bool \fBaction\fP ()=0"
+.br
+.RI "Perform the action for the table state\&. "
+.ti -1c
+.RI "void \fBsetTable\fP (\fBAbstractTable\fP *\fBtable\fP)"
+.br
+.RI "Set the table\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractTable\fP * \fBtable\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBTableState\fP class\&. 
+
+This class represents the state of a table\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "TableState::TableState ()\fC [inline]\fP"
+
+.PP
+Construct a new \fBTableState\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool TableState::action ()\fC [pure virtual]\fP"
+
+.PP
+Perform the action for the table state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if the action was successful, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBNotOccupied\fP, \fBNotReadyToOrder\fP, \fBPayBill\fP, \fBReadyToOrder\fP, and \fBWaiting\fP\&.
+.SS "virtual string TableState::getStatus ()\fC [pure virtual]\fP"
+
+.PP
+Get the status of the table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The status of the table\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBNotOccupied\fP, \fBNotReadyToOrder\fP, \fBPayBill\fP, \fBReadyToOrder\fP, and \fBWaiting\fP\&.
+.SS "void TableState::setTable (\fBAbstractTable\fP * table)\fC [inline]\fP"
+
+.PP
+Set the table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItable\fP The table to set\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAbstractTable\fP* TableState::table\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

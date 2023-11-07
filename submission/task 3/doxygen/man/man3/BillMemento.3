@@ -1,0 +1,64 @@
+.TH "BillMemento" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BillMemento \- Represents a Memento for storing the state of a bill\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BillMemento\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBillMemento\fP ()"
+.br
+.RI "Constructor for the \fBBillMemento\fP class\&. "
+.ti -1c
+.RI "\fBBillState\fP * \fBgetState\fP ()"
+.br
+.RI "Get the state associated with the Memento\&. "
+.ti -1c
+.RI "void \fBsetState\fP (\fBBillState\fP *bs)"
+.br
+.RI "Set the state associated with the Memento\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a Memento for storing the state of a bill\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BillMemento::BillMemento ()\fC [inline]\fP"
+
+.PP
+Constructor for the \fBBillMemento\fP class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBBillState\fP * BillMemento::getState ()"
+
+.PP
+Get the state associated with the Memento\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the \fBBillState\fP object representing the state\&. 
+.RE
+.PP
+
+.SS "void BillMemento::setState (\fBBillState\fP * bs)"
+
+.PP
+Set the state associated with the Memento\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbs\fP A pointer to the \fBBillState\fP object to be set as the state\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

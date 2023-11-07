@@ -1,0 +1,130 @@
+.TH "Macaroni" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Macaroni \- The \fBMacaroni\fP class represents macaroni pasta, which is a specific type of PastaBase\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Macaroni\&.h>\fP
+.PP
+Inherits \fBpastaBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMacaroni\fP ()"
+.br
+.RI "Constructor for \fBMacaroni\fP to set its name and cost\&. "
+.in -1c
+
+Public Member Functions inherited from \fBpastaBase\fP
+.in +1c
+.ti -1c
+.RI "\fBpastaBase\fP ()"
+.br
+.RI "Constructor for \fBpastaBase\fP\&. "
+.ti -1c
+.RI "virtual double \fBtotal\fP ()"
+.br
+.RI "Returns the cost of the pasta\&. "
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *)"
+.br
+.RI "Virtual method to decorate the pasta\&. "
+.ti -1c
+.RI "\fB~pastaBase\fP ()"
+.br
+.RI "Destructor for \fBpastaBase\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBPasta\fP
+.in +1c
+.ti -1c
+.RI "\fBPasta\fP ()"
+.br
+.RI "Constructor for \fBPasta\fP to set its cost to 0\&.0\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the pasta\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (double cost)"
+.br
+.RI "Set the cost of the pasta\&. "
+.ti -1c
+.RI "virtual \fB~Pasta\fP ()"
+.br
+.RI "Virtual destructor for \fBPasta\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBMacaroni\fP class represents macaroni pasta, which is a specific type of PastaBase\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Macaroni::Macaroni ()"
+
+.PP
+Constructor for \fBMacaroni\fP to set its name and cost\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

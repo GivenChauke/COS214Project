@@ -1,0 +1,66 @@
+\doxysection{Customer\+State Class Reference}
+\hypertarget{class_customer_state}{}\label{class_customer_state}\index{CustomerState@{CustomerState}}
+
+
+Represents the state of a customer in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Customer\+State.\+h$>$}
+
+Inheritance diagram for Customer\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_customer_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_customer_state_a4eb7cd4a20353e58f59939af4679ae32}{get\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the status of the customer state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_customer_state_a6726de45c175b78ca8ef586b6b8ce29d}{action}} ()=0
+\begin{DoxyCompactList}\small\item\em Perform an action associated with the customer state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the state of a customer in a restaurant. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_customer_state_a6726de45c175b78ca8ef586b6b8ce29d}\label{class_customer_state_a6726de45c175b78ca8ef586b6b8ce29d} 
+\index{CustomerState@{CustomerState}!action@{action}}
+\index{action@{action}!CustomerState@{CustomerState}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily virtual void Customer\+State\+::action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform an action associated with the customer state. 
+
+
+
+Implemented in \mbox{\hyperlink{class_angry_a32e2c9bce9b7ff7d0f80ec80449fb041}{Angry}}, \mbox{\hyperlink{class_happy_ab815e7e9f533a792c4c513039282f230}{Happy}}, and \mbox{\hyperlink{class_neutral_a23d92748cc8d0fd8ec90a1ae56d7e9a8}{Neutral}}.
+
+\Hypertarget{class_customer_state_a4eb7cd4a20353e58f59939af4679ae32}\label{class_customer_state_a4eb7cd4a20353e58f59939af4679ae32} 
+\index{CustomerState@{CustomerState}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!CustomerState@{CustomerState}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily virtual string Customer\+State\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the status of the customer state. 
+
+\begin{DoxyReturn}{Returns}
+The status as a string. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_angry_a74900b60ee3b8eb6c4fafe7e70c5c205}{Angry}}, \mbox{\hyperlink{class_happy_a7094bb0ef667b807a29ea8c1f0c65529}{Happy}}, and \mbox{\hyperlink{class_neutral_a96cce71232079c2eaf2ea72911181339}{Neutral}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_customer_state_8h}{Customer\+State.\+h}}\end{DoxyCompactItemize}

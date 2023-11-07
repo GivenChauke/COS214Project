@@ -1,0 +1,175 @@
+\doxysection{Burger Class Reference}
+\hypertarget{class_burger}{}\label{class_burger}\index{Burger@{Burger}}
+
+
+The \doxylink{class_burger}{Burger} class represents a generic burger.  
+
+
+
+
+{\ttfamily \#include $<$Burger.\+h$>$}
+
+Inheritance diagram for Burger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.085400cm]{class_burger}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_burger_ab5c9b4e70727ca73e1eae8415060e8e9}{Burger}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_burger}{Burger} to set its cost to 0.\+0. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_burger_acfa1d9a4abbb5984850b500d4bbac6a4}{decorate}} (\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*})=0
+\begin{DoxyCompactList}\small\item\em Virtual method to decorate the burger. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_burger_af838c2b683211f8f593e3f55e444e577}{total}} ()=0
+\begin{DoxyCompactList}\small\item\em Virtual method to get the total cost of the burger. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_burger_a04fa2755ed90a41f8686f38b87fa7049}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the burger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_burger_af51a4581bb1b38bff1fec295540f42b0}{set\+Cost}} (double cost)
+\begin{DoxyCompactList}\small\item\em Set the cost of the burger. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_burger_aed0edf975f13f06173877d4581e61371}{\texorpdfstring{$\sim$}{\string~}\+Burger}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_burger}{Burger}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_food}{Food} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{set\+Food\+Quality}} (int)
+\item 
+int \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{get\+Food\+Quality}} ()
+\item 
+string \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{set\+Name}} (string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}})
+\item 
+void \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{add\+Ingredient}} (string ingredient)
+\item 
+double \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{get\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{set\+Cost}} (double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\item 
+virtual void \mbox{\hyperlink{class_food_a58da93bcf8b3477f060c29b41a6974ff}{decorate}} (\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a4b500b34877fd38f084f4ec6692971ed}{decorate}} (\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}}
+\item 
+int \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{Random\+Food\+Quality}}
+\item 
+double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_burger}{Burger} class represents a generic burger. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_burger_ab5c9b4e70727ca73e1eae8415060e8e9}\label{class_burger_ab5c9b4e70727ca73e1eae8415060e8e9} 
+\index{Burger@{Burger}!Burger@{Burger}}
+\index{Burger@{Burger}!Burger@{Burger}}
+\doxysubsubsection{\texorpdfstring{Burger()}{Burger()}}
+{\footnotesize\ttfamily Burger\+::\+Burger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_burger}{Burger} to set its cost to 0.\+0. 
+
+\Hypertarget{class_burger_aed0edf975f13f06173877d4581e61371}\label{class_burger_aed0edf975f13f06173877d4581e61371} 
+\index{Burger@{Burger}!````~Burger@{\texorpdfstring{$\sim$}{\string~}Burger}}
+\index{````~Burger@{\texorpdfstring{$\sim$}{\string~}Burger}!Burger@{Burger}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Burger()}{\string~Burger()}}
+{\footnotesize\ttfamily virtual Burger\+::\texorpdfstring{$\sim$}{\string~}\+Burger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual destructor for \doxylink{class_burger}{Burger}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_burger_acfa1d9a4abbb5984850b500d4bbac6a4}\label{class_burger_acfa1d9a4abbb5984850b500d4bbac6a4} 
+\index{Burger@{Burger}!decorate@{decorate}}
+\index{decorate@{decorate}!Burger@{Burger}}
+\doxysubsubsection{\texorpdfstring{decorate()}{decorate()}}
+{\footnotesize\ttfamily virtual void Burger\+::decorate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual method to decorate the burger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em burger} & A pointer to the \doxylink{class_burger}{Burger} to be decorated. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_food_a0546c306d6023b35aababaf33d84d6fc}{Food}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_burger_base_a8b61556f0f5e12c0729d14c57b6ea350}{Burger\+Base}}, and \mbox{\hyperlink{class_burger_topping_add16e3ec497d69847b3d1cee12add3a6}{Burger\+Topping}}.
+
+\Hypertarget{class_burger_a04fa2755ed90a41f8686f38b87fa7049}\label{class_burger_a04fa2755ed90a41f8686f38b87fa7049} 
+\index{Burger@{Burger}!getCost@{getCost}}
+\index{getCost@{getCost}!Burger@{Burger}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily double Burger\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the cost of the burger. 
+
+\begin{DoxyReturn}{Returns}
+The cost of the burger. 
+\end{DoxyReturn}
+\Hypertarget{class_burger_af51a4581bb1b38bff1fec295540f42b0}\label{class_burger_af51a4581bb1b38bff1fec295540f42b0} 
+\index{Burger@{Burger}!setCost@{setCost}}
+\index{setCost@{setCost}!Burger@{Burger}}
+\doxysubsubsection{\texorpdfstring{setCost()}{setCost()}}
+{\footnotesize\ttfamily void Burger\+::set\+Cost (\begin{DoxyParamCaption}\item[{double}]{cost }\end{DoxyParamCaption})}
+
+
+
+Set the cost of the burger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & The cost of the burger. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_burger_af838c2b683211f8f593e3f55e444e577}\label{class_burger_af838c2b683211f8f593e3f55e444e577} 
+\index{Burger@{Burger}!total@{total}}
+\index{total@{total}!Burger@{Burger}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily virtual double Burger\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual method to get the total cost of the burger. 
+
+\begin{DoxyReturn}{Returns}
+The total cost of the burger. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_food_ab9dd03b525d89b32941268f4c8b1501f}{Food}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_burger_base_ab11ea88a68fa4dccb08052050d4c3404}{Burger\+Base}}, and \mbox{\hyperlink{class_burger_topping_aa6ad848e01dea941c1ca12a536a5d00f}{Burger\+Topping}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_burger_8h}{Burger.\+h}}\end{DoxyCompactItemize}

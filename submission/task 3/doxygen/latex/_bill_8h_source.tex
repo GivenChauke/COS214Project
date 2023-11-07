@@ -1,0 +1,58 @@
+\doxysection{Bill.\+h}
+\hypertarget{_bill_8h_source}{}\label{_bill_8h_source}\mbox{\hyperlink{_bill_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BILL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BILL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_bill_state_8h}{BillState.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_bill_memento_8h}{BillMemento.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_order_8h}{Order.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bill}{Bill}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ cost;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ paid;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ tableID;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_order}{Order}}*\ CopyOrders;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{string}\ customerID;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_bill_ad8851c492bc12aab0d1ffa5d8605b783}{Bill}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_order}{Order}}*\ \mbox{\hyperlink{class_bill_a725e84e317f2480dc59ec1751138b8ca}{getCopyOrder}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_ab5b8a24840f89f5f0a9b4dcba13351f4}{setCopyOrder}}(\mbox{\hyperlink{class_order}{Order}}*\ order);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_bill_aa3ef363f1a786154ed8f79621e4ec42a}{getCost}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_aa2a871fd7f4caa217dda2cde837df428}{setCost}}(\textcolor{keywordtype}{float}\ orderCost);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_bill_state}{BillState}}*\ \mbox{\hyperlink{class_bill_ae0389369da873df794aeec7d241aed2d}{getBillState}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bill_ab22e933df6bd123083beebd7dd3d1e53}{getBillStatus}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_a260af920535d2124582693542c225194}{setBillStatus}}(\textcolor{keywordtype}{bool}\ BillStatus);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_acc20a5ff15b78c67310960760f091999}{setTableID}}(\textcolor{keywordtype}{int}\ ID);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_a7186f797eb1e0ce0f3edd930c25955d2}{setCustomerID}}(\textcolor{keywordtype}{string}\ ID);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ std::string\ \mbox{\hyperlink{class_bill_a8df99555f22d37598b89b172b51dee4d}{getCustomerID}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bill_a56c73958345f3bc6932216e14ceffd4e}{getTableID}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_a10d07f4eae790bc8f81b580c90d46d66}{recoverBill}}(\mbox{\hyperlink{class_bill_memento}{BillMemento}}*\ mem);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_bill_memento}{BillMemento}}*\ \mbox{\hyperlink{class_bill_aef17fb4843646a47acf63835c8b53843}{saveState}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_aa67e63b7fb0b2f0b79f377c95f475d0d}{print}}();}
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

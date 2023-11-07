@@ -1,0 +1,99 @@
+.TH "Menu" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Menu \- Represents a menu for a restaurant\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Menu\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "string \fBprintMenu\fP ()"
+.br
+.RI "Prints the menu\&. "
+.ti -1c
+.RI "\fB~Menu\fP ()"
+.br
+.RI "Destroys the \fBMenu\fP instance\&. "
+.ti -1c
+.RI "\fBFoodItem\fP * \fBgetFoodItem\fP ()"
+.br
+.RI "returns a foodItem, for testing purposes "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBMenu\fP * \fBgetMenu\fP ()"
+.br
+.RI "Gets the menu instance\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< \fBFoodItem\fP * > \fBmenu\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMenu\fP ()"
+.br
+.RI "Constructs a \fBMenu\fP instance\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a menu for a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Menu::~Menu ()"
+
+.PP
+Destroys the \fBMenu\fP instance\&. 
+.SS "Menu::Menu ()\fC [protected]\fP"
+
+.PP
+Constructs a \fBMenu\fP instance\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFoodItem\fP * Menu::getFoodItem ()"
+
+.PP
+returns a foodItem, for testing purposes 
+.SS "static \fBMenu\fP * Menu::getMenu ()\fC [static]\fP"
+
+.PP
+Gets the menu instance\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the \fBMenu\fP instance\&. 
+.RE
+.PP
+
+.SS "string Menu::printMenu ()"
+
+.PP
+Prints the menu\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A string containing the formatted menu\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<\fBFoodItem\fP*> Menu::menu"
+A vector to store food items in the menu\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

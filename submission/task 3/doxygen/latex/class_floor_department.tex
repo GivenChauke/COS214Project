@@ -1,0 +1,116 @@
+\doxysection{Floor\+Department Class Reference}
+\hypertarget{class_floor_department}{}\label{class_floor_department}\index{FloorDepartment@{FloorDepartment}}
+
+
+The \doxylink{class_floor_department}{Floor\+Department} class.  
+
+
+
+
+{\ttfamily \#include $<$Floor\+Department.\+h$>$}
+
+Inheritance diagram for Floor\+Department\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_floor_department}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_floor_department_af5ad8764c04d00d475d58f5f54a77585}{Take\+Review}} (const \mbox{\hyperlink{class_review}{Review}} \&review) override
+\begin{DoxyCompactList}\small\item\em Take a review. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_floor_department_ae40cb0b75fd3ea047b5d29f5d76582dc}{Display\+Reviews}} () override
+\begin{DoxyCompactList}\small\item\em Display the reviews. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_floor_department_a2951afacb92f41fecac2591e80666e93}{Calculate\+Average\+Rating}} () const override
+\begin{DoxyCompactList}\small\item\em Calculate the average rating. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_floor_department_a8f0fbdfa76ac08a5b195a5275c812dd4}{Delete\+Review}} (const \mbox{\hyperlink{class_review}{Review}} \&review) override
+\begin{DoxyCompactList}\small\item\em Delete a review. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_department}{Department}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ \mbox{\hyperlink{class_department_a08c15967258374fadc25e50d76990038}{reviews}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_floor_department}{Floor\+Department} class. 
+
+This class represents the floor department of a restaurant. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_floor_department_a2951afacb92f41fecac2591e80666e93}\label{class_floor_department_a2951afacb92f41fecac2591e80666e93} 
+\index{FloorDepartment@{FloorDepartment}!CalculateAverageRating@{CalculateAverageRating}}
+\index{CalculateAverageRating@{CalculateAverageRating}!FloorDepartment@{FloorDepartment}}
+\doxysubsubsection{\texorpdfstring{CalculateAverageRating()}{CalculateAverageRating()}}
+{\footnotesize\ttfamily double Floor\+Department\+::\+Calculate\+Average\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculate the average rating. 
+
+\begin{DoxyReturn}{Returns}
+The average rating. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_department_a4622f57837eda1d0ec2a95073e029721}{Department}}.
+
+\Hypertarget{class_floor_department_a8f0fbdfa76ac08a5b195a5275c812dd4}\label{class_floor_department_a8f0fbdfa76ac08a5b195a5275c812dd4} 
+\index{FloorDepartment@{FloorDepartment}!DeleteReview@{DeleteReview}}
+\index{DeleteReview@{DeleteReview}!FloorDepartment@{FloorDepartment}}
+\doxysubsubsection{\texorpdfstring{DeleteReview()}{DeleteReview()}}
+{\footnotesize\ttfamily void Floor\+Department\+::\+Delete\+Review (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_review}{Review}} \&}]{review }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Delete a review. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review} & The review to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_department_adb0bb2e4255895a071fc2e829ede607b}{Department}}.
+
+\Hypertarget{class_floor_department_ae40cb0b75fd3ea047b5d29f5d76582dc}\label{class_floor_department_ae40cb0b75fd3ea047b5d29f5d76582dc} 
+\index{FloorDepartment@{FloorDepartment}!DisplayReviews@{DisplayReviews}}
+\index{DisplayReviews@{DisplayReviews}!FloorDepartment@{FloorDepartment}}
+\doxysubsubsection{\texorpdfstring{DisplayReviews()}{DisplayReviews()}}
+{\footnotesize\ttfamily void Floor\+Department\+::\+Display\+Reviews (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the reviews. 
+
+
+
+Implements \mbox{\hyperlink{class_department_a762a1703cc8c9fd3bc3348496a992100}{Department}}.
+
+\Hypertarget{class_floor_department_af5ad8764c04d00d475d58f5f54a77585}\label{class_floor_department_af5ad8764c04d00d475d58f5f54a77585} 
+\index{FloorDepartment@{FloorDepartment}!TakeReview@{TakeReview}}
+\index{TakeReview@{TakeReview}!FloorDepartment@{FloorDepartment}}
+\doxysubsubsection{\texorpdfstring{TakeReview()}{TakeReview()}}
+{\footnotesize\ttfamily void Floor\+Department\+::\+Take\+Review (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_review}{Review}} \&}]{review }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Take a review. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review} & The review to take. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_department_a31e1ae9efc153974218f781908780668}{Department}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_floor_department_8h}{Floor\+Department.\+h}}\end{DoxyCompactItemize}

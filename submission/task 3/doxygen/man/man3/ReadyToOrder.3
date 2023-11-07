@@ -1,0 +1,83 @@
+.TH "ReadyToOrder" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ReadyToOrder \- A class that represents the state of a table when it is ready to order\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ReadyToOrder\&.h>\fP
+.PP
+Inherits \fBTableState\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "string \fBgetStatus\fP ()"
+.br
+.RI "Returns the status of the table as a string\&. "
+.ti -1c
+.RI "bool \fBaction\fP ()"
+.br
+.RI "Performs the action of taking the order from the table\&. "
+.in -1c
+
+Public Member Functions inherited from \fBTableState\fP
+.in +1c
+.ti -1c
+.RI "\fBTableState\fP ()"
+.br
+.RI "Construct a new \fBTableState\fP object\&. "
+.ti -1c
+.RI "void \fBsetTable\fP (\fBAbstractTable\fP *\fBtable\fP)"
+.br
+.RI "Set the table\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBTableState\fP
+.in +1c
+.ti -1c
+.RI "\fBAbstractTable\fP * \fBtable\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class that represents the state of a table when it is ready to order\&. 
+
+This class inherits from the \fBTableState\fP abstract class and implements the getStatus and action methods\&. It is used to indicate that the customers at the table are ready to place their order and the waiter can take it\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool ReadyToOrder::action ()\fC [virtual]\fP"
+
+.PP
+Performs the action of taking the order from the table\&. This method overrides the action method of the \fBTableState\fP class and simulates the process of taking the order from the customers\&. It may also change the state of the table to another state, such as WaitingForFood or Eating, depending on the outcome of the action\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A boolean value that indicates whether the action was successful or not\&. 
+.RE
+.PP
+
+.PP
+Implements \fBTableState\fP\&.
+.SS "string ReadyToOrder::getStatus ()\fC [virtual]\fP"
+
+.PP
+Returns the status of the table as a string\&. This method overrides the getStatus method of the \fBTableState\fP class and returns 'Ready to order' as the status\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A string that represents the status of the table\&. 
+.RE
+.PP
+
+.PP
+Implements \fBTableState\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

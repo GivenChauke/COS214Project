@@ -1,0 +1,30 @@
+\doxysection{Combined\+Table.\+h}
+\hypertarget{_combined_table_8h_source}{}\label{_combined_table_8h_source}\mbox{\hyperlink{_combined_table_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COMBINEDTABLE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COMBINEDTABLE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_abstract_table_8h}{AbstractTable.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_order_8h}{Order.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_combined_table}{CombinedTable}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstract_table}{AbstractTable}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ vector<AbstractTable*>\ table;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_combined_table_a939f43c5db5af86603f981421199a647}{CombinedTable}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_combined_table_a2701be0d1581ced7d7a03231696e5caf}{\string~CombinedTable}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_combined_table_a82853b482e7dbc7d083ba974a7ea164a}{AddTable}}(\mbox{\hyperlink{class_abstract_table}{AbstractTable}}*\ table);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_abstract_table}{AbstractTable}}*\ \mbox{\hyperlink{class_combined_table_a646b74a246090d5d8b64e818377cf721}{SeparateTable}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ vector<Order*>\ \mbox{\hyperlink{class_combined_table_ab9edd981be7a48cf067b2bac298b200c}{PlaceOrder}}();}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

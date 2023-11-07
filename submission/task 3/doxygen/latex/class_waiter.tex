@@ -1,0 +1,204 @@
+\doxysection{Waiter Class Reference}
+\hypertarget{class_waiter}{}\label{class_waiter}\index{Waiter@{Waiter}}
+
+
+Represents a waiter who takes and delivers orders in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Waiter.\+h$>$}
+
+Inheritance diagram for Waiter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_waiter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_waiter_a7ac8a5e870ce0d1c3eb65dc56b131dd9}{Waiter}} (int id)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_waiter}{Waiter} with the given ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_waiter_aa3eac8a78439feb99b0bb50380f8597d}{\texorpdfstring{$\sim$}{\string~}\+Waiter}} ()
+\item 
+void \mbox{\hyperlink{class_waiter_a2c60a24d56dd10e5056ef00f2fbe7efb}{get\+Reviews\+For\+Kitchen\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves reviews from the kitchen department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_waiter_aaa73ac6d9c8503b4decfbbb73f6f3f59}{Collect\+Order\+From\+Kitchen}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Collects an order from the kitchen and updates the order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_waiter_a461f4812f0b7fb324a51f34dd1f40ecd}{Take\+Order}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Takes an order from a table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_waiter_a1088a2ef39c4d15d1062c61d59faf83b}{Take\+Order}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{class_waiter_ac0753b1f56f6bc9ec5cf45375ea2ce48}{deliver\+Orders}} ()
+\begin{DoxyCompactList}\small\item\em Delivers orders to the respective tables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_waiter_a3579454f9a3b8c7ddca6d64e680bba3f}{assign\+Tables}} (vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&)
+\item 
+bool \mbox{\hyperlink{class_waiter_acfd9c0e7669b2b9c542f712dc7c3ee51}{is\+Fully\+Occupied}} ()
+\item 
+void \mbox{\hyperlink{class_waiter_ac17f94afb525be496f8d0fef1b6fef5d}{set\+Max\+Tables}} (int)
+\item 
+void \mbox{\hyperlink{class_waiter_a2619a49404965dc733a65ed4fbdbae21}{iterate\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Iterate through the tables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_a870d18c216c82139c4871ea87c3096a6}{Employee}} (int id)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_employee}{Employee} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_employee_a2326b7e2f3af41a9bdc07ef2acccc5fa}{assign\+Tables}} (std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}})
+\begin{DoxyCompactList}\small\item\em Assign tables to the employee. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_af28385a1d8353015f3542f09423b393b}{move\+To\+Next\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Move to the next table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a70087dcdfa4c4a6a3a33b3a440da35f4}{get\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Get the department of the employee. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a35ae6fa000a06aa95153f840c8e9359e}{get\+Current\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Get the current table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a0d1b9d1438fe005119693e253e0e0e06}{set\+Department}} (\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*}dep)
+\begin{DoxyCompactList}\small\item\em Set the department of the employee. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a595355f296c717114d0f3023266885a2}{set\+Curr\+Table}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}curr\+Tab)
+\begin{DoxyCompactList}\small\item\em Set the current table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a4e3f9e6eec7f4b2df25c09aa76c7dcc5}{Get\+Review}} (const std\+::vector$<$ \mbox{\hyperlink{class_review}{Review}} \texorpdfstring{$\ast$}{*} $>$ \&review\+List)
+\begin{DoxyCompactList}\small\item\em Get the reviews. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a9d2dc749131b0f846ea2b31cafb29697}{Take\+Order}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Take an order. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_employee_ae6e99d450698a596c9087e6ee9fd8271}{get\+Employee\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the ID of the employee. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_employee_abed56e9c007fff2bfe27ca87251baaf2}{\texorpdfstring{$\sim$}{\string~}\+Employee}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_employee}{Employee} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a59d51185bb95a9297e3b8c6b68ba6143}{department}}
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}}
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a4b8eca091f3643144461fe33cf189650}{curr\+Table}}
+\item 
+\mbox{\hyperlink{class_table_iterator}{Table\+Iterator}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a44db99c27bf76bc29f0b55a599ffa5c6}{table\+Iterator}}
+\item 
+int \mbox{\hyperlink{class_employee_a7edc0b03cdfbe2f30d562bbbc5084534}{employee\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a waiter who takes and delivers orders in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_waiter_a7ac8a5e870ce0d1c3eb65dc56b131dd9}\label{class_waiter_a7ac8a5e870ce0d1c3eb65dc56b131dd9} 
+\index{Waiter@{Waiter}!Waiter@{Waiter}}
+\index{Waiter@{Waiter}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{Waiter()}{Waiter()}}
+{\footnotesize\ttfamily Waiter\+::\+Waiter (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_waiter}{Waiter} with the given ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the waiter. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_waiter_aa3eac8a78439feb99b0bb50380f8597d}\label{class_waiter_aa3eac8a78439feb99b0bb50380f8597d} 
+\index{Waiter@{Waiter}!````~Waiter@{\texorpdfstring{$\sim$}{\string~}Waiter}}
+\index{````~Waiter@{\texorpdfstring{$\sim$}{\string~}Waiter}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Waiter()}{\string~Waiter()}}
+{\footnotesize\ttfamily Waiter\+::\texorpdfstring{$\sim$}{\string~}\+Waiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_waiter_a3579454f9a3b8c7ddca6d64e680bba3f}\label{class_waiter_a3579454f9a3b8c7ddca6d64e680bba3f} 
+\index{Waiter@{Waiter}!assignTables@{assignTables}}
+\index{assignTables@{assignTables}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{assignTables()}{assignTables()}}
+{\footnotesize\ttfamily void Waiter\+::assign\+Tables (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_waiter_aaa73ac6d9c8503b4decfbbb73f6f3f59}\label{class_waiter_aaa73ac6d9c8503b4decfbbb73f6f3f59} 
+\index{Waiter@{Waiter}!CollectOrderFromKitchen@{CollectOrderFromKitchen}}
+\index{CollectOrderFromKitchen@{CollectOrderFromKitchen}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{CollectOrderFromKitchen()}{CollectOrderFromKitchen()}}
+{\footnotesize\ttfamily void Waiter\+::\+Collect\+Order\+From\+Kitchen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})}
+
+
+
+Collects an order from the kitchen and updates the order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & The order to be updated. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_waiter_ac0753b1f56f6bc9ec5cf45375ea2ce48}\label{class_waiter_ac0753b1f56f6bc9ec5cf45375ea2ce48} 
+\index{Waiter@{Waiter}!deliverOrders@{deliverOrders}}
+\index{deliverOrders@{deliverOrders}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{deliverOrders()}{deliverOrders()}}
+{\footnotesize\ttfamily void Waiter\+::deliver\+Orders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delivers orders to the respective tables. 
+
+\Hypertarget{class_waiter_a2c60a24d56dd10e5056ef00f2fbe7efb}\label{class_waiter_a2c60a24d56dd10e5056ef00f2fbe7efb} 
+\index{Waiter@{Waiter}!getReviewsForKitchenDepartment@{getReviewsForKitchenDepartment}}
+\index{getReviewsForKitchenDepartment@{getReviewsForKitchenDepartment}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getReviewsForKitchenDepartment()}{getReviewsForKitchenDepartment()}}
+{\footnotesize\ttfamily void Waiter\+::get\+Reviews\+For\+Kitchen\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves reviews from the kitchen department. 
+
+\Hypertarget{class_waiter_acfd9c0e7669b2b9c542f712dc7c3ee51}\label{class_waiter_acfd9c0e7669b2b9c542f712dc7c3ee51} 
+\index{Waiter@{Waiter}!isFullyOccupied@{isFullyOccupied}}
+\index{isFullyOccupied@{isFullyOccupied}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{isFullyOccupied()}{isFullyOccupied()}}
+{\footnotesize\ttfamily bool Waiter\+::is\+Fully\+Occupied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_waiter_a2619a49404965dc733a65ed4fbdbae21}\label{class_waiter_a2619a49404965dc733a65ed4fbdbae21} 
+\index{Waiter@{Waiter}!iterateTables@{iterateTables}}
+\index{iterateTables@{iterateTables}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{iterateTables()}{iterateTables()}}
+{\footnotesize\ttfamily void Waiter\+::iterate\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Iterate through the tables. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a8bf01c5794e91054f1e666e22bb69652}{Employee}}.
+
+\Hypertarget{class_waiter_ac17f94afb525be496f8d0fef1b6fef5d}\label{class_waiter_ac17f94afb525be496f8d0fef1b6fef5d} 
+\index{Waiter@{Waiter}!setMaxTables@{setMaxTables}}
+\index{setMaxTables@{setMaxTables}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{setMaxTables()}{setMaxTables()}}
+{\footnotesize\ttfamily void Waiter\+::set\+Max\+Tables (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_waiter_a1088a2ef39c4d15d1062c61d59faf83b}\label{class_waiter_a1088a2ef39c4d15d1062c61d59faf83b} 
+\index{Waiter@{Waiter}!TakeOrder@{TakeOrder}}
+\index{TakeOrder@{TakeOrder}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{TakeOrder()}{TakeOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Waiter\+::\+Take\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_waiter_a461f4812f0b7fb324a51f34dd1f40ecd}\label{class_waiter_a461f4812f0b7fb324a51f34dd1f40ecd} 
+\index{Waiter@{Waiter}!TakeOrder@{TakeOrder}}
+\index{TakeOrder@{TakeOrder}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{TakeOrder()}{TakeOrder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Waiter\+::\+Take\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})}
+
+
+
+Takes an order from a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & The table from which the order is taken. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_waiter_8h}{Waiter.\+h}}\end{DoxyCompactItemize}

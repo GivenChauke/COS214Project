@@ -14,6 +14,9 @@ Mr. Lesedi Kekana  | u20486473
 Mr. Atidaishe Mupanemunda  | u22747886
 Mr. Thabiso Matau  | u22609254
 
+## Our final report
+https://docs.google.com/document/d/1JjSkhLFV_IW5YNy85zgs4b0PSP8FCJd3Fxzd7wT0m7g/edit?usp=sharing
+
 ## Our implemented patterns
 - Composite (Table)
 - State (TableState, CustomerState, and OrderStatus)

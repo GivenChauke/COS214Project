@@ -1,0 +1,273 @@
+.TH "CustomerGroup" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CustomerGroup \- Represents a group of customers in a restaurant\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CustomerGroup\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "vector< \fBCustomer\fP > \fBgetCustomers\fP ()"
+.br
+.RI "Get the customers in the group\&. "
+.ti -1c
+.RI "void \fBsetCustomers\fP (vector< \fBCustomer\fP > customer)"
+.br
+.RI "Set the customers in the group\&. "
+.ti -1c
+.RI "int \fBgetRandomState\fP ()"
+.br
+.RI "Get the random state of the group\&. "
+.ti -1c
+.RI "void \fBdecrementRandomState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRandomState\fP (int \fBRandomState\fP)"
+.br
+.RI "Set the random state of the group\&. "
+.ti -1c
+.RI "int \fBNumOfCustomer\fP ()"
+.br
+.RI "Get the number of customers in the group\&. "
+.ti -1c
+.RI "\fBCustomer\fP \fBCustomerAt\fP (int index)"
+.br
+.RI "Get a specific customer in the group\&. "
+.ti -1c
+.RI "vector< \fBBill\fP * > \fBmergeBill\fP ()"
+.br
+.RI "Merge the bills of the customer group into a vector of bills\&. "
+.ti -1c
+.RI "bool \fBaddCustomer\fP (\fBCustomer\fP customer)"
+.br
+.RI "Add a customer to the customer group\&. "
+.ti -1c
+.RI "\fBCustomerGroup\fP ()"
+.br
+.RI "Default constructor for the \fBCustomerGroup\fP class\&. "
+.ti -1c
+.RI "void \fBreceiveOrder\fP (vector< \fBOrder\fP * > \fBorders\fP)"
+.br
+.RI "Receive orders for the group and update customer states based on food quality\&. "
+.ti -1c
+.RI "bool \fBPayBill\fP ()"
+.br
+.RI "Pay the bills of the customer group\&. "
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewFood\fP ()"
+.br
+.RI "Generate food reviews for the customer group\&. "
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewService\fP ()"
+.br
+.RI "Generate service reviews for the customer group\&. "
+.ti -1c
+.RI "vector< \fBOrder\fP * > \fBPlaceOrder\fP ()"
+.br
+.RI "Place orders for each customer in the group\&. "
+.ti -1c
+.RI "void \fBprint\fP ()"
+.br
+.RI "Print the IDs of the customers in the group\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< \fBCustomer\fP > \fBcustomers\fP"
+.br
+.ti -1c
+.RI "int \fBRandomState\fP"
+.br
+.ti -1c
+.RI "vector< \fBOrder\fP * > \fBorders\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a group of customers in a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CustomerGroup::CustomerGroup ()"
+
+.PP
+Default constructor for the \fBCustomerGroup\fP class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CustomerGroup::addCustomer (\fBCustomer\fP customer)"
+
+.PP
+Add a customer to the customer group\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomer\fP The \fBCustomer\fP object to be added\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the addition was successful, false otherwise\&. 
+.RE
+.PP
+
+.SS "\fBCustomer\fP CustomerGroup::CustomerAt (int index)"
+
+.PP
+Get a specific customer in the group\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP The index of the customer to retrieve\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The \fBCustomer\fP object at the specified index\&. 
+.RE
+.PP
+
+.SS "void CustomerGroup::decrementRandomState ()\fC [inline]\fP"
+
+.SS "vector< \fBCustomer\fP > CustomerGroup::getCustomers ()"
+
+.PP
+Get the customers in the group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of \fBCustomer\fP objects in the group\&. 
+.RE
+.PP
+
+.SS "int CustomerGroup::getRandomState ()"
+
+.PP
+Get the random state of the group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The random state as an integer\&. 
+.RE
+.PP
+
+.SS "vector< \fBBill\fP * > CustomerGroup::mergeBill ()"
+
+.PP
+Merge the bills of the customer group into a vector of bills\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of \fBBill\fP pointers representing merged bills\&. 
+.RE
+.PP
+
+.SS "int CustomerGroup::NumOfCustomer ()"
+
+.PP
+Get the number of customers in the group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The number of customers in the group\&. 
+.RE
+.PP
+
+.SS "bool CustomerGroup::PayBill ()"
+
+.PP
+Pay the bills of the customer group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the bills were paid successfully, false otherwise\&. 
+.RE
+.PP
+
+.SS "vector< \fBOrder\fP * > CustomerGroup::PlaceOrder ()"
+
+.PP
+Place orders for each customer in the group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of \fBOrder\fP pointers representing the placed orders\&. 
+.RE
+.PP
+
+.SS "void CustomerGroup::print ()"
+
+.PP
+Print the IDs of the customers in the group\&. 
+.SS "void CustomerGroup::receiveOrder (vector< \fBOrder\fP * > orders)"
+
+.PP
+Receive orders for the group and update customer states based on food quality\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorders\fP A vector of \fBOrder\fP pointers to be received\&. 
+.RE
+.PP
+
+.SS "vector< \fBReview\fP > CustomerGroup::ReviewFood ()"
+
+.PP
+Generate food reviews for the customer group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of \fBReview\fP objects representing food reviews\&. 
+.RE
+.PP
+
+.SS "vector< \fBReview\fP > CustomerGroup::ReviewService ()"
+
+.PP
+Generate service reviews for the customer group\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of \fBReview\fP objects representing service reviews\&. 
+.RE
+.PP
+
+.SS "void CustomerGroup::setCustomers (vector< \fBCustomer\fP > customer)"
+
+.PP
+Set the customers in the group\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomer\fP A vector of \fBCustomer\fP objects to set as the group\&. 
+.RE
+.PP
+
+.SS "void CustomerGroup::setRandomState (int RandomState)"
+
+.PP
+Set the random state of the group\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIRandomState\fP The random state to be set\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<\fBCustomer\fP> CustomerGroup::customers\fC [protected]\fP"
+
+.SS "vector<\fBOrder\fP*> CustomerGroup::orders\fC [protected]\fP"
+
+.SS "int CustomerGroup::RandomState\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

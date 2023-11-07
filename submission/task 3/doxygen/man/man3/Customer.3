@@ -1,0 +1,212 @@
+.TH "Customer" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Customer \- The \fBCustomer\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Customer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "string \fBgetID\fP ()"
+.br
+.RI "Get the ID of the customer\&. "
+.ti -1c
+.RI "void \fBsetID\fP (string ID)"
+.br
+.RI "Set the ID of the customer\&. "
+.ti -1c
+.RI "void \fBsetState\fP (\fBCustomerState\fP *state)"
+.br
+.RI "Set the state of the customer\&. "
+.ti -1c
+.RI "\fBCustomerState\fP * \fBgetState\fP ()"
+.br
+.RI "Get the state of the customer\&. "
+.ti -1c
+.RI "string \fBGiveComment_Food\fP ()"
+.br
+.RI "Give a comment about the food\&. "
+.ti -1c
+.RI "string \fBGiveComment_Service\fP ()"
+.br
+.RI "Give a comment about the service\&. "
+.ti -1c
+.RI "int \fBGiveRating_Food\fP ()"
+.br
+.RI "Give a rating for the food\&. "
+.ti -1c
+.RI "int \fBGiveRating_Service\fP ()"
+.br
+.RI "Give a rating for the service\&. "
+.ti -1c
+.RI "\fBCustomer\fP (string name)"
+.br
+.RI "Construct a new \fBCustomer\fP object\&. "
+.ti -1c
+.RI "\fBCustomer\fP ()"
+.br
+.RI "Construct a new \fBCustomer\fP object\&. "
+.ti -1c
+.RI "void \fBreceiveOrder\fP (\fBOrder\fP *order)"
+.br
+.RI "Receive an order\&. "
+.ti -1c
+.RI "\fBOrder\fP * \fBPlaceOrder\fP ()"
+.br
+.RI "Place an order\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBSeedValue\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBCustomer\fP class\&. 
+
+This class represents a customer in a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Customer::Customer (string name)\fC [inline]\fP"
+
+.PP
+Construct a new \fBCustomer\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name of the customer\&. 
+.RE
+.PP
+
+.SS "Customer::Customer ()"
+
+.PP
+Construct a new \fBCustomer\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "string Customer::getID ()\fC [inline]\fP"
+
+.PP
+Get the ID of the customer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The ID of the customer\&. 
+.RE
+.PP
+
+.SS "\fBCustomerState\fP * Customer::getState ()\fC [inline]\fP"
+
+.PP
+Get the state of the customer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The state of the customer\&. 
+.RE
+.PP
+
+.SS "string Customer::GiveComment_Food ()"
+
+.PP
+Give a comment about the food\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The comment about the food\&. 
+.RE
+.PP
+
+.SS "string Customer::GiveComment_Service ()"
+
+.PP
+Give a comment about the service\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The comment about the service\&. 
+.RE
+.PP
+
+.SS "int Customer::GiveRating_Food ()"
+
+.PP
+Give a rating for the food\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The rating for the food\&. 
+.RE
+.PP
+
+.SS "int Customer::GiveRating_Service ()"
+
+.PP
+Give a rating for the service\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The rating for the service\&. 
+.RE
+.PP
+
+.SS "\fBOrder\fP * Customer::PlaceOrder ()"
+
+.PP
+Place an order\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The order placed\&. 
+.RE
+.PP
+
+.SS "void Customer::receiveOrder (\fBOrder\fP * order)"
+
+.PP
+Receive an order\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorder\fP The order to receive\&. 
+.RE
+.PP
+
+.SS "void Customer::setID (string ID)\fC [inline]\fP"
+
+.PP
+Set the ID of the customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIID\fP The ID to set\&. 
+.RE
+.PP
+
+.SS "void Customer::setState (\fBCustomerState\fP * state)\fC [inline]\fP"
+
+.PP
+Set the state of the customer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstate\fP The state to set\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Customer::SeedValue\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

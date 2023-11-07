@@ -1,0 +1,163 @@
+\doxysection{Table Class Reference}
+\hypertarget{class_table}{}\label{class_table}\index{Table@{Table}}
+
+
+The \doxylink{class_table}{Table} class.  
+
+
+
+
+{\ttfamily \#include $<$Table.\+h$>$}
+
+Inheritance diagram for Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_table}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_table_a049f2e06391781ae255c6698869c4ad1}{Table}} ()
+\item 
+\mbox{\hyperlink{class_table_a9a559f2e7beb37b511ee9f88873164f8}{\texorpdfstring{$\sim$}{\string~}\+Table}} ()
+\item 
+bool \mbox{\hyperlink{class_table_a8a6d25a184400abc21f5665f1060e7b9}{Add\+Table}} (\mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*}table)
+\item 
+\mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_a7a3387656c7728e0ca1c0536381713d5}{Separate\+Table}} ()
+\item 
+int \mbox{\hyperlink{class_table_a16300a294b7a845688eb99af5671b1c1}{get\+Table\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Get the table number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_abstract_table}{Abstract\+Table}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_abstract_table_a4b4e49243561691d95f002b3929e5a17}{get\+Table\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the \doxylink{class_table}{Table} I D object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_abstract_table_aea0019628a585c30333f32550ee14ed4}{set\+Table\+ID}} (int ID)
+\begin{DoxyCompactList}\small\item\em Set the \doxylink{class_table}{Table} ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_abstract_table_a563064235763ec9a5a0633a078da8b76}{set\+Occupied}} (bool o)
+\begin{DoxyCompactList}\small\item\em Set the Occupied object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_abstract_table_a377a50d6b5f4db2a0aa967dde76e755b}{get\+Occupied}} ()
+\begin{DoxyCompactList}\small\item\em Get the Occupied object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_abstract_table_aa1bc90ac39370aabc8ad70829d53f3d6}{get\+Max\+People}} ()
+\begin{DoxyCompactList}\small\item\em Get the Max\+People allowed in on the table. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_abstract_table_ab3f22f1075ecc85769199646fc6138c1}{visit\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Set the Max People object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_abstract_table_a0875e4d95e658215df4d64ce5a05ed2a}{set\+Max\+People}} (int \mbox{\hyperlink{class_abstract_table_abce9f1f328356fd2f3d3fd814e50e95f}{max\+People}})
+\item 
+\mbox{\hyperlink{class_table_state}{Table\+State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_table_afc1e1d25ff8abf88af64c779b31a01dc}{get\+Table\+State}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_table_a9804ab11f5b10acb0e7e421cd41ab647}{set\+Table\+State}} (\mbox{\hyperlink{class_table_state}{Table\+State}} \texorpdfstring{$\ast$}{*}state)
+\item 
+\mbox{\hyperlink{class_customer_group}{Customer\+Group}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_table_a022a6118edde8df3d84297b83129bf06}{get\+Customer\+Group}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_table_ab16e42fd35c0d13fbc3a7fdce38d462d}{set\+Customer\+Group}} (\mbox{\hyperlink{class_customer_group}{Customer\+Group}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_abstract_table_aaacc5a5095f41a1b80690c2bf5e84c85}{customer\+Group}})
+\item 
+int \mbox{\hyperlink{class_abstract_table_a70561f32b695ace887d3d29896bc06db}{get\+Current\+People}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_table_a82db927fd56127c390139fdce8c3d181}{set\+Current\+People}} (int \mbox{\hyperlink{class_abstract_table_a78facfefeff74f4b940d9f0d78a2f4c3}{current\+People}})
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_abstract_table_a0280139328ce72ee5eb6290aae0f2b95}{Place\+Order}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_table_a100bbb91949076ee71ea25dd4cad94ff}{Receive\+Order}} (vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$ orders)
+\item 
+int \mbox{\hyperlink{class_abstract_table_ab47f9825aa423f3716ed4ebed6010698}{get\+Random\+State}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_table_a4552351d883c27254d9f91f6f6e7cf1a}{set\+Random\+State}} (int \mbox{\hyperlink{class_abstract_table_a29ad412cd2e1a3e1cecff206f0761f69}{Random\+State}})
+\item 
+string \mbox{\hyperlink{class_abstract_table_a8499f4cf8adabccca2f40dfca987010e}{Enquire\+State}} ()
+\item 
+\mbox{\hyperlink{class_abstract_table_a0d4b411db86931d15cc643a2883ffe59}{Abstract\+Table}} ()
+\item 
+virtual \mbox{\hyperlink{class_abstract_table_a957e2dc86a1aa6ffa19b2d8585a1ee91}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+Table}} ()
+\item 
+bool \mbox{\hyperlink{class_abstract_table_a0a7a27059a88d0bb30e46ba15451813d}{pay\+Bill}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ \mbox{\hyperlink{class_abstract_table_a7da5849350ca951f95e364fafd2af2d4}{Review\+Food}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ \mbox{\hyperlink{class_abstract_table_a73a89cd983e2d5d83392295a60fb8bcc}{Review\+Service}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_abstract_table}{Abstract\+Table}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_abstract_table_abce9f1f328356fd2f3d3fd814e50e95f}{max\+People}}
+\item 
+\mbox{\hyperlink{class_table_state}{Table\+State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_table_ae72f29e334ba7fab611fca03e284bee4}{table\+State}}
+\item 
+\mbox{\hyperlink{class_customer_group}{Customer\+Group}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_table_aaacc5a5095f41a1b80690c2bf5e84c85}{customer\+Group}}
+\item 
+int \mbox{\hyperlink{class_abstract_table_a78facfefeff74f4b940d9f0d78a2f4c3}{current\+People}}
+\item 
+int \mbox{\hyperlink{class_abstract_table_a29ad412cd2e1a3e1cecff206f0761f69}{Random\+State}}
+\item 
+int \mbox{\hyperlink{class_abstract_table_ac7e9828d65b02bca8d675f6ea8069bcc}{table\+ID}}
+\item 
+bool \mbox{\hyperlink{class_abstract_table_a60968ce14a4b9a27ac2d82bc6aa9505e}{occupied}} =false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_abstract_table}{Abstract\+Table}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_abstract_table_ac0750113dcc81745d8015b952bb9b956}{counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_table}{Table} class. 
+
+This class represents a table in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_table_a049f2e06391781ae255c6698869c4ad1}\label{class_table_a049f2e06391781ae255c6698869c4ad1} 
+\index{Table@{Table}!Table@{Table}}
+\index{Table@{Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}}
+{\footnotesize\ttfamily Table\+::\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_table_a9a559f2e7beb37b511ee9f88873164f8}\label{class_table_a9a559f2e7beb37b511ee9f88873164f8} 
+\index{Table@{Table}!````~Table@{\texorpdfstring{$\sim$}{\string~}Table}}
+\index{````~Table@{\texorpdfstring{$\sim$}{\string~}Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Table()}{\string~Table()}}
+{\footnotesize\ttfamily Table\+::\texorpdfstring{$\sim$}{\string~}\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_table_a8a6d25a184400abc21f5665f1060e7b9}\label{class_table_a8a6d25a184400abc21f5665f1060e7b9} 
+\index{Table@{Table}!AddTable@{AddTable}}
+\index{AddTable@{AddTable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{AddTable()}{AddTable()}}
+{\footnotesize\ttfamily bool Table\+::\+Add\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_table_a9fca3b55cfb6ce03a57294a9b6c9620d}{Abstract\+Table}}.
+
+\Hypertarget{class_table_a16300a294b7a845688eb99af5671b1c1}\label{class_table_a16300a294b7a845688eb99af5671b1c1} 
+\index{Table@{Table}!getTableNumber@{getTableNumber}}
+\index{getTableNumber@{getTableNumber}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getTableNumber()}{getTableNumber()}}
+{\footnotesize\ttfamily int Table\+::get\+Table\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the table number. 
+
+\begin{DoxyReturn}{Returns}
+The table number. 
+\end{DoxyReturn}
+\Hypertarget{class_table_a7a3387656c7728e0ca1c0536381713d5}\label{class_table_a7a3387656c7728e0ca1c0536381713d5} 
+\index{Table@{Table}!SeparateTable@{SeparateTable}}
+\index{SeparateTable@{SeparateTable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{SeparateTable()}{SeparateTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*} Table\+::\+Separate\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_table_ad92dac898fa1472378539216b3cca738}{Abstract\+Table}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_table_8h}{Table.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+.TH "Order" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Order
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Order\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOrder\fP ()"
+.br
+.ti -1c
+.RI "\fB~Order\fP ()"
+.br
+.ti -1c
+.RI "std::vector< \fBFoodItem\fP * > \fBgetItems\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetItems\fP (std::vector< \fBFoodItem\fP * >)"
+.br
+.ti -1c
+.RI "void \fBaddFood\fP (\fBFood\fP *)"
+.br
+.ti -1c
+.RI "vector< \fBFood\fP * > \fBgetFood\fP ()"
+.br
+.ti -1c
+.RI "\fBAbstractTable\fP * \fBgetTable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTable\fP (\fBAbstractTable\fP *)"
+.br
+.ti -1c
+.RI "\fBWaiter\fP * \fBgetWaiter\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWaiter\fP (\fBWaiter\fP *)"
+.br
+.ti -1c
+.RI "void \fBsetBill\fP (\fBBill\fP *)"
+.br
+.ti -1c
+.RI "\fBBill\fP * \fBgetBill\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBgetOrderStatus\fP ()"
+.br
+.ti -1c
+.RI "void \fBtoReadyStatus\fP ()"
+.br
+.ti -1c
+.RI "void \fBtoReceivedStatus\fP ()"
+.br
+.ti -1c
+.RI "void \fBtoProcessingStatus\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "void \fBprint\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Order::Order ()"
+
+.SS "Order::~Order ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Order::addFood (\fBFood\fP *)"
+
+.SS "\fBBill\fP * Order::getBill ()"
+
+.SS "vector< \fBFood\fP * > Order::getFood ()"
+
+.SS "std::vector< \fBFoodItem\fP * > Order::getItems ()"
+
+.SS "std::string Order::getOrderStatus ()"
+
+.SS "\fBAbstractTable\fP * Order::getTable ()"
+
+.SS "\fBWaiter\fP * Order::getWaiter ()"
+
+.SS "void Order::print ()"
+
+.SS "void Order::setBill (\fBBill\fP *)"
+
+.SS "void Order::setItems (std::vector< \fBFoodItem\fP * >)"
+
+.SS "void Order::setTable (\fBAbstractTable\fP *)"
+
+.SS "void Order::setWaiter (\fBWaiter\fP *)"
+
+.SS "void Order::toProcessingStatus ()"
+
+.SS "void Order::toReadyStatus ()"
+
+.SS "void Order::toReceivedStatus ()"
+
+.SS "std::string Order::toString ()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

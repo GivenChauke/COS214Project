@@ -1,0 +1,106 @@
+\doxysection{Manager Class Reference}
+\hypertarget{class_manager}{}\label{class_manager}\index{Manager@{Manager}}
+
+
+The \doxylink{class_manager}{Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$Manager.\+h$>$}
+
+Inheritance diagram for Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_manager_a8f6bd4f525d0cfedd7f524669f0b5c78}{Manager}} (int id)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_manager}{Manager} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_manager_ad31ea44094f4588b7a359cf615ee5f7d}{get\+Reviews\+For\+Floor\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Get the reviews for the floor department. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_a870d18c216c82139c4871ea87c3096a6}{Employee}} (int id)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_employee}{Employee} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_employee_a2326b7e2f3af41a9bdc07ef2acccc5fa}{assign\+Tables}} (std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}})
+\begin{DoxyCompactList}\small\item\em Assign tables to the employee. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_employee_a8bf01c5794e91054f1e666e22bb69652}{iterate\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Iterate through the tables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_af28385a1d8353015f3542f09423b393b}{move\+To\+Next\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Move to the next table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a70087dcdfa4c4a6a3a33b3a440da35f4}{get\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Get the department of the employee. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a35ae6fa000a06aa95153f840c8e9359e}{get\+Current\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Get the current table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a0d1b9d1438fe005119693e253e0e0e06}{set\+Department}} (\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*}dep)
+\begin{DoxyCompactList}\small\item\em Set the department of the employee. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a595355f296c717114d0f3023266885a2}{set\+Curr\+Table}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}curr\+Tab)
+\begin{DoxyCompactList}\small\item\em Set the current table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a4e3f9e6eec7f4b2df25c09aa76c7dcc5}{Get\+Review}} (const std\+::vector$<$ \mbox{\hyperlink{class_review}{Review}} \texorpdfstring{$\ast$}{*} $>$ \&review\+List)
+\begin{DoxyCompactList}\small\item\em Get the reviews. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a9d2dc749131b0f846ea2b31cafb29697}{Take\+Order}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Take an order. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_employee_ae6e99d450698a596c9087e6ee9fd8271}{get\+Employee\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the ID of the employee. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_employee_abed56e9c007fff2bfe27ca87251baaf2}{\texorpdfstring{$\sim$}{\string~}\+Employee}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_employee}{Employee} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a59d51185bb95a9297e3b8c6b68ba6143}{department}}
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}}
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a4b8eca091f3643144461fe33cf189650}{curr\+Table}}
+\item 
+\mbox{\hyperlink{class_table_iterator}{Table\+Iterator}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a44db99c27bf76bc29f0b55a599ffa5c6}{table\+Iterator}}
+\item 
+int \mbox{\hyperlink{class_employee_a7edc0b03cdfbe2f30d562bbbc5084534}{employee\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_manager}{Manager} class. 
+
+This class represents a manager in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_manager_a8f6bd4f525d0cfedd7f524669f0b5c78}\label{class_manager_a8f6bd4f525d0cfedd7f524669f0b5c78} 
+\index{Manager@{Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily Manager\+::\+Manager (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_manager}{Manager} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the manager. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_manager_ad31ea44094f4588b7a359cf615ee5f7d}\label{class_manager_ad31ea44094f4588b7a359cf615ee5f7d} 
+\index{Manager@{Manager}!getReviewsForFloorDepartment@{getReviewsForFloorDepartment}}
+\index{getReviewsForFloorDepartment@{getReviewsForFloorDepartment}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{getReviewsForFloorDepartment()}{getReviewsForFloorDepartment()}}
+{\footnotesize\ttfamily void Manager\+::get\+Reviews\+For\+Floor\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the reviews for the floor department. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_manager_8h}{Manager.\+h}}\end{DoxyCompactItemize}

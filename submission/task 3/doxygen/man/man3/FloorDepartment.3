@@ -1,0 +1,98 @@
+.TH "FloorDepartment" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FloorDepartment \- The \fBFloorDepartment\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FloorDepartment\&.h>\fP
+.PP
+Inherits \fBDepartment\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTakeReview\fP (const \fBReview\fP &review) override"
+.br
+.RI "Take a review\&. "
+.ti -1c
+.RI "void \fBDisplayReviews\fP () override"
+.br
+.RI "Display the reviews\&. "
+.ti -1c
+.RI "double \fBCalculateAverageRating\fP () const override"
+.br
+.RI "Calculate the average rating\&. "
+.ti -1c
+.RI "void \fBDeleteReview\fP (const \fBReview\fP &review) override"
+.br
+.RI "Delete a review\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBDepartment\fP
+.in +1c
+.ti -1c
+.RI "std::vector< \fBReview\fP > \fBreviews\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBFloorDepartment\fP class\&. 
+
+This class represents the floor department of a restaurant\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "double FloorDepartment::CalculateAverageRating () const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Calculate the average rating\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The average rating\&. 
+.RE
+.PP
+
+.PP
+Implements \fBDepartment\fP\&.
+.SS "void FloorDepartment::DeleteReview (const \fBReview\fP & review)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Delete a review\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreview\fP The review to delete\&. 
+.RE
+.PP
+
+.PP
+Implements \fBDepartment\fP\&.
+.SS "void FloorDepartment::DisplayReviews ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Display the reviews\&. 
+.PP
+Implements \fBDepartment\fP\&.
+.SS "void FloorDepartment::TakeReview (const \fBReview\fP & review)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Take a review\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreview\fP The review to take\&. 
+.RE
+.PP
+
+.PP
+Implements \fBDepartment\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

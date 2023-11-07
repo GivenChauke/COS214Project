@@ -1,0 +1,59 @@
+\doxysection{Order.\+h}
+\hypertarget{_order_8h_source}{}\label{_order_8h_source}\mbox{\hyperlink{_order_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ORDER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ORDER\_H}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_order_status_8h}{OrderStatus.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_ready_8h}{Ready.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_processing_8h}{Processing.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_received_8h}{Received.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_8h}{Menu.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_8h}{Food.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bill}{Bill}};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table}{Table}};}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_employee_8h}{Employee.h}}"{}}}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_waiter}{Waiter}};}
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_abstract_table}{AbstractTable}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_order}{Order}}\{}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_status}{OrderStatus}}*\ orderStatus;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::vector<FoodItem*>\ items;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::vector<Food*>\ food;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_bill}{Bill}}*\ bill;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_table}{AbstractTable}}*\ table;\textcolor{comment}{//I\ have\ changed\ this\ to\ abstract\ \ Table}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_waiter}{Waiter}}*\ waiter;\textcolor{comment}{//change\ it\ back\ to\ employee}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ deallocateStatus()\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(orderStatus\ !=\ \textcolor{keyword}{nullptr})\ \textcolor{keyword}{delete}\ orderStatus;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_a7b6a660b03708ed5b4e1c4a6dc2a664a}{Order}}();\ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order_a8fb25876ccbd534465f5f96ef9bb2212}{\string~Order}}();\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::vector<FoodItem*>\ \mbox{\hyperlink{class_order_a8f8c5595737b8c269d84e04c9ed495ef}{getItems}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_a587c0145080bbf4b696b9ed0837cbcd0}{setItems}}(std::vector<FoodItem*>);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_ac8e98e316b6c491d0fca48b10e0af329}{addFood}}(\mbox{\hyperlink{class_food}{Food}}*\ );}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ vector<Food*>\ \mbox{\hyperlink{class_order_a4a1922cfb9cd3108a7b529211022af6c}{getFood}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_table}{AbstractTable}}*\ \mbox{\hyperlink{class_order_abf3aa55a7a9e42e13dbc2322efd79c0e}{getTable}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_af42b6fa8d9314bb21663ad91a1d9b0de}{setTable}}(\mbox{\hyperlink{class_abstract_table}{AbstractTable}}*);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_waiter}{Waiter}}*\ \mbox{\hyperlink{class_order_adbe28ed4cee3d739f10ccbe0962612c7}{getWaiter}}();\ \ \ \ \textcolor{comment}{//change\ it\ back\ to\ employee}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_aa639d594aa6adc5cafae6dbbfeb9ae75}{setWaiter}}(\mbox{\hyperlink{class_waiter}{Waiter}}*);\textcolor{comment}{//change\ it\ back\ to\ Employee}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_aa41b4d4c23c27188b6b54db1dbd12e7a}{setBill}}(\mbox{\hyperlink{class_bill}{Bill}}*);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_bill}{Bill}}*\ \mbox{\hyperlink{class_order_a8b5b4338e90c72e1e710fb3794080ce3}{getBill}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_order_a3b099add075310ec8414a7cef23b2496}{getOrderStatus}}();}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_ae0412554b30012749fb9d57ad14a6274}{toReadyStatus}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_a1fe400931ee9148081df0d974eb5e697}{toReceivedStatus}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_ae767c09cbd8411f098cc164f649dd764}{toProcessingStatus}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_order_a75cde9259264dc287608318ee8797b91}{toString}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_order_adf058dc273a7638a685ad3051f10b676}{print}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

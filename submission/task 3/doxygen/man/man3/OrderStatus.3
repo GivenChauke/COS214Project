@@ -1,0 +1,45 @@
+.TH "OrderStatus" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OrderStatus \- The \fBOrderStatus\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OrderStatus\&.h>\fP
+.PP
+Inherited by \fBProcessing\fP, \fBReady\fP, and \fBReceived\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::string \fBgetStatus\fP ()=0"
+.br
+.RI "Get the status of the order\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBOrderStatus\fP class\&. 
+
+This class represents the status of an order\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::string OrderStatus::getStatus ()\fC [pure virtual]\fP"
+
+.PP
+Get the status of the order\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The status of the order\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBProcessing\fP, \fBReady\fP, and \fBReceived\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

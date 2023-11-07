@@ -1,0 +1,222 @@
+.TH "Employee" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Employee \- The \fBEmployee\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Employee\&.h>\fP
+.PP
+Inherited by \fBManager\fP, and \fBWaiter\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEmployee\fP (int id)"
+.br
+.RI "Construct a new \fBEmployee\fP object\&. "
+.ti -1c
+.RI "virtual void \fBassignTables\fP (std::vector< \fBTable\fP * > &\fBtables\fP)"
+.br
+.RI "Assign tables to the employee\&. "
+.ti -1c
+.RI "virtual void \fBiterateTables\fP ()"
+.br
+.RI "Iterate through the tables\&. "
+.ti -1c
+.RI "void \fBmoveToNextTable\fP ()"
+.br
+.RI "Move to the next table\&. "
+.ti -1c
+.RI "\fBDepartment\fP * \fBgetDepartment\fP ()"
+.br
+.RI "Get the department of the employee\&. "
+.ti -1c
+.RI "\fBTable\fP * \fBgetCurrentTable\fP ()"
+.br
+.RI "Get the current table\&. "
+.ti -1c
+.RI "void \fBsetDepartment\fP (\fBDepartment\fP *dep)"
+.br
+.RI "Set the department of the employee\&. "
+.ti -1c
+.RI "void \fBsetCurrTable\fP (\fBTable\fP *currTab)"
+.br
+.RI "Set the current table\&. "
+.ti -1c
+.RI "void \fBGetReview\fP (const std::vector< \fBReview\fP * > &reviewList)"
+.br
+.RI "Get the reviews\&. "
+.ti -1c
+.RI "void \fBTakeOrder\fP (\fBTable\fP *table)"
+.br
+.RI "Take an order\&. "
+.ti -1c
+.RI "int \fBgetEmployeeId\fP ()"
+.br
+.RI "Get the ID of the employee\&. "
+.ti -1c
+.RI "\fB~Employee\fP ()"
+.br
+.RI "Destroy the \fBEmployee\fP object\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBDepartment\fP * \fBdepartment\fP"
+.br
+.ti -1c
+.RI "\fBTable\fP * \fBtables\fP"
+.br
+.ti -1c
+.RI "\fBTable\fP * \fBcurrTable\fP"
+.br
+.ti -1c
+.RI "\fBTableIterator\fP * \fBtableIterator\fP"
+.br
+.ti -1c
+.RI "int \fBemployeeId\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBEmployee\fP class\&. 
+
+This class represents an employee in a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Employee::Employee (int id)"
+
+.PP
+Construct a new \fBEmployee\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The ID of the employee\&. 
+.RE
+.PP
+
+.SS "Employee::~Employee ()"
+
+.PP
+Destroy the \fBEmployee\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Employee::assignTables (std::vector< \fBTable\fP * > & tables)\fC [virtual]\fP"
+
+.PP
+Assign tables to the employee\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItables\fP The tables to assign\&. 
+.RE
+.PP
+
+.SS "\fBTable\fP * Employee::getCurrentTable ()"
+
+.PP
+Get the current table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The current table\&. 
+.RE
+.PP
+
+.SS "\fBDepartment\fP * Employee::getDepartment ()"
+
+.PP
+Get the department of the employee\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The department of the employee\&. 
+.RE
+.PP
+
+.SS "int Employee::getEmployeeId ()"
+
+.PP
+Get the ID of the employee\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The ID of the employee\&. 
+.RE
+.PP
+
+.SS "void Employee::GetReview (const std::vector< \fBReview\fP * > & reviewList)"
+
+.PP
+Get the reviews\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreviewList\fP The list of reviews\&. 
+.RE
+.PP
+
+.SS "virtual void Employee::iterateTables ()\fC [virtual]\fP"
+
+.PP
+Iterate through the tables\&. 
+.PP
+Reimplemented in \fBWaiter\fP\&.
+.SS "void Employee::moveToNextTable ()"
+
+.PP
+Move to the next table\&. 
+.SS "void Employee::setCurrTable (\fBTable\fP * currTab)"
+
+.PP
+Set the current table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcurrTab\fP The current table to set\&. 
+.RE
+.PP
+
+.SS "void Employee::setDepartment (\fBDepartment\fP * dep)"
+
+.PP
+Set the department of the employee\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdep\fP The department to set\&. 
+.RE
+.PP
+
+.SS "void Employee::TakeOrder (\fBTable\fP * table)"
+
+.PP
+Take an order\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItable\fP The table to take the order from\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBTable\fP* Employee::currTable\fC [protected]\fP"
+
+.SS "\fBDepartment\fP* Employee::department\fC [protected]\fP"
+
+.SS "int Employee::employeeId\fC [protected]\fP"
+
+.SS "\fBTableIterator\fP* Employee::tableIterator\fC [protected]\fP"
+
+.SS "\fBTable\fP* Employee::tables\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

@@ -1,0 +1,102 @@
+\doxysection{Thin\+Base\+Pizza Class Reference}
+\hypertarget{class_thin_base_pizza}{}\label{class_thin_base_pizza}\index{ThinBasePizza@{ThinBasePizza}}
+
+
+The \doxylink{class_thin_base_pizza}{Thin\+Base\+Pizza} class represents a pizza with a thin crust base, which is a specific type of \doxylink{class_pizza_base}{Pizza\+Base}.  
+
+
+
+
+{\ttfamily \#include $<$Thin\+Base\+Pizza.\+h$>$}
+
+Inheritance diagram for Thin\+Base\+Pizza\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_thin_base_pizza}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_thin_base_pizza_a8ca51f6ef0652ab07f775aa3aa3e0a5b}{Thin\+Base\+Pizza}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_thin_base_pizza}{Thin\+Base\+Pizza} to set its name and cost. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pizza_base}{Pizza\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pizza_base_a23a2fe92cea8527a3c769c7883b4baf2}{Pizza\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_pizza_base}{Pizza\+Base}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_pizza_base_abeada8b50885adfa9a6cd78384b64cbd}{total}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total cost of the pizza. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pizza_base_a868a39ea5da4efcc4f2a3757c7f0d675}{decorate}} (\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Decorates the pizza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pizza_base_a85b2d1f3c18750886dfb9e6b431a5b0c}{\texorpdfstring{$\sim$}{\string~}\+Pizza\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_pizza_base}{Pizza\+Base}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pizza}{Pizza}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pizza_a2d699a68b26253cae3b2d87019deb8ec}{Pizza}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_pizza}{Pizza} to set its cost to 0.\+0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pizza_a87ac4749cc2088cdb2d49b3af9c22aee}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the pizza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pizza_a8b887f44ff8cf806832bc6045fc40b3a}{set\+Cost}} (double cost)
+\begin{DoxyCompactList}\small\item\em Set the cost of the pizza. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_pizza_a28affbd9b37a895e49aea25360a36a2c}{\texorpdfstring{$\sim$}{\string~}\+Pizza}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_pizza}{Pizza}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_food}{Food} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{set\+Food\+Quality}} (int)
+\item 
+int \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{get\+Food\+Quality}} ()
+\item 
+string \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{set\+Name}} (string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}})
+\item 
+void \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{add\+Ingredient}} (string ingredient)
+\item 
+double \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{get\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{set\+Cost}} (double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\item 
+virtual void \mbox{\hyperlink{class_food_a0546c306d6023b35aababaf33d84d6fc}{decorate}} (\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a4b500b34877fd38f084f4ec6692971ed}{decorate}} (\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}}
+\item 
+int \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{Random\+Food\+Quality}}
+\item 
+double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_thin_base_pizza}{Thin\+Base\+Pizza} class represents a pizza with a thin crust base, which is a specific type of \doxylink{class_pizza_base}{Pizza\+Base}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_thin_base_pizza_a8ca51f6ef0652ab07f775aa3aa3e0a5b}\label{class_thin_base_pizza_a8ca51f6ef0652ab07f775aa3aa3e0a5b} 
+\index{ThinBasePizza@{ThinBasePizza}!ThinBasePizza@{ThinBasePizza}}
+\index{ThinBasePizza@{ThinBasePizza}!ThinBasePizza@{ThinBasePizza}}
+\doxysubsubsection{\texorpdfstring{ThinBasePizza()}{ThinBasePizza()}}
+{\footnotesize\ttfamily Thin\+Base\+Pizza\+::\+Thin\+Base\+Pizza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_thin_base_pizza}{Thin\+Base\+Pizza} to set its name and cost. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_thin_base_pizza_8h}{Thin\+Base\+Pizza.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+.TH "Manager" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Manager \- The \fBManager\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Manager\&.h>\fP
+.PP
+Inherits \fBEmployee\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBManager\fP (int id)"
+.br
+.RI "Construct a new \fBManager\fP object\&. "
+.ti -1c
+.RI "void \fBgetReviewsForFloorDepartment\fP ()"
+.br
+.RI "Get the reviews for the floor department\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEmployee\fP
+.in +1c
+.ti -1c
+.RI "\fBEmployee\fP (int id)"
+.br
+.RI "Construct a new \fBEmployee\fP object\&. "
+.ti -1c
+.RI "virtual void \fBassignTables\fP (std::vector< \fBTable\fP * > &\fBtables\fP)"
+.br
+.RI "Assign tables to the employee\&. "
+.ti -1c
+.RI "virtual void \fBiterateTables\fP ()"
+.br
+.RI "Iterate through the tables\&. "
+.ti -1c
+.RI "void \fBmoveToNextTable\fP ()"
+.br
+.RI "Move to the next table\&. "
+.ti -1c
+.RI "\fBDepartment\fP * \fBgetDepartment\fP ()"
+.br
+.RI "Get the department of the employee\&. "
+.ti -1c
+.RI "\fBTable\fP * \fBgetCurrentTable\fP ()"
+.br
+.RI "Get the current table\&. "
+.ti -1c
+.RI "void \fBsetDepartment\fP (\fBDepartment\fP *dep)"
+.br
+.RI "Set the department of the employee\&. "
+.ti -1c
+.RI "void \fBsetCurrTable\fP (\fBTable\fP *currTab)"
+.br
+.RI "Set the current table\&. "
+.ti -1c
+.RI "void \fBGetReview\fP (const std::vector< \fBReview\fP * > &reviewList)"
+.br
+.RI "Get the reviews\&. "
+.ti -1c
+.RI "void \fBTakeOrder\fP (\fBTable\fP *table)"
+.br
+.RI "Take an order\&. "
+.ti -1c
+.RI "int \fBgetEmployeeId\fP ()"
+.br
+.RI "Get the ID of the employee\&. "
+.ti -1c
+.RI "\fB~Employee\fP ()"
+.br
+.RI "Destroy the \fBEmployee\fP object\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBEmployee\fP
+.in +1c
+.ti -1c
+.RI "\fBDepartment\fP * \fBdepartment\fP"
+.br
+.ti -1c
+.RI "\fBTable\fP * \fBtables\fP"
+.br
+.ti -1c
+.RI "\fBTable\fP * \fBcurrTable\fP"
+.br
+.ti -1c
+.RI "\fBTableIterator\fP * \fBtableIterator\fP"
+.br
+.ti -1c
+.RI "int \fBemployeeId\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBManager\fP class\&. 
+
+This class represents a manager in a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Manager::Manager (int id)"
+
+.PP
+Construct a new \fBManager\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The ID of the manager\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Manager::getReviewsForFloorDepartment ()"
+
+.PP
+Get the reviews for the floor department\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

@@ -1,0 +1,47 @@
+\doxysection{Bill\+State.\+h}
+\hypertarget{_bill_state_8h_source}{}\label{_bill_state_8h_source}\mbox{\hyperlink{_bill_state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BILLSTATE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BILLSTATE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_order_8h}{Order.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bill_state}{BillState}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_order}{Order}}*\ CopyOrder;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ cost;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ paid;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ customerID;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ tableID;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_a47bdb969feda28243f257d9e0e62d56c}{loadFromFile}}(\textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_ae773fcaeafe70dde097d397854e6cbd6}{saveToFile}}(\textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_order}{Order}}*\ \mbox{\hyperlink{class_bill_state_a5aadade52d48fbc3dda6d44ac0c12769}{getCopyOrder}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_bill_state_a0b77b766d05c93e54165ea08c70d0a88}{getCost}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bill_state_af4a285a67ad65186a824e2a58ecb58ab}{getPaidStatus}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ \mbox{\hyperlink{class_bill_state_a23928b8bd66c3e3578be9bbbb93c99db}{getCustomerID}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bill_state_a3e692e32eaaa3ba40a286ad708eef040}{getTableID}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_aab60ab0cd20087b7e2002492076cb157}{setCopyOrder}}(\mbox{\hyperlink{class_order}{Order}}*\ order);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_a407521a8776185196c8b7329a8afd66e}{setCost}}(\textcolor{keywordtype}{float}\ newCost);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_a0ac51ea880e29d25afe46e629485011d}{setPaid}}(\textcolor{keywordtype}{bool}\ pay);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_a9857f43c68a846176c7627ddff4cb61b}{setCustomerID}}(\textcolor{keywordtype}{string}\ custID);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bill_state_a425586c6f9b69c4ed67922ae7cc98a5f}{setTableID}}(\textcolor{keywordtype}{int}\ tabID);}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

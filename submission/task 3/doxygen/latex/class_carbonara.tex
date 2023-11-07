@@ -1,0 +1,117 @@
+\doxysection{Carbonara Class Reference}
+\hypertarget{class_carbonara}{}\label{class_carbonara}\index{Carbonara@{Carbonara}}
+
+
+The \doxylink{class_carbonara}{Carbonara} class represents \doxylink{class_carbonara}{Carbonara} pasta, which is a specific type of \doxylink{class_pasta_type}{Pasta\+Type}.  
+
+
+
+
+{\ttfamily \#include $<$Carbonara.\+h$>$}
+
+Inheritance diagram for Carbonara\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_carbonara}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_carbonara_a8b9fb47060c5672105923fb95e95a105}{Carbonara}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_carbonara}{Carbonara} to set its name and cost. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_carbonara_afe3fe27d133d62b4379e73365035a798}{\texorpdfstring{$\sim$}{\string~}\+Carbonara}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_carbonara}{Carbonara}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pasta_type}{Pasta\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pasta_type_a4ef0b05d0e2b66ecd9b2c1284ae2b81c}{Pasta\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_pasta_type}{Pasta\+Type} to set cost to 0.\+0. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_pasta_type_a0cd6170b80c7bc38d3e762366e407feb}{total}} ()
+\begin{DoxyCompactList}\small\item\em Virtual method to get the total cost of the pasta. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pasta_type_a29dde6d1b22e5375024091271f263088}{decorate}} (\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*}pasta\+Type)
+\begin{DoxyCompactList}\small\item\em Virtual method to decorate the pasta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pasta}{Pasta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pasta_ab9f564c7fb92d98a9cfdb9d58ac4cffd}{Pasta}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_pasta}{Pasta} to set its cost to 0.\+0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pasta_a10ba5eab2434026711ee4672efaa98ee}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the pasta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pasta_a2c32c6b2ccd27ea6ade392af89a8daf4}{set\+Cost}} (double cost)
+\begin{DoxyCompactList}\small\item\em Set the cost of the pasta. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_pasta_a37dc4075cad29b8759da0bc8a6877c8a}{\texorpdfstring{$\sim$}{\string~}\+Pasta}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_pasta}{Pasta}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_food}{Food} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{set\+Food\+Quality}} (int)
+\item 
+int \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{get\+Food\+Quality}} ()
+\item 
+string \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{set\+Name}} (string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}})
+\item 
+void \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{add\+Ingredient}} (string ingredient)
+\item 
+double \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{get\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{set\+Cost}} (double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\item 
+virtual void \mbox{\hyperlink{class_food_a0546c306d6023b35aababaf33d84d6fc}{decorate}} (\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a58da93bcf8b3477f060c29b41a6974ff}{decorate}} (\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_pasta_type}{Pasta\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pasta_type_a00871749bb8fb82ba9b5308a4286434c}{\texorpdfstring{$\sim$}{\string~}\+Pasta\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_pasta_type}{Pasta\+Type}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}}
+\item 
+int \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{Random\+Food\+Quality}}
+\item 
+double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_carbonara}{Carbonara} class represents \doxylink{class_carbonara}{Carbonara} pasta, which is a specific type of \doxylink{class_pasta_type}{Pasta\+Type}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_carbonara_a8b9fb47060c5672105923fb95e95a105}\label{class_carbonara_a8b9fb47060c5672105923fb95e95a105} 
+\index{Carbonara@{Carbonara}!Carbonara@{Carbonara}}
+\index{Carbonara@{Carbonara}!Carbonara@{Carbonara}}
+\doxysubsubsection{\texorpdfstring{Carbonara()}{Carbonara()}}
+{\footnotesize\ttfamily Carbonara\+::\+Carbonara (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_carbonara}{Carbonara} to set its name and cost. 
+
+\Hypertarget{class_carbonara_afe3fe27d133d62b4379e73365035a798}\label{class_carbonara_afe3fe27d133d62b4379e73365035a798} 
+\index{Carbonara@{Carbonara}!````~Carbonara@{\texorpdfstring{$\sim$}{\string~}Carbonara}}
+\index{````~Carbonara@{\texorpdfstring{$\sim$}{\string~}Carbonara}!Carbonara@{Carbonara}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Carbonara()}{\string~Carbonara()}}
+{\footnotesize\ttfamily Carbonara\+::\texorpdfstring{$\sim$}{\string~}\+Carbonara (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_carbonara}{Carbonara}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_carbonara_8h}{Carbonara.\+h}}\end{DoxyCompactItemize}
