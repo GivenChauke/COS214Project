@@ -25,16 +25,12 @@ jobs:
 
       - name: clean-prev
         run: |
-          cd Implementation; make full-clean
+          cd test-project/Implementation; make full-clean
 
       - name: build-cpp
         run: |
-          cd Implementation; make
-
-      - name: move-binary
-        run: |
-          cd Implementation; cp main ../main
+          cd test-project/Implementation; make
 
       - name: clean-object-files
         run: |
-          cd Implementation; make clean-o
+          cd test-project/Implementation; make clean-o
