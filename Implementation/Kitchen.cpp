@@ -47,8 +47,9 @@ void Kitchen::notify() {
         Order* currentOrder = preparedOrders.front();
         for (Waiter* waiter : waiters) {
             if (currentOrder->getWaiter()->getEmployeeId() == waiter->getEmployeeId()) {
+                std::cout<<"Give order to waiter no. "<<waiter->getEmployeeId()<<std::endl;
                 waiter->CollectOrderFromKitchen(currentOrder);
-                break; // Exit the loop after notifying the waiter for the order
+                break; //Exit the loop after notifying the waiter for the order
             }
         }
         preparedOrders.pop();
