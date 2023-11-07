@@ -1,0 +1,229 @@
+\doxysection{Customer Class Reference}
+\hypertarget{class_customer}{}\label{class_customer}\index{Customer@{Customer}}
+
+
+The \doxylink{class_customer}{Customer} class.  
+
+
+
+
+{\ttfamily \#include $<$Customer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_customer_a80f523cbedd97483658c21ce795b52bd}{get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the ID of the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_a77241afd23b324e8b7df03e7c8884c1a}{set\+ID}} (string ID)
+\begin{DoxyCompactList}\small\item\em Set the ID of the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_a345cb47adc957a6060c57a5c04c95b05}{set\+State}} (\mbox{\hyperlink{class_customer_state}{Customer\+State}} \texorpdfstring{$\ast$}{*}state)
+\begin{DoxyCompactList}\small\item\em Set the state of the customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_state}{Customer\+State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_customer_ab2cabd38f33ae4d2f1bea0a6e1defdc8}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Get the state of the customer. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_customer_aaedd9a70477fe99087ed920011a752c0}{Give\+Comment\+\_\+\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Give a comment about the food. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_customer_a37382ce61bb22171197624aa99e94586}{Give\+Comment\+\_\+\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Give a comment about the service. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_customer_a83e61abf7f3a1056f24a32a1e4f9370e}{Give\+Rating\+\_\+\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Give a rating for the food. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_customer_a3516c5a3d0755c09b52520040bd9fb45}{Give\+Rating\+\_\+\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Give a rating for the service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_afc4cab516c98cff44e414490317cd292}{Customer}} (string name)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_customer}{Customer} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3}{Customer}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_customer}{Customer} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_a9fa5281800df8773520533bcea7350b0}{receive\+Order}} (\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}order)
+\begin{DoxyCompactList}\small\item\em Receive an order. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_customer_aa02a2407b456629e5a7666c0ec225261}{Place\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Place an order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_customer_a28dd7cc7db0bec8389eaeec5a58811cf}{Seed\+Value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_customer}{Customer} class. 
+
+This class represents a customer in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_customer_afc4cab516c98cff44e414490317cd292}\label{class_customer_afc4cab516c98cff44e414490317cd292} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Customer\+::\+Customer (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \doxylink{class_customer}{Customer} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the customer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3}\label{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Customer\+::\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_customer}{Customer} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_customer_a80f523cbedd97483658c21ce795b52bd}\label{class_customer_a80f523cbedd97483658c21ce795b52bd} 
+\index{Customer@{Customer}!getID@{getID}}
+\index{getID@{getID}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily string Customer\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the ID of the customer. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the customer. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_ab2cabd38f33ae4d2f1bea0a6e1defdc8}\label{class_customer_ab2cabd38f33ae4d2f1bea0a6e1defdc8} 
+\index{Customer@{Customer}!getState@{getState}}
+\index{getState@{getState}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_customer_state}{Customer\+State}} \texorpdfstring{$\ast$}{*} Customer\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the state of the customer. 
+
+\begin{DoxyReturn}{Returns}
+The state of the customer. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_aaedd9a70477fe99087ed920011a752c0}\label{class_customer_aaedd9a70477fe99087ed920011a752c0} 
+\index{Customer@{Customer}!GiveComment\_Food@{GiveComment\_Food}}
+\index{GiveComment\_Food@{GiveComment\_Food}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{GiveComment\_Food()}{GiveComment\_Food()}}
+{\footnotesize\ttfamily string Customer\+::\+Give\+Comment\+\_\+\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Give a comment about the food. 
+
+\begin{DoxyReturn}{Returns}
+The comment about the food. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_a37382ce61bb22171197624aa99e94586}\label{class_customer_a37382ce61bb22171197624aa99e94586} 
+\index{Customer@{Customer}!GiveComment\_Service@{GiveComment\_Service}}
+\index{GiveComment\_Service@{GiveComment\_Service}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{GiveComment\_Service()}{GiveComment\_Service()}}
+{\footnotesize\ttfamily string Customer\+::\+Give\+Comment\+\_\+\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Give a comment about the service. 
+
+\begin{DoxyReturn}{Returns}
+The comment about the service. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_a83e61abf7f3a1056f24a32a1e4f9370e}\label{class_customer_a83e61abf7f3a1056f24a32a1e4f9370e} 
+\index{Customer@{Customer}!GiveRating\_Food@{GiveRating\_Food}}
+\index{GiveRating\_Food@{GiveRating\_Food}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{GiveRating\_Food()}{GiveRating\_Food()}}
+{\footnotesize\ttfamily int Customer\+::\+Give\+Rating\+\_\+\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Give a rating for the food. 
+
+\begin{DoxyReturn}{Returns}
+The rating for the food. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_a3516c5a3d0755c09b52520040bd9fb45}\label{class_customer_a3516c5a3d0755c09b52520040bd9fb45} 
+\index{Customer@{Customer}!GiveRating\_Service@{GiveRating\_Service}}
+\index{GiveRating\_Service@{GiveRating\_Service}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{GiveRating\_Service()}{GiveRating\_Service()}}
+{\footnotesize\ttfamily int Customer\+::\+Give\+Rating\+\_\+\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Give a rating for the service. 
+
+\begin{DoxyReturn}{Returns}
+The rating for the service. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_aa02a2407b456629e5a7666c0ec225261}\label{class_customer_aa02a2407b456629e5a7666c0ec225261} 
+\index{Customer@{Customer}!PlaceOrder@{PlaceOrder}}
+\index{PlaceOrder@{PlaceOrder}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{PlaceOrder()}{PlaceOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} Customer\+::\+Place\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Place an order. 
+
+\begin{DoxyReturn}{Returns}
+The order placed. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_a9fa5281800df8773520533bcea7350b0}\label{class_customer_a9fa5281800df8773520533bcea7350b0} 
+\index{Customer@{Customer}!receiveOrder@{receiveOrder}}
+\index{receiveOrder@{receiveOrder}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{receiveOrder()}{receiveOrder()}}
+{\footnotesize\ttfamily void Customer\+::receive\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*}}]{order }\end{DoxyParamCaption})}
+
+
+
+Receive an order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & The order to receive. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_customer_a77241afd23b324e8b7df03e7c8884c1a}\label{class_customer_a77241afd23b324e8b7df03e7c8884c1a} 
+\index{Customer@{Customer}!setID@{setID}}
+\index{setID@{setID}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily void Customer\+::set\+ID (\begin{DoxyParamCaption}\item[{string}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the ID of the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The ID to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_customer_a345cb47adc957a6060c57a5c04c95b05}\label{class_customer_a345cb47adc957a6060c57a5c04c95b05} 
+\index{Customer@{Customer}!setState@{setState}}
+\index{setState@{setState}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Customer\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer_state}{Customer\+State}} \texorpdfstring{$\ast$}{*}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the state of the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state to set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_customer_a28dd7cc7db0bec8389eaeec5a58811cf}\label{class_customer_a28dd7cc7db0bec8389eaeec5a58811cf} 
+\index{Customer@{Customer}!SeedValue@{SeedValue}}
+\index{SeedValue@{SeedValue}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{SeedValue}{SeedValue}}
+{\footnotesize\ttfamily int Customer\+::\+Seed\+Value\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_customer_8h}{Customer.\+h}}\end{DoxyCompactItemize}

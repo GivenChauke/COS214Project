@@ -1,0 +1,117 @@
+\doxysection{Table\+State Class Reference}
+\hypertarget{class_table_state}{}\label{class_table_state}\index{TableState@{TableState}}
+
+
+The \doxylink{class_table_state}{Table\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$Table\+State.\+h$>$}
+
+Inheritance diagram for Table\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.821138cm]{class_table_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_table_state_aa75f4e33c4f57d8bf21af36e97f2371a}{Table\+State}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_table_state}{Table\+State} object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_table_state_a36fc3ae6ff0eda00069a2a7ef52834d6}{get\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the status of the table. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_table_state_ab2e00713d470e5e7eff2d7cb267c0efe}{action}} ()=0
+\begin{DoxyCompactList}\small\item\em Perform the action for the table state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_state_ac2e76ef9193dbf8d042937940b73392f}{set\+Table}} (\mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_table_state_a18614427051f9f9f195f1ddee8356a82}{table}})
+\begin{DoxyCompactList}\small\item\em Set the table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_state_a18614427051f9f9f195f1ddee8356a82}{table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_table_state}{Table\+State} class. 
+
+This class represents the state of a table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_table_state_aa75f4e33c4f57d8bf21af36e97f2371a}\label{class_table_state_aa75f4e33c4f57d8bf21af36e97f2371a} 
+\index{TableState@{TableState}!TableState@{TableState}}
+\index{TableState@{TableState}!TableState@{TableState}}
+\doxysubsubsection{\texorpdfstring{TableState()}{TableState()}}
+{\footnotesize\ttfamily Table\+State\+::\+Table\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \doxylink{class_table_state}{Table\+State} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_table_state_ab2e00713d470e5e7eff2d7cb267c0efe}\label{class_table_state_ab2e00713d470e5e7eff2d7cb267c0efe} 
+\index{TableState@{TableState}!action@{action}}
+\index{action@{action}!TableState@{TableState}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily virtual bool Table\+State\+::action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform the action for the table state. 
+
+\begin{DoxyReturn}{Returns}
+True if the action was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_not_occupied_aaa3a34000e2850ce34cbe64ad3b11482}{Not\+Occupied}}, \mbox{\hyperlink{class_not_ready_to_order_a2eac4167743ab118ccc6ccab8be9588d}{Not\+Ready\+To\+Order}}, \mbox{\hyperlink{class_pay_bill_a691319f718cac7559519b7edca436ede}{Pay\+Bill}}, \mbox{\hyperlink{class_ready_to_order_a6843c651dc9f8a810c83340991db654e}{Ready\+To\+Order}}, and \mbox{\hyperlink{class_waiting_af8dce911e6c9f0abee06c88ac15d2670}{Waiting}}.
+
+\Hypertarget{class_table_state_a36fc3ae6ff0eda00069a2a7ef52834d6}\label{class_table_state_a36fc3ae6ff0eda00069a2a7ef52834d6} 
+\index{TableState@{TableState}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!TableState@{TableState}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily virtual string Table\+State\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the status of the table. 
+
+\begin{DoxyReturn}{Returns}
+The status of the table. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_not_occupied_aa281bcb5a3b199e99f399e2f0f8c591a}{Not\+Occupied}}, \mbox{\hyperlink{class_not_ready_to_order_abda407cf0b4958da20e8ffb6e4dbc73f}{Not\+Ready\+To\+Order}}, \mbox{\hyperlink{class_pay_bill_ab6906b700d3079744402c6683cb49dcd}{Pay\+Bill}}, \mbox{\hyperlink{class_ready_to_order_aad9ba9b02eabf65afe4c7470b570f09a}{Ready\+To\+Order}}, and \mbox{\hyperlink{class_waiting_abfa4a9dfbfa6cefecf67ede00ba34af4}{Waiting}}.
+
+\Hypertarget{class_table_state_ac2e76ef9193dbf8d042937940b73392f}\label{class_table_state_ac2e76ef9193dbf8d042937940b73392f} 
+\index{TableState@{TableState}!setTable@{setTable}}
+\index{setTable@{setTable}!TableState@{TableState}}
+\doxysubsubsection{\texorpdfstring{setTable()}{setTable()}}
+{\footnotesize\ttfamily void Table\+State\+::set\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_table}{Abstract\+Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & The table to set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_table_state_a18614427051f9f9f195f1ddee8356a82}\label{class_table_state_a18614427051f9f9f195f1ddee8356a82} 
+\index{TableState@{TableState}!table@{table}}
+\index{table@{table}!TableState@{TableState}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_table}{Abstract\+Table}}\texorpdfstring{$\ast$}{*} Table\+State\+::table\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_table_state_8h}{Table\+State.\+h}}\end{DoxyCompactItemize}

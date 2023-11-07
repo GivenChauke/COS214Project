@@ -1,0 +1,141 @@
+\doxysection{Table\+Iterator Class Reference}
+\hypertarget{class_table_iterator}{}\label{class_table_iterator}\index{TableIterator@{TableIterator}}
+
+
+The \doxylink{class_table_iterator}{Table\+Iterator} class.  
+
+
+
+
+{\ttfamily \#include $<$Table\+Iterator.\+h$>$}
+
+Inheritance diagram for Table\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_table_iterator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_table_iterator_a04cb5786b6e05a0cc6b5d0e23b4521e7}{Table\+Iterator}} (const std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&tables)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_table_iterator}{Table\+Iterator} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table_iterator_aaa5c6a0697e4edcd1355ec7df62e7f01}{\texorpdfstring{$\sim$}{\string~}\+Table\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_table_iterator}{Table\+Iterator} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_iterator_af6f67c38143a21dba7e59c71de54e418}{first}} () override
+\begin{DoxyCompactList}\small\item\em Get the first table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_iterator_aeafd3143a7774293e8947203eb07c8e2}{next}} () override
+\begin{DoxyCompactList}\small\item\em Get the next table. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_table_iterator_a847556745e871b126a65eb93ad47effd}{has\+Next}} () override
+\begin{DoxyCompactList}\small\item\em Check if there is a next table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_table_iterator_a1ab6e603f0e36536c9cb7142c04af9ce}{current}} () override
+\begin{DoxyCompactList}\small\item\em Get the current table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_table_iterator}{Table\+Iterator} class. 
+
+This class represents an iterator for a collection of tables. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_table_iterator_a04cb5786b6e05a0cc6b5d0e23b4521e7}\label{class_table_iterator_a04cb5786b6e05a0cc6b5d0e23b4521e7} 
+\index{TableIterator@{TableIterator}!TableIterator@{TableIterator}}
+\index{TableIterator@{TableIterator}!TableIterator@{TableIterator}}
+\doxysubsubsection{\texorpdfstring{TableIterator()}{TableIterator()}}
+{\footnotesize\ttfamily Table\+Iterator\+::\+Table\+Iterator (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&}]{tables }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_table_iterator}{Table\+Iterator} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tables} & The tables to iterate over. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_table_iterator_aaa5c6a0697e4edcd1355ec7df62e7f01}\label{class_table_iterator_aaa5c6a0697e4edcd1355ec7df62e7f01} 
+\index{TableIterator@{TableIterator}!````~TableIterator@{\texorpdfstring{$\sim$}{\string~}TableIterator}}
+\index{````~TableIterator@{\texorpdfstring{$\sim$}{\string~}TableIterator}!TableIterator@{TableIterator}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TableIterator()}{\string~TableIterator()}}
+{\footnotesize\ttfamily Table\+Iterator\+::\texorpdfstring{$\sim$}{\string~}\+Table\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \doxylink{class_table_iterator}{Table\+Iterator} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_table_iterator_a1ab6e603f0e36536c9cb7142c04af9ce}\label{class_table_iterator_a1ab6e603f0e36536c9cb7142c04af9ce} 
+\index{TableIterator@{TableIterator}!current@{current}}
+\index{current@{current}!TableIterator@{TableIterator}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} Table\+Iterator\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the current table. 
+
+\begin{DoxyReturn}{Returns}
+The current table. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_iterator_abce8d07bbbc732702bb9dab1b78be562}{Iterator}}.
+
+\Hypertarget{class_table_iterator_af6f67c38143a21dba7e59c71de54e418}\label{class_table_iterator_af6f67c38143a21dba7e59c71de54e418} 
+\index{TableIterator@{TableIterator}!first@{first}}
+\index{first@{first}!TableIterator@{TableIterator}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} Table\+Iterator\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the first table. 
+
+\begin{DoxyReturn}{Returns}
+The first table. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_iterator_a3ff32bf7dbbeafab5dac341885d87c01}{Iterator}}.
+
+\Hypertarget{class_table_iterator_a847556745e871b126a65eb93ad47effd}\label{class_table_iterator_a847556745e871b126a65eb93ad47effd} 
+\index{TableIterator@{TableIterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!TableIterator@{TableIterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily bool Table\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if there is a next table. 
+
+\begin{DoxyReturn}{Returns}
+True if there is a next table, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_iterator_ac3a1f5cb124b2b89e4cc41900ffd83f6}{Iterator}}.
+
+\Hypertarget{class_table_iterator_aeafd3143a7774293e8947203eb07c8e2}\label{class_table_iterator_aeafd3143a7774293e8947203eb07c8e2} 
+\index{TableIterator@{TableIterator}!next@{next}}
+\index{next@{next}!TableIterator@{TableIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} Table\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the next table. 
+
+\begin{DoxyReturn}{Returns}
+The next table. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_iterator_af2f891050cbda6926d194df2c752f5bc}{Iterator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_table_iterator_8h}{Table\+Iterator.\+h}}\end{DoxyCompactItemize}

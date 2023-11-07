@@ -1,0 +1,156 @@
+.TH "pastaBase" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pastaBase \- The \fBpastaBase\fP class represents the base of a pasta dish, which is a specific type of \fBPasta\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <pastaBase\&.h>\fP
+.PP
+Inherits \fBPasta\fP\&.
+.PP
+Inherited by \fBMacaroni\fP, and \fBSpaghetti\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpastaBase\fP ()"
+.br
+.RI "Constructor for \fBpastaBase\fP\&. "
+.ti -1c
+.RI "virtual double \fBtotal\fP ()"
+.br
+.RI "Returns the cost of the pasta\&. "
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *)"
+.br
+.RI "Virtual method to decorate the pasta\&. "
+.ti -1c
+.RI "\fB~pastaBase\fP ()"
+.br
+.RI "Destructor for \fBpastaBase\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBPasta\fP
+.in +1c
+.ti -1c
+.RI "\fBPasta\fP ()"
+.br
+.RI "Constructor for \fBPasta\fP to set its cost to 0\&.0\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the pasta\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (double cost)"
+.br
+.RI "Set the cost of the pasta\&. "
+.ti -1c
+.RI "virtual \fB~Pasta\fP ()"
+.br
+.RI "Virtual destructor for \fBPasta\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBpastaBase\fP class represents the base of a pasta dish, which is a specific type of \fBPasta\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "pastaBase::pastaBase ()"
+
+.PP
+Constructor for \fBpastaBase\fP\&. 
+.SS "pastaBase::~pastaBase ()"
+
+.PP
+Destructor for \fBpastaBase\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void pastaBase::decorate (\fBPasta\fP *)\fC [virtual]\fP"
+
+.PP
+Virtual method to decorate the pasta\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpasta\fP A pointer to the \fBPasta\fP to be decorated\&. 
+.RE
+.PP
+
+.PP
+Implements \fBPasta\fP\&.
+.SS "virtual double pastaBase::total ()\fC [virtual]\fP"
+
+.PP
+Returns the cost of the pasta\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The cost of the pasta\&. 
+.RE
+.PP
+
+.PP
+Implements \fBPasta\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

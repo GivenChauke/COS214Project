@@ -1,0 +1,28 @@
+\doxysection{Table\+Iterator.\+h}
+\hypertarget{_table_iterator_8h_source}{}\label{_table_iterator_8h_source}\mbox{\hyperlink{_table_iterator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ TABLEITERATOR\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ TABLEITERATOR\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_iterator_8h}{Iterator.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table}{Table}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_table_iterator}{TableIterator}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_iterator}{Iterator}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_table_iterator_a04cb5786b6e05a0cc6b5d0e23b4521e7}{TableIterator}}(\textcolor{keyword}{const}\ std::vector<Table*>\&\ tables);}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_table_iterator_aaa5c6a0697e4edcd1355ec7df62e7f01}{\string~TableIterator}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_table_iterator_af6f67c38143a21dba7e59c71de54e418}{first}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_table_iterator_aeafd3143a7774293e8947203eb07c8e2}{next}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_table_iterator_a847556745e871b126a65eb93ad47effd}{hasNext}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_table_iterator_a1ab6e603f0e36536c9cb7142c04af9ce}{current}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ std::vector<Table*>\ tables;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ currentPos;}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TABLEITERATOR\_H}}
+
+\end{DoxyCode}

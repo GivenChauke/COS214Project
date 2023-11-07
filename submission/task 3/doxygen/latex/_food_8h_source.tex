@@ -1,0 +1,40 @@
+\doxysection{Food.\+h}
+\hypertarget{_food_8h_source}{}\label{_food_8h_source}\mbox{\hyperlink{_food_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ FOOD\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FOOD\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_burger}{Burger}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pizza}{Pizza}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pasta}{Pasta}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food}{Food}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}};}
+\DoxyCodeLine{00027\ \ \ \ \ vector<string>\ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{RandomFoodQuality}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}};}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{setFoodQuality}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{getFoodQuality}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{getName}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{setName}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}});}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{addIngredient}}(\textcolor{keywordtype}{string}\ ingredient);\textcolor{comment}{//for\ extras}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_food_ab9dd03b525d89b32941268f4c8b1501f}{total}}()\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{getCost}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{setCost}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}});}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\string~Food}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_a0546c306d6023b35aababaf33d84d6fc}{decorate}}(\mbox{\hyperlink{class_burger}{Burger}}*)\ ;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_a58da93bcf8b3477f060c29b41a6974ff}{decorate}}(\mbox{\hyperlink{class_pizza}{Pizza}}*)\ ;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_a4b500b34877fd38f084f4ec6692971ed}{decorate}}(\mbox{\hyperlink{class_pasta}{Pasta}}*)\ ;}
+\DoxyCodeLine{00053\ \ \ \ \ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

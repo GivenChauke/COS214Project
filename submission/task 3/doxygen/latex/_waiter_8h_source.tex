@@ -1,0 +1,40 @@
+\doxysection{Waiter.\+h}
+\hypertarget{_waiter_8h_source}{}\label{_waiter_8h_source}\mbox{\hyperlink{_waiter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WAITER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WAITER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_table_iterator_8h}{TableIterator.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_employee_8h}{Employee.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_order_8h}{Order.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_waiter}{Waiter}}\ :\textcolor{keyword}{public}\ \mbox{\hyperlink{class_employee}{Employee}}\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_waiter_a7ac8a5e870ce0d1c3eb65dc56b131dd9}{Waiter}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_waiter_aa3eac8a78439feb99b0bb50380f8597d}{\string~Waiter}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_a2c60a24d56dd10e5056ef00f2fbe7efb}{getReviewsForKitchenDepartment}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_aaa73ac6d9c8503b4decfbbb73f6f3f59}{CollectOrderFromKitchen}}(\mbox{\hyperlink{class_order}{Order}}*);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_a461f4812f0b7fb324a51f34dd1f40ecd}{TakeOrder}}(\mbox{\hyperlink{class_table}{Table}}*);\textcolor{comment}{//change\ it\ back\ to\ table}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_a1088a2ef39c4d15d1062c61d59faf83b}{TakeOrder}}(\mbox{\hyperlink{class_order}{Order}}*);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_ac0753b1f56f6bc9ec5cf45375ea2ce48}{deliverOrders}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_a3579454f9a3b8c7ddca6d64e680bba3f}{assignTables}}(vector<Table*>\&);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_waiter_acfd9c0e7669b2b9c542f712dc7c3ee51}{isFullyOccupied}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_ac17f94afb525be496f8d0fef1b6fef5d}{setMaxTables}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_waiter_a2619a49404965dc733a65ed4fbdbae21}{iterateTables}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ vector<Order*>\ customerOrder;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ employeeId,\ maxTables;}
+\DoxyCodeLine{00051\ \ \ \ \ vector<Table*>\ tables;}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_table_iterator}{TableIterator}}*\ tableIterator;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WAITER\_H}}
+\DoxyCodeLine{00057\ }
+
+\end{DoxyCode}

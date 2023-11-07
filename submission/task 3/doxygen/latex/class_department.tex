@@ -1,0 +1,124 @@
+\doxysection{Department Class Reference}
+\hypertarget{class_department}{}\label{class_department}\index{Department@{Department}}
+
+
+The \doxylink{class_department}{Department} class.  
+
+
+
+
+{\ttfamily \#include $<$Department.\+h$>$}
+
+Inheritance diagram for Department\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_department}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_department_a31e1ae9efc153974218f781908780668}{Take\+Review}} (const \mbox{\hyperlink{class_review}{Review}} \&review)=0
+\begin{DoxyCompactList}\small\item\em Take a review. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_department_a762a1703cc8c9fd3bc3348496a992100}{Display\+Reviews}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the reviews. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_department_a4622f57837eda1d0ec2a95073e029721}{Calculate\+Average\+Rating}} () const =0
+\begin{DoxyCompactList}\small\item\em Calculate the average rating. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_department_adb0bb2e4255895a071fc2e829ede607b}{Delete\+Review}} (const \mbox{\hyperlink{class_review}{Review}} \&review)=0
+\begin{DoxyCompactList}\small\item\em Delete a review. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ \mbox{\hyperlink{class_department_a08c15967258374fadc25e50d76990038}{reviews}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_department}{Department} class. 
+
+This class represents a department in a restaurant. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_department_a4622f57837eda1d0ec2a95073e029721}\label{class_department_a4622f57837eda1d0ec2a95073e029721} 
+\index{Department@{Department}!CalculateAverageRating@{CalculateAverageRating}}
+\index{CalculateAverageRating@{CalculateAverageRating}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{CalculateAverageRating()}{CalculateAverageRating()}}
+{\footnotesize\ttfamily virtual double Department\+::\+Calculate\+Average\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculate the average rating. 
+
+\begin{DoxyReturn}{Returns}
+The average rating. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_floor_department_a2951afacb92f41fecac2591e80666e93}{Floor\+Department}}, and \mbox{\hyperlink{class_kitchen_department_a9a810be5e16e6689c5d318e428aea5fc}{Kitchen\+Department}}.
+
+\Hypertarget{class_department_adb0bb2e4255895a071fc2e829ede607b}\label{class_department_adb0bb2e4255895a071fc2e829ede607b} 
+\index{Department@{Department}!DeleteReview@{DeleteReview}}
+\index{DeleteReview@{DeleteReview}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{DeleteReview()}{DeleteReview()}}
+{\footnotesize\ttfamily virtual void Department\+::\+Delete\+Review (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_review}{Review}} \&}]{review }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Delete a review. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review} & The review to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_floor_department_a8f0fbdfa76ac08a5b195a5275c812dd4}{Floor\+Department}}, and \mbox{\hyperlink{class_kitchen_department_af541ed0912163da801f40afc47a1019c}{Kitchen\+Department}}.
+
+\Hypertarget{class_department_a762a1703cc8c9fd3bc3348496a992100}\label{class_department_a762a1703cc8c9fd3bc3348496a992100} 
+\index{Department@{Department}!DisplayReviews@{DisplayReviews}}
+\index{DisplayReviews@{DisplayReviews}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{DisplayReviews()}{DisplayReviews()}}
+{\footnotesize\ttfamily virtual void Department\+::\+Display\+Reviews (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display the reviews. 
+
+
+
+Implemented in \mbox{\hyperlink{class_floor_department_ae40cb0b75fd3ea047b5d29f5d76582dc}{Floor\+Department}}, and \mbox{\hyperlink{class_kitchen_department_ad559ed26c492b4f3e0f4d4ca35e1c3e7}{Kitchen\+Department}}.
+
+\Hypertarget{class_department_a31e1ae9efc153974218f781908780668}\label{class_department_a31e1ae9efc153974218f781908780668} 
+\index{Department@{Department}!TakeReview@{TakeReview}}
+\index{TakeReview@{TakeReview}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{TakeReview()}{TakeReview()}}
+{\footnotesize\ttfamily virtual void Department\+::\+Take\+Review (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_review}{Review}} \&}]{review }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Take a review. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review} & The review to take. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_floor_department_af5ad8764c04d00d475d58f5f54a77585}{Floor\+Department}}, and \mbox{\hyperlink{class_kitchen_department_a085a33d3ba9cb144d856e54b710f636b}{Kitchen\+Department}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_department_a08c15967258374fadc25e50d76990038}\label{class_department_a08c15967258374fadc25e50d76990038} 
+\index{Department@{Department}!reviews@{reviews}}
+\index{reviews@{reviews}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{reviews}{reviews}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_review}{Review}}$>$ Department\+::reviews\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_department_8h}{Department.\+h}}\end{DoxyCompactItemize}

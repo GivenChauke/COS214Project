@@ -1,0 +1,271 @@
+.TH "AbstractTable" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AbstractTable
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AbstractTable\&.h>\fP
+.PP
+Inherited by \fBCombinedTable\fP, and \fBTable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBgetTableID\fP ()"
+.br
+.RI "Get the \fBTable\fP I D object\&. "
+.ti -1c
+.RI "void \fBsetTableID\fP (int ID)"
+.br
+.RI "Set the \fBTable\fP ID\&. "
+.ti -1c
+.RI "void \fBsetOccupied\fP (bool o)"
+.br
+.RI "Set the Occupied object\&. "
+.ti -1c
+.RI "bool \fBgetOccupied\fP ()"
+.br
+.RI "Get the Occupied object\&. "
+.ti -1c
+.RI "int \fBgetMaxPeople\fP ()"
+.br
+.RI "Get the MaxPeople allowed in on the table\&. "
+.ti -1c
+.RI "bool \fBvisitTable\fP ()"
+.br
+.RI "Set the Max People object\&. "
+.ti -1c
+.RI "void \fBsetMaxPeople\fP (int \fBmaxPeople\fP)"
+.br
+.ti -1c
+.RI "\fBTableState\fP * \fBgetTableState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTableState\fP (\fBTableState\fP *state)"
+.br
+.ti -1c
+.RI "\fBCustomerGroup\fP * \fBgetCustomerGroup\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCustomerGroup\fP (\fBCustomerGroup\fP *\fBcustomerGroup\fP)"
+.br
+.ti -1c
+.RI "virtual bool \fBAddTable\fP (\fBAbstractTable\fP *table)=0"
+.br
+.ti -1c
+.RI "virtual \fBAbstractTable\fP * \fBSeparateTable\fP ()=0"
+.br
+.ti -1c
+.RI "int \fBgetCurrentPeople\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCurrentPeople\fP (int \fBcurrentPeople\fP)"
+.br
+.ti -1c
+.RI "virtual vector< \fBOrder\fP * > \fBPlaceOrder\fP ()"
+.br
+.ti -1c
+.RI "void \fBReceiveOrder\fP (vector< \fBOrder\fP * > orders)"
+.br
+.ti -1c
+.RI "int \fBgetRandomState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRandomState\fP (int \fBRandomState\fP)"
+.br
+.ti -1c
+.RI "string \fBEnquireState\fP ()"
+.br
+.ti -1c
+.RI "\fBAbstractTable\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~AbstractTable\fP ()"
+.br
+.ti -1c
+.RI "bool \fBpayBill\fP ()"
+.br
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewFood\fP ()"
+.br
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewService\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBmaxPeople\fP"
+.br
+.ti -1c
+.RI "\fBTableState\fP * \fBtableState\fP"
+.br
+.ti -1c
+.RI "\fBCustomerGroup\fP * \fBcustomerGroup\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentPeople\fP"
+.br
+.ti -1c
+.RI "int \fBRandomState\fP"
+.br
+.ti -1c
+.RI "int \fBtableID\fP"
+.br
+.ti -1c
+.RI "bool \fBoccupied\fP =false"
+.br
+.in -1c
+.SS "Static Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBcounter\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AbstractTable::AbstractTable ()"
+
+.SS "virtual AbstractTable::~AbstractTable ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool AbstractTable::AddTable (\fBAbstractTable\fP * table)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCombinedTable\fP, and \fBTable\fP\&.
+.SS "string AbstractTable::EnquireState ()"
+
+.SS "int AbstractTable::getCurrentPeople ()\fC [inline]\fP"
+
+.SS "\fBCustomerGroup\fP * AbstractTable::getCustomerGroup ()\fC [inline]\fP"
+
+.SS "int AbstractTable::getMaxPeople ()\fC [inline]\fP"
+
+.PP
+Get the MaxPeople allowed in on the table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "bool AbstractTable::getOccupied ()\fC [inline]\fP"
+
+.PP
+Get the Occupied object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "int AbstractTable::getRandomState ()"
+
+.SS "int AbstractTable::getTableID ()\fC [inline]\fP"
+
+.PP
+Get the \fBTable\fP I D object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "\fBTableState\fP * AbstractTable::getTableState ()\fC [inline]\fP"
+
+.SS "bool AbstractTable::payBill ()"
+
+.SS "virtual vector< \fBOrder\fP * > AbstractTable::PlaceOrder ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCombinedTable\fP\&.
+.SS "void AbstractTable::ReceiveOrder (vector< \fBOrder\fP * > orders)"
+
+.SS "vector< \fBReview\fP > AbstractTable::ReviewFood ()\fC [inline]\fP"
+
+.SS "vector< \fBReview\fP > AbstractTable::ReviewService ()\fC [inline]\fP"
+
+.SS "virtual \fBAbstractTable\fP * AbstractTable::SeparateTable ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCombinedTable\fP, and \fBTable\fP\&.
+.SS "void AbstractTable::setCurrentPeople (int currentPeople)\fC [inline]\fP"
+
+.SS "void AbstractTable::setCustomerGroup (\fBCustomerGroup\fP * customerGroup)\fC [inline]\fP"
+
+.SS "void AbstractTable::setMaxPeople (int maxPeople)\fC [inline]\fP"
+
+.SS "void AbstractTable::setOccupied (bool o)\fC [inline]\fP"
+
+.PP
+Set the Occupied object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIo\fP set occupied attribute 
+.br
+\fIo\fP 
+.RE
+.PP
+
+.SS "void AbstractTable::setRandomState (int RandomState)\fC [inline]\fP"
+
+.SS "void AbstractTable::setTableID (int ID)\fC [inline]\fP"
+
+.PP
+Set the \fBTable\fP ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIID\fP seting tableID 
+.br
+\fIID\fP 
+.RE
+.PP
+
+.SS "void AbstractTable::setTableState (\fBTableState\fP * state)\fC [inline]\fP"
+
+.SS "bool AbstractTable::visitTable ()"
+
+.PP
+Set the Max People object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImaxPeople\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int AbstractTable::counter\fC [static]\fP, \fC [protected]\fP"
+
+.SS "int AbstractTable::currentPeople\fC [protected]\fP"
+
+.SS "\fBCustomerGroup\fP* AbstractTable::customerGroup\fC [protected]\fP"
+
+.SS "int AbstractTable::maxPeople\fC [protected]\fP"
+
+.SS "bool AbstractTable::occupied =false\fC [protected]\fP"
+
+.SS "int AbstractTable::RandomState\fC [protected]\fP"
+
+.SS "int AbstractTable::tableID\fC [protected]\fP"
+
+.SS "\fBTableState\fP* AbstractTable::tableState\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

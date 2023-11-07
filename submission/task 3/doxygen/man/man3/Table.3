@@ -1,0 +1,182 @@
+.TH "Table" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Table \- The \fBTable\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Table\&.h>\fP
+.PP
+Inherits \fBAbstractTable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTable\fP ()"
+.br
+.ti -1c
+.RI "\fB~Table\fP ()"
+.br
+.ti -1c
+.RI "bool \fBAddTable\fP (\fBAbstractTable\fP *table)"
+.br
+.ti -1c
+.RI "\fBAbstractTable\fP * \fBSeparateTable\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetTableNumber\fP ()"
+.br
+.RI "Get the table number\&. "
+.in -1c
+
+Public Member Functions inherited from \fBAbstractTable\fP
+.in +1c
+.ti -1c
+.RI "int \fBgetTableID\fP ()"
+.br
+.RI "Get the \fBTable\fP I D object\&. "
+.ti -1c
+.RI "void \fBsetTableID\fP (int ID)"
+.br
+.RI "Set the \fBTable\fP ID\&. "
+.ti -1c
+.RI "void \fBsetOccupied\fP (bool o)"
+.br
+.RI "Set the Occupied object\&. "
+.ti -1c
+.RI "bool \fBgetOccupied\fP ()"
+.br
+.RI "Get the Occupied object\&. "
+.ti -1c
+.RI "int \fBgetMaxPeople\fP ()"
+.br
+.RI "Get the MaxPeople allowed in on the table\&. "
+.ti -1c
+.RI "bool \fBvisitTable\fP ()"
+.br
+.RI "Set the Max People object\&. "
+.ti -1c
+.RI "void \fBsetMaxPeople\fP (int \fBmaxPeople\fP)"
+.br
+.ti -1c
+.RI "\fBTableState\fP * \fBgetTableState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTableState\fP (\fBTableState\fP *state)"
+.br
+.ti -1c
+.RI "\fBCustomerGroup\fP * \fBgetCustomerGroup\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCustomerGroup\fP (\fBCustomerGroup\fP *\fBcustomerGroup\fP)"
+.br
+.ti -1c
+.RI "int \fBgetCurrentPeople\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCurrentPeople\fP (int \fBcurrentPeople\fP)"
+.br
+.ti -1c
+.RI "virtual vector< \fBOrder\fP * > \fBPlaceOrder\fP ()"
+.br
+.ti -1c
+.RI "void \fBReceiveOrder\fP (vector< \fBOrder\fP * > orders)"
+.br
+.ti -1c
+.RI "int \fBgetRandomState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRandomState\fP (int \fBRandomState\fP)"
+.br
+.ti -1c
+.RI "string \fBEnquireState\fP ()"
+.br
+.ti -1c
+.RI "\fBAbstractTable\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~AbstractTable\fP ()"
+.br
+.ti -1c
+.RI "bool \fBpayBill\fP ()"
+.br
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewFood\fP ()"
+.br
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewService\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBAbstractTable\fP
+.in +1c
+.ti -1c
+.RI "int \fBmaxPeople\fP"
+.br
+.ti -1c
+.RI "\fBTableState\fP * \fBtableState\fP"
+.br
+.ti -1c
+.RI "\fBCustomerGroup\fP * \fBcustomerGroup\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentPeople\fP"
+.br
+.ti -1c
+.RI "int \fBRandomState\fP"
+.br
+.ti -1c
+.RI "int \fBtableID\fP"
+.br
+.ti -1c
+.RI "bool \fBoccupied\fP =false"
+.br
+.in -1c
+
+Static Protected Attributes inherited from \fBAbstractTable\fP
+.in +1c
+.ti -1c
+.RI "static int \fBcounter\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBTable\fP class\&. 
+
+This class represents a table in a restaurant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Table::Table ()\fC [inline]\fP"
+
+.SS "Table::~Table ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Table::AddTable (\fBAbstractTable\fP * table)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBAbstractTable\fP\&.
+.SS "int Table::getTableNumber ()"
+
+.PP
+Get the table number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The table number\&. 
+.RE
+.PP
+
+.SS "\fBAbstractTable\fP * Table::SeparateTable ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBAbstractTable\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

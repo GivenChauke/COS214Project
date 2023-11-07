@@ -1,0 +1,100 @@
+.TH "Department" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Department \- The \fBDepartment\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Department\&.h>\fP
+.PP
+Inherited by \fBFloorDepartment\fP, and \fBKitchenDepartment\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBTakeReview\fP (const \fBReview\fP &review)=0"
+.br
+.RI "Take a review\&. "
+.ti -1c
+.RI "virtual void \fBDisplayReviews\fP ()=0"
+.br
+.RI "Display the reviews\&. "
+.ti -1c
+.RI "virtual double \fBCalculateAverageRating\fP () const =0"
+.br
+.RI "Calculate the average rating\&. "
+.ti -1c
+.RI "virtual void \fBDeleteReview\fP (const \fBReview\fP &review)=0"
+.br
+.RI "Delete a review\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBReview\fP > \fBreviews\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBDepartment\fP class\&. 
+
+This class represents a department in a restaurant\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual double Department::CalculateAverageRating () const\fC [pure virtual]\fP"
+
+.PP
+Calculate the average rating\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The average rating\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBFloorDepartment\fP, and \fBKitchenDepartment\fP\&.
+.SS "virtual void Department::DeleteReview (const \fBReview\fP & review)\fC [pure virtual]\fP"
+
+.PP
+Delete a review\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreview\fP The review to delete\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBFloorDepartment\fP, and \fBKitchenDepartment\fP\&.
+.SS "virtual void Department::DisplayReviews ()\fC [pure virtual]\fP"
+
+.PP
+Display the reviews\&. 
+.PP
+Implemented in \fBFloorDepartment\fP, and \fBKitchenDepartment\fP\&.
+.SS "virtual void Department::TakeReview (const \fBReview\fP & review)\fC [pure virtual]\fP"
+
+.PP
+Take a review\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreview\fP The review to take\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBFloorDepartment\fP, and \fBKitchenDepartment\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBReview\fP> Department::reviews\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

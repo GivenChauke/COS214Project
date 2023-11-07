@@ -1,0 +1,83 @@
+.TH "Waiting" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Waiting \- The \fBWaiting\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Waiting\&.h>\fP
+.PP
+Inherits \fBTableState\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "string \fBgetStatus\fP ()"
+.br
+.RI "Get the status of the table\&. "
+.ti -1c
+.RI "bool \fBaction\fP ()"
+.br
+.RI "Perform the action for the waiting state\&. "
+.in -1c
+
+Public Member Functions inherited from \fBTableState\fP
+.in +1c
+.ti -1c
+.RI "\fBTableState\fP ()"
+.br
+.RI "Construct a new \fBTableState\fP object\&. "
+.ti -1c
+.RI "void \fBsetTable\fP (\fBAbstractTable\fP *\fBtable\fP)"
+.br
+.RI "Set the table\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBTableState\fP
+.in +1c
+.ti -1c
+.RI "\fBAbstractTable\fP * \fBtable\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBWaiting\fP class\&. 
+
+This class represents the waiting state of a table\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Waiting::action ()\fC [virtual]\fP"
+
+.PP
+Perform the action for the waiting state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+False\&. 
+.RE
+.PP
+
+.PP
+Implements \fBTableState\fP\&.
+.SS "string Waiting::getStatus ()\fC [virtual]\fP"
+
+.PP
+Get the status of the table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The status of the table\&. 
+.RE
+.PP
+
+.PP
+Implements \fBTableState\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

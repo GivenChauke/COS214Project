@@ -1,0 +1,210 @@
+.TH "CombinedTable" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CombinedTable \- Represents a combined table that can group multiple \fBAbstractTable\fP instances\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CombinedTable\&.h>\fP
+.PP
+Inherits \fBAbstractTable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCombinedTable\fP ()"
+.br
+.RI "Constructor for the \fBCombinedTable\fP class\&. "
+.ti -1c
+.RI "\fB~CombinedTable\fP ()"
+.br
+.RI "Destructor for the \fBCombinedTable\fP class\&. "
+.ti -1c
+.RI "bool \fBAddTable\fP (\fBAbstractTable\fP *table)"
+.br
+.RI "Add an \fBAbstractTable\fP to the combined table\&. "
+.ti -1c
+.RI "\fBAbstractTable\fP * \fBSeparateTable\fP ()"
+.br
+.RI "Separate an \fBAbstractTable\fP from the combined table\&. "
+.ti -1c
+.RI "vector< \fBOrder\fP * > \fBPlaceOrder\fP ()"
+.br
+.RI "Place orders for all tables in the combined table\&. "
+.in -1c
+
+Public Member Functions inherited from \fBAbstractTable\fP
+.in +1c
+.ti -1c
+.RI "int \fBgetTableID\fP ()"
+.br
+.RI "Get the \fBTable\fP I D object\&. "
+.ti -1c
+.RI "void \fBsetTableID\fP (int ID)"
+.br
+.RI "Set the \fBTable\fP ID\&. "
+.ti -1c
+.RI "void \fBsetOccupied\fP (bool o)"
+.br
+.RI "Set the Occupied object\&. "
+.ti -1c
+.RI "bool \fBgetOccupied\fP ()"
+.br
+.RI "Get the Occupied object\&. "
+.ti -1c
+.RI "int \fBgetMaxPeople\fP ()"
+.br
+.RI "Get the MaxPeople allowed in on the table\&. "
+.ti -1c
+.RI "bool \fBvisitTable\fP ()"
+.br
+.RI "Set the Max People object\&. "
+.ti -1c
+.RI "void \fBsetMaxPeople\fP (int \fBmaxPeople\fP)"
+.br
+.ti -1c
+.RI "\fBTableState\fP * \fBgetTableState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTableState\fP (\fBTableState\fP *state)"
+.br
+.ti -1c
+.RI "\fBCustomerGroup\fP * \fBgetCustomerGroup\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCustomerGroup\fP (\fBCustomerGroup\fP *\fBcustomerGroup\fP)"
+.br
+.ti -1c
+.RI "int \fBgetCurrentPeople\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCurrentPeople\fP (int \fBcurrentPeople\fP)"
+.br
+.ti -1c
+.RI "void \fBReceiveOrder\fP (vector< \fBOrder\fP * > orders)"
+.br
+.ti -1c
+.RI "int \fBgetRandomState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRandomState\fP (int \fBRandomState\fP)"
+.br
+.ti -1c
+.RI "string \fBEnquireState\fP ()"
+.br
+.ti -1c
+.RI "\fBAbstractTable\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~AbstractTable\fP ()"
+.br
+.ti -1c
+.RI "bool \fBpayBill\fP ()"
+.br
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewFood\fP ()"
+.br
+.ti -1c
+.RI "vector< \fBReview\fP > \fBReviewService\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBAbstractTable\fP
+.in +1c
+.ti -1c
+.RI "int \fBmaxPeople\fP"
+.br
+.ti -1c
+.RI "\fBTableState\fP * \fBtableState\fP"
+.br
+.ti -1c
+.RI "\fBCustomerGroup\fP * \fBcustomerGroup\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentPeople\fP"
+.br
+.ti -1c
+.RI "int \fBRandomState\fP"
+.br
+.ti -1c
+.RI "int \fBtableID\fP"
+.br
+.ti -1c
+.RI "bool \fBoccupied\fP =false"
+.br
+.in -1c
+
+Static Protected Attributes inherited from \fBAbstractTable\fP
+.in +1c
+.ti -1c
+.RI "static int \fBcounter\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a combined table that can group multiple \fBAbstractTable\fP instances\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CombinedTable::CombinedTable ()"
+
+.PP
+Constructor for the \fBCombinedTable\fP class\&. 
+.SS "CombinedTable::~CombinedTable ()"
+
+.PP
+Destructor for the \fBCombinedTable\fP class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CombinedTable::AddTable (\fBAbstractTable\fP * table)\fC [virtual]\fP"
+
+.PP
+Add an \fBAbstractTable\fP to the combined table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItable\fP A pointer to the \fBAbstractTable\fP to be added\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if the addition was successful, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAbstractTable\fP\&.
+.SS "vector< \fBOrder\fP * > CombinedTable::PlaceOrder ()\fC [virtual]\fP"
+
+.PP
+Place orders for all tables in the combined table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A vector of \fBOrder\fP pointers representing the placed orders\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBAbstractTable\fP\&.
+.SS "\fBAbstractTable\fP * CombinedTable::SeparateTable ()\fC [virtual]\fP"
+
+.PP
+Separate an \fBAbstractTable\fP from the combined table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the separated \fBAbstractTable\fP, or NULL if the combined table is empty\&. 
+.RE
+.PP
+
+.PP
+Implements \fBAbstractTable\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

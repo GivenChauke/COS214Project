@@ -1,0 +1,142 @@
+.TH "Food" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Food \- The \fBFood\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Food\&.h>\fP
+.PP
+Inherited by \fBBurger\fP, \fBPasta\fP, and \fBPizza\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "virtual double \fBtotal\fP ()=0"
+.br
+.RI "Calculate the total cost of the food\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBFood\fP class\&. 
+
+This class represents a food item\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Food::Food ()"
+
+.PP
+Construct a new \fBFood\fP object\&. 
+.SS "virtual Food::~Food ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Food::addIngredient (string ingredient)"
+
+.SS "virtual void Food::decorate (\fBBurger\fP *)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBBurgerBase\fP, \fBBurger\fP, and \fBBurgerTopping\fP\&.
+.SS "virtual void Food::decorate (\fBPasta\fP *)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBpastaBase\fP, \fBPasta\fP, and \fBPastaType\fP\&.
+.SS "virtual void Food::decorate (\fBPizza\fP *)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBPizzaBase\fP, \fBPizza\fP, and \fBPizzaType\fP\&.
+.SS "double Food::getCost ()"
+
+.SS "int Food::getFoodQuality ()"
+
+.SS "string Food::getName ()"
+
+.SS "void Food::setCost (double cost)"
+
+.SS "void Food::setFoodQuality (int)"
+
+.SS "void Food::setName (string name)"
+
+.SS "virtual double Food::total ()\fC [pure virtual]\fP"
+
+.PP
+Calculate the total cost of the food\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The total cost of the food\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBBurgerBase\fP, \fBBurgerTopping\fP, \fBpastaBase\fP, \fBPastaType\fP, \fBPizzaBase\fP, \fBPizzaType\fP, \fBBurger\fP, \fBPasta\fP, and \fBPizza\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Food::cost\fC [protected]\fP"
+
+.SS "vector<string> Food::ingredients\fC [protected]\fP"
+
+.SS "string Food::name\fC [protected]\fP"
+
+.SS "int Food::RandomFoodQuality\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

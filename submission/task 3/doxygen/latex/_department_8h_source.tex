@@ -1,0 +1,23 @@
+\doxysection{Department.\+h}
+\hypertarget{_department_8h_source}{}\label{_department_8h_source}\mbox{\hyperlink{_department_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ DEPARTMENT\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ DEPARTMENT\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_review_8h}{Review.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_department}{Department}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_department_a31e1ae9efc153974218f781908780668}{TakeReview}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_review}{Review}}\&\ review)\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_department_a762a1703cc8c9fd3bc3348496a992100}{DisplayReviews}}()\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_department_a4622f57837eda1d0ec2a95073e029721}{CalculateAverageRating}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_department_adb0bb2e4255895a071fc2e829ede607b}{DeleteReview}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_review}{Review}}\&\ review)\ =\ 0;}
+\DoxyCodeLine{00043\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00044\ \ \ \ \ std::vector<Review>\ \mbox{\hyperlink{class_department_a08c15967258374fadc25e50d76990038}{reviews}};}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DEPARTMENT\_H}}
+
+\end{DoxyCode}

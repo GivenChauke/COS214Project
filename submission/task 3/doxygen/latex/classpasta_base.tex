@@ -1,0 +1,146 @@
+\doxysection{pasta\+Base Class Reference}
+\hypertarget{classpasta_base}{}\label{classpasta_base}\index{pastaBase@{pastaBase}}
+
+
+The \doxylink{classpasta_base}{pasta\+Base} class represents the base of a pasta dish, which is a specific type of \doxylink{class_pasta}{Pasta}.  
+
+
+
+
+{\ttfamily \#include $<$pasta\+Base.\+h$>$}
+
+Inheritance diagram for pasta\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpasta_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpasta_base_a3db7f8a4a9395c95801255fcc05bdf86}{pasta\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classpasta_base}{pasta\+Base}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classpasta_base_a7234ebfdac92e2b2ab256ac6a2674e8f}{total}} ()
+\begin{DoxyCompactList}\small\item\em Returns the cost of the pasta. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classpasta_base_a91ca442871d842ae3ab82e67e7a086cf}{decorate}} (\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Virtual method to decorate the pasta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpasta_base_a008b19bf77c68ae53276e976119f38a5}{\texorpdfstring{$\sim$}{\string~}pasta\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classpasta_base}{pasta\+Base}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pasta}{Pasta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pasta_ab9f564c7fb92d98a9cfdb9d58ac4cffd}{Pasta}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_pasta}{Pasta} to set its cost to 0.\+0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pasta_a10ba5eab2434026711ee4672efaa98ee}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Get the cost of the pasta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pasta_a2c32c6b2ccd27ea6ade392af89a8daf4}{set\+Cost}} (double cost)
+\begin{DoxyCompactList}\small\item\em Set the cost of the pasta. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_pasta_a37dc4075cad29b8759da0bc8a6877c8a}{\texorpdfstring{$\sim$}{\string~}\+Pasta}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_pasta}{Pasta}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_food}{Food} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{set\+Food\+Quality}} (int)
+\item 
+int \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{get\+Food\+Quality}} ()
+\item 
+string \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{set\+Name}} (string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}})
+\item 
+void \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{add\+Ingredient}} (string ingredient)
+\item 
+double \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{get\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{set\+Cost}} (double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\item 
+virtual void \mbox{\hyperlink{class_food_a0546c306d6023b35aababaf33d84d6fc}{decorate}} (\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a58da93bcf8b3477f060c29b41a6974ff}{decorate}} (\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_food}{Food}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}}
+\item 
+int \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{Random\+Food\+Quality}}
+\item 
+double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classpasta_base}{pasta\+Base} class represents the base of a pasta dish, which is a specific type of \doxylink{class_pasta}{Pasta}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpasta_base_a3db7f8a4a9395c95801255fcc05bdf86}\label{classpasta_base_a3db7f8a4a9395c95801255fcc05bdf86} 
+\index{pastaBase@{pastaBase}!pastaBase@{pastaBase}}
+\index{pastaBase@{pastaBase}!pastaBase@{pastaBase}}
+\doxysubsubsection{\texorpdfstring{pastaBase()}{pastaBase()}}
+{\footnotesize\ttfamily pasta\+Base\+::pasta\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{classpasta_base}{pasta\+Base}. 
+
+\Hypertarget{classpasta_base_a008b19bf77c68ae53276e976119f38a5}\label{classpasta_base_a008b19bf77c68ae53276e976119f38a5} 
+\index{pastaBase@{pastaBase}!````~pastaBase@{\texorpdfstring{$\sim$}{\string~}pastaBase}}
+\index{````~pastaBase@{\texorpdfstring{$\sim$}{\string~}pastaBase}!pastaBase@{pastaBase}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}pastaBase()}{\string~pastaBase()}}
+{\footnotesize\ttfamily pasta\+Base\+::\texorpdfstring{$\sim$}{\string~}pasta\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{classpasta_base}{pasta\+Base}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpasta_base_a91ca442871d842ae3ab82e67e7a086cf}\label{classpasta_base_a91ca442871d842ae3ab82e67e7a086cf} 
+\index{pastaBase@{pastaBase}!decorate@{decorate}}
+\index{decorate@{decorate}!pastaBase@{pastaBase}}
+\doxysubsubsection{\texorpdfstring{decorate()}{decorate()}}
+{\footnotesize\ttfamily virtual void pasta\+Base\+::decorate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual method to decorate the pasta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pasta} & A pointer to the \doxylink{class_pasta}{Pasta} to be decorated. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_pasta_a1b8270510ec0e8d2e639f363f5654404}{Pasta}}.
+
+\Hypertarget{classpasta_base_a7234ebfdac92e2b2ab256ac6a2674e8f}\label{classpasta_base_a7234ebfdac92e2b2ab256ac6a2674e8f} 
+\index{pastaBase@{pastaBase}!total@{total}}
+\index{total@{total}!pastaBase@{pastaBase}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily virtual double pasta\+Base\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the cost of the pasta. 
+
+\begin{DoxyReturn}{Returns}
+The cost of the pasta. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_pasta_ac8ac00af03e60a9ee3bc020b9fbbf7ea}{Pasta}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pasta_base_8h}{pasta\+Base.\+h}}\end{DoxyCompactItemize}

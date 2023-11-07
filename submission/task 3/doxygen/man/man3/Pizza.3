@@ -1,0 +1,170 @@
+.TH "Pizza" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pizza \- The \fBPizza\fP class represents a generic pizza\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Pizza\&.h>\fP
+.PP
+Inherits \fBFood\fP\&.
+.PP
+Inherited by \fBPizzaBase\fP, and \fBPizzaType\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPizza\fP ()"
+.br
+.RI "Constructor for \fBPizza\fP to set its cost to 0\&.0\&. "
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *)=0"
+.br
+.RI "Virtual method to decorate the pizza\&. "
+.ti -1c
+.RI "virtual double \fBtotal\fP ()=0"
+.br
+.RI "Virtual method to get the total cost of the pizza\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the pizza\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (double cost)"
+.br
+.RI "Set the cost of the pizza\&. "
+.ti -1c
+.RI "virtual \fB~Pizza\fP ()"
+.br
+.RI "Virtual destructor for \fBPizza\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBPizza\fP class represents a generic pizza\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Pizza::Pizza ()"
+
+.PP
+Constructor for \fBPizza\fP to set its cost to 0\&.0\&. 
+.SS "virtual Pizza::~Pizza ()\fC [virtual]\fP"
+
+.PP
+Virtual destructor for \fBPizza\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Pizza::decorate (\fBPizza\fP *)\fC [pure virtual]\fP"
+
+.PP
+Virtual method to decorate the pizza\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpizza\fP A pointer to the \fBPizza\fP to be decorated\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBFood\fP\&.
+.PP
+Implemented in \fBPizzaBase\fP, and \fBPizzaType\fP\&.
+.SS "double Pizza::getCost ()"
+
+.PP
+Get the cost of the pizza\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The cost of the pizza\&. 
+.RE
+.PP
+
+.SS "void Pizza::setCost (double cost)"
+
+.PP
+Set the cost of the pizza\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcost\fP The cost of the pizza\&. 
+.RE
+.PP
+
+.SS "virtual double Pizza::total ()\fC [pure virtual]\fP"
+
+.PP
+Virtual method to get the total cost of the pizza\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The total cost of the pizza\&. 
+.RE
+.PP
+
+.PP
+Implements \fBFood\fP\&.
+.PP
+Implemented in \fBPizzaBase\fP, and \fBPizzaType\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

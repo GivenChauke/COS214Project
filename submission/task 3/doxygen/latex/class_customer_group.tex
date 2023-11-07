@@ -1,0 +1,301 @@
+\doxysection{Customer\+Group Class Reference}
+\hypertarget{class_customer_group}{}\label{class_customer_group}\index{CustomerGroup@{CustomerGroup}}
+
+
+Represents a group of customers in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Customer\+Group.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \mbox{\hyperlink{class_customer_group_a8d4896933946b533ac495bcdae256b05}{get\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Get the customers in the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_group_a2614f961f8382d1035dcd6853834e8ab}{set\+Customers}} (vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ customer)
+\begin{DoxyCompactList}\small\item\em Set the customers in the group. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_customer_group_acbe9c546db0d7a59211982af5fd359f9}{get\+Random\+State}} ()
+\begin{DoxyCompactList}\small\item\em Get the random state of the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_group_a5a32bee1437d3aa82f67d94029d12309}{decrement\+Random\+State}} ()
+\item 
+void \mbox{\hyperlink{class_customer_group_ab4695af3a3ddb795de0482d859ee5908}{set\+Random\+State}} (int \mbox{\hyperlink{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd}{Random\+State}})
+\begin{DoxyCompactList}\small\item\em Set the random state of the group. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_customer_group_a50dc4205d376a7a03b2b49e7bd51836f}{Num\+Of\+Customer}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of customers in the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer}{Customer}} \mbox{\hyperlink{class_customer_group_a4d4e5a4f60a174095979b7beda656c9a}{Customer\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Get a specific customer in the group. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_bill}{Bill}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_customer_group_ae9d4710aafbf218ad5c01ab04162dbee}{merge\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em Merge the bills of the customer group into a vector of bills. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_customer_group_a7650933d5456c6558b54a2450aef2556}{add\+Customer}} (\mbox{\hyperlink{class_customer}{Customer}} customer)
+\begin{DoxyCompactList}\small\item\em Add a customer to the customer group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_group_ad46ca9cf09cfe4ba7f2016c65144996f}{Customer\+Group}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{class_customer_group}{Customer\+Group} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_group_ad855d85f8222f587f497ff2447b72c9c}{receive\+Order}} (vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_customer_group_af5f4f9678f3f702ea90b548bc1001122}{orders}})
+\begin{DoxyCompactList}\small\item\em Receive orders for the group and update customer states based on food quality. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_customer_group_a0afa8f6bf21eac435e81678248574218}{Pay\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em Pay the bills of the customer group. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ \mbox{\hyperlink{class_customer_group_abddfee2d4e517c147143523efef8f8af}{Review\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Generate food reviews for the customer group. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ \mbox{\hyperlink{class_customer_group_a2353e979500c8a561ae481db50ca9dc1}{Review\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Generate service reviews for the customer group. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_customer_group_aff9e62e47ec22973d2158fda5d9f7a82}{Place\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Place orders for each customer in the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_group_a29d41dcaaae610d29a916fdf79143ffd}{print}} ()
+\begin{DoxyCompactList}\small\item\em Print the IDs of the customers in the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \mbox{\hyperlink{class_customer_group_aaf2e5459666bfc33861a6f1d7838ea99}{customers}}
+\item 
+int \mbox{\hyperlink{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd}{Random\+State}}
+\item 
+vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_customer_group_af5f4f9678f3f702ea90b548bc1001122}{orders}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a group of customers in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_customer_group_ad46ca9cf09cfe4ba7f2016c65144996f}\label{class_customer_group_ad46ca9cf09cfe4ba7f2016c65144996f} 
+\index{CustomerGroup@{CustomerGroup}!CustomerGroup@{CustomerGroup}}
+\index{CustomerGroup@{CustomerGroup}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{CustomerGroup()}{CustomerGroup()}}
+{\footnotesize\ttfamily Customer\+Group\+::\+Customer\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \doxylink{class_customer_group}{Customer\+Group} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_customer_group_a7650933d5456c6558b54a2450aef2556}\label{class_customer_group_a7650933d5456c6558b54a2450aef2556} 
+\index{CustomerGroup@{CustomerGroup}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily bool Customer\+Group\+::add\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}}}]{customer }\end{DoxyParamCaption})}
+
+
+
+Add a customer to the customer group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The \doxylink{class_customer}{Customer} object to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the addition was successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a4d4e5a4f60a174095979b7beda656c9a}\label{class_customer_group_a4d4e5a4f60a174095979b7beda656c9a} 
+\index{CustomerGroup@{CustomerGroup}!CustomerAt@{CustomerAt}}
+\index{CustomerAt@{CustomerAt}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{CustomerAt()}{CustomerAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_customer}{Customer}} Customer\+Group\+::\+Customer\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Get a specific customer in the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the customer to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_customer}{Customer} object at the specified index. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a5a32bee1437d3aa82f67d94029d12309}\label{class_customer_group_a5a32bee1437d3aa82f67d94029d12309} 
+\index{CustomerGroup@{CustomerGroup}!decrementRandomState@{decrementRandomState}}
+\index{decrementRandomState@{decrementRandomState}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{decrementRandomState()}{decrementRandomState()}}
+{\footnotesize\ttfamily void Customer\+Group\+::decrement\+Random\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_customer_group_a8d4896933946b533ac495bcdae256b05}\label{class_customer_group_a8d4896933946b533ac495bcdae256b05} 
+\index{CustomerGroup@{CustomerGroup}!getCustomers@{getCustomers}}
+\index{getCustomers@{getCustomers}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{getCustomers()}{getCustomers()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ Customer\+Group\+::get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the customers in the group. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_customer}{Customer} objects in the group. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_acbe9c546db0d7a59211982af5fd359f9}\label{class_customer_group_acbe9c546db0d7a59211982af5fd359f9} 
+\index{CustomerGroup@{CustomerGroup}!getRandomState@{getRandomState}}
+\index{getRandomState@{getRandomState}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{getRandomState()}{getRandomState()}}
+{\footnotesize\ttfamily int Customer\+Group\+::get\+Random\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the random state of the group. 
+
+\begin{DoxyReturn}{Returns}
+The random state as an integer. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_ae9d4710aafbf218ad5c01ab04162dbee}\label{class_customer_group_ae9d4710aafbf218ad5c01ab04162dbee} 
+\index{CustomerGroup@{CustomerGroup}!mergeBill@{mergeBill}}
+\index{mergeBill@{mergeBill}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{mergeBill()}{mergeBill()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_bill}{Bill}} \texorpdfstring{$\ast$}{*} $>$ Customer\+Group\+::merge\+Bill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Merge the bills of the customer group into a vector of bills. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_bill}{Bill} pointers representing merged bills. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a50dc4205d376a7a03b2b49e7bd51836f}\label{class_customer_group_a50dc4205d376a7a03b2b49e7bd51836f} 
+\index{CustomerGroup@{CustomerGroup}!NumOfCustomer@{NumOfCustomer}}
+\index{NumOfCustomer@{NumOfCustomer}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{NumOfCustomer()}{NumOfCustomer()}}
+{\footnotesize\ttfamily int Customer\+Group\+::\+Num\+Of\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of customers in the group. 
+
+\begin{DoxyReturn}{Returns}
+The number of customers in the group. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a0afa8f6bf21eac435e81678248574218}\label{class_customer_group_a0afa8f6bf21eac435e81678248574218} 
+\index{CustomerGroup@{CustomerGroup}!PayBill@{PayBill}}
+\index{PayBill@{PayBill}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{PayBill()}{PayBill()}}
+{\footnotesize\ttfamily bool Customer\+Group\+::\+Pay\+Bill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pay the bills of the customer group. 
+
+\begin{DoxyReturn}{Returns}
+true if the bills were paid successfully, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_aff9e62e47ec22973d2158fda5d9f7a82}\label{class_customer_group_aff9e62e47ec22973d2158fda5d9f7a82} 
+\index{CustomerGroup@{CustomerGroup}!PlaceOrder@{PlaceOrder}}
+\index{PlaceOrder@{PlaceOrder}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{PlaceOrder()}{PlaceOrder()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$ Customer\+Group\+::\+Place\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Place orders for each customer in the group. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_order}{Order} pointers representing the placed orders. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a29d41dcaaae610d29a916fdf79143ffd}\label{class_customer_group_a29d41dcaaae610d29a916fdf79143ffd} 
+\index{CustomerGroup@{CustomerGroup}!print@{print}}
+\index{print@{print}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Customer\+Group\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the IDs of the customers in the group. 
+
+\Hypertarget{class_customer_group_ad855d85f8222f587f497ff2447b72c9c}\label{class_customer_group_ad855d85f8222f587f497ff2447b72c9c} 
+\index{CustomerGroup@{CustomerGroup}!receiveOrder@{receiveOrder}}
+\index{receiveOrder@{receiveOrder}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{receiveOrder()}{receiveOrder()}}
+{\footnotesize\ttfamily void Customer\+Group\+::receive\+Order (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_order}{Order}} \texorpdfstring{$\ast$}{*} $>$}]{orders }\end{DoxyParamCaption})}
+
+
+
+Receive orders for the group and update customer states based on food quality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orders} & A vector of \doxylink{class_order}{Order} pointers to be received. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_customer_group_abddfee2d4e517c147143523efef8f8af}\label{class_customer_group_abddfee2d4e517c147143523efef8f8af} 
+\index{CustomerGroup@{CustomerGroup}!ReviewFood@{ReviewFood}}
+\index{ReviewFood@{ReviewFood}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{ReviewFood()}{ReviewFood()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ Customer\+Group\+::\+Review\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generate food reviews for the customer group. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_review}{Review} objects representing food reviews. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a2353e979500c8a561ae481db50ca9dc1}\label{class_customer_group_a2353e979500c8a561ae481db50ca9dc1} 
+\index{CustomerGroup@{CustomerGroup}!ReviewService@{ReviewService}}
+\index{ReviewService@{ReviewService}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{ReviewService()}{ReviewService()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_review}{Review}} $>$ Customer\+Group\+::\+Review\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generate service reviews for the customer group. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \doxylink{class_review}{Review} objects representing service reviews. 
+\end{DoxyReturn}
+\Hypertarget{class_customer_group_a2614f961f8382d1035dcd6853834e8ab}\label{class_customer_group_a2614f961f8382d1035dcd6853834e8ab} 
+\index{CustomerGroup@{CustomerGroup}!setCustomers@{setCustomers}}
+\index{setCustomers@{setCustomers}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{setCustomers()}{setCustomers()}}
+{\footnotesize\ttfamily void Customer\+Group\+::set\+Customers (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$}]{customer }\end{DoxyParamCaption})}
+
+
+
+Set the customers in the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A vector of \doxylink{class_customer}{Customer} objects to set as the group. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_customer_group_ab4695af3a3ddb795de0482d859ee5908}\label{class_customer_group_ab4695af3a3ddb795de0482d859ee5908} 
+\index{CustomerGroup@{CustomerGroup}!setRandomState@{setRandomState}}
+\index{setRandomState@{setRandomState}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{setRandomState()}{setRandomState()}}
+{\footnotesize\ttfamily void Customer\+Group\+::set\+Random\+State (\begin{DoxyParamCaption}\item[{int}]{Random\+State }\end{DoxyParamCaption})}
+
+
+
+Set the random state of the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Random\+State} & The random state to be set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_customer_group_aaf2e5459666bfc33861a6f1d7838ea99}\label{class_customer_group_aaf2e5459666bfc33861a6f1d7838ea99} 
+\index{CustomerGroup@{CustomerGroup}!customers@{customers}}
+\index{customers@{customers}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{customers}{customers}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_customer}{Customer}}$>$ Customer\+Group\+::customers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_customer_group_af5f4f9678f3f702ea90b548bc1001122}\label{class_customer_group_af5f4f9678f3f702ea90b548bc1001122} 
+\index{CustomerGroup@{CustomerGroup}!orders@{orders}}
+\index{orders@{orders}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{orders}{orders}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_order}{Order}}\texorpdfstring{$\ast$}{*}$>$ Customer\+Group\+::orders\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd}\label{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd} 
+\index{CustomerGroup@{CustomerGroup}!RandomState@{RandomState}}
+\index{RandomState@{RandomState}!CustomerGroup@{CustomerGroup}}
+\doxysubsubsection{\texorpdfstring{RandomState}{RandomState}}
+{\footnotesize\ttfamily int Customer\+Group\+::\+Random\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_customer_group_8h}{Customer\+Group.\+h}}\end{DoxyCompactItemize}

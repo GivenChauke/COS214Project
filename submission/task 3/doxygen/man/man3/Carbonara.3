@@ -1,0 +1,142 @@
+.TH "Carbonara" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Carbonara \- The \fBCarbonara\fP class represents \fBCarbonara\fP pasta, which is a specific type of \fBPastaType\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Carbonara\&.h>\fP
+.PP
+Inherits \fBPastaType\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCarbonara\fP ()"
+.br
+.RI "Constructor for \fBCarbonara\fP to set its name and cost\&. "
+.ti -1c
+.RI "\fB~Carbonara\fP ()"
+.br
+.RI "Destructor for \fBCarbonara\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBPastaType\fP
+.in +1c
+.ti -1c
+.RI "\fBPastaType\fP ()"
+.br
+.RI "Constructor for \fBPastaType\fP to set cost to 0\&.0\&. "
+.ti -1c
+.RI "virtual double \fBtotal\fP ()"
+.br
+.RI "Virtual method to get the total cost of the pasta\&. "
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPasta\fP *pastaType)"
+.br
+.RI "Virtual method to decorate the pasta\&. "
+.in -1c
+
+Public Member Functions inherited from \fBPasta\fP
+.in +1c
+.ti -1c
+.RI "\fBPasta\fP ()"
+.br
+.RI "Constructor for \fBPasta\fP to set its cost to 0\&.0\&. "
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the pasta\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (double cost)"
+.br
+.RI "Set the cost of the pasta\&. "
+.ti -1c
+.RI "virtual \fB~Pasta\fP ()"
+.br
+.RI "Virtual destructor for \fBPasta\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "\fBFood\fP ()"
+.br
+.RI "Construct a new \fBFood\fP object\&. "
+.ti -1c
+.RI "void \fBsetFoodQuality\fP (int)"
+.br
+.ti -1c
+.RI "int \fBgetFoodQuality\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBaddIngredient\fP (string ingredient)"
+.br
+.ti -1c
+.RI "double \fBgetCost\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCost\fP (double \fBcost\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Food\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBBurger\fP *)"
+.br
+.ti -1c
+.RI "virtual void \fBdecorate\fP (\fBPizza\fP *)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBPastaType\fP
+.in +1c
+.ti -1c
+.RI "\fB~PastaType\fP ()"
+.br
+.RI "Destructor for \fBPastaType\fP\&. "
+.in -1c
+
+Protected Attributes inherited from \fBFood\fP
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBingredients\fP"
+.br
+.ti -1c
+.RI "int \fBRandomFoodQuality\fP"
+.br
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBCarbonara\fP class represents \fBCarbonara\fP pasta, which is a specific type of \fBPastaType\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Carbonara::Carbonara ()"
+
+.PP
+Constructor for \fBCarbonara\fP to set its name and cost\&. 
+.SS "Carbonara::~Carbonara ()"
+
+.PP
+Destructor for \fBCarbonara\fP\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

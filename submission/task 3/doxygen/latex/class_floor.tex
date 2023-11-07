@@ -1,0 +1,177 @@
+\doxysection{Floor Class Reference}
+\hypertarget{class_floor}{}\label{class_floor}\index{Floor@{Floor}}
+
+
+This is the interface for floor.  
+
+
+
+
+{\ttfamily \#include $<$Floor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_floor_aab5f7fe43bd89e73727292941c123751}{Floor}} (int)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_floor}{Floor} object. Passes in the number of tables in the floor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_abd6c73a3801d26f2cde9745d5343fcd9}{create\+Waiter}} ()
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{class_waiter}{Waiter} object, and adds it to the list of waiters. Number of waiters cannot exceed number of tables returns null if waiters reached capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_aed12e5f99bf47f73e5116b4d4c52b313}{create\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{class_manager}{Manager} object. If manager already exists, then current manager is returned. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_floor_a5b83830adee93bc94e5d62f5e4288c53}{has\+Available\+Waiter}} ()
+\item 
+bool \mbox{\hyperlink{class_floor_a098f7d58e9afb2609d0c2cea2141cef3}{add\+Customer\+Group}} (\mbox{\hyperlink{class_customer_group}{Customer\+Group}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Adds customer group to tables and assigns the group to a waiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_floor_a6bacedc0b13a0826e30367cc6a137bfa}{waiter\+Iterate\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em performs one cycle of the waiter iteration \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_floor_a582d4d368593fe512dd46a0d7c467eb5}{reorder\+Max\+Tables\+For\+Waiters}} ()
+\item 
+void \mbox{\hyperlink{class_floor_abf84d9d6d4afaf5f3d1478a93206e315}{print\+Tables\+And\+Waiters}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_floor_a14e614e7a5953246ee8715fa8cd0d3c2}{tables}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_floor_a90f36dec326a7ae89146e75a11fb66d2}{waiters}}
+\item 
+\mbox{\hyperlink{class_manager}{Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_floor_a992b6445cdfa3743cea5ae9c9d5be128}{manager}}
+\item 
+int \mbox{\hyperlink{class_floor_a14ea93ee39dd8f7d7d2a6e3f1bbe3877}{capacity}}
+\item 
+int \mbox{\hyperlink{class_floor_a0f7fbb3fe9d0aa86e639f8b74ef5dce5}{num\+Occupied\+Tables}}
+\item 
+int \mbox{\hyperlink{class_floor_a7e0fe7c3fddd9110256563fdd5882671}{num\+Available\+Waiters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the interface for floor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_floor_aab5f7fe43bd89e73727292941c123751}\label{class_floor_aab5f7fe43bd89e73727292941c123751} 
+\index{Floor@{Floor}!Floor@{Floor}}
+\index{Floor@{Floor}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{Floor()}{Floor()}}
+{\footnotesize\ttfamily Floor\+::\+Floor (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_floor}{Floor} object. Passes in the number of tables in the floor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_floor_a098f7d58e9afb2609d0c2cea2141cef3}\label{class_floor_a098f7d58e9afb2609d0c2cea2141cef3} 
+\index{Floor@{Floor}!addCustomerGroup@{addCustomerGroup}}
+\index{addCustomerGroup@{addCustomerGroup}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{addCustomerGroup()}{addCustomerGroup()}}
+{\footnotesize\ttfamily bool Floor\+::add\+Customer\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer_group}{Customer\+Group}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})}
+
+
+
+Adds customer group to tables and assigns the group to a waiter. 
+
+\begin{DoxyReturn}{Returns}
+true if customer group is added 
+
+false if restaurant is full 
+\end{DoxyReturn}
+\Hypertarget{class_floor_aed12e5f99bf47f73e5116b4d4c52b313}\label{class_floor_aed12e5f99bf47f73e5116b4d4c52b313} 
+\index{Floor@{Floor}!createManager@{createManager}}
+\index{createManager@{createManager}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{createManager()}{createManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} Floor\+::create\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a \doxylink{class_manager}{Manager} object. If manager already exists, then current manager is returned. 
+
+\begin{DoxyReturn}{Returns}
+Employee\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_floor_abd6c73a3801d26f2cde9745d5343fcd9}\label{class_floor_abd6c73a3801d26f2cde9745d5343fcd9} 
+\index{Floor@{Floor}!createWaiter@{createWaiter}}
+\index{createWaiter@{createWaiter}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{createWaiter()}{createWaiter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} Floor\+::create\+Waiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a \doxylink{class_waiter}{Waiter} object, and adds it to the list of waiters. Number of waiters cannot exceed number of tables returns null if waiters reached capacity. 
+
+\begin{DoxyReturn}{Returns}
+Employee\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_floor_a5b83830adee93bc94e5d62f5e4288c53}\label{class_floor_a5b83830adee93bc94e5d62f5e4288c53} 
+\index{Floor@{Floor}!hasAvailableWaiter@{hasAvailableWaiter}}
+\index{hasAvailableWaiter@{hasAvailableWaiter}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{hasAvailableWaiter()}{hasAvailableWaiter()}}
+{\footnotesize\ttfamily bool Floor\+::has\+Available\+Waiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_floor_abf84d9d6d4afaf5f3d1478a93206e315}\label{class_floor_abf84d9d6d4afaf5f3d1478a93206e315} 
+\index{Floor@{Floor}!printTablesAndWaiters@{printTablesAndWaiters}}
+\index{printTablesAndWaiters@{printTablesAndWaiters}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{printTablesAndWaiters()}{printTablesAndWaiters()}}
+{\footnotesize\ttfamily void Floor\+::print\+Tables\+And\+Waiters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_floor_a582d4d368593fe512dd46a0d7c467eb5}\label{class_floor_a582d4d368593fe512dd46a0d7c467eb5} 
+\index{Floor@{Floor}!reorderMaxTablesForWaiters@{reorderMaxTablesForWaiters}}
+\index{reorderMaxTablesForWaiters@{reorderMaxTablesForWaiters}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{reorderMaxTablesForWaiters()}{reorderMaxTablesForWaiters()}}
+{\footnotesize\ttfamily void Floor\+::reorder\+Max\+Tables\+For\+Waiters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_floor_a6bacedc0b13a0826e30367cc6a137bfa}\label{class_floor_a6bacedc0b13a0826e30367cc6a137bfa} 
+\index{Floor@{Floor}!waiterIterateTables@{waiterIterateTables}}
+\index{waiterIterateTables@{waiterIterateTables}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{waiterIterateTables()}{waiterIterateTables()}}
+{\footnotesize\ttfamily void Floor\+::waiter\+Iterate\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+performs one cycle of the waiter iteration 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_floor_a14ea93ee39dd8f7d7d2a6e3f1bbe3877}\label{class_floor_a14ea93ee39dd8f7d7d2a6e3f1bbe3877} 
+\index{Floor@{Floor}!capacity@{capacity}}
+\index{capacity@{capacity}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily int Floor\+::capacity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_floor_a992b6445cdfa3743cea5ae9c9d5be128}\label{class_floor_a992b6445cdfa3743cea5ae9c9d5be128} 
+\index{Floor@{Floor}!manager@{manager}}
+\index{manager@{manager}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{manager}{manager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_manager}{Manager}}\texorpdfstring{$\ast$}{*} Floor\+::manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_floor_a7e0fe7c3fddd9110256563fdd5882671}\label{class_floor_a7e0fe7c3fddd9110256563fdd5882671} 
+\index{Floor@{Floor}!numAvailableWaiters@{numAvailableWaiters}}
+\index{numAvailableWaiters@{numAvailableWaiters}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{numAvailableWaiters}{numAvailableWaiters}}
+{\footnotesize\ttfamily int Floor\+::num\+Available\+Waiters\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_floor_a0f7fbb3fe9d0aa86e639f8b74ef5dce5}\label{class_floor_a0f7fbb3fe9d0aa86e639f8b74ef5dce5} 
+\index{Floor@{Floor}!numOccupiedTables@{numOccupiedTables}}
+\index{numOccupiedTables@{numOccupiedTables}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{numOccupiedTables}{numOccupiedTables}}
+{\footnotesize\ttfamily int Floor\+::num\+Occupied\+Tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_floor_a14e614e7a5953246ee8715fa8cd0d3c2}\label{class_floor_a14e614e7a5953246ee8715fa8cd0d3c2} 
+\index{Floor@{Floor}!tables@{tables}}
+\index{tables@{tables}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_table}{Table}}\texorpdfstring{$\ast$}{*}$>$ Floor\+::tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_floor_a90f36dec326a7ae89146e75a11fb66d2}\label{class_floor_a90f36dec326a7ae89146e75a11fb66d2} 
+\index{Floor@{Floor}!waiters@{waiters}}
+\index{waiters@{waiters}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{waiters}{waiters}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_employee}{Employee}}\texorpdfstring{$\ast$}{*}$>$ Floor\+::waiters\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_floor_8h}{Floor.\+h}}\end{DoxyCompactItemize}

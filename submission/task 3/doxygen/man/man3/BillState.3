@@ -1,0 +1,204 @@
+.TH "BillState" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BillState \- Represents the state of a bill associated with an order\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BillState\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBloadFromFile\fP (string filename)"
+.br
+.RI "Load the state from a file\&. "
+.ti -1c
+.RI "void \fBsaveToFile\fP (string filename)"
+.br
+.RI "Save the state to a file\&. "
+.ti -1c
+.RI "\fBOrder\fP * \fBgetCopyOrder\fP ()"
+.br
+.RI "Get a copy of the order associated with the bill state\&. "
+.ti -1c
+.RI "float \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the bill state\&. "
+.ti -1c
+.RI "bool \fBgetPaidStatus\fP ()"
+.br
+.RI "Get the payment status of the bill state\&. "
+.ti -1c
+.RI "std::string \fBgetCustomerID\fP ()"
+.br
+.RI "Get the customer ID associated with the bill state\&. "
+.ti -1c
+.RI "int \fBgetTableID\fP ()"
+.br
+.RI "Get the table ID associated with the bill state\&. "
+.ti -1c
+.RI "void \fBsetCopyOrder\fP (\fBOrder\fP *order)"
+.br
+.RI "Set a copy of the order associated with the bill state\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (float newCost)"
+.br
+.RI "Set the cost of the bill state\&. "
+.ti -1c
+.RI "void \fBsetPaid\fP (bool pay)"
+.br
+.RI "Set the payment status of the bill state\&. "
+.ti -1c
+.RI "void \fBsetCustomerID\fP (string custID)"
+.br
+.RI "Set the customer ID associated with the bill state\&. "
+.ti -1c
+.RI "void \fBsetTableID\fP (int tabID)"
+.br
+.RI "Set the table ID associated with the bill state\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents the state of a bill associated with an order\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBOrder\fP * BillState::getCopyOrder ()"
+
+.PP
+Get a copy of the order associated with the bill state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the copy of the order\&. 
+.RE
+.PP
+
+.SS "float BillState::getCost ()"
+
+.PP
+Get the cost of the bill state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The cost of the bill state\&. 
+.RE
+.PP
+
+.SS "std::string BillState::getCustomerID ()"
+
+.PP
+Get the customer ID associated with the bill state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The customer ID as a string\&. 
+.RE
+.PP
+
+.SS "bool BillState::getPaidStatus ()"
+
+.PP
+Get the payment status of the bill state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the bill is paid, false otherwise\&. 
+.RE
+.PP
+
+.SS "int BillState::getTableID ()"
+
+.PP
+Get the table ID associated with the bill state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The table ID\&. 
+.RE
+.PP
+
+.SS "void BillState::loadFromFile (string filename)"
+
+.PP
+Load the state from a file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP The name of the file from which to load the state\&. 
+.RE
+.PP
+
+.SS "void BillState::saveToFile (string filename)"
+
+.PP
+Save the state to a file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP The name of the file to which to save the state\&. 
+.RE
+.PP
+
+.SS "void BillState::setCopyOrder (\fBOrder\fP * order)"
+
+.PP
+Set a copy of the order associated with the bill state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorder\fP A pointer to the order to be copied and associated with the bill state\&. 
+.RE
+.PP
+
+.SS "void BillState::setCost (float newCost)"
+
+.PP
+Set the cost of the bill state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInewCost\fP The cost of the bill state to be set\&. 
+.RE
+.PP
+
+.SS "void BillState::setCustomerID (string custID)"
+
+.PP
+Set the customer ID associated with the bill state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustID\fP The customer ID to be set\&. 
+.RE
+.PP
+
+.SS "void BillState::setPaid (bool pay)"
+
+.PP
+Set the payment status of the bill state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpay\fP true if the bill is paid, false otherwise\&. 
+.RE
+.PP
+
+.SS "void BillState::setTableID (int tabID)"
+
+.PP
+Set the table ID associated with the bill state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItabID\fP The table ID to be set\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

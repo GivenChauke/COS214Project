@@ -1,0 +1,130 @@
+\doxysection{Review Class Reference}
+\hypertarget{class_review}{}\label{class_review}\index{Review@{Review}}
+
+
+The \doxylink{class_review}{Review} class.  
+
+
+
+
+{\ttfamily \#include $<$Review.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_review_a6ee6cb8763b0a785f585cf0e975c81d9}{Review}} ()
+\item 
+\mbox{\hyperlink{class_review_ade9ecc3911b38dca9a8df2e2f14d38bc}{Review}} (const std\+::string \&comment, int rating)
+\item 
+std\+::string \mbox{\hyperlink{class_review_a818b8a9e8c4c9417857f525e6e0ff86d}{get\+Review\+Comment}} () const
+\begin{DoxyCompactList}\small\item\em Get the review comment. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_review_a1ac3dfea7dea2986f4c14fc7ff0fb33a}{get\+Rating}} () const
+\begin{DoxyCompactList}\small\item\em Get the rating. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_review_aff374d962b760314a14d1e19bc23c179}{operator==}} (const \mbox{\hyperlink{class_review}{Review}} \&other) const
+\begin{DoxyCompactList}\small\item\em Check if two reviews are equal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_review_aee7648b8970cf98568066901eb259b94}{set\+Rating}} (int r)
+\begin{DoxyCompactList}\small\item\em Set the rating. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_review_a9751d11967b0298fd90cce2406fbefcb}{set\+Review\+Comment}} (string c)
+\begin{DoxyCompactList}\small\item\em Set the review comment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_review}{Review} class. 
+
+This class represents a review of a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_review_a6ee6cb8763b0a785f585cf0e975c81d9}\label{class_review_a6ee6cb8763b0a785f585cf0e975c81d9} 
+\index{Review@{Review}!Review@{Review}}
+\index{Review@{Review}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{Review()}{Review()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Review\+::\+Review (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_review_ade9ecc3911b38dca9a8df2e2f14d38bc}\label{class_review_ade9ecc3911b38dca9a8df2e2f14d38bc} 
+\index{Review@{Review}!Review@{Review}}
+\index{Review@{Review}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{Review()}{Review()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Review\+::\+Review (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{comment,  }\item[{int}]{rating }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_review_a1ac3dfea7dea2986f4c14fc7ff0fb33a}\label{class_review_a1ac3dfea7dea2986f4c14fc7ff0fb33a} 
+\index{Review@{Review}!getRating@{getRating}}
+\index{getRating@{getRating}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{getRating()}{getRating()}}
+{\footnotesize\ttfamily int Review\+::get\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the rating. 
+
+\begin{DoxyReturn}{Returns}
+The rating. 
+\end{DoxyReturn}
+\Hypertarget{class_review_a818b8a9e8c4c9417857f525e6e0ff86d}\label{class_review_a818b8a9e8c4c9417857f525e6e0ff86d} 
+\index{Review@{Review}!getReviewComment@{getReviewComment}}
+\index{getReviewComment@{getReviewComment}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{getReviewComment()}{getReviewComment()}}
+{\footnotesize\ttfamily std\+::string Review\+::get\+Review\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the review comment. 
+
+\begin{DoxyReturn}{Returns}
+The review comment. 
+\end{DoxyReturn}
+\Hypertarget{class_review_aff374d962b760314a14d1e19bc23c179}\label{class_review_aff374d962b760314a14d1e19bc23c179} 
+\index{Review@{Review}!operator==@{operator==}}
+\index{operator==@{operator==}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Review\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_review}{Review}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Check if two reviews are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other review to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the reviews are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_review_aee7648b8970cf98568066901eb259b94}\label{class_review_aee7648b8970cf98568066901eb259b94} 
+\index{Review@{Review}!setRating@{setRating}}
+\index{setRating@{setRating}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{setRating()}{setRating()}}
+{\footnotesize\ttfamily void Review\+::set\+Rating (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the rating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The rating to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_review_a9751d11967b0298fd90cce2406fbefcb}\label{class_review_a9751d11967b0298fd90cce2406fbefcb} 
+\index{Review@{Review}!setReviewComment@{setReviewComment}}
+\index{setReviewComment@{setReviewComment}!Review@{Review}}
+\doxysubsubsection{\texorpdfstring{setReviewComment()}{setReviewComment()}}
+{\footnotesize\ttfamily void Review\+::set\+Review\+Comment (\begin{DoxyParamCaption}\item[{string}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the review comment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The review comment to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_review_8h}{Review.\+h}}\end{DoxyCompactItemize}

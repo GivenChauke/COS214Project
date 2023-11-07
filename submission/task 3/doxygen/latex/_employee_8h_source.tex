@@ -1,0 +1,37 @@
+\doxysection{Employee.\+h}
+\hypertarget{_employee_8h_source}{}\label{_employee_8h_source}\mbox{\hyperlink{_employee_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EMPLOYEE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EMPLOYEE\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_department_8h}{Department.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_table_iterator_8h}{TableIterator.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_employee}{Employee}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_employee_a870d18c216c82139c4871ea87c3096a6}{Employee}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a2326b7e2f3af41a9bdc07ef2acccc5fa}{assignTables}}(std::vector<Table*>\&\ \mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}});}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a8bf01c5794e91054f1e666e22bb69652}{iterateTables}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_af28385a1d8353015f3542f09423b393b}{moveToNextTable}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_department}{Department}}*\ \mbox{\hyperlink{class_employee_a70087dcdfa4c4a6a3a33b3a440da35f4}{getDepartment}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_employee_a35ae6fa000a06aa95153f840c8e9359e}{getCurrentTable}}();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a0d1b9d1438fe005119693e253e0e0e06}{setDepartment}}(\mbox{\hyperlink{class_department}{Department}}*\ dep);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a595355f296c717114d0f3023266885a2}{setCurrTable}}(\mbox{\hyperlink{class_table}{Table}}*\ currTab);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a4e3f9e6eec7f4b2df25c09aa76c7dcc5}{GetReview}}(\textcolor{keyword}{const}\ std::vector<Review*>\&\ reviewList);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a9d2dc749131b0f846ea2b31cafb29697}{TakeOrder}}(\mbox{\hyperlink{class_table}{Table}}*\ table);}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_employee_ae6e99d450698a596c9087e6ee9fd8271}{getEmployeeId}}();}
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{class_employee_abed56e9c007fff2bfe27ca87251baaf2}{\string~Employee}}();}
+\DoxyCodeLine{00091\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_department}{Department}}*\ \mbox{\hyperlink{class_employee_a59d51185bb95a9297e3b8c6b68ba6143}{department}};}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}};}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{class_table}{Table}}*\ \mbox{\hyperlink{class_employee_a4b8eca091f3643144461fe33cf189650}{currTable}};}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_table_iterator}{TableIterator}}*\ \mbox{\hyperlink{class_employee_a44db99c27bf76bc29f0b55a599ffa5c6}{tableIterator}};}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_employee_a7edc0b03cdfbe2f30d562bbbc5084534}{employeeId}};}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,114 @@
+\doxysection{Menu Class Reference}
+\hypertarget{class_menu}{}\label{class_menu}\index{Menu@{Menu}}
+
+
+Represents a menu for a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_menu_ab5221fe6ff46005a6031a8a1cd961636}{print\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Prints the menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{\texorpdfstring{$\sim$}{\string~}\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \doxylink{class_menu}{Menu} instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_food_item}{Food\+Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_menu_a30cd2f3cb50d44018a2ca7391fece8de}{get\+Food\+Item}} ()
+\begin{DoxyCompactList}\small\item\em returns a food\+Item, for testing purposes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_menu}{Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_menu_ae3cf7b9e49c1c8333143f75a8ccb8b12}{get\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Gets the menu instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{struct_food_item}{Food\+Item}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_menu_aa33f108da523648d7225e539d995300f}{menu}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_menu}{Menu} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a menu for a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}\label{class_menu_a831387f51358cfb88cd018e1777bc980} 
+\index{Menu@{Menu}!````~Menu@{\texorpdfstring{$\sim$}{\string~}Menu}}
+\index{````~Menu@{\texorpdfstring{$\sim$}{\string~}Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Menu()}{\string~Menu()}}
+{\footnotesize\ttfamily Menu\+::\texorpdfstring{$\sim$}{\string~}\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \doxylink{class_menu}{Menu} instance. 
+
+\Hypertarget{class_menu_ad466dd83355124a6ed958430450bfe94}\label{class_menu_ad466dd83355124a6ed958430450bfe94} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructs a \doxylink{class_menu}{Menu} instance. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_a30cd2f3cb50d44018a2ca7391fece8de}\label{class_menu_a30cd2f3cb50d44018a2ca7391fece8de} 
+\index{Menu@{Menu}!getFoodItem@{getFoodItem}}
+\index{getFoodItem@{getFoodItem}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{getFoodItem()}{getFoodItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_food_item}{Food\+Item}} \texorpdfstring{$\ast$}{*} Menu\+::get\+Food\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns a food\+Item, for testing purposes 
+
+\Hypertarget{class_menu_ae3cf7b9e49c1c8333143f75a8ccb8b12}\label{class_menu_ae3cf7b9e49c1c8333143f75a8ccb8b12} 
+\index{Menu@{Menu}!getMenu@{getMenu}}
+\index{getMenu@{getMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{getMenu()}{getMenu()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_menu}{Menu}} \texorpdfstring{$\ast$}{*} Menu\+::get\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the menu instance. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the \doxylink{class_menu}{Menu} instance. 
+\end{DoxyReturn}
+\Hypertarget{class_menu_ab5221fe6ff46005a6031a8a1cd961636}\label{class_menu_ab5221fe6ff46005a6031a8a1cd961636} 
+\index{Menu@{Menu}!printMenu@{printMenu}}
+\index{printMenu@{printMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{printMenu()}{printMenu()}}
+{\footnotesize\ttfamily string Menu\+::print\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the menu. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the formatted menu. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_menu_aa33f108da523648d7225e539d995300f}\label{class_menu_aa33f108da523648d7225e539d995300f} 
+\index{Menu@{Menu}!menu@{menu}}
+\index{menu@{menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_food_item}{Food\+Item}}\texorpdfstring{$\ast$}{*}$>$ Menu\+::menu}
+
+A vector to store food items in the menu. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\end{DoxyCompactItemize}

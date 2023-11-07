@@ -1,0 +1,54 @@
+\doxysection{Customer\+Group.\+h}
+\hypertarget{_customer_group_8h_source}{}\label{_customer_group_8h_source}\mbox{\hyperlink{_customer_group_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CUSTOMER\_GROUP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CUSTOMER\_GROUP\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_customer_8h}{Customer.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_order_8h}{Order.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_review_8h}{Review.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_customer_group}{CustomerGroup}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00021\ \ \ \ \ vector<Customer>\ \mbox{\hyperlink{class_customer_group_aaf2e5459666bfc33861a6f1d7838ea99}{customers}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd}{RandomState}};}
+\DoxyCodeLine{00023\ \ \ \ \ vector<Order*>\ \mbox{\hyperlink{class_customer_group_af5f4f9678f3f702ea90b548bc1001122}{orders}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ vector<Customer>\ \mbox{\hyperlink{class_customer_group_a8d4896933946b533ac495bcdae256b05}{getCustomers}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_group_a2614f961f8382d1035dcd6853834e8ab}{setCustomers}}(vector<Customer>\ customer);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_group_acbe9c546db0d7a59211982af5fd359f9}{getRandomState}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_group_a5a32bee1437d3aa82f67d94029d12309}{decrementRandomState}}()\{\mbox{\hyperlink{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd}{RandomState}}-\/-\/;\}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_group_ab4695af3a3ddb795de0482d859ee5908}{setRandomState}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_group_a27a35466c392ad0ebc514ac4bc933dfd}{RandomState}});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_group_a50dc4205d376a7a03b2b49e7bd51836f}{NumOfCustomer}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_customer}{Customer}}\ \mbox{\hyperlink{class_customer_group_a4d4e5a4f60a174095979b7beda656c9a}{CustomerAt}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ vector<Bill*>\ \mbox{\hyperlink{class_customer_group_ae9d4710aafbf218ad5c01ab04162dbee}{mergeBill}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_customer_group_a7650933d5456c6558b54a2450aef2556}{addCustomer}}(\mbox{\hyperlink{class_customer}{Customer}}\ customer);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_customer_group_ad46ca9cf09cfe4ba7f2016c65144996f}{CustomerGroup}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_group_ad855d85f8222f587f497ff2447b72c9c}{receiveOrder}}(vector<Order*>\ \mbox{\hyperlink{class_customer_group_af5f4f9678f3f702ea90b548bc1001122}{orders}});}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_customer_group_a0afa8f6bf21eac435e81678248574218}{PayBill}}();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ vector<Review>\ \mbox{\hyperlink{class_customer_group_abddfee2d4e517c147143523efef8f8af}{ReviewFood}}();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ vector<Review>\ \mbox{\hyperlink{class_customer_group_a2353e979500c8a561ae481db50ca9dc1}{ReviewService}}();}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00110\ \ \ \ \ vector<Order*>\ \mbox{\hyperlink{class_customer_group_aff9e62e47ec22973d2158fda5d9f7a82}{PlaceOrder}}();}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_group_a29d41dcaaae610d29a916fdf79143ffd}{print}}();}
+\DoxyCodeLine{00116\ \};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

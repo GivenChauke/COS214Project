@@ -1,0 +1,43 @@
+\doxysection{Customer.\+h}
+\hypertarget{_customer_8h_source}{}\label{_customer_8h_source}\mbox{\hyperlink{_customer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ Customer\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ Customer\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_customer_8h}{Customer.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_customer_state_8h}{CustomerState.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_order_8h}{Order.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_customer}{Customer}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//srand((unsigned)\ time(NULL));}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ ID;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_customer_state}{CustomerState}}*\ state;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a28dd7cc7db0bec8389eaeec5a58811cf}{SeedValue}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_customer_a80f523cbedd97483658c21ce795b52bd}{getID}}()\{\textcolor{keywordflow}{return}\ ID;\};\textcolor{comment}{//t}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_a77241afd23b324e8b7df03e7c8884c1a}{setID}}(\textcolor{keywordtype}{string}\ ID)\{this-\/>ID=ID;\};\textcolor{comment}{//t}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_a345cb47adc957a6060c57a5c04c95b05}{setState}}(\mbox{\hyperlink{class_customer_state}{CustomerState}}*\ state)\{this-\/>state=state;\};\textcolor{comment}{//t}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_customer_state}{CustomerState}}*\ \mbox{\hyperlink{class_customer_ab2cabd38f33ae4d2f1bea0a6e1defdc8}{getState}}()\{\textcolor{keywordflow}{return}\ state;\};\textcolor{comment}{//t}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_customer_aaedd9a70477fe99087ed920011a752c0}{GiveComment\_Food}}();\textcolor{comment}{//t}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_customer_a37382ce61bb22171197624aa99e94586}{GiveComment\_Service}}();\textcolor{comment}{//t}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a83e61abf7f3a1056f24a32a1e4f9370e}{GiveRating\_Food}}();\textcolor{comment}{//t}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a3516c5a3d0755c09b52520040bd9fb45}{GiveRating\_Service}}();\textcolor{comment}{//t}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_customer_afc4cab516c98cff44e414490317cd292}{Customer}}(\textcolor{keywordtype}{string}\ name)\{ID=name;\};\textcolor{comment}{//t}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3}{Customer}}();\textcolor{comment}{//t}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_customer_a9fa5281800df8773520533bcea7350b0}{receiveOrder}}(\mbox{\hyperlink{class_order}{Order}}*\ order);\textcolor{comment}{//check}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_order}{Order}}*\ \mbox{\hyperlink{class_customer_aa02a2407b456629e5a7666c0ec225261}{PlaceOrder}}();\textcolor{comment}{//t}}
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{comment}{//\#include\ "{}Customer.cpp"{}}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

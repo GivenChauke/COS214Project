@@ -1,0 +1,269 @@
+\doxysection{Employee Class Reference}
+\hypertarget{class_employee}{}\label{class_employee}\index{Employee@{Employee}}
+
+
+The \doxylink{class_employee}{Employee} class.  
+
+
+
+
+{\ttfamily \#include $<$Employee.\+h$>$}
+
+Inheritance diagram for Employee\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_employee}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_a870d18c216c82139c4871ea87c3096a6}{Employee}} (int id)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_employee}{Employee} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_employee_a2326b7e2f3af41a9bdc07ef2acccc5fa}{assign\+Tables}} (std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}})
+\begin{DoxyCompactList}\small\item\em Assign tables to the employee. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_employee_a8bf01c5794e91054f1e666e22bb69652}{iterate\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Iterate through the tables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_af28385a1d8353015f3542f09423b393b}{move\+To\+Next\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Move to the next table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a70087dcdfa4c4a6a3a33b3a440da35f4}{get\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Get the department of the employee. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a35ae6fa000a06aa95153f840c8e9359e}{get\+Current\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Get the current table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a0d1b9d1438fe005119693e253e0e0e06}{set\+Department}} (\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*}dep)
+\begin{DoxyCompactList}\small\item\em Set the department of the employee. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a595355f296c717114d0f3023266885a2}{set\+Curr\+Table}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}curr\+Tab)
+\begin{DoxyCompactList}\small\item\em Set the current table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a4e3f9e6eec7f4b2df25c09aa76c7dcc5}{Get\+Review}} (const std\+::vector$<$ \mbox{\hyperlink{class_review}{Review}} \texorpdfstring{$\ast$}{*} $>$ \&review\+List)
+\begin{DoxyCompactList}\small\item\em Get the reviews. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_a9d2dc749131b0f846ea2b31cafb29697}{Take\+Order}} (\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}table)
+\begin{DoxyCompactList}\small\item\em Take an order. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_employee_ae6e99d450698a596c9087e6ee9fd8271}{get\+Employee\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the ID of the employee. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_employee_abed56e9c007fff2bfe27ca87251baaf2}{\texorpdfstring{$\sim$}{\string~}\+Employee}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_employee}{Employee} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a59d51185bb95a9297e3b8c6b68ba6143}{department}}
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a2090c142130fd557f9cc50c668d39303}{tables}}
+\item 
+\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a4b8eca091f3643144461fe33cf189650}{curr\+Table}}
+\item 
+\mbox{\hyperlink{class_table_iterator}{Table\+Iterator}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_a44db99c27bf76bc29f0b55a599ffa5c6}{table\+Iterator}}
+\item 
+int \mbox{\hyperlink{class_employee_a7edc0b03cdfbe2f30d562bbbc5084534}{employee\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_employee}{Employee} class. 
+
+This class represents an employee in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_employee_a870d18c216c82139c4871ea87c3096a6}\label{class_employee_a870d18c216c82139c4871ea87c3096a6} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_employee}{Employee} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the employee. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_employee_abed56e9c007fff2bfe27ca87251baaf2}\label{class_employee_abed56e9c007fff2bfe27ca87251baaf2} 
+\index{Employee@{Employee}!````~Employee@{\texorpdfstring{$\sim$}{\string~}Employee}}
+\index{````~Employee@{\texorpdfstring{$\sim$}{\string~}Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Employee()}{\string~Employee()}}
+{\footnotesize\ttfamily Employee\+::\texorpdfstring{$\sim$}{\string~}\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \doxylink{class_employee}{Employee} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_employee_a2326b7e2f3af41a9bdc07ef2acccc5fa}\label{class_employee_a2326b7e2f3af41a9bdc07ef2acccc5fa} 
+\index{Employee@{Employee}!assignTables@{assignTables}}
+\index{assignTables@{assignTables}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{assignTables()}{assignTables()}}
+{\footnotesize\ttfamily virtual void Employee\+::assign\+Tables (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} $>$ \&}]{tables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Assign tables to the employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tables} & The tables to assign. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_employee_a35ae6fa000a06aa95153f840c8e9359e}\label{class_employee_a35ae6fa000a06aa95153f840c8e9359e} 
+\index{Employee@{Employee}!getCurrentTable@{getCurrentTable}}
+\index{getCurrentTable@{getCurrentTable}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getCurrentTable()}{getCurrentTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*} Employee\+::get\+Current\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current table. 
+
+\begin{DoxyReturn}{Returns}
+The current table. 
+\end{DoxyReturn}
+\Hypertarget{class_employee_a70087dcdfa4c4a6a3a33b3a440da35f4}\label{class_employee_a70087dcdfa4c4a6a3a33b3a440da35f4} 
+\index{Employee@{Employee}!getDepartment@{getDepartment}}
+\index{getDepartment@{getDepartment}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getDepartment()}{getDepartment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*} Employee\+::get\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the department of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The department of the employee. 
+\end{DoxyReturn}
+\Hypertarget{class_employee_ae6e99d450698a596c9087e6ee9fd8271}\label{class_employee_ae6e99d450698a596c9087e6ee9fd8271} 
+\index{Employee@{Employee}!getEmployeeId@{getEmployeeId}}
+\index{getEmployeeId@{getEmployeeId}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getEmployeeId()}{getEmployeeId()}}
+{\footnotesize\ttfamily int Employee\+::get\+Employee\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the ID of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the employee. 
+\end{DoxyReturn}
+\Hypertarget{class_employee_a4e3f9e6eec7f4b2df25c09aa76c7dcc5}\label{class_employee_a4e3f9e6eec7f4b2df25c09aa76c7dcc5} 
+\index{Employee@{Employee}!GetReview@{GetReview}}
+\index{GetReview@{GetReview}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetReview()}{GetReview()}}
+{\footnotesize\ttfamily void Employee\+::\+Get\+Review (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_review}{Review}} \texorpdfstring{$\ast$}{*} $>$ \&}]{review\+List }\end{DoxyParamCaption})}
+
+
+
+Get the reviews. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em review\+List} & The list of reviews. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_employee_a8bf01c5794e91054f1e666e22bb69652}\label{class_employee_a8bf01c5794e91054f1e666e22bb69652} 
+\index{Employee@{Employee}!iterateTables@{iterateTables}}
+\index{iterateTables@{iterateTables}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{iterateTables()}{iterateTables()}}
+{\footnotesize\ttfamily virtual void Employee\+::iterate\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Iterate through the tables. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_waiter_a2619a49404965dc733a65ed4fbdbae21}{Waiter}}.
+
+\Hypertarget{class_employee_af28385a1d8353015f3542f09423b393b}\label{class_employee_af28385a1d8353015f3542f09423b393b} 
+\index{Employee@{Employee}!moveToNextTable@{moveToNextTable}}
+\index{moveToNextTable@{moveToNextTable}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{moveToNextTable()}{moveToNextTable()}}
+{\footnotesize\ttfamily void Employee\+::move\+To\+Next\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move to the next table. 
+
+\Hypertarget{class_employee_a595355f296c717114d0f3023266885a2}\label{class_employee_a595355f296c717114d0f3023266885a2} 
+\index{Employee@{Employee}!setCurrTable@{setCurrTable}}
+\index{setCurrTable@{setCurrTable}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setCurrTable()}{setCurrTable()}}
+{\footnotesize\ttfamily void Employee\+::set\+Curr\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{curr\+Tab }\end{DoxyParamCaption})}
+
+
+
+Set the current table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Tab} & The current table to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_employee_a0d1b9d1438fe005119693e253e0e0e06}\label{class_employee_a0d1b9d1438fe005119693e253e0e0e06} 
+\index{Employee@{Employee}!setDepartment@{setDepartment}}
+\index{setDepartment@{setDepartment}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setDepartment()}{setDepartment()}}
+{\footnotesize\ttfamily void Employee\+::set\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_department}{Department}} \texorpdfstring{$\ast$}{*}}]{dep }\end{DoxyParamCaption})}
+
+
+
+Set the department of the employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dep} & The department to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_employee_a9d2dc749131b0f846ea2b31cafb29697}\label{class_employee_a9d2dc749131b0f846ea2b31cafb29697} 
+\index{Employee@{Employee}!TakeOrder@{TakeOrder}}
+\index{TakeOrder@{TakeOrder}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{TakeOrder()}{TakeOrder()}}
+{\footnotesize\ttfamily void Employee\+::\+Take\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_table}{Table}} \texorpdfstring{$\ast$}{*}}]{table }\end{DoxyParamCaption})}
+
+
+
+Take an order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & The table to take the order from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_employee_a4b8eca091f3643144461fe33cf189650}\label{class_employee_a4b8eca091f3643144461fe33cf189650} 
+\index{Employee@{Employee}!currTable@{currTable}}
+\index{currTable@{currTable}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{currTable}{currTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table}{Table}}\texorpdfstring{$\ast$}{*} Employee\+::curr\+Table\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_employee_a59d51185bb95a9297e3b8c6b68ba6143}\label{class_employee_a59d51185bb95a9297e3b8c6b68ba6143} 
+\index{Employee@{Employee}!department@{department}}
+\index{department@{department}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{department}{department}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_department}{Department}}\texorpdfstring{$\ast$}{*} Employee\+::department\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_employee_a7edc0b03cdfbe2f30d562bbbc5084534}\label{class_employee_a7edc0b03cdfbe2f30d562bbbc5084534} 
+\index{Employee@{Employee}!employeeId@{employeeId}}
+\index{employeeId@{employeeId}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{employeeId}{employeeId}}
+{\footnotesize\ttfamily int Employee\+::employee\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_employee_a44db99c27bf76bc29f0b55a599ffa5c6}\label{class_employee_a44db99c27bf76bc29f0b55a599ffa5c6} 
+\index{Employee@{Employee}!tableIterator@{tableIterator}}
+\index{tableIterator@{tableIterator}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{tableIterator}{tableIterator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table_iterator}{Table\+Iterator}}\texorpdfstring{$\ast$}{*} Employee\+::table\+Iterator\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_employee_a2090c142130fd557f9cc50c668d39303}\label{class_employee_a2090c142130fd557f9cc50c668d39303} 
+\index{Employee@{Employee}!tables@{tables}}
+\index{tables@{tables}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_table}{Table}}\texorpdfstring{$\ast$}{*} Employee\+::tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_employee_8h}{Employee.\+h}}\end{DoxyCompactItemize}

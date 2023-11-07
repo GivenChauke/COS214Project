@@ -1,0 +1,77 @@
+\doxysection{Bill\+Caretaker Class Reference}
+\hypertarget{class_bill_caretaker}{}\label{class_bill_caretaker}\index{BillCaretaker@{BillCaretaker}}
+
+
+Manages the storage and retrieval of bill Memento objects.  
+
+
+
+
+{\ttfamily \#include $<$Bill\+Caretaker.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bill_caretaker_a91562589db6e7fbb2a2549b568fa74f0}{Bill\+Caretaker}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_bill_caretaker}{Bill\+Caretaker} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bill_caretaker_aef3ffb74b4353d1bb3359d02a2a20459}{store\+Memento}} (\mbox{\hyperlink{class_bill_memento}{Bill\+Memento}} \texorpdfstring{$\ast$}{*}mem)
+\begin{DoxyCompactList}\small\item\em Store a Memento object in the caretaker. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bill_memento}{Bill\+Memento}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bill_caretaker_a6e115d6637f270db9b5aad5811605ffe}{retrieve\+Memento}} (string customer\+ID)
+\begin{DoxyCompactList}\small\item\em Retrieve a Memento object by customer ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the storage and retrieval of bill Memento objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bill_caretaker_a91562589db6e7fbb2a2549b568fa74f0}\label{class_bill_caretaker_a91562589db6e7fbb2a2549b568fa74f0} 
+\index{BillCaretaker@{BillCaretaker}!BillCaretaker@{BillCaretaker}}
+\index{BillCaretaker@{BillCaretaker}!BillCaretaker@{BillCaretaker}}
+\doxysubsubsection{\texorpdfstring{BillCaretaker()}{BillCaretaker()}}
+{\footnotesize\ttfamily Bill\+Caretaker\+::\+Bill\+Caretaker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_bill_caretaker}{Bill\+Caretaker} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bill_caretaker_a6e115d6637f270db9b5aad5811605ffe}\label{class_bill_caretaker_a6e115d6637f270db9b5aad5811605ffe} 
+\index{BillCaretaker@{BillCaretaker}!retrieveMemento@{retrieveMemento}}
+\index{retrieveMemento@{retrieveMemento}!BillCaretaker@{BillCaretaker}}
+\doxysubsubsection{\texorpdfstring{retrieveMemento()}{retrieveMemento()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bill_memento}{Bill\+Memento}} \texorpdfstring{$\ast$}{*} Bill\+Caretaker\+::retrieve\+Memento (\begin{DoxyParamCaption}\item[{string}]{customer\+ID }\end{DoxyParamCaption})}
+
+
+
+Retrieve a Memento object by customer ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer\+ID} & The customer ID for which to retrieve the Memento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \doxylink{class_bill_memento}{Bill\+Memento} object matching the customer ID, or nullptr if not found. 
+\end{DoxyReturn}
+\Hypertarget{class_bill_caretaker_aef3ffb74b4353d1bb3359d02a2a20459}\label{class_bill_caretaker_aef3ffb74b4353d1bb3359d02a2a20459} 
+\index{BillCaretaker@{BillCaretaker}!storeMemento@{storeMemento}}
+\index{storeMemento@{storeMemento}!BillCaretaker@{BillCaretaker}}
+\doxysubsubsection{\texorpdfstring{storeMemento()}{storeMemento()}}
+{\footnotesize\ttfamily void Bill\+Caretaker\+::store\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bill_memento}{Bill\+Memento}} \texorpdfstring{$\ast$}{*}}]{mem }\end{DoxyParamCaption})}
+
+
+
+Store a Memento object in the caretaker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mem} & A pointer to the \doxylink{class_bill_memento}{Bill\+Memento} object to be stored. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bill_caretaker_8h}{Bill\+Caretaker.\+h}}\end{DoxyCompactItemize}

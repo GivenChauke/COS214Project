@@ -1,0 +1,69 @@
+.TH "BillCaretaker" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BillCaretaker \- Manages the storage and retrieval of bill Memento objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BillCaretaker\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBillCaretaker\fP ()"
+.br
+.RI "Constructor for the \fBBillCaretaker\fP class\&. "
+.ti -1c
+.RI "void \fBstoreMemento\fP (\fBBillMemento\fP *mem)"
+.br
+.RI "Store a Memento object in the caretaker\&. "
+.ti -1c
+.RI "\fBBillMemento\fP * \fBretrieveMemento\fP (string customerID)"
+.br
+.RI "Retrieve a Memento object by customer ID\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Manages the storage and retrieval of bill Memento objects\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BillCaretaker::BillCaretaker ()"
+
+.PP
+Constructor for the \fBBillCaretaker\fP class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBBillMemento\fP * BillCaretaker::retrieveMemento (string customerID)"
+
+.PP
+Retrieve a Memento object by customer ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcustomerID\fP The customer ID for which to retrieve the Memento\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the \fBBillMemento\fP object matching the customer ID, or nullptr if not found\&. 
+.RE
+.PP
+
+.SS "void BillCaretaker::storeMemento (\fBBillMemento\fP * mem)"
+
+.PP
+Store a Memento object in the caretaker\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImem\fP A pointer to the \fBBillMemento\fP object to be stored\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

@@ -1,0 +1,237 @@
+.TH "Bill" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Bill \- Represents a bill associated with a customer's order\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Bill\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBill\fP ()"
+.br
+.RI "Constructor for the \fBBill\fP class\&. "
+.ti -1c
+.RI "\fBOrder\fP * \fBgetCopyOrder\fP ()"
+.br
+.RI "Get a copy of the order associated with the bill\&. "
+.ti -1c
+.RI "void \fBsetCopyOrder\fP (\fBOrder\fP *order)"
+.br
+.RI "Set a copy of the order associated with the bill\&. "
+.ti -1c
+.RI "float \fBgetCost\fP ()"
+.br
+.RI "Get the cost of the bill\&. "
+.ti -1c
+.RI "void \fBsetCost\fP (float orderCost)"
+.br
+.RI "Set the cost of the bill\&. "
+.ti -1c
+.RI "\fBBillState\fP * \fBgetBillState\fP ()"
+.br
+.RI "Get the current state of the bill\&. "
+.ti -1c
+.RI "bool \fBgetBillStatus\fP ()"
+.br
+.RI "Get the status of the bill\&. "
+.ti -1c
+.RI "void \fBsetBillStatus\fP (bool BillStatus)"
+.br
+.RI "Set the status of the bill\&. "
+.ti -1c
+.RI "void \fBsetTableID\fP (int ID)"
+.br
+.RI "Set the table ID associated with the bill\&. "
+.ti -1c
+.RI "void \fBsetCustomerID\fP (string ID)"
+.br
+.RI "Set the customer ID associated with the bill\&. "
+.ti -1c
+.RI "std::string \fBgetCustomerID\fP ()"
+.br
+.RI "Get the customer ID associated with the bill\&. "
+.ti -1c
+.RI "int \fBgetTableID\fP ()"
+.br
+.RI "Get the table ID associated with the bill\&. "
+.ti -1c
+.RI "void \fBrecoverBill\fP (\fBBillMemento\fP *mem)"
+.br
+.RI "Recover the state of the bill from a Memento object\&. "
+.ti -1c
+.RI "\fBBillMemento\fP * \fBsaveState\fP ()"
+.br
+.RI "Save the current state of the bill to a Memento object\&. "
+.ti -1c
+.RI "void \fBprint\fP ()"
+.br
+.RI "Print information about the bill, including cost, payment status, table ID, and customer ID\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents a bill associated with a customer's order\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Bill::Bill ()"
+
+.PP
+Constructor for the \fBBill\fP class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBBillState\fP * Bill::getBillState ()"
+
+.PP
+Get the current state of the bill\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the \fBBillState\fP object representing the current state of the bill\&. 
+.RE
+.PP
+
+.SS "bool Bill::getBillStatus ()"
+
+.PP
+Get the status of the bill\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if the bill is paid, false otherwise\&. 
+.RE
+.PP
+
+.SS "\fBOrder\fP * Bill::getCopyOrder ()"
+
+.PP
+Get a copy of the order associated with the bill\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the copy of the order\&. 
+.RE
+.PP
+
+.SS "float Bill::getCost ()"
+
+.PP
+Get the cost of the bill\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The cost of the bill\&. 
+.RE
+.PP
+
+.SS "std::string Bill::getCustomerID ()"
+
+.PP
+Get the customer ID associated with the bill\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The customer ID as a string\&. 
+.RE
+.PP
+
+.SS "int Bill::getTableID ()"
+
+.PP
+Get the table ID associated with the bill\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The table ID\&. 
+.RE
+.PP
+
+.SS "void Bill::print ()"
+
+.PP
+Print information about the bill, including cost, payment status, table ID, and customer ID\&. 
+.SS "void Bill::recoverBill (\fBBillMemento\fP * mem)"
+
+.PP
+Recover the state of the bill from a Memento object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImem\fP A pointer to the Memento object containing the saved state\&. 
+.RE
+.PP
+
+.SS "\fBBillMemento\fP * Bill::saveState ()"
+
+.PP
+Save the current state of the bill to a Memento object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A pointer to the Memento object containing the saved state\&. 
+.RE
+.PP
+
+.SS "void Bill::setBillStatus (bool BillStatus)"
+
+.PP
+Set the status of the bill\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIBillStatus\fP true if the bill is paid, false otherwise\&. 
+.RE
+.PP
+
+.SS "void Bill::setCopyOrder (\fBOrder\fP * order)"
+
+.PP
+Set a copy of the order associated with the bill\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorder\fP A pointer to the order to be copied and associated with the bill\&. 
+.RE
+.PP
+
+.SS "void Bill::setCost (float orderCost)"
+
+.PP
+Set the cost of the bill\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorderCost\fP The cost of the bill to be set\&. 
+.RE
+.PP
+
+.SS "void Bill::setCustomerID (string ID)"
+
+.PP
+Set the customer ID associated with the bill\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIID\fP The customer ID to be set\&. 
+.RE
+.PP
+
+.SS "void Bill::setTableID (int ID)"
+
+.PP
+Set the table ID associated with the bill\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIID\fP The table ID to be set\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

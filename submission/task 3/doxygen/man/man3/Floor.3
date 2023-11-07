@@ -1,0 +1,140 @@
+.TH "Floor" 3 "Cheat GBT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Floor \- This is the interface for floor\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Floor\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloor\fP (int)"
+.br
+.RI "Construct a new \fBFloor\fP object\&. Passes in the number of tables in the floor\&. "
+.ti -1c
+.RI "\fBEmployee\fP * \fBcreateWaiter\fP ()"
+.br
+.RI "Create a \fBWaiter\fP object, and adds it to the list of waiters\&. Number of waiters cannot exceed number of tables returns null if waiters reached capacity\&. "
+.ti -1c
+.RI "\fBEmployee\fP * \fBcreateManager\fP ()"
+.br
+.RI "Create a \fBManager\fP object\&. If manager already exists, then current manager is returned\&. "
+.ti -1c
+.RI "bool \fBhasAvailableWaiter\fP ()"
+.br
+.ti -1c
+.RI "bool \fBaddCustomerGroup\fP (\fBCustomerGroup\fP *)"
+.br
+.RI "Adds customer group to tables and assigns the group to a waiter\&. "
+.ti -1c
+.RI "void \fBwaiterIterateTables\fP ()"
+.br
+.RI "performs one cycle of the waiter iteration "
+.ti -1c
+.RI "void \fBreorderMaxTablesForWaiters\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintTablesAndWaiters\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBTable\fP * > \fBtables\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBEmployee\fP * > \fBwaiters\fP"
+.br
+.ti -1c
+.RI "\fBManager\fP * \fBmanager\fP"
+.br
+.ti -1c
+.RI "int \fBcapacity\fP"
+.br
+.ti -1c
+.RI "int \fBnumOccupiedTables\fP"
+.br
+.ti -1c
+.RI "int \fBnumAvailableWaiters\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the interface for floor\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Floor::Floor (int)"
+
+.PP
+Construct a new \fBFloor\fP object\&. Passes in the number of tables in the floor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Floor::addCustomerGroup (\fBCustomerGroup\fP *)"
+
+.PP
+Adds customer group to tables and assigns the group to a waiter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if customer group is added 
+.PP
+false if restaurant is full 
+.RE
+.PP
+
+.SS "\fBEmployee\fP * Floor::createManager ()"
+
+.PP
+Create a \fBManager\fP object\&. If manager already exists, then current manager is returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Employee* 
+.RE
+.PP
+
+.SS "\fBEmployee\fP * Floor::createWaiter ()"
+
+.PP
+Create a \fBWaiter\fP object, and adds it to the list of waiters\&. Number of waiters cannot exceed number of tables returns null if waiters reached capacity\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Employee* 
+.RE
+.PP
+
+.SS "bool Floor::hasAvailableWaiter ()"
+
+.SS "void Floor::printTablesAndWaiters ()\fC [inline]\fP"
+
+.SS "void Floor::reorderMaxTablesForWaiters ()"
+
+.SS "void Floor::waiterIterateTables ()"
+
+.PP
+performs one cycle of the waiter iteration 
+.SH "Member Data Documentation"
+.PP 
+.SS "int Floor::capacity\fC [protected]\fP"
+
+.SS "\fBManager\fP* Floor::manager\fC [protected]\fP"
+
+.SS "int Floor::numAvailableWaiters\fC [protected]\fP"
+
+.SS "int Floor::numOccupiedTables\fC [protected]\fP"
+
+.SS "std::vector<\fBTable\fP*> Floor::tables\fC [protected]\fP"
+
+.SS "std::vector<\fBEmployee\fP*> Floor::waiters\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Cheat GBT from the source code\&.

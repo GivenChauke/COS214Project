@@ -1,0 +1,205 @@
+\doxysection{Food Class Reference}
+\hypertarget{class_food}{}\label{class_food}\index{Food@{Food}}
+
+
+The \doxylink{class_food}{Food} class.  
+
+
+
+
+{\ttfamily \#include $<$Food.\+h$>$}
+
+Inheritance diagram for Food\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.187500cm]{class_food}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a75d4d7f76fd495cc8133302ca9fdc485}{Food}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_food}{Food} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}{set\+Food\+Quality}} (int)
+\item 
+int \mbox{\hyperlink{class_food_ae77f434a55c6433fd123cf506f7249e5}{get\+Food\+Quality}} ()
+\item 
+string \mbox{\hyperlink{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_food_a5ab867de8f1192b8bb13b554d8c3be41}{set\+Name}} (string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}})
+\item 
+void \mbox{\hyperlink{class_food_ab88e21323605747915fff2796af2c54d}{add\+Ingredient}} (string ingredient)
+\item 
+virtual double \mbox{\hyperlink{class_food_ab9dd03b525d89b32941268f4c8b1501f}{total}} ()=0
+\begin{DoxyCompactList}\small\item\em Calculate the total cost of the food. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}{get\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_food_a82fe76dd5ed998381a2519b0dc708344}{set\+Cost}} (double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()
+\item 
+virtual void \mbox{\hyperlink{class_food_a0546c306d6023b35aababaf33d84d6fc}{decorate}} (\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a58da93bcf8b3477f060c29b41a6974ff}{decorate}} (\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void \mbox{\hyperlink{class_food_a4b500b34877fd38f084f4ec6692971ed}{decorate}} (\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_food_a8e14d45aef0db4ff9fd7328ab459d562}{name}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_food_af4b23383dfa2f725796afdf2b3c8582d}{ingredients}}
+\item 
+int \mbox{\hyperlink{class_food_a0e4f627e78f9005a5dbf727713f422c8}{Random\+Food\+Quality}}
+\item 
+double \mbox{\hyperlink{class_food_a93202b73f0e3a05308c63795c143a099}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_food}{Food} class. 
+
+This class represents a food item. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_food_a75d4d7f76fd495cc8133302ca9fdc485}\label{class_food_a75d4d7f76fd495cc8133302ca9fdc485} 
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{Food()}{Food()}}
+{\footnotesize\ttfamily Food\+::\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_food}{Food} object. 
+
+\Hypertarget{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5}\label{class_food_aaafd52be7f77aa866a3e187f0cbc5ad5} 
+\index{Food@{Food}!````~Food@{\texorpdfstring{$\sim$}{\string~}Food}}
+\index{````~Food@{\texorpdfstring{$\sim$}{\string~}Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Food()}{\string~Food()}}
+{\footnotesize\ttfamily virtual Food\+::\texorpdfstring{$\sim$}{\string~}\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_food_ab88e21323605747915fff2796af2c54d}\label{class_food_ab88e21323605747915fff2796af2c54d} 
+\index{Food@{Food}!addIngredient@{addIngredient}}
+\index{addIngredient@{addIngredient}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{addIngredient()}{addIngredient()}}
+{\footnotesize\ttfamily void Food\+::add\+Ingredient (\begin{DoxyParamCaption}\item[{string}]{ingredient }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_a0546c306d6023b35aababaf33d84d6fc}\label{class_food_a0546c306d6023b35aababaf33d84d6fc} 
+\index{Food@{Food}!decorate@{decorate}}
+\index{decorate@{decorate}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{decorate()}{decorate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual void Food\+::decorate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_burger}{Burger}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_burger_base_a8b61556f0f5e12c0729d14c57b6ea350}{Burger\+Base}}, \mbox{\hyperlink{class_burger_acfa1d9a4abbb5984850b500d4bbac6a4}{Burger}}, and \mbox{\hyperlink{class_burger_topping_add16e3ec497d69847b3d1cee12add3a6}{Burger\+Topping}}.
+
+\Hypertarget{class_food_a4b500b34877fd38f084f4ec6692971ed}\label{class_food_a4b500b34877fd38f084f4ec6692971ed} 
+\index{Food@{Food}!decorate@{decorate}}
+\index{decorate@{decorate}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{decorate()}{decorate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual void Food\+::decorate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pasta}{Pasta}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpasta_base_a91ca442871d842ae3ab82e67e7a086cf}{pasta\+Base}}, \mbox{\hyperlink{class_pasta_a1b8270510ec0e8d2e639f363f5654404}{Pasta}}, and \mbox{\hyperlink{class_pasta_type_a29dde6d1b22e5375024091271f263088}{Pasta\+Type}}.
+
+\Hypertarget{class_food_a58da93bcf8b3477f060c29b41a6974ff}\label{class_food_a58da93bcf8b3477f060c29b41a6974ff} 
+\index{Food@{Food}!decorate@{decorate}}
+\index{decorate@{decorate}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{decorate()}{decorate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual void Food\+::decorate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pizza}{Pizza}} \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_pizza_base_a868a39ea5da4efcc4f2a3757c7f0d675}{Pizza\+Base}}, \mbox{\hyperlink{class_pizza_a11e1cd8202f766abd9b59b444bc940ce}{Pizza}}, and \mbox{\hyperlink{class_pizza_type_aae153f758d55f85bfd9d900022c5bb59}{Pizza\+Type}}.
+
+\Hypertarget{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8}\label{class_food_a71f08b3fb2df52cdc8ee476fbfcf64b8} 
+\index{Food@{Food}!getCost@{getCost}}
+\index{getCost@{getCost}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily double Food\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_ae77f434a55c6433fd123cf506f7249e5}\label{class_food_ae77f434a55c6433fd123cf506f7249e5} 
+\index{Food@{Food}!getFoodQuality@{getFoodQuality}}
+\index{getFoodQuality@{getFoodQuality}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{getFoodQuality()}{getFoodQuality()}}
+{\footnotesize\ttfamily int Food\+::get\+Food\+Quality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f}\label{class_food_a8aa1a8b8df3a1fa4938198ea77c9792f} 
+\index{Food@{Food}!getName@{getName}}
+\index{getName@{getName}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Food\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_a82fe76dd5ed998381a2519b0dc708344}\label{class_food_a82fe76dd5ed998381a2519b0dc708344} 
+\index{Food@{Food}!setCost@{setCost}}
+\index{setCost@{setCost}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{setCost()}{setCost()}}
+{\footnotesize\ttfamily void Food\+::set\+Cost (\begin{DoxyParamCaption}\item[{double}]{cost }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_ab8182c06ed1e74e8b1fb06e235a955fc}\label{class_food_ab8182c06ed1e74e8b1fb06e235a955fc} 
+\index{Food@{Food}!setFoodQuality@{setFoodQuality}}
+\index{setFoodQuality@{setFoodQuality}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{setFoodQuality()}{setFoodQuality()}}
+{\footnotesize\ttfamily void Food\+::set\+Food\+Quality (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_a5ab867de8f1192b8bb13b554d8c3be41}\label{class_food_a5ab867de8f1192b8bb13b554d8c3be41} 
+\index{Food@{Food}!setName@{setName}}
+\index{setName@{setName}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Food\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+\Hypertarget{class_food_ab9dd03b525d89b32941268f4c8b1501f}\label{class_food_ab9dd03b525d89b32941268f4c8b1501f} 
+\index{Food@{Food}!total@{total}}
+\index{total@{total}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily virtual double Food\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculate the total cost of the food. 
+
+\begin{DoxyReturn}{Returns}
+The total cost of the food. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_burger_base_ab11ea88a68fa4dccb08052050d4c3404}{Burger\+Base}}, \mbox{\hyperlink{class_burger_topping_aa6ad848e01dea941c1ca12a536a5d00f}{Burger\+Topping}}, \mbox{\hyperlink{classpasta_base_a7234ebfdac92e2b2ab256ac6a2674e8f}{pasta\+Base}}, \mbox{\hyperlink{class_pasta_type_a0cd6170b80c7bc38d3e762366e407feb}{Pasta\+Type}}, \mbox{\hyperlink{class_pizza_base_abeada8b50885adfa9a6cd78384b64cbd}{Pizza\+Base}}, \mbox{\hyperlink{class_pizza_type_a07fcc0f06866ba7b5198a9ebabe14cf0}{Pizza\+Type}}, \mbox{\hyperlink{class_burger_af838c2b683211f8f593e3f55e444e577}{Burger}}, \mbox{\hyperlink{class_pasta_ac8ac00af03e60a9ee3bc020b9fbbf7ea}{Pasta}}, and \mbox{\hyperlink{class_pizza_a1162fdd6e41172dbd6cbc8cdaca0b169}{Pizza}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_food_a93202b73f0e3a05308c63795c143a099}\label{class_food_a93202b73f0e3a05308c63795c143a099} 
+\index{Food@{Food}!cost@{cost}}
+\index{cost@{cost}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double Food\+::cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_food_af4b23383dfa2f725796afdf2b3c8582d}\label{class_food_af4b23383dfa2f725796afdf2b3c8582d} 
+\index{Food@{Food}!ingredients@{ingredients}}
+\index{ingredients@{ingredients}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{ingredients}{ingredients}}
+{\footnotesize\ttfamily vector$<$string$>$ Food\+::ingredients\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_food_a8e14d45aef0db4ff9fd7328ab459d562}\label{class_food_a8e14d45aef0db4ff9fd7328ab459d562} 
+\index{Food@{Food}!name@{name}}
+\index{name@{name}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Food\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_food_a0e4f627e78f9005a5dbf727713f422c8}\label{class_food_a0e4f627e78f9005a5dbf727713f422c8} 
+\index{Food@{Food}!RandomFoodQuality@{RandomFoodQuality}}
+\index{RandomFoodQuality@{RandomFoodQuality}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{RandomFoodQuality}{RandomFoodQuality}}
+{\footnotesize\ttfamily int Food\+::\+Random\+Food\+Quality\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_food_8h}{Food.\+h}}\end{DoxyCompactItemize}
