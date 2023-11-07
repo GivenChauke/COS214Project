@@ -17,7 +17,7 @@ public:
     void setDepartment(Department* dep);
     void setCurrTable(Table* currTab);
     void GetReview(const std::vector<Review*>& reviewList);
-    void TakeOrder(Table* table);
+    vector<Order*> TakeOrder(Table* table);
     int getEmployeeId();
     ~Employee();
 protected:

@@ -62,10 +62,14 @@ void Employee::GetReview(const std::vector<Review*>& reviewList) {
     }
 }
 
-void Employee::TakeOrder(Table* table) {
+vector<Order*> Employee::TakeOrder(Table* table) {
     if (table) {
         // Process the order and add it to the queue
+        return table->getCustomerGroup()->PlaceOrder();
     }
+    vector<Order*> dummy;
+
+    return dummy;
 }
 
 Employee::~Employee() {

@@ -10,6 +10,7 @@ Employee::Employee(int id) : department(nullptr), tables(nullptr), currTable(nul
 }
 
 void Employee::assignTables(std::vector<Table*>& tables) {
+    if(tableIterator) delete tableIterator;
     tableIterator = new TableIterator(tables);
 }
 

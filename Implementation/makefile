@@ -1,5 +1,5 @@
 make:
-	g++ -std=c++17 -g *.cpp -o main
+	g++ -std=c++17 -g Pizza/*.cpp Burger/*.cpp Pasta/*.cpp *.cpp -o main
 
 run:
 	make

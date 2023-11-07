@@ -21,7 +21,7 @@ void Waiter::assignTables(vector<Table*>& tables){
     for(Table* table: tables){
         this->tables.push_back(table);
     }
-    //if(tableIterator!= nullptr) delete tableIterator;
+    if(tableIterator!= nullptr) delete tableIterator;
     this->tableIterator = new TableIterator(this->tables);
 
 }

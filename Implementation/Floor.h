@@ -71,10 +71,16 @@ class Floor{
             cout << "Printing floors and waiters" << endl;
 
             for(Table* table: tables){
-                cout << left << setw(20) << table->EnquireState() << "|";
+                cout << "Table  " << table->getTableID() << " details:" << endl;
+                cout << "State - " << table->EnquireState() << endl;
+                table->getCustomerGroup()->print();
             }
-            cout << endl << "Number of tables: " << tables.size() <<
-             "\nNumber of occupied tables: " << this->numOccupiedTables << endl;
+            string hasAvailableWaiter = this->hasAvailableWaiter() ? "\033[31mYes\033[0m" : "\033[32mNo\033[0m";
+            cout << endl << setw(35) << 
+                            "Number of tables: " << tables.size() << endl << setw(35) <<
+                            "Number of occupied tables: " << this->numOccupiedTables << endl << setw(35) <<
+                            "Has available waiters: " << hasAvailableWaiter << endl ;
+
         }
 
 };
